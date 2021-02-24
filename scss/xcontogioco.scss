@@ -1,3 +1,5 @@
+$url: "test.sirplay.it";
+@import url("https://#{$url}/external_css/SIRPLAY/fontAwesome/css/all.min.css");
 /*HEADER e MENU*/
 
 html:root {
@@ -74,7 +76,7 @@ p.testo-disclaimer {
 /*FINE HEADER e MENU*/
 
 body[page="sport"] {
-  background-image: url(https://test.sirplay.it/external_css/SIRPLAY/img/bgMain.jpeg);
+  background-image: url("https://#{$url}/external_css/SIRPLAY/img/bgMain.jpeg");
   background-size: 1760px;
   background-position: center 237px;
   background-repeat: no-repeat;
@@ -82,4 +84,11 @@ body[page="sport"] {
 }
 #sport-frame {
   margin-top: 0 !important;
+}
+
+span.live-collapse-opened {
+  font-family: "Font Awesome 5 Pro";
+  &:before {
+    content: "\f053";
+  }
 }
