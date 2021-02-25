@@ -538,8 +538,10 @@ a {
 }
 
 .widget-bestseller-tab-result-box {
-  border-color: #f8cb24 !important;
+  border: none !important;
   font-family: Open Sans, Arial, sans-serif;
+  background-color: #ffffff33;
+  padding: 5px;
 }
 
 #collapser-container-hotbet .match-team-name {
@@ -6476,6 +6478,9 @@ $base: #000000;
   tbody {
     border-top: 1px solid #555555;
   }
+  thead {
+    background: #333333;
+  }
   th {
     padding: 0 0 2px 0;
   }
@@ -6494,6 +6499,7 @@ $base: #000000;
     border-left: 1px solid #555555;
   }
 }
+
 .widget-btn-td {
   padding: 0px 0;
 }
