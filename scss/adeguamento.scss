@@ -3,7 +3,13 @@
 @import url("https://fonts.googleapis.com/css?family=Open Sans:400,700");
 @import url("https://#{$url}/external_css/SIRPLAY/fontAwesome/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@mixin borderBottom3d {
+  background-color: #222222;
+  border-bottom: 1px solid #444;
+  box-shadow: inset 0px -1px 0px 0px #000;
+}
 /* body */
+
 body {
   background: #40404000;
   color: #232323;
@@ -763,11 +769,9 @@ a {
 
 /*sfondo, testo e bordo sottobottoni menu a sinistra*/
 .qualification-group-container li {
-  background: #000;
-  border-bottom: 1px solid #444;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
-  box-shadow: inset 0 -2px 0 -1px #000000;
+  @include borderBottom3d;
 }
 
 .cart-title {
@@ -784,13 +788,10 @@ a {
 
 /*background e bordi tasti disciplina*/
 #left-menu-primary li {
-  border-bottom: 1px solid #444 !important;
-  box-shadow: none;
   padding: 5px 0 !important;
   margin: 0;
-  background: #000 !important;
   font-family: "Roboto", sans-serif;
-  box-shadow: inset 0 -2px 0 -1px #000000;
+  @include borderBottom3d;
 }
 /*colore font tasti disciplina*/
 #left-menu-primary li a {
@@ -846,8 +847,8 @@ a {
 /*sfondo colore avvenimenti best seller*/
 .widget-bestseller-table tr {
   background: transparent;
-  border-bottom: 1px solid #555555;
   font-family: "Roboto", sans-serif;
+  @include borderBottom3d;
 }
 
 .widget-bestseller-table tr .widget-calendar-date {
@@ -4445,7 +4446,7 @@ td .btn:hover,
 .widget-last-winnings-box,
 #left-menu-primary li,
 .qualification-group-container li {
-  background-color: #222 !important;
+  @include borderBottom3d;
 }
 
 .header-logo-container {
@@ -6453,7 +6454,82 @@ $base: #000000;
   display: inline-block;
 }
 /* fine widget live*/
+
 html {
+  .widget-hotbet-tab-result-quotes-box
+    .widget-hotbet-tab-result-container
+    .widget-hotbet-tab-result-percent-box {
+    @include borderBottom3d;
+  }
+  .cart-sistema-final-input-table.final-input-theader div {
+    @include borderBottom3d;
+  }
+  .cart-sistema-final-input-table div {
+    @include borderBottom3d;
+    box-shadow: inset -1px -1px 0px 0px #000;
+  }
+
+  .widget-tab-box-hotbet .widget-info-text-container {
+    @include borderBottom3d;
+  }
+  .cart-banker-table .game-event-box-table {
+    @include borderBottom3d;
+  }
+  .cart-banker-letter-td {
+    vertical-align: middle;
+  }
+  #cart-events-wrapper {
+    border: 3px solid #f5c020;
+    border-radius: 0;
+  }
+  #cart-container .nav-pills li {
+    &.active {
+      a {
+        background-color: #ffbe02;
+        color: #222 !important;
+      }
+    }
+  }
+  #cart-container .shopping-cart-result-box {
+    padding: 0 7px;
+  }
+  .ico-print {
+    margin-left: auto;
+  }
+  .accept-quote-box {
+    .hand-pointer {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      line-height: 18px;
+    }
+  }
+  .cart-potential-winning-result {
+    font-size: 30px;
+    font-family: "Roboto";
+    font-weight: 300;
+    background: #222;
+  }
+  #checkbet {
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+  }
+  div#checkbet-submit > div {
+    padding: 7px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > div {
+      padding: 0 !important;
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      input {
+        flex-grow: 1;
+      }
+    }
+  }
   .led-box {
     .led-green {
       display: none;
