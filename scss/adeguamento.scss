@@ -6466,7 +6466,7 @@ html {
   #cart-systems {
     width: 100%;
   }
-  div#center-content:before {
+  .box-prematch div#center-content:before {
     content: "";
     width: 100%;
     background-image: url("https://#{$url}/external_css/SIRPLAY/img/sportBg.jpg");
