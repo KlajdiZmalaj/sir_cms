@@ -141,8 +141,7 @@ a {
 
 .widget-last-winnings-box-container,
 #widget-last-news {
-  background-color: #000;
-  font-family: "Roboto", sans-serif;
+  padding-bottom: 0;
 }
 
 .ui-datepicker .ui-datepicker-prev span {
@@ -1124,7 +1123,7 @@ a {
 .buttons-container-body .btn-azure {
   background: linear-gradient(180deg, #ffe01a, #e79211);
   text-shadow: none !important;
-  color: white;
+  color: #222;
   font-family: "Roboto", sans-serif;
 }
 
@@ -1766,6 +1765,14 @@ html body .title-toggle-text.collapsed {
   background: url(images/big-star-icon.png) no-repeat center center;
   background-size: contain;
   font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffbe02;
+  &:after {
+    content: "\f005";
+    font-family: "Font Awesome 5 Pro";
+  }
 }
 .search-calendar-icon {
   display: inline-block;
@@ -3222,7 +3229,7 @@ body .prematch-fluid-giocabilita-q5:visited,
 }
 
 .cart.btn-green {
-  background: #56bd9a !important;
+  background: #4caf50  !important;
   text-shadow: none !important;
   color: #fff !important;
   font-family: "Roboto", sans-serif;
@@ -6507,6 +6514,9 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    .left {
+      flex-grow: 1;
+    }
     > div {
       padding: 0 !important;
       width: 100%;
@@ -6514,6 +6524,8 @@ html {
       flex-flow: row wrap;
       input {
         flex-grow: 1;
+        border-radius: 0;
+        width: 100%;
       }
     }
   }
