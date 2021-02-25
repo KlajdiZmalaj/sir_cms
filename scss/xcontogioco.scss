@@ -14,10 +14,10 @@ html:root {
   --header-input-bg-color: #cccccc;
   --header-input-text-color: #000000;
   --user-img-border-color: #f8cb24;
-  --menu-bar-background-color: ;
-  --menu-bar-text-color: ;
-  --submenu-bar-background-color: ;
-  --submenu-bar-text-color: ;
+  --menu-bar-background-color: #212121;
+  --menu-bar-text-color: #fff;
+  --submenu-bar-background-color: #212121;
+  --submenu-bar-text-color: #fff;
   --login-btn-bg-color: #ffffff;
   --login-btn-text-color: #000000;
   --signup-btn-bg-color: #ffd919;
@@ -74,7 +74,33 @@ p.testo-disclaimer {
 .barra-superiore .blocco-header {
   font-size: 12px !important;
 }
-
+.container-fluid.fissato-alto .row.barra-superiore {
+  height: 30px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  .info-utili {
+    font-size: 14px;
+    height: 30px;
+    .cg-contatti span {
+      font-size: 13px;
+    }
+  }
+  .disclaimer {
+    font-size: 13px;
+    height: 30px;
+    justify-content: space-between;
+    .cg-header-logo {
+      width: 60px;
+      height: 26px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right;
+    }
+  }
+}
+.menu-principale-barra ul.menu-principale {
+  border-bottom: 1px solid var(--bottombar-footer-bg-color);
+}
 /*FINE HEADER e MENU*/
 
 body[page="sport"] {
