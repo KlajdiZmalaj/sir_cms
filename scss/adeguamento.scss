@@ -1506,15 +1506,19 @@ img {
 }
 #collapser-container-hotbet .widget-bestseller-tab-result-box,
 #collapser-container-hotbet .widget-hotbet-tab-result-box {
-  border-top: 1px solid #eda417;
-  border-bottom: 1px solid #eda417;
+  border: none;
   font-family: "Roboto", sans-serif;
+  border-bottom: 1px solid #4e4e4e;
 }
 #collapser-container-hotbet .widget-hotbet-tab-result-container {
-  border-right: 1px solid #eda417;
+  border-right: 1px solid #676767;
   font-family: "Roboto", sans-serif;
 }
-
+#collapser-container-hotbet
+  .widget-hotbet-tab-result-quotes-box
+  .widget-hotbet-tab-result-container {
+  border-right: 0;
+}
 /* -- BANNERS ReStyles -- */
 .DG-pager a {
   background: #95ec92;
@@ -6624,7 +6628,7 @@ html {
       height: 4px;
     }
     .hotbet-tab-result-quote-td {
-      padding: 0;
+      padding: 0 !important;
     }
     .btn-widget.white {
       height: 26px;
@@ -6657,7 +6661,7 @@ html {
     border-radius: 0;
   }
   .hotbet-tab-result-quote-td {
-    padding: 0;
+    padding: 0 !important;
   }
 }
 .widget-hotbet-blasoni.column {
