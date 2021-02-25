@@ -2,11 +2,12 @@
 
 @import url("https://fonts.googleapis.com/css?family=Open Sans:400,700");
 @import url("https://#{$url}/external_css/SIRPLAY/fontAwesome/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 /* body */
 body {
   background: #40404000;
   color: #232323;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 13px;
 }
 
@@ -22,13 +23,13 @@ body#jspregistrazione {
 
 .iframeland {
   height: 1630px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* banner spacer: deve coincidere con il background-color del body*/
 .banner-spacer {
   background: transparent;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /*sfondo contenitore menu a sinistra*/
 #shortcut-live-menu-container {
@@ -51,9 +52,9 @@ body#jspregistrazione {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8d8d8d', endColorstr='#686868',GradientType=0 ); /* IE6-9 */
   color: #fff;
   height: 32px;
-  margin: 0 0 5px 0;
+  margin: 0 0 0 0;
   border-radius: 0;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .modal.fade.in {
@@ -63,18 +64,18 @@ body#jspregistrazione {
 a:hover,
 a:focus {
   color: linear-gradient(180deg, #f8cb24, #e79211);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*sfondo avvenimento menu a sx*/
 .live-menu-pref li {
   background: #000;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /*colore font descrizione manifestazione avvenimento menu a sx*/
 .live-menu-team-game {
   color: #c1c1c1;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .live-menu-team-title {
@@ -84,20 +85,20 @@ a:focus {
 
 .bootstrap-switch {
   border-color: transparent !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary,
 .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary {
   background: #232528 !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default,
 .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default {
   color: #fff !important;
   background: #232528;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .collapse-prematch-menu .btn-primary {
@@ -105,12 +106,12 @@ a:focus {
   font-size: 13px;
   text-transform: uppercase;
   color: #fff !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* avvenimento menu a sx, nome avvenimento */
 .live-menu-team-titl-box {
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* avvenimento menu a sx, collapser disciplina e text shadow */
 .live-menu-title {
@@ -139,7 +140,7 @@ a:focus {
   font-size: 13px;
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* barra di navigazione live prematch colore sfondo bottone attivo */
 .nav-pills > li.active > a,
@@ -148,65 +149,65 @@ a:focus {
   background: linear-gradient(180deg, #f8cb24, #e79211) !important;
   color: #000 !important;
   border-radius: 0;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
   color: linear-gradient(180deg, #f8cb24, #e79211);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .widget-last-winnings-box-container,
 #widget-last-news {
   background-color: #000;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .ui-datepicker .ui-datepicker-prev span {
   display: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #ui-datepicker-div .ui-widget-header {
   padding: 1px 0 !important;
   background: #e0e0e0;
   margin: 0px 0 0 0;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #ui-datepicker-div {
   z-index: 100;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*barra di navigazione live prematch colore sfondo numero avvenimenti e colore font */
 .match-number-container {
   background: linear-gradient(180deg, #f8cb24, #e79211);
   color: #000;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* barra di navigazione live prematch colore testo */
 .nav-pills > li > a {
   color: #000;
   background-color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* live sezione centrale, colore sfondo header box */
 .buttons-container-header {
   background: #0d0d0d;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #widget-bestseller-box .nav-tabs > li > a {
   font-family: "Open Sans";
   font-size: 13px;
   font-weight: 700;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .ui-widget-header .ui-icon {
   background-image: none !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .widget-tab-2-icon,
@@ -217,7 +218,7 @@ a {
   width: 20px !important;
   height: 20px !important;
   background-size: cover;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* live sezione centrale, colore font header box e text shadow */
 .title-alternate {
@@ -226,14 +227,14 @@ a {
   font-family: "Open Sans";
   font-size: 13px;
   font-weight: 700;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .left-column-search-container {
   background: #000;
   border: none;
   font-family: "Open Sans", sans-serif;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* live sezione centrale, colore bottone sport disattivo e attivo */
 
@@ -242,13 +243,13 @@ a {
   background-color: #c89304 !important;
   background-image: none;
   border-radius: 0px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .buttons-container-header .btn-live.selected {
   background: #3a3a3a !important;
   border-radius: 0px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*attivo*/
@@ -273,7 +274,7 @@ a {
     rgba(255, 255, 255, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cecece', endColorstr='#ffffff',GradientType=0 );
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /*color font e shadow bottone sport*/
 .btn-live-text {
@@ -281,35 +282,35 @@ a {
   color: #000 !important;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* sezione centrale colore sfondo disciplina header */
 .sport-type-title-container {
   background-color: #595b5d;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .active #widget-bestseller-box span {
   color: #000;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* sezione centrale colore font disciplina header */
 .sport-type-title {
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /*svuota tutto hover*/
 .btn-tit-ltl:hover {
   background: linear-gradient(180deg, #f8cb24, #e79211);
   /*color: #fff;*/
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*tasto svuota tutto background*/
 .btn-tit-ltl {
   background: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*svuota tutto font*/
@@ -317,13 +318,13 @@ a {
   color: #000 !important;
   text-shadow: none;
   font-weight: 700;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*border radius tabs arancioni*/
 .nav-tabs > li > a {
   border-radius: 2px 2px 0 0;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #widget-bestseller-box .nav-tabs > li.active > a,
@@ -339,7 +340,7 @@ a {
   font-family: "Open Sans";
   font-size: 13px;
   font-weight: 700;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .box-age-18 {
@@ -353,7 +354,7 @@ a {
   background: #000 !important;
   padding: 5px 0 !important;
   color: #fff !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* sezione centrale colore sfondo header manifestazione */
@@ -361,28 +362,28 @@ a {
   background-image: none;
   color: #fff;
   background: #333;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* sezione centrale colore font header manifestazione */
 .sport-team-title {
   color: #cecece;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* sezione centrale colore sfondo header scommesse avvenimento */
 .sport-match-container-header {
   background: #333;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* sezione centrale colore sfondo e testo header scommesse (avvenimento sezione descrizione scommessa) */
 .tbl-title-box {
   color: #ffffff;
   background-color: #333;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* sezione centrale colore testo header scommesse avvenimento sezione descrizione esiti */
 .tbl-title-box.bordered {
   color: white;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* sezione centrale colore sfondo e testo match score */
 .match-score-num {
@@ -390,22 +391,22 @@ a {
 	background: #0000ff;*/
   border-left: 1px dashed #1f2428;
   border-right: 1px dashed #1f2428;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* sezione centrale testo descrizione avvenimento	 */
 .match-title-left {
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* sezione centrale testo periodo minuti */
 .td-time-left-evi {
   color: #ffc47b;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* sezione centrale testo periodo */
 .td-txt-left-ltl {
   color: #b5b5b5;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #widget-bestseller-box .nav-tabs > li > a,
@@ -414,14 +415,14 @@ a {
   font-size: 13px;
   font-weight: 700;
   text-shadow: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #widget-bestseller-box .nav-tabs > li > a,
 #widget-hotbet-box .nav-tabs > li > a {
   color: #fff !important;
   text-shadow: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* -- change buttons . gray normal and green active  */
@@ -430,54 +431,54 @@ a {
   background: linear-gradient(180deg, #f8cb24, #e79211) !important;
   color: #fff;
 
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /*  text into buttons */
 .sport-prematch-container a {
   color: #000;
   text-shadow: none !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .btn-g.giocabilita-s.disabled {
   color: rgb(167, 167, 167) !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* sezione centrale "altre scommesse" */
 .box-supplement-time {
   background-color: transparent;
   color: #ffffff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* sezione centrale colore sfondo avvenimento e sfondo casella di prenotazione e colore testo nel box hotbet*/
 .buttons-container-box {
   color: #fff;
   border: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .nav-tabs > li {
   margin-bottom: 0px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .widget-bestseller-tab-title-box,
 .widget-hotbet-tab-title-box {
   margin-bottom: 4px !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #fluid-overview-live-container .simple-row {
   background: rgba(0, 0, 0, 0);
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* sezione destra, sfondo header collapser widget */
 .close-box-container {
   background: linear-gradient(180deg, #f8cb24, #e79211) !important;
 
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* carrello nav bar sfondo e testo sezione attiva e non attiva */
 /*attiva*/
@@ -492,7 +493,7 @@ a {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#65D2E9',EndColorStr='#4B9BAC')";
   color: white;
   text-shadow: 0px 1px 1px #000;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /*non attiva*/
 #shopping-cart .nav-tabs > li > a {
@@ -506,14 +507,14 @@ a {
 		"progid:DXImageTransform.Microsoft.gradient(startColorStr='#4A555F',EndColorStr='#1F2428')";*/
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.66);
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* carrello sfondo tab attiva */
 .tab-content > .active,
 #widget-hotbet-box .tab-content > .active {
   background-color: #0b0b0b;
   position: relative;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .fa-newspaper-o:before {
@@ -525,55 +526,56 @@ a {
 /* progress bar insuccesso/pericolo (solitamente rossa)*/
 .progress-bar-danger {
   background-color: #6a6a6a !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* sfondo progress bar*/
 .progress {
   background-color: #333;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .progress-bar-danger {
   background-color: linear-gradient(180deg, #f8cb24, #e79211) !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .widget-bestseller-tab-result-box {
+  border-color: #f8cb24 !important;
+  font-family: "Roboto", sans-serif;
   border: none !important;
-  font-family: Open Sans, Arial, sans-serif;
   background-color: #ffffff33;
   padding: 5px;
 }
 
 #collapser-container-hotbet .match-team-name {
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #widget-hotbet-tab-result-percent-table td {
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .match-name-container td.event-title p {
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*carello colore contorno*/
 .shopping-cart-view-mode.nav-tabs {
   border-bottom: 1px solid #101010;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* carrello sfondo bottone cancella tutto */
 .shopping-cart-delete-all-btn {
   background-color: #ffffff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* carrello colore font tab attiva */
 .shopping-cart-bet-options-box {
   color: #e26161;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* carrello, colore sfondo singola/multipla */
 .shopping-cart-result-box {
@@ -581,82 +583,82 @@ a {
   box-shadow: none;
   color: #dedede;
   background: #242424 !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .result-letter-box {
   background: linear-gradient(180deg, #f8cb24, #e79211) !important;
   color: #fff !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .result-close-box {
   border-left: 1px solid #cecece;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .coupon-result-spacer-1px {
   border-bottom: 1px solid #cecece;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*carrello, colore testo descrizione scommessa e quota (aggiungere attributo color) */
 .desc-scom-odds {
   color: black;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*carrello, colore testo descrizione esito scommesso*/
 .title-winner {
   color: #000;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /*carrello box riassuntivo sfondo e font color */
 .tab-coupon-final-count-box {
   color: #dcdcdc;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* carrello box vincita possibile totale sfondo e font color */
 .cart-total-price {
   background: #400040;
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .sistemi-result-import-title {
   border-bottom: 1px solid #555555;
   background-color: linear-gradient(180deg, #f8cb24, #e79211);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #sistemi-result-combinations .sistemi-result-check-box,
 #sistemi-result-combinations .sistemi-result-inputtype-box {
   background-color: linear-gradient(180deg, #f8cb24, #e79211) !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .sistemi-result-ncomb-title {
   border-right: 1px solid #555555;
   border-bottom: 1px solid #555555;
   background-color: linear-gradient(180deg, #f8cb24, #e79211);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .sistemi-result-import-title {
   border-bottom: 1px solid #555555;
   background-color: linear-gradient(180deg, #f8cb24, #e79211);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #sistemi-results-input-container {
   background-color: #a7a7a7;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .sistemi-result-check-box {
   border-right: 1px solid #555555;
   border-bottom: 1px solid #555555;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*colore sfondo bottone "Scommetti" e text-shadow */
@@ -670,14 +672,14 @@ a {
   zoom: 1;
   text-shadow: 0px 1px 0px #f56c60 !important;
   cursor: pointer;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*colore font bottone "Scommetti"*/
 .btn {
   color: #fff;
   border-radius: 0px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /**********SEZIONE LIVE END*******************/
@@ -690,7 +692,7 @@ a {
 .btn-primary:focus {
   background-color: #1f2428;
   color: white;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /*sfondo bottone ALL selezionato*/
 .btn-primary.active.focus,
@@ -703,7 +705,7 @@ a {
 .open > .dropdown-toggle.btn-primary:focus,
 .open > .dropdown-toggle.btn-primary:hover {
   background-color: #ffff00;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /*bottone ALL selezionato, senza focus, testo interno*/
 .btn-primary.active,
@@ -711,18 +713,18 @@ a {
 .open > .dropdown-toggle.btn-primary {
   color: #008000;
   background-color: #ffff00;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .box-prematch a.right {
   color: white !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*sfondo dropdown menu*/
 .dropdown-menu {
   background-color: #323232 !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*sfondo dropdown menu on mouse hover, colore del font*/
@@ -730,20 +732,20 @@ a {
 .dropdown-menu > li > a:hover {
   background-color: linear-gradient(180deg, #f8cb24, #e79211);
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /*separatore dropdown menu*/
 .dropdown-menu li {
   border-bottom: 1px solid #404040;
   background: #636060;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #header .dropdown-menu li {
   border-bottom: none;
   padding: 0;
   background: #323232;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #menu_primary_container ul li ul li a,
@@ -754,7 +756,7 @@ a {
   font-size: 12px;
   font-weight: normal;
   border-bottom: 1px solid #575757;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #menu_primary_container ul li ul li a:hover,
@@ -785,7 +787,7 @@ a {
   text-shadow: none;
   border-radius: 0px;
   margin: 0 0 2px 0;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .left-menu-title a,
@@ -795,7 +797,7 @@ a {
   font-family: "Open Sans";
   font-size: 13px;
   font-weight: normal;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*sfondo, testo e bordo sottobottoni menu a sinistra*/
@@ -803,63 +805,72 @@ a {
   background: #000;
   border-bottom: 1px solid #444;
   color: #ffffff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  box-shadow: inset 0 -2px 0 -1px #000000;
 }
 
 .cart-title {
   color: #dedede;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*separatore tra collapser e bottoni disciplina*/
 #left-menu-primary-container,
 #left-menu-secondary-container {
   border-top: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*background e bordi tasti disciplina*/
 #left-menu-primary li {
-  border-bottom: 1px solid #333 !important;
+  border-bottom: 1px solid #444 !important;
   box-shadow: none;
-  padding: 5px 0;
+  padding: 5px 0 !important;
   margin: 0;
   background: #000 !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  box-shadow: inset 0 -2px 0 -1px #000000;
 }
 /*colore font tasti disciplina*/
 #left-menu-primary li a {
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  span.right.icon-next {
+    order: 3;
+  }
 }
 
 /*colore font sottotasti disciplina*/
 #prematch-left-menu-match-2-level li a,
 #prematch-left-menu-match-2-level li a:hover {
   color: #0000ff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*colore font numero avvenimenti*/
 .prematch-left-menu-match-number {
   color: #ececec;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  margin-left: auto;
 }
 
 /*colore font bottoni manifestazione*/
 #prematch-left-menu-match-2-level li {
   background-color: #16181d;
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 #prematch-left-menu-match-2-level li a {
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /*manifestazione selezionata*/
 .manif-selected {
   background-color: linear-gradient(180deg, #f8cb24, #e79211) !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /*bestseller colore di: Giorno & Ora, PARTITA, ESITI, VALORE IMPORTO, VINCITA TOTALE*/
 .corporate-blue {
@@ -869,23 +880,23 @@ a {
 /*bestseller colore testo Importo:, Quota totale:, Vincita totale*/
 .widget-bestseller-tab-result-general-box {
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /*sfondo colore avvenimenti best seller*/
 .widget-bestseller-table tr {
   background: transparent;
   border-bottom: 1px solid #555555;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .widget-bestseller-table tr .widget-calendar-date {
   color: #9fa0a0;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .widget-bestseller-table .widget-bestseller-match-title {
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*colore sfondo bottone quota non giocabile*/
@@ -896,7 +907,7 @@ a {
   line-height: 8px;
   color: #fff;
   text-shadow: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   box-shadow: inset 1px 1px 0px #222222;
 }
 
@@ -906,7 +917,7 @@ a {
 /*colore sfondo bottone scommetti bestseller*/
 .btn-blue {
   background: linear-gradient(180deg, #f8cb24, #e79211);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*colore sfondo bottone scommetti bestseller on mouse hover*/
@@ -936,35 +947,35 @@ a {
   );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4f0ca', endColorstr='#b8e7b7',GradientType=0 );
   box-shadow: inset 1px 1px 0px #bfe6ef;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*contenitore "+999" avvenimento prematch*/
 .next-live-plus-quote-container {
   background-color: #222;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*font color "+999"*/
 .sport-prematch-container a {
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* sfondo box ultime vincite*/
 .widget-last-winnings-container {
   background: transparent;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* sfondo e font box ultimi risultati */
 .widget-last-result-table {
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #last-result-box-container {
   background-color: #222;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*bottone gruppo scommessa 1 menu bet-type, sfondo e testo   */
@@ -972,14 +983,14 @@ a {
   background-color: linear-gradient(180deg, #f8cb24, #e79211);
   color: #fff;
   text-shadow: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /*bottone gruppo scommessa 1 menu bet-type, on mouse hover  */
 .game-btn:hover,
 #wrapper.prematch .games-btn-container.oven .game-event-btn:hover {
   background: linear-gradient(180deg, #f8cb24, #e79211);
   color: #fff !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*bottone gruppo scommessa 2, menu bet-type sfondo e testo*/
@@ -994,7 +1005,7 @@ a {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#65D2E9',EndColorStr='#4B9BAC')";
   color: #fff !important;
   text-shadow: 0px 1px 0px #4490a1 !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*bottone gruppo scommessa 2, menu bet-type on click*/
@@ -1003,7 +1014,7 @@ a {
   background-color: #333;
   color: #fff;
   text-shadow: 0px -1px 1px rgb(30, 66, 74);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /*bottone gruppo scommessa 2, menu bet-type sfondo e testo*/
 /*on dropdown*/
@@ -1027,7 +1038,7 @@ a {
   > .dropdown-toggle.btn-default:hover {
   background-color: #004080;
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*bottone gruppo scommessa 2 tipo, default, on mouse hover, selected*/
@@ -1036,7 +1047,7 @@ a {
   box-shadow: none;
   color: #ffffff;
   text-shadow: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .game-event-btn.selected {
@@ -1047,7 +1058,7 @@ a {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#58B6CB',
 		EndColorStr='#1289A2');
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#58B6CB',EndColorStr='#1289A2')";
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .game-event-btn:hover {
@@ -1075,33 +1086,33 @@ a {
   );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#175920', endColorstr='#123212',GradientType=0 );
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*bottone esito "+122"*/
 .prematch-event-selected-btn-table td {
   background-color: #101215;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* colore font descrizione esito bottone esito "+122" */
 .prematch-avvenimento-tbl-title {
   color: #fff !important;
   text-shadow: 0 0 1px #000 !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*on mouse hover quota + 133*/
 .prematch-avvenimento-tbl-btn-container a:hover {
   background-color: #3f4041;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*header box evento singolo*/
 .info-text-box-container {
   background-color: #80ff00;
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Casella dei box prematch che contiene l alias e la data-ora dell'evento*/
@@ -1109,20 +1120,20 @@ a {
 .time-col {
   background-color: #333;
   color: yellow;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .sport-prematch-container table p {
   color: white;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* colore testo alias */
 .blu-bg {
   color: #33ab4a;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .sport-prematch-container table p.blu-bg {
   color: #33ab4a;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* menu piccolo di sinistra con le sole icone degli sport */
@@ -1134,13 +1145,13 @@ a {
   background: linear-gradient(to bottom, #8d8d8d 0%, #686868 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8d8d8d', endColorstr='#686868',GradientType=0 );
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* sfondo lente di ingrandimento*/
 .prematch-mini-menu-search-container {
   background-color: #333;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* sfondo icone sport */
@@ -1149,7 +1160,7 @@ a {
   background-color: #343434;
   border-bottom: 1px solid #343434;
   box-shadow: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Classe per il bottone azzurro, presente in molti componenti */
@@ -1157,59 +1168,59 @@ a {
   background: linear-gradient(180deg, #f8cb24, #e79211);
   text-shadow: none !important;
   color: white;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* testo quando il mouse passa sopra*/
 .btn-azure:hover {
   color: #232323;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* colore di eventuali link presenti nel pulsante*/
 .btn-azure a {
   color: #fff !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* colore menu dropdown (tringolo basso) */
 /* colore di sfondo*/
 td .dropdown-menu-esiti {
   background-color: #636060 !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #header td .dropdown-menu-esiti {
   background-color: #6f6f6f !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* colore del speratore*/
 td .dropdown-menu-esiti ul li ul li,
 td .dropdown-menu-esiti ul li ul li:last-child {
   border-bottom: 1px solid #a7a7a7;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* colore del testo*/
 td .dropdown-menu-esiti ul li ul li a {
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 td .dropdown-menu-esiti ul li a {
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*header box live singolo*/
 .info-text-box-container {
   background-color: #80ff00;
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* OVERWRITING JS background-changes */
 #center-content .live-match-primary-container .info-text-box-container {
   background: #2c3137 !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*live singolo, colore sfondo testo descrizione scommessa */
@@ -1217,7 +1228,7 @@ td .dropdown-menu-esiti ul li a {
   color: #fff;
   border: 1px solid #3e4448;
   background-color: #101215;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*live singolo, colore sfondo box quota */
@@ -1227,12 +1238,12 @@ td .dropdown-menu-esiti ul li a {
   background-color: #343434;
   /* box-shadow: inset 0px 0px 5px #080808; */
   border: 1px solid #0d0d0d;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .live-match-primary-container .text-white {
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*live singolo, colore sfondo box quota on mouse hover*/
@@ -1245,67 +1256,67 @@ td .dropdown-menu-esiti ul li a {
   background-color: #737373;
   box-shadow: inset 0px 0px 5px #050d0e;
   border: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /*colore font descrizione esito quota live singolo*/
 .text-white {
   color: #ff8000;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /*colore font esito quota non giocabile live singolo*/
 .text-darkgray {
   color: #fff !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*colore sfondo barra principale multilive*/
 #menu-live-multi-container {
   background: #333 !important;
   border: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*multilive colore header avvenimento*/
 .menu-live-multi-singolar-match-title.football {
   background: #5a5a5a !important;
   color: #dedede !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /*multilive colore font header avvenimento*/
 .info-text-box-1-col {
   color: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*multilive sfondo testo header manifestazione*/
 .live-multi-header {
   background-color: #400080;
   color: #b1e2ec;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*ZZZZ avvenimento multilive, contenitore bottoni destra sfondo */
 .live-multi-top-content-right {
   background-color: #222 !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*bottoni a destra, multilive sfondo*/
 .live-multi-top-content-right .top-content-btns {
   box-shadow: 0px -1px 1px #323c3e;
   background-color: #6f6f6f;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /*bottoni a destra, multilive sfondo on mouse hover*/
 .live-multi-top-content-right .top-content-btns:hover {
   box-shadow: 0px -1px 1px #484747;
   background-color: #484747;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #menu-live-multi-boxes-container .text-white {
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* sfondo tab swicher, dove sono presenti tutte le sezioni (prematch, overview live, evento live, multilive, calendario */
@@ -1320,7 +1331,7 @@ td .dropdown-menu-esiti ul li a {
 #menu-live-next-events-dates-ul li {
   border-right: 1px solid red;
   box-shadow: 1px 0px 0px yellow;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #menu-live-next-events-dates-ul li a {
@@ -1328,13 +1339,13 @@ td .dropdown-menu-esiti ul li a {
   text-shadow: none;
   font-weight: 700;
   background: #555;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .menu-live-next-events-dates-box {
   background: #222;
   display: inline-flex;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* pulsante giorno della settimana selezionato */
@@ -1342,7 +1353,7 @@ td .dropdown-menu-esiti ul li a {
   background: linear-gradient(180deg, #f8cb24, #e79211) !important;
   text-shadow: none;
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* pulsante  -> filtra per */
@@ -1350,7 +1361,7 @@ td .dropdown-menu-esiti ul li a {
   background: linear-gradient(180deg, #f8cb24, #e79211) !important;
   text-shadow: none;
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* bordo box singolo match calendario */
@@ -1358,7 +1369,7 @@ td .dropdown-menu-esiti ul li a {
   /* display: table; */
   border: none;
   background: #222;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*  sfondo testo e divisore del match */
@@ -1367,7 +1378,7 @@ td .dropdown-menu-esiti ul li a {
   background-color: #333;
   box-shadow: none;
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* sfondo e colore del box dell avvenimento dove viene specificata la data*/
@@ -1376,16 +1387,16 @@ td .dropdown-menu-esiti ul li a {
   color: #fff;
   border-left: 1px solid #222;
   border-right: 1px solid #222;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .live-next-event-multi-boxes-match-info .match-name {
   border-bottom: 1px solid #000;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .live-next-event-multi-boxes-match-info .match-info {
   border-bottom: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* colore quando il mouse passa sopra una delle squadre */
@@ -1396,7 +1407,7 @@ td .dropdown-menu-esiti ul li a {
   box-shadow: none;
   border: none;
 
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .carosello-widget-infos-box {
@@ -1410,51 +1421,63 @@ td .dropdown-menu-esiti ul li a {
   );
   background: linear-gradient(to bottom, #3d4247 0%, #384247 61%, #21262a 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d4247', endColorstr='#21262a',GradientType=0 );
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .widget-win-box {
   color: white;
   box-shadow: none !important;
   text-shadow: 0 0 1px #000 !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .widget-win-box .div-divider {
   background: linear-gradient(180deg, #f8cb24, #e79211) !important;
   box-shadow: none !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Fix overlapping some banners */
 img {
   max-width: 100%;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #prematch-big-menu #slider-range-max .ui-slider .ui-slider-handle {
   background-image: none !important;
   background: #319e32 !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .left-column-search-container .slider-time-range-box {
   color: white;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+.left-column-search-calendar-button {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid #3d3d3d;
+  width: 100%;
 }
 .left-column-search-calendar-button:hover {
-  color: #eda417;
-  font-family: Open Sans, Arial, sans-serif;
+  background-color: #ffe001;
+  font-family: "Roboto", sans-serif;
+  color: #222;
+  * {
+    color: #222;
+  }
 }
 
 .left-column-search-container .left-column-search-separator {
   background: #555555;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* -- printer icon -- */
 .shopping-cart-bet-options-box .showReservation {
   background-color: linear-gradient(180deg, #f8cb24, #e79211) !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* -- CARELLO TAB -- */
@@ -1462,60 +1485,60 @@ img {
 #shopping-cart .nav-tabs > li.active > a:focus,
 #shopping-cart .nav-tabs > li.active > a:hover {
   background: linear-gradient(180deg, #f8cb24, #e79211);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .shopping-cart-bet-options-box {
   color: white;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #prematch-left-menu-match-2-level li a:hover,
 #prematch-left-menu-match-2-level li a:not(.collapsed) {
   color: #eda417;
   font-size: 11px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*  -- blue lines in tables --  */
 #widget-tab-box-favorita .widget-bestseller-table .spacer {
   border-top: none !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 #collapser-container-hotbet .widget-bestseller-tab-result-box,
 #collapser-container-hotbet .widget-hotbet-tab-result-box {
   border-top: 1px solid #eda417;
   border-bottom: 1px solid #eda417;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 #collapser-container-hotbet .widget-hotbet-tab-result-container {
   border-right: 1px solid #eda417;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* -- BANNERS ReStyles -- */
 .DG-pager a {
   background: #95ec92;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .carosello-widget-match-name {
   color: linear-gradient(180deg, #f8cb24, #e79211);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .titoloNazioneStampaQuote {
   color: #b9b9b9;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .coupon-result-title {
   color: white;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #betbutton,
 #prenota_bet_button span {
   color: white !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .buttons-container-header a,
@@ -1523,7 +1546,7 @@ img {
   color: #dedede !important;
   font-weight: normal;
   text-shadow: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .buttons-container-box .game-btn-dropdown .dropdown-toggle {
@@ -1558,7 +1581,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#85c18c', endColorstr='#85c18c',GradientType=0 );
 
   color: #333 !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .buttons-container-box .game-btn-dropdown .dropdown-toggle:hover {
   background: rgb(39, 53, 41);
@@ -1585,11 +1608,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#273529', endColorstr='#273529',GradientType=0 );
   color: #fff !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #center-content .btn-defaul[aria-expanded="true"] {
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .buttons-container-box .game-btn-dropdown .btn-default.active.focus,
@@ -1635,71 +1658,71 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     rgba(39, 53, 41, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#273529', endColorstr='#273529',GradientType=0 );
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #cancelbutton {
   width: 31%;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .btn-verde {
   background: #2e671b !important;
   text-shadow: none !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .btn-red {
   background: #d11f0f !important;
   text-shadow: none !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .cart.btn-red {
   background: #d11f0f !important;
   text-shadow: none !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .btn-azzurro {
   background: linear-gradient(180deg, #f8cb24, #e79211) !important;
   text-shadow: none !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .btn:active,
 .btn:hover {
   color: #2c2c2c;
   box-shadow: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #shopping-cart #bottom-button-section .btn {
   font-size: 12px !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #prematch-market-selected-container .dropdown-menu {
   background-color: #373f46 !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .widget-last-result-row-number.selected {
   background: linear-gradient(180deg, #f8cb24, #e79211);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='linear-gradient(180deg,#f8cb24,#e79211)', endColorstr='linear-gradient(180deg,#f8cb24,#e79211)',GradientType=1 );
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* LAST MINUTE TABLE CHANGES  */
 .sport-match-separator-box {
   background: #5a5a5a;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .match-separator-table .tbl-title-box {
   background-color: linear-gradient(180deg, #f8cb24, #e79211) !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .match-separator-table .tbl-title-box,
@@ -1707,64 +1730,64 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   background-color: #5a5a5a !important;
   color: white;
   text-shadow: 0 0 1px #000;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #coupon-multiple .cart-total-price {
   background-color: linear-gradient(180deg, #f8cb24, #e79211) !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .text-white {
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .sistemi-result-inputtype-box {
   border-bottom: 1px solid #555555;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #menu-live-next-events-dates-ul li {
   border-right: none;
   box-shadow: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .coupon-result-title {
   color: #000;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .cart-total-price {
   background-color: #f8cb24 !important;
   border-bottom: 1px solid #fff !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .modifiche_quote_section {
   background: linear-gradient(180deg, #f8cb24, #e79211);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .live-multi-header {
   background-color: #343434 !important;
   color: white !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body .ui-slider .ui-slider-handle {
   background-image: none !important;
   background: #f6a120 !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .tooltip-inner {
   border: 1px solid #a7a7a7 !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .cleanallsys {
   color: #da1b1b !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* ***************button images*********************/
@@ -1772,7 +1795,7 @@ body .ui-slider .ui-slider-handle {
 html body .title-toggle-text.collapsed {
   background: url(images/title-toggle-img2.png) no-repeat left center !important;
   color: #004b69;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .big-star-icon {
@@ -1781,7 +1804,7 @@ html body .title-toggle-text.collapsed {
   display: inline-block;
   background: url(images/big-star-icon.png) no-repeat center center;
   background-size: contain;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .search-calendar-icon {
   display: inline-block;
@@ -1824,7 +1847,7 @@ i.fa.fa-print {
   background-image: url(images/ico-delete-all2.png) !important;
   background: url(images/ico-delete-all2.png) no-repeat center center
     linear-gradient(180deg, #f8cb24, #e79211) !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* padlocks */
 html body .ico-lock-mini-button {
@@ -1838,7 +1861,7 @@ html body .ico-lock-mini-button {
 
 .box-useful-links-ul a:hover {
   color: linear-gradient(180deg, #f8cb24, #e79211);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #widget-tab-box-thriller thead tr,
@@ -1846,7 +1869,7 @@ html body .ico-lock-mini-button {
 #widget-tab-box-favorita thead tr {
   border-bottom: 1px solid linear-gradient(180deg, #f8cb24, #e79211);
   border-color: linear-gradient(180deg, #f8cb24, #e79211);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .menu_primary li a:hover,
@@ -1863,26 +1886,26 @@ html body .ico-lock-mini-button {
   color: #000;
   background: linear-gradient(180deg, #f8cb24, #e79211);
   padding: 10px 3px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* Live "tuto, 1, 2,..." */
 .sr-pills .sr-pills-header .sr-pill.sr-active {
   background-color: linear-gradient(180deg, #f8cb24, #e79211);
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .sr-widget .sr-pills .sr-pill {
   background-color: #545454;
   color: white;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .sr-widget .sr-pills .sr-pill.sr-pill-disabled {
   color: #9e9e9e; /*  soft white */
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .sr-widget .sr-pills .sr-pill {
   background-color: #333;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .sr-widget .sr-subheader-1 {
@@ -1891,73 +1914,73 @@ html body .ico-lock-mini-button {
 
 .sr-stats-content .sr-widget .sr-color-home {
   background-color: linear-gradient(180deg, #f8cb24, #e79211);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .sr-widget .sr-team-header-home,
 .sr-widget .sr-team-header-away {
   background-color: #5a5a5a;
   color: #dedede;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .sr-bar-arrow .sr-team-name .sr-team-name-home,
 .sr-team-name .sr-team-name-away {
   color: white;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .sr-widget .sr-lmts.sr-lmts-pitch-crowd .sr-scoreboard-head {
   background-color: linear-gradient(180deg, #f8cb24, #e79211);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .sr-lmts-scoreboard-wraper
   .sr-scoreboard-head
   .sr-scoreboard-head-title-wrap
   .sr-head-title {
   color: white;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .sr-widget .sr-color-home {
   background-color: linear-gradient(180deg, #f8cb24, #e79211);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .live-match-primary-container .text-white {
   color: white;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .live-match-match-title {
   border-color: transparent;
   background: #111;
   border: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #ffbe02;
 }
 
 .sr-bar-progress .sr-bar-arrow {
   border-color: linear-gradient(180deg, #f8cb24, #e79211); /* arrow vertix */
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .sr-widgets-matchinfo.sr-small .sr-matchinfo-header {
   background-color: linear-gradient(180deg, #f8cb24, #e79211);
   color: white;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .sr-result-wraper .sr-result-periodscore {
   background-color: linear-gradient(180deg, #f8cb24, #e79211);
   color: white;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*.sr-widget .sr-content .sr-content {*/
 .sr-lmts-scoreboard-wraper .sr-result-wraper {
   background-color: #222;
   color: white;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*  GREEN BUTTONS TO GRAY */
@@ -1971,7 +1994,7 @@ html body .ico-lock-mini-button {
   font-weight: bold;
   text-shadow: none !important;
   box-shadow: none !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #prematch-market-selected-container .games-btn-container .game-event-btn,
@@ -1983,7 +2006,7 @@ html body .ico-lock-mini-button {
   font-size: 11px;
   text-shadow: none !important;
   box-shadow: none !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #wrapper.prematch .games-btn-container.oven .dropdown-toggle:hover,
@@ -1991,23 +2014,23 @@ html body .ico-lock-mini-button {
 #wrapper.live_prematch .games-btn-container.oven .dropdown-toggle:hover,
 #wrapper.live_prematch .games-btn-container.oven .game-event-btn:hover {
   color: #000;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #shortcut-live-menu-container .btn:hover {
   background: linear-gradient(180deg, #f8cb24, #e79211) !important;
   color: #000;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #prematch-market-selected-container .games-btn-container .game-event-btn {
   color: #000;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .footer-age18-txt {
   border: 1px solid #333;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .Disclaimer_it-IT {
@@ -2017,7 +2040,7 @@ html body .ico-lock-mini-button {
 .footer-title {
   color: linear-gradient(180deg, #f8cb24, #e79211);
   margin: 0 0 10px 0;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .menu_primary li a {
@@ -2025,7 +2048,7 @@ html body .ico-lock-mini-button {
   text-transform: uppercase;
   font-size: 13px;
   font-weight: bold;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 8px !important;
 }
 
@@ -2034,7 +2057,7 @@ html body .ico-lock-mini-button {
   border-top: none;
   padding: 0;
   background: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #footer {
@@ -2042,13 +2065,13 @@ html body .ico-lock-mini-button {
   margin: 0px;
   border-top: none;
   background: #141414;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body .game-event-btn.selected {
   background: linear-gradient(180deg, #f8cb24, #e79211);
   color: #fff !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* OVERVIEW LIVE SCORES (with floats, that forces negative margins) */
@@ -2056,16 +2079,16 @@ body .live-menu-team-detail-events {
   font-size: 12px;
   line-height: 20px;
   border-top-color: #9fa3a7;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 body div.live-team-game-situation {
   color: white;
   font-size: 12px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .live-detail-event-box .right {
   margin-right: -3px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .live-detail-event-box .left {
   margin-right: 10px;
@@ -2074,7 +2097,7 @@ body div.live-team-game-situation {
   width: 19px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* MULTILIVE */
@@ -2082,43 +2105,43 @@ body div.live-team-game-situation {
 body .live-multi-match-2col-box a .text-white,
 body .live-multi-match-1col-box a .text-white {
   color: white;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .prematch-avvenimento-tbl-title.text-white {
   color: white !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body #fluid-prematch-matches-container .date-time-row {
   background: #000 !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 body #fluid-prematch-matches-container .date-time-row td {
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #fluid-prematch-matches-container {
   border-top: 1px solid #636363;
   background: #202020;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #fluid-prematch-matches-container .simple-row:hover,
 .simple-row:hover .fluid-prematch-info-esiti-td {
   background-color: #000 !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .fluid-prematch-matches-hidden-td {
   border-right: 1px solid #555555;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #fluid-prematch-matches-container .heading-row {
   background: #c89304;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #fluid-prematch-matches-container .heading-row td {
@@ -2131,18 +2154,18 @@ body #fluid-prematch-matches-container .date-time-row td {
   color: #000000;
   border-right: 1px solid #555555;
   font-family: "Open Sans", sans-serif;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .spacer-1 {
   border-top: 1px solid #333;
   background-color: #222 !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .fluid-prematch-info-esiti-td {
   background: #222;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .overview-live-fluid-giocabilita-s,
@@ -2150,13 +2173,13 @@ body #fluid-prematch-matches-container .date-time-row td {
   background: #a7a7a7;
   zoom: 1;
   text-shadow: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .buttons-container-header.tabs-container {
   height: 34px;
   position: relative;
   background: #3c3c3c !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .overview-live-title-selected {
   background: linear-gradient(180deg, #f8cb24, #e79211);
@@ -2166,7 +2189,7 @@ body #fluid-prematch-matches-container .date-time-row td {
   font-size: 18px;
   line-height: 18px;
   padding: 7px 5px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .fluid-overview-live-time-td {
   width: 45px;
@@ -2178,7 +2201,7 @@ body #fluid-prematch-matches-container .date-time-row td {
 
   padding-left: 2px;
   padding-right: 2px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #overview-live-box .nav-tabs > li.active > a,
@@ -2190,7 +2213,7 @@ body #fluid-prematch-matches-container .date-time-row td {
   background: #222 !important;
   color: #fff !important;
   text-shadow: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 html body .box-live .subtitle-row td.fluid-overview-live-quotes-td,
@@ -2209,17 +2232,17 @@ body
   .fluid-overview-live-no-subtitle-bg
   .fluid-overview-live-full-time-td {
   background-color: #5a5a5a;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body .fluid-heading-span {
   color: #dedede;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body .fluid-overview-sport-title {
   color: white;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 #fluid-overview-live-container .fluid-overview-live-sport-title {
   background: transparent !important;
@@ -2230,14 +2253,14 @@ body .fluid-overview-sport-title {
   width: 85px;
   max-width: 85px;
   min-width: 85px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 #fluid-overview-live-container .simple-row td {
   font-size: 14px;
   text-align: left;
   padding-top: 2px;
   padding-bottom: 2px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 #fluid-overview-live-container .player {
   font-size: 13px;
@@ -2246,25 +2269,25 @@ body .fluid-overview-sport-title {
   width: 100%;
   table-layout: fixed;
   margin-left: 3px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 table tr p,
 table td p {
   margin: 0;
   text-align: center;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .overview-live-soccer-field-icon {
   width: 28px;
   height: 20px;
   background: url(https://www.scommettendo.it/XSport/pages/images/campo_bianco.png)
     no-repeat center center;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 a:hover .overview-live-soccer-field-icon {
   background: url(https://www.scommettendo.it/XSport/pages/images/campo_grigio_scuro.png)
     no-repeat center center;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .tooltip.top .tooltip-arrow {
@@ -2273,7 +2296,7 @@ a:hover .overview-live-soccer-field-icon {
   margin-left: -5px;
   border-width: 5px 5px 0;
   border-top-color: #a7a7a7;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .tooltip.top-left .tooltip-arrow {
@@ -2282,7 +2305,7 @@ a:hover .overview-live-soccer-field-icon {
   margin-bottom: -5px;
   border-width: 5px 5px 0;
   border-top-color: #a7a7a7;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .tooltip.top-right .tooltip-arrow {
@@ -2291,7 +2314,7 @@ a:hover .overview-live-soccer-field-icon {
   margin-bottom: -5px;
   border-width: 5px 5px 0;
   border-top-color: #a7a7a7;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .tooltip.right .tooltip-arrow {
@@ -2300,7 +2323,7 @@ a:hover .overview-live-soccer-field-icon {
   margin-top: -5px;
   border-width: 5px 5px 5px 0;
   border-right-color: #a7a7a7;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .tooltip.left .tooltip-arrow {
@@ -2309,7 +2332,7 @@ a:hover .overview-live-soccer-field-icon {
   margin-top: -5px;
   border-width: 5px 0 5px 5px;
   border-left-color: #a7a7a7;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .tooltip.bottom .tooltip-arrow {
@@ -2318,7 +2341,7 @@ a:hover .overview-live-soccer-field-icon {
   margin-left: -5px;
   border-width: 0 5px 5px;
   border-bottom-color: #a7a7a7;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .tooltip.bottom-left .tooltip-arrow {
@@ -2327,7 +2350,7 @@ a:hover .overview-live-soccer-field-icon {
   margin-top: -5px;
   border-width: 0 5px 5px;
   border-bottom-color: #a7a7a7;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .tooltip.bottom-right .tooltip-arrow {
@@ -2336,140 +2359,140 @@ a:hover .overview-live-soccer-field-icon {
   margin-top: -5px;
   border-width: 0 5px 5px;
   border-bottom-color: #a7a7a7;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body .match-titles-table .border-right {
   border-right: 1px solid #333;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .sport-prematch-container:hover,
 .sport-prematch-container:hover .next-live-plus-quote-container,
 .sport-prematch-container:hover .td-alias {
   background-color: #191919 !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .match-separator-table .tbl-title-box td,
 .prematch-separator-table .tbl-title-box td {
   color: #dedede;
   text-shadow: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .overview-live-tab-title-container {
   bottom: -4px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #fluid-overview-live-table .heading-row {
   background: #333;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #fluid-overview-live-container {
   border-top: 6px solid #404144;
   border-bottom: 1px solid #404144;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #fluid-overview-live-container .subtitle-row td table td {
   background: #333;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .menu-live-multi-title {
   color: #ffffff;
   text-shadow: none;
   font-weight: 700;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #menu-live-multi-container li:first-child {
   border-left: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #menu-live-multi-container li {
   background: #222;
   border-right: none;
   box-shadow: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .menu-match-number {
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .jspDrag {
   background: #6f6f6f;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .jspTrack {
   background: #343434;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .live-match-widget-switch-buttons-box {
   background: linear-gradient(180deg, #f8cb24, #e79211);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .fluid-live-general-container .heading-result-row {
   background: #333;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .fluid-live-general-container .heading-result-row td {
   color: #fff;
   font-family: "Open Sans", sans-serif;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #fluid-live-container .heading-row {
   background: #333;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #fluid-live-container {
   border-top: 6px solid #1f2428;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .fluid-live-general-container .heading-result-row .fluid-live-quotes-td {
   border-top: 1px solid #333;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .fluid-live-time-td,
 .fluid-live-alias-td {
   border-right: 1px solid #333;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .fluid-live-match-score-num {
   font-family: "Open Sans", sans-serif;
   padding: inherit;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #fluid-overview-live-container .simple-row .fluid-overview-live-infos-td {
   background-color: transparent;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .live-match-widget-switch-buttons-box .spacer {
   color: #343434;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .coupon-result-title {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .panel-contogioco .panel-heading {
@@ -2489,12 +2512,12 @@ body .match-titles-table .border-right {
 
 .contogioco-title {
   background: #464646;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .corporate-color {
   color: linear-gradient(180deg, #f8cb24, #e79211);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 td .btn:active,
@@ -2503,29 +2526,29 @@ td .btn:hover,
 .btn {
   color: #000 !important;
   /* background-color: linear-gradient(180deg,#f8cb24,#e79211) !important;*/
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   border: none !important;
   text-shadow: none;
 }
 
 #menu_footer a:hover {
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .modal-header {
   background: #6f6f6f;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .cart-potential-winning-box {
   background: linear-gradient(180deg, #f8cb24, #e79211);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .cart-event-summary.cart-event-option {
   border-bottom: 1px solid #555555;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .cart-header {
@@ -2546,14 +2569,14 @@ td .btn:hover,
     #686868 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8d8d8d', endColorstr='#686868',GradientType=0 ); /* IE6-9 */
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .nav-pills > li > a {
   background: #4b4b4b;
   color: #cdcdcd !important;
   border-radius: 0 !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .nav > li > a:focus,
@@ -2563,45 +2586,45 @@ td .btn:hover,
 
 .cart-mode {
   border-top: 1px solid #555555;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .cart.btn {
   text-shadow: none !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .cart.btn-yellow {
   background: #e4a208 !important;
   text-shadow: none !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .btn-green {
   background: #8bba3e !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .live-match-widget-switch-buttons-box a:hover {
   color: #dedede;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .team-chose-cart-table .evidence-color {
   color: #eda417;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .cart.btn-yellow {
   background: linear-gradient(180deg, #f8cb24, #e79211) !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #content.casino-content .nav-tabs > li > a {
   background: #2e2e2e !important;
   text-shadow: none;
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #content.casino-content .nav-tabs > li.active > a,
@@ -2610,7 +2633,7 @@ td .btn:hover,
   background: linear-gradient(180deg, #f8cb24, #e79211) !important;
   text-shadow: none;
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .casino-game-section-title,
@@ -2621,31 +2644,31 @@ td .btn:hover,
   padding: 10px;
   color: #fff;
   position: relative;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .gioco-name-box a,
 .gioco-name-box a:hover {
   color: #fff;
   text-decoration: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .overlay .btn-overlay {
   background-color: linear-gradient(180deg, #f8cb24, #e79211);
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .overlay .btn-overlay:hover {
   background: #a7a7a7;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .game-help-singolar-box {
   border-radius: 0;
   border: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .game-help-text-box {
@@ -2653,12 +2676,12 @@ td .btn:hover,
   text-shadow: none;
   box-shadow: none;
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .game-help-text-box a {
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .casinolive-btn {
@@ -2667,7 +2690,7 @@ td .btn:hover,
   box-shadow: none;
   color: #000;
   line-height: 18px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .casinolive-btn:hover,
@@ -2676,43 +2699,43 @@ td .btn:hover,
   background: #a7a7a7;
   box-shadow: none;
   color: #000;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .btn-default {
   text-shadow: none !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .help-game-frase {
   line-height: 21px;
   color: #000;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .tv-widget-btn,
 .tv-widget-btn:hover {
   background: linear-gradient(180deg, #f8cb24, #e79211);
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .user-dates .dropdown-menu {
   min-width: auto;
   white-space: nowrap;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .tbl-dropdown-saldo td {
   border-bottom: 1px solid #4c4a4a;
   background: #636060;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .tbl-dropdown-saldo tr {
   border-bottom: 1px solid #404040;
   background: #2d2d2d;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .table-versamenti .clickable {
@@ -2722,13 +2745,13 @@ td .btn:hover,
   text-shadow: none;
   cursor: pointer;
   border-bottom: 1px solid #000;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #modalPerMenu .tblBonus th,
 #modalPerMenu .search-filters-container {
   background: #404144;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .menu-header {
@@ -2738,7 +2761,7 @@ td .btn:hover,
   font-weight: normal;
   padding: 5px 10px;
   border-radius: 0px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .nav-side-menu ul .sub-menu li.active a,
@@ -2746,19 +2769,19 @@ td .btn:hover,
 .nav-side-menu ul .sub-menu li.active,
 .nav-side-menu li .sub-menu li.active {
   color: linear-gradient(180deg, #f8cb24, #e79211);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .nav-side-menu ul .active,
 .nav-side-menu li .active {
   border-left: 3px solid linear-gradient(180deg, #f8cb24, #e79211);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .areaPrincipale table th {
   background: linear-gradient(180deg, #f8cb24, #e79211);
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .datepicker td.active:hover,
@@ -2779,31 +2802,31 @@ td .btn:hover,
 .datepicker td.active:hover {
   background: linear-gradient(180deg, #f8cb24, #e79211) !important;
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .datepicker td.day:hover {
   background: #fff0da !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .ui-datepicker .ui-datepicker-prev,
 .ui-datepicker .ui-datepicker-prev.ui-state-hover {
   background-color: linear-gradient(180deg, #f8cb24, #e79211);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .ui-datepicker .ui-datepicker-next,
 .ui-datepicker .ui-datepicker-next.ui-state-hover {
   background-color: linear-gradient(180deg, #f8cb24, #e79211);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .buttons-container-header {
   background: #3c3c3c;
   color: #fff;
   border-radius: 0px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   height: 28px;
 }
 
@@ -2820,23 +2843,23 @@ td .btn:hover,
 .live-match-match-box {
   border: 1px solid #222;
   background: #222;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .active .match-number-container {
   background: #222;
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #ui-datepicker-div {
   z-index: 999 !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .tv-widget-text-box {
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .header-user-dates-txt .user-dates .glyphicon {
@@ -2852,13 +2875,13 @@ td .btn:hover,
 .pagination > .active > span:hover {
   background-color: linear-gradient(180deg, #f8cb24, #e79211);
   color: #000;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .pagination > li > a,
 .pagination > li > span {
   color: #000;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*sfondo e testo bottone quote on mouse hover*/
@@ -2870,40 +2893,40 @@ td .btn:hover,
 .btn-g.giocabilita-s:hover {
   background-color: linear-gradient(180deg, #f8cb24, #e79211) !important;
   text-shadow: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Homepage */
 
 .blog-container {
   background: linear-gradient(180deg, #f8cb24, #e79211);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .blog-title-box h2 {
   color: #000;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .blog-date-box {
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .content-box > i:not(.fa-rss) {
   background: linear-gradient(180deg, #f8cb24, #e79211);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .latest-events-view-mode.nav-tabs > li > a {
   color: #fff;
   background: #000;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .latest-events-view-mode.nav-tabs {
   border-bottom: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .latest-events-view-mode.nav-tabs > li.active > a,
@@ -2911,24 +2934,24 @@ td .btn:hover,
 .latest-events-view-mode.nav-tabs > li.active > a:hover {
   color: #000;
   background: linear-gradient(180deg, #f8cb24, #e79211);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .latest-events-box .tab-content > .active {
   background-color: transparent;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .latest-events-table th {
   background: linear-gradient(180deg, #f8cb24, #e79211);
   color: #232323;
   border: 1px solid #b99257;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .latest-events-table td {
   background: #000;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .home-box .mobile-box h3,
@@ -2936,51 +2959,51 @@ td .btn:hover,
 .home-box .poker-mobile-box h3 {
   background: rgba(201, 158, 93, 0.8);
 
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .content-box:hover > i:not(.fa-rss) {
   background: #000;
   color: linear-gradient(180deg, #f8cb24, #e79211);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .more-info-home-box {
   color: #000;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* FINE Homepage */
 
 /* Adattamento background e no horizontal scroll 1280 px */
 
 .content-box {
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #content {
   padding: 0px !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #header .box-container {
   width: 1243px;
   padding: 0 10px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #footer .box-container {
   width: 1223px;
   padding: 0 10px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #footer .box-container .box-container {
   padding: 0;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #content .box-container {
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .header-logo-container {
@@ -2988,7 +3011,7 @@ td .btn:hover,
   width: 310px;
   margin: 5px 0 0 0 !important;
   background: url(img/logo-header.png) no-repeat top left;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #header {
@@ -3000,14 +3023,14 @@ td .btn:hover,
 
 iframe {
   min-width: 1243px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* FINE Adattamento background e no horizontal scroll 1280 px */
 
 .form-btn-box a {
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
 }
 
@@ -3026,7 +3049,7 @@ body #wrapper .game-event-btn.selected,
   color: #000 !important;
   text-shadow: none;
   font-weight: 700;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* bottoni */
@@ -3059,7 +3082,7 @@ body #wrapper .game-event-btn.selected,
   line-height: 7px;
   font-weight: normal;
   border-radius: 0px !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .giocabilita-u:hover,
@@ -3078,7 +3101,8 @@ body #wrapper .game-event-btn.selected,
   text-shadow: none !important;
   background: linear-gradient(180deg, #f8cb24, #e79211);
   border-radius: 0px !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  box-shadow: inset 0px 0px 0px 1px #000;
 }
 
 .giocabilita-s:hover span {
@@ -3094,7 +3118,8 @@ body #wrapper .game-event-btn.selected,
 
   font-weight: normal !important;
   border-radius: 4px !important;
-  font-family: Open Sans, Arial, sans-serif;
+  box-shadow: inset 0px 0px 0px 1px #000;
+  font-family: "Roboto", sans-serif;
 }
 
 .giocabilita-q5-ex span,
@@ -3113,43 +3138,43 @@ body #wrapper .game-event-btn.selected,
 
 .tooltip-inner {
   border: 1px solid #837878;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .tooltip.top .tooltip-arrow,
 .tooltip.top-left .tooltip-arrow,
 .tooltip.top-right .tooltip-arrow {
   border-top-color: #837878;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .tooltip.right .tooltip-arrow {
   border-right-color: #837878;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .tooltip.left .tooltip-arrow {
   border-left-color: #837878;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .tooltip.bottom .tooltip-arrow,
 .tooltip.bottom-left .tooltip-arrow,
 .tooltip.bottom-right .tooltip-arrow {
   border-bottom-color: #837878;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .buttons-container-header .nav-tabs > li > a {
   top: 4px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* fine tooltip */
 
 .td-alias {
   background: transparent;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .Window_close a {
@@ -3159,7 +3184,7 @@ body #wrapper .game-event-btn.selected,
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #legend-box .giocabilita-u,
@@ -3170,7 +3195,7 @@ body .prematch-fluid-giocabilita-u:visited,
 .live-fluid-giocabilita-u,
 .live-fluid-giocabilita-u:visited {
   box-shadow: inset 0px 0px 0px 1px #ffde00;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #legend-box .giocabilita-s,
@@ -3180,7 +3205,8 @@ body .prematch-fluid-giocabilita-s:visited,
 .overview-live-fluid-giocabilita-s:visited,
 .live-fluid-giocabilita-s,
 .live-fluid-giocabilita-s:visited {
-  font-family: Open Sans, Arial, sans-serif;
+  box-shadow: inset 0px 0px 0px 1px #000;
+  font-family: "Roboto", sans-serif;
 }
 
 #legend-box .giocabilita-t,
@@ -3191,7 +3217,7 @@ body .prematch-fluid-giocabilita-t:visited,
 .live-fluid-giocabilita-t,
 .live-fluid-giocabilita-t:visited {
   box-shadow: inset 0px 0px 0px 1px #8cd2ef;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #legend-box .giocabilita-q4,
@@ -3202,7 +3228,7 @@ body .prematch-fluid-giocabilita-q4:visited,
 .live-fluid-giocabilita-q4,
 .live-fluid-giocabilita-q4:visited {
   box-shadow: inset 0px 0px 0px 1px #ff8a46;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #legend-box .giocabilita-q5,
@@ -3213,34 +3239,34 @@ body .prematch-fluid-giocabilita-q5:visited,
 .live-fluid-giocabilita-q5,
 .live-fluid-giocabilita-q5:visited {
   box-shadow: inset 0px 0px 0px 1px #29ff00;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .cart.btn-yellow {
   background: #e4a208 !important;
   text-shadow: none !important;
   color: #fff !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .cart.btn-red {
   background: #d11f0f !important;
   text-shadow: none !important;
   color: #fff !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .cart.btn-green {
   background: #56bd9a !important;
   text-shadow: none !important;
   color: #fff !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .menu_primary li a,
 .menu_primary li a:hover {
   padding: 8px 7px !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 20px;
 }
@@ -3250,19 +3276,19 @@ body .prematch-fluid-giocabilita-q5:visited,
 .live-match-switch-btn-a .btn-nofullscreen,
 .live-match-switch-btn-a .btn-fullscreen {
   display: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .banker-letter-box {
   background: #a7a7a7 !important;
   color: #000 !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .banker-letter-box.oven {
   background: linear-gradient(180deg, #f8cb24, #e79211) !important;
   color: #fff !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* barra contatti */
@@ -3270,7 +3296,7 @@ body .prematch-fluid-giocabilita-q5:visited,
 .social-box {
   background: linear-gradient(180deg, #f8cb24, #e79211);
   padding: 5px 0;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #social-menu,
@@ -3278,7 +3304,7 @@ body .prematch-fluid-giocabilita-q5:visited,
   margin: 0;
   padding: 0;
   list-style-type: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #help-menu li {
@@ -3290,12 +3316,12 @@ body .prematch-fluid-giocabilita-q5:visited,
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #help-menu a {
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #help-menu i {
@@ -3303,25 +3329,25 @@ body .prematch-fluid-giocabilita-q5:visited,
   margin: 0 5px 0 0;
   vertical-align: middle;
   line-height: 25px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #help-menu span {
   display: inline-block;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #help-menu li:last-child {
   border: 0;
   padding-right: 0;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* fix IE */
 
 .effects .img {
   width: 100%;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .ui-dialog .ui-dialog-titlebar-close span {
@@ -3331,7 +3357,7 @@ body .prematch-fluid-giocabilita-q5:visited,
   margin: 0;
   text-indent: 0px;
   overflow: hidden;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 span.ui-icon.ui-icon-closethick:before {
@@ -3350,12 +3376,12 @@ span.ui-icon.ui-icon-closethick:before {
   border: none;
   padding: 1px 0 0 1px;
   display: inline-block;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .ui-dialog .ui-dialog-titlebar-close {
   padding: 0;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .btn-azure {
@@ -3363,19 +3389,19 @@ span.ui-icon.ui-icon-closethick:before {
   padding: 7px 3px;
   vertical-align: initial;
   text-shadow: none !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .btn-azure:hover {
   text-shadow: none !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body select {
   padding: 5px 0;
   box-shadow: none;
   background: #fff !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #widget-bestseller-box .nav-tabs > li.active > a,
@@ -3386,14 +3412,14 @@ body select {
 #widget-hotbet-box .nav-tabs > li.active > a:hover {
   background: #222 !important;
   color: #fff !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #widget-container .tab-content > .active,
 #widget-container #widget-hotbet-box .tab-content > .active {
   background: #222 !important;
   color: #fff !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* */
@@ -3403,12 +3429,12 @@ body select {
   color: #fff;
   border-radius: 2px;
   line-height: 17px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .title-toggle-text {
   background: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .title-toggle-text span:before {
@@ -3431,17 +3457,17 @@ body select {
 
 .fluid-overview-live-no-subtitle-bg {
   background: #404144 !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #fluid-overview-live-container .subtitle-row .fluid-overview-live-infos-td {
   background-color: #404144;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .fluid-heading-span {
   margin: 5px 0 3px 0;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #fluid-overview-live-container .simple-row td {
@@ -3449,12 +3475,12 @@ body select {
   text-align: center;
   padding-top: 1px;
   padding-bottom: 1px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .betradar_box {
   background: #232528;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .live-multi-match-3col-box a,
@@ -3464,7 +3490,7 @@ body select {
   box-shadow: none !important;
   border: none !important;
   border-radius: 3px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .live-multi-match-3col-box a:hover,
@@ -3475,24 +3501,24 @@ body select {
 .live-detail-event-box a:hover {
   box-shadow: none !important;
   border: none !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .live-multi-header {
   background-color: #333;
   color: #ffffff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #menu-live-next-events-dates-btn-container {
   background: transparent;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #menu-live-next-event-sport-ul li a {
   background-color: #bbbbbb;
   color: #0d0d0d;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #id_closebutton {
@@ -3500,7 +3526,7 @@ body select {
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .nav-side-menu li {
@@ -3508,37 +3534,37 @@ body select {
   border-bottom: 1px solid #333;
   box-shadow: none;
   margin: 0;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body .handicap-green-bg {
   background: linear-gradient(180deg, #f8cb24, #e79211) !important;
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body .hdnButton {
   height: 20px !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #overview-live-box .buttons-container-header.tabs-container {
   overflow: hidden;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .areaPrincipale .dataTables_paginate {
   margin: 10px 0 0 0;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #fluid-overview-live-container .calcio .player .name {
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body .service-tennis {
   min-height: 10px !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .datepicker td.active:hover,
@@ -3554,17 +3580,17 @@ body .service-tennis {
 .datepicker td.active[disabled],
 .datepicker td.active:hover[disabled] {
   background: linear-gradient(180deg, #f8cb24, #e79211);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .datepicker td.day:hover {
   background: #ececec;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .tblColorBackground td {
   background-color: #5a5b5f;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .pagination > li > a,
@@ -3574,12 +3600,12 @@ body .service-tennis {
 .pagination > li > span:focus,
 .pagination > li > span:hover {
   color: #2b2b2b;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 select {
   background: #fff !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .gioco-name-box .information-icon {
@@ -3611,7 +3637,7 @@ select {
   font-size: 13px;
   line-height: 13px;
   background: rgba(201, 158, 93, 0.6);
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .casino-jackpot-box .ico-money:before {
@@ -3658,7 +3684,7 @@ select {
   padding: 8px 0;
   line-height: 13px;
 
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .header-app-link,
@@ -3670,18 +3696,18 @@ select {
   font-size: 15px;
   line-height: 15px;
 
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .header-app-link {
   float: right;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .header-app-link .fa {
   color: #fff;
   font-size: 18px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .fa-mobile-phone:before,
@@ -3690,18 +3716,19 @@ select {
 }
 
 .giocabilita-s {
-  font-family: Open Sans, Arial, sans-serif;
+  box-shadow: inset 0px 0px 0px 1px #000;
+  font-family: "Roboto", sans-serif;
   box-shadow: inset 1px 1px 0px #222222;
 }
 
 /* ui style */
 body .ui-widget {
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body .ac-manif {
   background: #1f2428 !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body .tooltip-alias-search-1 {
@@ -3709,30 +3736,30 @@ body .tooltip-alias-search-1 {
   color: #1b1b1b;
   text-shadow: none;
   background: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* ui style */
 
 .dropdown-menu-esiti.spread {
   background-color: #f8cb24 !important;
   padding: 2px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .giocabilita-s.dropdown {
   box-shadow: none;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .fluid-overview-live-quotes-box-table {
   padding-top: 2px !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .fluid-prematch-black-tab,
 .overview-live-black-tab {
   color: #ffffff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   background: #c89304 !important;
 }
 
@@ -3743,30 +3770,30 @@ body .tooltip-alias-search-1 {
 .sr-widget .sr-header-1 {
   background-color: #1f2428 !important;
   color: #fff;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .sr-widget.sr-widgets-matchheader .sr-scoreboard-head {
   background-color: #111 !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .sr-widget .sr-comment-item .sr-time,
 .sr-widget .sr-comment-item .sr-event-icon {
   background: transparent !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .sr-widget {
   color: #fff;
   background: #000;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .sr-widget .sr-pills .sr-pill.sr-active:hover {
   background-color: #222 !important;
   color: #000;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .sr-widget .sr-color-away {
@@ -3774,71 +3801,71 @@ body .tooltip-alias-search-1 {
 }
 .live-match-widget-switch-buttons-box a {
   color: #000;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #fluid-live-container .live-squares-titles-box {
   width: 93% !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .prematch-avvenimento-tbl-btn-container a {
   box-shadow: none !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .widget-bestseller-table .spacer {
   border-top: 1px solid #eda417;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #casino-slot-jackpot-box .img img {
   width: 190px;
   height: 101px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #casino-slot-jackpot-box .gioco-container {
   height: 164px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #casino-slot-machines-box #casino-slot-jackpot-box .gioco-container {
   height: 135px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #List_auto_width tr.Black_bg {
   background-color: linear-gradient(180deg, #f8cb24, #e79211) !important;
   color: #000;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body div div div div b {
   background: transparent !important;
   padding: 7px;
   display: block;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body #content div div div b {
   padding: initial;
   display: initial;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #List_auto_width td {
   border: 1px #101215 solid;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .areaPrincipale .pDatatables .row:last-child {
   margin-top: 10px !important;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .table-versamenti .clickable td {
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #modalPerMenu th {
@@ -3884,7 +3911,7 @@ tblColorBackground td.border-right {
 input,
 select,
 text-area {
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .header-right-user-box {
@@ -3896,7 +3923,7 @@ text-area {
   font-size: 12px;
   line-height: 13px;
   font-weight: normal;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: lowercase;
   color: #fff;
 }
@@ -3941,7 +3968,7 @@ table td {
 }
 
 .areaPrincipale label {
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .header-right-user-box .btn {
@@ -3969,7 +3996,7 @@ table td {
 }
 
 .panel-registrazione h3 {
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
 
@@ -4243,8 +4270,13 @@ a.giocabilita-q5-ex span {
 }
 
 .left.left-menu-sport-title {
-  /* margin: 5px 0 0 0; */
   float: none;
+  /* display: block; */
+  width: 111px;
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .fluid-prematch-event-span,
@@ -4281,7 +4313,7 @@ td.fluid-prematch-matches-alias-td {
 
 label {
   font-size: 12px;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .fluid-prematch-matches-alias-td,
@@ -4367,23 +4399,23 @@ td .btn:hover,
 @media (max-width: 4000px) and (min-width: 1280px) {
   .casinolive-game-button-container {
     width: 224px;
-    font-family: Open Sans, Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
   }
 
   .casinolive-game-thumb-container {
     width: 224px;
-    font-family: Open Sans, Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
   }
 
   .casinolive-game-thumb-container img {
     width: 225px !important;
-    font-family: Open Sans, Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
   }
 
   .gioco-container {
     margin: 0 24px 12px 0;
     width: 190px;
-    font-family: Open Sans, Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
   }
 }
 
@@ -4434,13 +4466,14 @@ td .btn:hover,
 .filtri-palinsesto-container {
   text-align: center;
   width: 100%;
-  color: white;
   font-size: 12px;
-  border-top: 3px solid #eda417;
-  margin-top: 7px;
-  background-color: #222222;
-  border-bottom: 1px solid #06070a;
-  box-shadow: 0px 1px 1px #2c3037;
+  border-top: 0;
+  margin-top: 0;
+  border-bottom: 0;
+  box-shadow: unset;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .widget-last-winnings-box-container,
@@ -4456,7 +4489,7 @@ td .btn:hover,
   width: 280px;
   margin: 5px 0 0 0 !important;
   background: url(img/logo-header.png) no-repeat top left;
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   height: 90px !important;
   background-size: 170px;
 }
@@ -4501,7 +4534,9 @@ td .btn:hover,
 .live-fluid-giocabilita-s,
 .live-fluid-giocabilita-s:visited,
 .giocabilita-s {
-  font-family: Open Sans, Arial, sans-serif;
+  box-shadow: inset 0px 0px 0px 1px #000;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid #5e5e5e;
 }
 
 /*BACKROUNG LIVE SPORT */
@@ -4615,7 +4650,7 @@ td .btn:hover,
 }
 
 #fluid-overview-live-container .player {
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 15px;
   display: table;
@@ -6454,7 +6489,64 @@ $base: #000000;
   display: inline-block;
 }
 /* fine widget live*/
-
+html {
+  .filtro-palinsesto {
+    border-width: 1px;
+    border-color: #444;
+    padding: 3px;
+  }
+  span.live-collapse-opened {
+    font-family: "Font Awesome 5 Pro";
+    font-style: normal;
+    background: none;
+    &:before {
+      content: "\f053";
+    }
+  }
+  .fa {
+    font-weight: 300 !important;
+    font-family: "Font Awesome 5 Pro";
+  }
+  .nav-pills > li.active > a,
+  .nav-pills > li.active > a:focus,
+  .nav-pills > li.active > a:hover {
+    background: linear-gradient(
+      180deg,
+      #8bc34a 11%,
+      #fff 33%,
+      #fff 66%,
+      red 106%
+    ) !important;
+  }
+  .bet-mode-container {
+    margin: 0;
+  }
+  .ui-slider .ui-slider-handle {
+    border-radius: 0;
+    width: 5px !important;
+  }
+  a.ui-slider-handle.ui-state-default.ui-corner-all:before {
+    content: "";
+    width: 500px;
+    height: 6px;
+    background: #f8cb24;
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+  }
+  #temporal-filters {
+    overflow: hidden;
+  }
+  .rewidth-search-left-column {
+    width: 100% !important;
+    border-radius: 0;
+    background: #434343;
+    color: #fff;
+    &::placeholder {
+      color: #fff;
+    }
+  }
+}
 //added
 
 #center-content {
@@ -6524,13 +6616,8 @@ span.live-collapse-opened {
   font-family: "Font Awesome 5 Pro";
   font-style: normal;
   background: none;
+
   &:before {
     content: "\f053";
   }
-}
-.fa {
-  font-weight: 300;
-  font: inherit;
-  font-family: "Font Awesome 5 Pro";
-  font-size: inherit;
 }
