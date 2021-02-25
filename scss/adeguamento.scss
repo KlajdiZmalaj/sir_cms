@@ -105,8 +105,9 @@ a:focus {
   background: transparent;
   font-size: 13px;
   text-transform: uppercase;
-  color: #fff !important;
+  color: #fff;
   font-family: "Roboto", sans-serif;
+  height: auto !important;
 }
 /* avvenimento menu a sx, nome avvenimento */
 .live-menu-team-titl-box {
@@ -140,15 +141,6 @@ a:focus {
   font-size: 13px;
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
-  font-family: "Roboto", sans-serif;
-}
-/* barra di navigazione live prematch colore sfondo bottone attivo */
-.nav-pills > li.active > a,
-.nav-pills > li.active > a:focus,
-.nav-pills > li.active > a:hover {
-  background: linear-gradient(180deg, #f8cb24, #e79211) !important;
-  color: #000 !important;
-  border-radius: 0;
   font-family: "Roboto", sans-serif;
 }
 
@@ -231,10 +223,11 @@ a {
 }
 
 .left-column-search-container {
-  background: #000;
+  background: #1e1e1e;
   border: none;
   font-family: "Open Sans", sans-serif;
   font-family: "Roboto", sans-serif;
+  margin: 0 !important;
 }
 /* live sezione centrale, colore bottone sport disattivo e attivo */
 
@@ -6494,34 +6487,85 @@ $base: #000000;
 }
 /* fine widget live*/
 html {
+  .led-box {
+    .led-green {
+      display: none;
+    }
+    &:after {
+      content: "\f8dd";
+      font-family: "FA5Pro";
+    }
+  }
+
+  .sidebar .list-group {
+    display: flex;
+    flex-flow: column;
+    .btn-group.bet-mode-container {
+      order: 1;
+      .nav-justified {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        > li {
+          width: 50%;
+          > a {
+            width: 100%;
+            height: 48px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            border-bottom: 3px solid transparent;
+          }
+          &.active {
+            > a {
+              background: #444;
+              color: #fff;
+              border-bottom: 3px solid #f8cb24;
+              position: relative;
+              &:after {
+                content: " ";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                border-width: 6px;
+                border-style: solid;
+                border-left-color: transparent !important;
+                border-bottom-color: #f8cb24 !important;
+                border-right-color: transparent !important;
+                border-top-color: transparent !important;
+                width: 1px;
+                transform: translateX(-50%);
+              }
+            }
+          }
+        }
+      }
+    }
+    > div {
+      order: 2;
+    }
+  }
   .filtro-palinsesto {
     border-width: 1px;
     border-color: #444;
     padding: 3px;
   }
   span.live-collapse-opened {
-    font-family: "Font Awesome 5 Pro";
+    font-family: "FA5Pro";
     font-style: normal;
     background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &:before {
       content: "\f053";
     }
   }
   .fa {
     font-weight: 300 !important;
-    font-family: "Font Awesome 5 Pro";
+    font-family: "FA5Pro";
   }
-  .nav-pills > li.active > a,
-  .nav-pills > li.active > a:focus,
-  .nav-pills > li.active > a:hover {
-    background: linear-gradient(
-      180deg,
-      #8bc34a 11%,
-      #fff 33%,
-      #fff 66%,
-      red 106%
-    ) !important;
-  }
+
   .bet-mode-container {
     margin: 0;
   }
@@ -6674,7 +6718,7 @@ html {
   padding: 0px 0px;
 }
 span.live-collapse-opened {
-  font-family: "Font Awesome 5 Pro";
+  font-family: "FA5Pro";
   font-style: normal;
   background: none;
 
