@@ -2806,7 +2806,7 @@ td .btn:hover,
   color: #fff;
   border-radius: 0px;
   font-family: "Roboto", sans-serif;
-  height: 28px;
+  height: auto;
   display: flex;
   border-bottom: 1px solid #5c5c5c;
   box-shadow: inset 0px -1px 0px 0px #0b0b0b;
@@ -6462,6 +6462,13 @@ $base: #000000;
 /* fine widget live*/
 
 html {
+  .widget-bestseller-tab-title-container,
+  .widget-hotbet-tab-title-container {
+    left: auto;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
   #cart-multiple,
   #cart-systems {
     width: 100%;
