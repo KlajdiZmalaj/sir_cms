@@ -2800,6 +2800,7 @@ td .btn:hover,
   color: #fff;
   border-radius: 0px;
   font-family: Open Sans, Arial, sans-serif;
+  height: 28px;
 }
 
 .buttons-container-header span {
@@ -6457,3 +6458,30 @@ $base: #000000;
   display: inline-block;
 }
 /* fine widget live*/
+
+//added
+
+#center-content {
+  border-right: 1px solid #3c3c3c;
+  border-left: 1px solid #3c3c3c;
+}
+
+#shopping-cart .fixableElement,
+#left-column .fixableElement {
+  border-right: 1px solid #3c3c3c;
+  border-left: 1px solid #3c3c3c;
+}
+
+.puls-widg-bestseller {
+  width: 18px;
+  height: 18px;
+  background-size: contain;
+}
+.widget-bestseller-table {
+  margin: 0px 0 0 0;
+}
+#widget-tab-box-favorita,
+#widget-tab-box-thriller,
+#widget-tab-box-cassaforte {
+  padding: 0px 5px;
+}
