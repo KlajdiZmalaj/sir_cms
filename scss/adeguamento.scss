@@ -106,7 +106,7 @@ a:focus {
 }
 /* avvenimento menu a sx, collapser disciplina e text shadow */
 .live-menu-title {
-  background: #000000 !important;
+  background: #525252 !important;
   text-shadow: none;
   border-radius: 0px;
   margin: 0 0 2px 0;
@@ -164,7 +164,7 @@ a {
 
 /*barra di navigazione live prematch colore sfondo numero avvenimenti e colore font */
 .match-number-container {
-  background: linear-gradient(180deg, #ffe01a, #e79211);
+  background: #ffe01a;
   color: #000;
   font-family: "Roboto", sans-serif;
 }
@@ -176,7 +176,7 @@ a {
 }
 /* live sezione centrale, colore sfondo header box */
 .buttons-container-header {
-  background: #0d0d0d;
+  background: #525252;
   font-family: "Roboto", sans-serif;
 }
 
@@ -411,7 +411,7 @@ a {
 /* -- change buttons . gray normal and green active  */
 
 .btn-g.giocabilita-q5-ex {
-  background: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background: #ffe01a !important;
   color: #fff;
 
   font-family: "Roboto", sans-serif;
@@ -459,7 +459,7 @@ a {
 }
 /* sezione destra, sfondo header collapser widget */
 .close-box-container {
-  background: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background: #ffe01a !important;
 
   font-family: "Roboto", sans-serif;
 }
@@ -570,7 +570,7 @@ a {
 }
 
 .result-letter-box {
-  background: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background: #ffe01a !important;
   color: #fff !important;
   font-family: "Roboto", sans-serif;
 }
@@ -616,7 +616,7 @@ a {
 
 #sistemi-result-combinations .sistemi-result-check-box,
 #sistemi-result-combinations .sistemi-result-inputtype-box {
-  background-color: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background-color: #ffe01a !important;
   font-family: "Roboto", sans-serif;
 }
 
@@ -831,7 +831,7 @@ a {
 }
 /*manifestazione selezionata*/
 .manif-selected {
-  background-color: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background-color: #ffe01a !important;
   font-family: "Roboto", sans-serif;
 }
 /*bestseller colore di: Giorno & Ora, PARTITA, ESITI, VALORE IMPORTO, VINCITA TOTALE*/
@@ -957,14 +957,7 @@ a {
 
 /*bottone gruppo scommessa 2, menu bet-type sfondo e testo*/
 .btn-default {
-  background: linear-gradient(180deg, #ffe01a, #e79211) !important;
-  background: -webkit-linear-gradient(top, #65d2e9 0%, #b7babb 100%);
-  background-image: -moz-linear-gradient(top, #65d2e9 0%, #4b9bac 100%);
-  background-image: -ms-linear-gradient(top, #65d2e9 0%, #4b9bac 100%);
-  background-image: -o-linear-gradient(top, #65d2e9 0%, #4b9bac 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#65D2E9',
-		EndColorStr='#4B9BAC');
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#65D2E9',EndColorStr='#4B9BAC')";
+  background: #ffe01a;
   color: #fff !important;
   text-shadow: 0px 1px 0px #4490a1 !important;
   font-family: "Roboto", sans-serif;
@@ -1127,7 +1120,7 @@ a {
 
 /* Classe per il bottone azzurro, presente in molti componenti */
 .buttons-container-body .btn-azure {
-  background: linear-gradient(180deg, #ffe01a, #e79211);
+  background: #ffe01a;
   text-shadow: none !important;
   color: white;
   font-family: "Roboto", sans-serif;
@@ -1320,7 +1313,7 @@ td .dropdown-menu-esiti ul li a {
 
 /* pulsante  -> filtra per */
 .menu-live-next-event-sport-title {
-  background: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background: #ffe01a !important;
   text-shadow: none;
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -1394,7 +1387,7 @@ td .dropdown-menu-esiti ul li a {
 }
 
 .widget-win-box .div-divider {
-  background: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background: #ffe01a !important;
   box-shadow: none !important;
   font-family: "Roboto", sans-serif;
 }
@@ -2788,7 +2781,7 @@ td .btn:hover,
 }
 
 .buttons-container-header {
-  background: #3c3c3c;
+  background: #525252;
   color: #fff;
   border-radius: 0px;
   font-family: "Roboto", sans-serif;
@@ -4038,28 +4031,19 @@ table td {
 #right-column-search-box {
   padding: 5px !important;
   position: relative;
-
   height: 33px;
   text-align: center;
-  background: #8d8d8d; /* Old browsers */
-  background: -moz-linear-gradient(
-    top,
-    #8d8d8d 0%,
-    #686868 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    top,
-    #8d8d8d 0%,
-    #686868 100%
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #8d8d8d 0%,
-    #686868 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8d8d8d', endColorstr='#686868',GradientType=0 ); /* IE6-9 */
+  background: #525252;
   margin: 0 0 5px 0;
   width: 241px;
+  border-bottom: 1px solid #333333;
+  #prenotazione {
+    .buttons-container-box {
+      margin-bottom: 0;
+    }
+  }
+  #prenotazione_submit {
+  }
 }
 
 #right-column-search-box .fa-question-circle:before {
@@ -4439,6 +4423,7 @@ td .btn:hover,
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  background-color: #222;
 }
 
 .widget-last-winnings-box-container,
@@ -6527,6 +6512,8 @@ html {
       flex-flow: row wrap;
       input {
         flex-grow: 1;
+        background-color: #434343;
+        color: #fff;
       }
     }
   }
@@ -6592,6 +6579,9 @@ html {
     border-width: 1px;
     border-color: #444;
     padding: 3px;
+    margin-top: 3px;
+    background-color: #434343;
+    width: 46%;
   }
   span.live-collapse-opened {
     font-family: "Font Awesome 5 Pro";
@@ -6629,7 +6619,7 @@ html {
     overflow: hidden;
   }
   .rewidth-search-left-column {
-    width: 100% !important;
+    width: calc(100% - 50px) !important;
     border-radius: 0;
     background: #434343;
     color: #fff;
@@ -6669,6 +6659,7 @@ html {
   }
   th {
     padding: 0 0 2px 0;
+    font-weight: 500;
   }
   .spacer {
     height: 0px;
