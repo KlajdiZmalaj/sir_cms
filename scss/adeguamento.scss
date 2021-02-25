@@ -6462,6 +6462,18 @@ $base: #000000;
 /* fine widget live*/
 
 html {
+  div#center-content:before {
+    content: "";
+    width: 100%;
+    background-image: url("https://#{$url}/external_css/SIRPLAY/img/sportBg.jpg");
+    height: 230px;
+    position: relative;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #1c1c1c;
+  }
   .widget-bestseller-table .btn-widget {
     @include quote3d;
     margin: 2px;
