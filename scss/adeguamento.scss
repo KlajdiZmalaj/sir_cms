@@ -806,6 +806,7 @@ a {
   border-bottom: 1px solid #444;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
+  box-shadow: inset 0 -2px 0 -1px #000000;
 }
 
 .cart-title {
@@ -822,12 +823,13 @@ a {
 
 /*background e bordi tasti disciplina*/
 #left-menu-primary li {
-  border-bottom: 1px solid #333 !important;
+  border-bottom: 1px solid #444 !important;
   box-shadow: none;
   padding: 5px 0 !important;
   margin: 0;
   background: #000 !important;
   font-family: "Roboto", sans-serif;
+  box-shadow: inset 0 -2px 0 -1px #000000;
 }
 /*colore font tasti disciplina*/
 #left-menu-primary li a {
@@ -6488,6 +6490,11 @@ $base: #000000;
 }
 /* fine widget live*/
 html {
+  .filtro-palinsesto {
+    border-width: 1px;
+    border-color: #444;
+    padding: 3px;
+  }
   span.live-collapse-opened {
     font-family: "Font Awesome 5 Pro";
     font-style: normal;
