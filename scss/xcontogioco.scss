@@ -99,7 +99,8 @@ p.testo-disclaimer {
   }
 }
 .menu-principale-barra ul.menu-principale {
-  border-bottom: 1px solid var(--bottombar-footer-bg-color);
+  border-bottom: 1px solid #444;
+  box-shadow: inset 0px -1px 0px 0px #000;
 }
 /*FINE HEADER e MENU*/
 

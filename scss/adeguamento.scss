@@ -8,6 +8,16 @@
   border-bottom: 1px solid #444;
   box-shadow: inset 0px -1px 0px 0px #000;
 }
+@mixin quote3d {
+  background: #222;
+  border-right: 1px solid #000;
+  box-shadow: inset -2px 0px 0px -1px #444, inset 0px 2px 0px -1px #444,
+    inset 0px -2px 0px -1px #000, inset 2px 0 0px -1px #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #444;
+  border-left: 1px solid #444;
+  margin-left: -2px;
+}
 /* body */
 
 body {
@@ -36,6 +46,7 @@ body#jspregistrazione {
 .banner-spacer {
   background: transparent;
   font-family: "Roboto", sans-serif;
+  display: none;
 }
 /*sfondo contenitore menu a sinistra*/
 #shortcut-live-menu-container {
@@ -141,8 +152,7 @@ a {
 
 .widget-last-winnings-box-container,
 #widget-last-news {
-  background-color: #000;
-  font-family: "Roboto", sans-serif;
+  padding-bottom: 0;
 }
 
 .ui-datepicker .ui-datepicker-prev span {
@@ -174,12 +184,10 @@ a {
   background-color: #fff;
   font-family: "Roboto", sans-serif;
 }
-/* live sezione centrale, colore sfondo header box */
 .buttons-container-header {
   background: #525252;
   font-family: "Roboto", sans-serif;
 }
-
 #widget-bestseller-box .nav-tabs > li > a {
   font-family: "Open Sans";
   font-size: 13px;
@@ -562,11 +570,12 @@ a {
 }
 /* carrello, colore sfondo singola/multipla */
 .shopping-cart-result-box {
-  border-bottom: 1px solid #0d0d0d;
+  border-bottom: 1px solid #444;
   box-shadow: none;
   color: #dedede;
   background: #242424 !important;
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 .result-letter-box {
@@ -1122,7 +1131,7 @@ a {
 .buttons-container-body .btn-azure {
   background: #ffe01a;
   text-shadow: none !important;
-  color: white;
+  color: #222;
   font-family: "Roboto", sans-serif;
 }
 
@@ -1764,6 +1773,14 @@ html body .title-toggle-text.collapsed {
   background: url(images/big-star-icon.png) no-repeat center center;
   background-size: contain;
   font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffbe02;
+  &:after {
+    content: "\f005";
+    font-family: "Font Awesome 5 Pro";
+  }
 }
 .search-calendar-icon {
   display: inline-block;
@@ -2785,7 +2802,12 @@ td .btn:hover,
   color: #fff;
   border-radius: 0px;
   font-family: "Roboto", sans-serif;
-  height: 28px;
+  height: auto;
+  display: flex;
+  border-bottom: 1px solid #5c5c5c;
+  box-shadow: inset 0px -1px 0px 0px #0b0b0b;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .buttons-container-header span {
@@ -3215,7 +3237,7 @@ body .prematch-fluid-giocabilita-q5:visited,
 }
 
 .cart.btn-green {
-  background: #56bd9a !important;
+  background: #4caf50 !important;
   text-shadow: none !important;
   color: #fff !important;
   font-family: "Roboto", sans-serif;
@@ -4029,21 +4051,17 @@ table td {
 }
 
 #right-column-search-box {
-  padding: 5px !important;
+  padding: 0;
   position: relative;
-  height: 33px;
+  height: 43px;
   text-align: center;
-  background: #525252;
-  margin: 0 0 5px 0;
-  width: 241px;
-  border-bottom: 1px solid #333333;
-  #prenotazione {
-    .buttons-container-box {
-      margin-bottom: 0;
-    }
-  }
-  #prenotazione_submit {
-  }
+  background: linear-gradient(to bottom, #212121 0%, #000000 100%);
+  color: #fff;
+  margin: 0;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 #right-column-search-box .fa-question-circle:before {
@@ -4113,7 +4131,7 @@ li:hover .prematch-left-menu-match-number {
 }
 
 .selectedAvv {
-  background: #000000 !important;
+  background: #222 !important;
 }
 
 .close-box-container {
@@ -6441,6 +6459,71 @@ $base: #000000;
 /* fine widget live*/
 
 html {
+  #widget-container .tab-content > .active,
+  #widget-container #widget-hotbet-box .tab-content > .active {
+    background: #2220 !important;
+    backdrop-filter: blur(10px);
+  }
+  #widget-hotbet-box .tab-content {
+    background: url("https://#{$url}/external_css/SIRPLAY/img/widgetBg.png")
+      no-repeat top center;
+    background-position: center;
+    background-size: cover;
+  }
+  .widget-bestseller-tab-title-container,
+  .widget-hotbet-tab-title-container {
+    left: auto;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  #cart-multiple,
+  #cart-systems {
+    width: 100%;
+  }
+  .box-prematch div#center-content:before {
+    content: "";
+    width: 100%;
+    background-image: url("https://#{$url}/external_css/SIRPLAY/img/sportBg.jpg");
+    height: 230px;
+    position: relative;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #1c1c1c;
+  }
+  .widget-bestseller-table .btn-widget {
+    @include quote3d;
+    margin: 2px;
+  }
+  .fluid-prematch-quotes-table.quotes-16 .prematch-fluid-btn-g {
+    @include quote3d;
+  }
+  .team-title-box p {
+    font-weight: 500;
+    font-family: "Roboto";
+  }
+  .tab-coupon-eur-input {
+    border-radius: 0;
+    width: 50px;
+    text-align: center;
+    background: #222;
+    color: #fcd518;
+  }
+
+  .cart-date-close-btn {
+    background: none;
+    &:after {
+      content: "\f00d";
+      font-family: "Font Awesome 5 Pro";
+      color: red;
+      font-size: 19px;
+      font-weight: 300;
+      position: relative;
+      top: 2px;
+    }
+  }
   .widget-hotbet-tab-result-quotes-box
     .widget-hotbet-tab-result-container
     .widget-hotbet-tab-result-percent-box {
@@ -6505,6 +6588,9 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    .left {
+      flex-grow: 1;
+    }
     > div {
       padding: 0 !important;
       width: 100%;
@@ -6514,6 +6600,8 @@ html {
         flex-grow: 1;
         background-color: #434343;
         color: #fff;
+        border-radius: 0;
+        width: 100%;
       }
     }
   }
@@ -6629,10 +6717,18 @@ html {
   }
 }
 //added
-
+#shopping-cart .fixableElement {
+  border-left: 1px solid #515151 !important;
+  box-shadow: -1px 0px 0 0px #000 !important;
+}
+#left-column .fixableElement {
+  border-right: 1px solid #000 !important;
+  box-shadow: 1px 0px 0 0px #515151 !important;
+}
 #center-content {
-  border-right: 1px solid #3c3c3c;
-  border-left: 1px solid #3c3c3c;
+  border-right: 1px solid #000;
+  border-left: 1px solid #515151;
+  box-shadow: 1px 0px 0 0px #515151, -1px 0px 0 0px #000;
 }
 
 #shopping-cart .fixableElement,
