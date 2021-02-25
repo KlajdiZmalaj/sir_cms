@@ -6451,6 +6451,30 @@ $base: #000000;
 /* fine widget live*/
 
 html {
+  .team-title-box p {
+    font-weight: 500;
+    font-family: "Roboto";
+  }
+  .tab-coupon-eur-input {
+    border-radius: 0;
+    width: 50px;
+    text-align: center;
+    background: #222;
+    color: #fcd518;
+  }
+
+  .cart-date-close-btn {
+    background: none;
+    &:after {
+      content: "\f00d";
+      font-family: "Font Awesome 5 Pro";
+      color: red;
+      font-size: 19px;
+      font-weight: 300;
+      position: relative;
+      top: 2px;
+    }
+  }
   .widget-hotbet-tab-result-quotes-box
     .widget-hotbet-tab-result-container
     .widget-hotbet-tab-result-percent-box {
