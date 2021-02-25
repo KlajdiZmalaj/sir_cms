@@ -6611,6 +6611,9 @@ html {
 }
 .widget-bestseller-table {
   margin: 0px 0 0 0;
+  .giocabilita-s {
+    border: none;
+  }
   tbody {
     border-top: 1px solid #555555;
   }
@@ -6639,6 +6642,72 @@ html {
 .widget-btn-td {
   padding: 0px 0;
 }
+
+.widget-tab-box-hotbet {
+  padding: 0px;
+  .widget-info-text-container {
+    padding: 5px;
+    background-color: #333333;
+  }
+  .progress-bar-striped,
+  .progress-striped .progress-bar {
+    background-image: none;
+  }
+}
+.widget-hotbet-tab-result-box {
+  padding: 0px 0;
+}
+.widget-hotbet-tab-result-quotes-box:first-child
+  .widget-hotbet-tab-result-container {
+  padding: 0;
+  .widget-hotbet-tab-result-percent-box {
+    border-bottom: 1px solid #555555;
+    height: 26px;
+    line-height: 26px;
+    .hotbet-tab-result-progress-td .progress {
+      height: 4px;
+    }
+    .hotbet-tab-result-quote-td {
+      padding: 0;
+    }
+    .btn-widget.white {
+      height: 26px;
+      line-height: 26px;
+      padding: 0;
+      text-align: center;
+      margin: 0;
+      border-left: 1px solid #555555;
+      border-radius: 0;
+    }
+  }
+}
+.widget-hotbet-tab-result-quotes-title {
+  font-family: "Lato";
+  text-align: center;
+  background: #4e4e4e;
+  height: 26px;
+  line-height: 26px;
+}
+.widget-hotbet-tab-result-quotes-box:last-child
+  .widget-hotbet-tab-result-container {
+  padding: 0px 0 5px 0px;
+  .btn-widget.white {
+    height: 28px;
+    line-height: 28px;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    border-left: 1px solid #555555;
+    border-radius: 0;
+  }
+  .hotbet-tab-result-quote-td {
+    padding: 0;
+  }
+}
+.widget-hotbet-blasoni.column {
+  padding: 5px 0px 5px 0px;
+}
+
 #widget-tab-box-favorita,
 #widget-tab-box-thriller,
 #widget-tab-box-cassaforte {
