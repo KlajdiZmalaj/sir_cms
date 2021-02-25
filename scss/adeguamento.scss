@@ -33,23 +33,7 @@ body#jspregistrazione {
 }
 /*sfondo contenitore menu a sinistra*/
 #shortcut-live-menu-container {
-  background: #8d8d8d; /* Old browsers */
-  background: -moz-linear-gradient(
-    top,
-    #8d8d8d 0%,
-    #686868 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    top,
-    #8d8d8d 0%,
-    #686868 100%
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #8d8d8d 0%,
-    #686868 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8d8d8d', endColorstr='#686868',GradientType=0 ); /* IE6-9 */
+  background: #525252;
   color: #fff;
   height: 32px;
   margin: 0 0 0 0;
@@ -760,23 +744,7 @@ a {
 
 /*colore sfondo header menu a sx, colore font*/
 .left-menu-title {
-  background: #8d8d8d; /* Old browsers */
-  background: -moz-linear-gradient(
-    top,
-    #8d8d8d 0%,
-    #686868 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    top,
-    #8d8d8d 0%,
-    #686868 100%
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #8d8d8d 0%,
-    #686868 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8d8d8d', endColorstr='#686868',GradientType=0 ); /* IE6-9 */
+  background: #525252;
   text-shadow: none;
   border-radius: 0px;
   margin: 0 0 2px 0;
@@ -2521,8 +2489,7 @@ td .btn:active,
 td .btn,
 td .btn:hover,
 .btn {
-  color: #000 !important;
-  /* background-color: linear-gradient(180deg,#f8cb24,#e79211) !important;*/
+  color: #000;
   font-family: "Roboto", sans-serif;
   border: none !important;
   text-shadow: none;
