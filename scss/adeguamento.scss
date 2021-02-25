@@ -6471,6 +6471,12 @@ $base: #000000;
 }
 .widget-bestseller-table {
   margin: 0px 0 0 0;
+  tbody {
+    border-top: 1px solid #555555;
+  }
+  th {
+    padding: 0 0 2px 0;
+  }
   .spacer {
     height: 0px;
     border-top: none;
