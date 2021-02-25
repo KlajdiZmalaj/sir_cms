@@ -895,6 +895,7 @@ a {
   color: #fff;
   text-shadow: none;
   font-family: Open Sans, Arial, sans-serif;
+  box-shadow: inset 1px 1px 0px #222222;
 }
 
 .btn-widget.white:hover {
@@ -3688,6 +3689,7 @@ select {
 
 .giocabilita-s {
   font-family: Open Sans, Arial, sans-serif;
+  box-shadow: inset 1px 1px 0px #222222;
 }
 
 /* ui style */
@@ -6492,7 +6494,9 @@ $base: #000000;
     border-left: 1px solid #555555;
   }
 }
-
+.widget-btn-td {
+  padding: 0px 0;
+}
 #widget-tab-box-favorita,
 #widget-tab-box-thriller,
 #widget-tab-box-cassaforte {
