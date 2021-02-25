@@ -6481,11 +6481,25 @@ $base: #000000;
 }
 .widget-bestseller-table {
   margin: 0px 0 0 0;
+  .spacer {
+    height: 0px;
+    border-top: none;
+    padding: 0px 0;
+  }
+  .btn-widget {
+    margin: 0 0px;
+    padding: 0px;
+    height: 26px;
+    line-height: 26px !important;
+    text-align: center;
+    border-radius: 0;
+  }
 }
+
 #widget-tab-box-favorita,
 #widget-tab-box-thriller,
 #widget-tab-box-cassaforte {
-  padding: 0px 5px;
+  padding: 0px 0px;
 }
 span.live-collapse-opened {
   font-family: "Font Awesome 5 Pro";
