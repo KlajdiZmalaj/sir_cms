@@ -6567,6 +6567,9 @@ html {
 }
 .widget-bestseller-table {
   margin: 0px 0 0 0;
+  .giocabilita-s {
+    border: none;
+  }
   tbody {
     border-top: 1px solid #555555;
   }
