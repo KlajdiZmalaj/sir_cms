@@ -893,7 +893,6 @@ a {
   font-weight: bold;
   line-height: 8px;
   color: #fff;
-  box-shadow: inset 1px 1px 0px #000;
   text-shadow: none;
   font-family: Open Sans, Arial, sans-serif;
 }
@@ -3077,7 +3076,6 @@ body #wrapper .game-event-btn.selected,
   background: linear-gradient(180deg, #f8cb24, #e79211);
   border-radius: 0px !important;
   font-family: Open Sans, Arial, sans-serif;
-  box-shadow: inset 0px 0px 0px 1px #000;
 }
 
 .giocabilita-s:hover span {
@@ -3093,7 +3091,6 @@ body #wrapper .game-event-btn.selected,
 
   font-weight: normal !important;
   border-radius: 4px !important;
-  box-shadow: inset 0px 0px 0px 1px #000;
   font-family: Open Sans, Arial, sans-serif;
 }
 
@@ -3180,7 +3177,6 @@ body .prematch-fluid-giocabilita-s:visited,
 .overview-live-fluid-giocabilita-s:visited,
 .live-fluid-giocabilita-s,
 .live-fluid-giocabilita-s:visited {
-  box-shadow: inset 0px 0px 0px 1px #000;
   font-family: Open Sans, Arial, sans-serif;
 }
 
@@ -3691,7 +3687,6 @@ select {
 }
 
 .giocabilita-s {
-  box-shadow: inset 0px 0px 0px 1px #000;
   font-family: Open Sans, Arial, sans-serif;
 }
 
@@ -4502,14 +4497,9 @@ td .btn:hover,
 .live-fluid-giocabilita-s,
 .live-fluid-giocabilita-s:visited,
 .giocabilita-s {
-  box-shadow: inset 0px 0px 0px 1px #000;
   font-family: Open Sans, Arial, sans-serif;
-  border: 1px solid #5e5e5e;
 }
 
-[class*="giocabilita-s"] {
-  border: 0px solid #333333 !important;
-}
 /*BACKROUNG LIVE SPORT */
 
 .overview-live-title-selected.sport-class-1 {
@@ -6493,6 +6483,7 @@ $base: #000000;
     line-height: 26px !important;
     text-align: center;
     border-radius: 0;
+    border-left: 1px solid #555555;
   }
 }
 
