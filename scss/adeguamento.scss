@@ -6623,6 +6623,9 @@ html {
     .hotbet-tab-result-progress-td .progress {
       height: 4px;
     }
+    .hotbet-tab-result-quote-td {
+      padding: 0;
+    }
     .btn-widget.white {
       height: 26px;
       line-height: 26px;
@@ -6640,6 +6643,22 @@ html {
   background: #4e4e4e;
   height: 26px;
   line-height: 26px;
+}
+.widget-hotbet-tab-result-quotes-box:last-child
+  .widget-hotbet-tab-result-container {
+  padding: 0px 0 5px 0px;
+  .btn-widget.white {
+    height: 28px;
+    line-height: 28px;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    border-left: 1px solid #555555;
+    border-radius: 0;
+  }
+  .hotbet-tab-result-quote-td {
+    padding: 0;
+  }
 }
 .widget-hotbet-blasoni.column {
   padding: 5px 0px 5px 0px;
