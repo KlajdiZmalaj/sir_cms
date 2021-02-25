@@ -6462,6 +6462,10 @@ $base: #000000;
 /* fine widget live*/
 
 html {
+  #cart-multiple,
+  #cart-systems {
+    width: 100%;
+  }
   div#center-content:before {
     content: "";
     width: 100%;
