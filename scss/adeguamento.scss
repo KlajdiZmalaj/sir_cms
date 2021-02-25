@@ -6610,6 +6610,37 @@ html {
     background-image: none;
   }
 }
+.widget-hotbet-tab-result-box {
+  padding: 0px 0;
+}
+.widget-hotbet-tab-result-quotes-box:first-child
+  .widget-hotbet-tab-result-container {
+  padding: 0;
+  .widget-hotbet-tab-result-percent-box {
+    border-bottom: 1px solid #555555;
+    height: 26px;
+    line-height: 26px;
+    .hotbet-tab-result-progress-td .progress {
+      height: 4px;
+    }
+    .btn-widget.white {
+      height: 26px;
+      line-height: 26px;
+      padding: 0;
+      text-align: center;
+      margin: 0;
+      border-left: 1px solid #555555;
+      border-radius: 0;
+    }
+  }
+}
+.widget-hotbet-tab-result-quotes-title {
+  font-family: "Lato";
+  text-align: center;
+  background: #4e4e4e;
+  height: 26px;
+  line-height: 26px;
+}
 .widget-hotbet-blasoni.column {
   padding: 5px 0px 5px 0px;
 }
