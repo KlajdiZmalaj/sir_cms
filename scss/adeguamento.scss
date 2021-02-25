@@ -6462,6 +6462,17 @@ $base: #000000;
 /* fine widget live*/
 
 html {
+  #widget-container .tab-content > .active,
+  #widget-container #widget-hotbet-box .tab-content > .active {
+    background: #2220 !important;
+    backdrop-filter: blur(10px);
+  }
+  #widget-hotbet-box .tab-content {
+    background: url("https://#{$url}/external_css/SIRPLAY/img/widgetBg.png")
+      no-repeat top center;
+    background-position: center;
+    background-size: cover;
+  }
   .widget-bestseller-tab-title-container,
   .widget-hotbet-tab-title-container {
     left: auto;
