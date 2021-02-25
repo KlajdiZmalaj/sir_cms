@@ -3229,7 +3229,7 @@ body .prematch-fluid-giocabilita-q5:visited,
 }
 
 .cart.btn-green {
-  background: #4caf50  !important;
+  background: #4caf50 !important;
   text-shadow: none !important;
   color: #fff !important;
   font-family: "Roboto", sans-serif;
@@ -6638,10 +6638,18 @@ html {
   }
 }
 //added
-
+#shopping-cart .fixableElement {
+  border-left: 1px solid #515151 !important;
+  box-shadow: -1px 0px 0 0px #000 !important;
+}
+#left-column .fixableElement {
+  border-right: 1px solid #000 !important;
+  box-shadow: 1px 0px 0 0px #515151 !important;
+}
 #center-content {
-  border-right: 1px solid #3c3c3c;
-  border-left: 1px solid #3c3c3c;
+  border-right: 1px solid #000;
+  border-left: 1px solid #515151;
+  box-shadow: 1px 0px 0 0px #515151, -1px 0px 0 0px #000;
 }
 
 #shopping-cart .fixableElement,
