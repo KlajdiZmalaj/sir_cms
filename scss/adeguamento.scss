@@ -541,6 +541,9 @@ a {
 .widget-bestseller-tab-result-box {
   border-color: #f8cb24 !important;
   font-family: "Roboto", sans-serif;
+  border: none !important;
+  background-color: #ffffff33;
+  padding: 5px;
 }
 
 #collapser-container-hotbet .match-team-name {
@@ -900,9 +903,9 @@ a {
   font-weight: bold;
   line-height: 8px;
   color: #fff;
-  box-shadow: inset 1px 1px 0px #000;
   text-shadow: none;
   font-family: "Roboto", sans-serif;
+  box-shadow: inset 1px 1px 0px #222222;
 }
 
 .btn-widget.white:hover {
@@ -2821,6 +2824,7 @@ td .btn:hover,
   color: #fff;
   border-radius: 0px;
   font-family: "Roboto", sans-serif;
+  height: 28px;
 }
 
 .buttons-container-header span {
@@ -3711,6 +3715,7 @@ select {
 .giocabilita-s {
   box-shadow: inset 0px 0px 0px 1px #000;
   font-family: "Roboto", sans-serif;
+  box-shadow: inset 1px 1px 0px #222222;
 }
 
 /* ui style */
@@ -4531,9 +4536,6 @@ td .btn:hover,
   border: 1px solid #5e5e5e;
 }
 
-[class*="giocabilita-s"] {
-  border: 0px solid #333333 !important;
-}
 /*BACKROUNG LIVE SPORT */
 
 .overview-live-title-selected.sport-class-1 {
@@ -6535,5 +6537,66 @@ html {
     &::placeholder {
       color: #fff;
     }
+  }
+}
+//added
+
+#center-content {
+  border-right: 1px solid #3c3c3c;
+  border-left: 1px solid #3c3c3c;
+}
+
+#shopping-cart .fixableElement,
+#left-column .fixableElement {
+  border-right: 1px solid #3c3c3c;
+  border-left: 1px solid #3c3c3c;
+}
+
+.puls-widg-bestseller {
+  width: 18px;
+  height: 18px;
+  background-size: contain;
+}
+.widget-bestseller-table {
+  margin: 0px 0 0 0;
+  tbody {
+    border-top: 1px solid #555555;
+  }
+  thead {
+    background: #333333;
+  }
+  th {
+    padding: 0 0 2px 0;
+  }
+  .spacer {
+    height: 0px;
+    border-top: none;
+    padding: 0px 0;
+  }
+  .btn-widget {
+    margin: 0 0px;
+    padding: 0px;
+    height: 26px;
+    line-height: 26px !important;
+    text-align: center;
+    border-radius: 0;
+    border-left: 1px solid #555555;
+  }
+}
+
+.widget-btn-td {
+  padding: 0px 0;
+}
+#widget-tab-box-favorita,
+#widget-tab-box-thriller,
+#widget-tab-box-cassaforte {
+  padding: 0px 0px;
+}
+span.live-collapse-opened {
+  font-family: "Font Awesome 5 Pro";
+  font-style: normal;
+  background: none;
+  &:before {
+    content: "\f053";
   }
 }
