@@ -1,5 +1,7 @@
-﻿@import url("https://fonts.googleapis.com/css?family=Open Sans:400,700");
+﻿$url: "test.sirplay.it";
 
+@import url("https://fonts.googleapis.com/css?family=Open Sans:400,700");
+@import url("https://#{$url}/external_css/SIRPLAY/fontAwesome/css/all.min.css");
 /* body */
 body {
   background: #40404000;
@@ -6464,4 +6466,10 @@ span.live-collapse-opened {
   &:before {
     content: "\f053";
   }
+}
+.fa {
+  font-weight: 300;
+  font: inherit;
+  font-family: "Font Awesome 5 Pro";
+  font-size: inherit;
 }
