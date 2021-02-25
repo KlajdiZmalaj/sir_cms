@@ -835,7 +835,7 @@ a {
   font-family: "Roboto", sans-serif;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   span.right.icon-next {
     order: 3;
   }
@@ -852,6 +852,7 @@ a {
 .prematch-left-menu-match-number {
   color: #ececec;
   font-family: "Roboto", sans-serif;
+  margin-left: auto;
 }
 
 /*colore font bottoni manifestazione*/
@@ -6596,6 +6597,7 @@ span.live-collapse-opened {
   font-family: "Font Awesome 5 Pro";
   font-style: normal;
   background: none;
+
   &:before {
     content: "\f053";
   }
