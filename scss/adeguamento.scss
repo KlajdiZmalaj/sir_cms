@@ -557,11 +557,12 @@ a {
 }
 /* carrello, colore sfondo singola/multipla */
 .shopping-cart-result-box {
-  border-bottom: 1px solid #0d0d0d;
+  border-bottom: 1px solid #444;
   box-shadow: none;
   color: #dedede;
   background: #242424 !important;
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 .result-letter-box {
