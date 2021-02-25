@@ -6602,6 +6602,10 @@ html {
     padding: 5px;
     background-color: #333333;
   }
+  .progress-bar-striped,
+  .progress-striped .progress-bar {
+    background-image: none;
+  }
 }
 .widget-hotbet-blasoni.column {
   padding: 5px 0px 5px 0px;
