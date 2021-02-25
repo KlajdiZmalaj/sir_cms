@@ -11,8 +11,8 @@ html:root {
   --intermediate-bar-bg-color: #000000;
   --intermediate-bar-text-color: #ffffff;
   --intermediate-bar-muted-text-color: #ffffff;
-  --header-input-bg-color: #cccccc;
-  --header-input-text-color: #000000;
+  --header-input-bg-color: #525252;
+  --header-input-text-color: #ffffff;
   --user-img-border-color: #ffe01a;
   --menu-bar-background-color: #212121;
   --menu-bar-text-color: #fff;
@@ -105,11 +105,11 @@ p.testo-disclaimer {
 /*FINE HEADER e MENU*/
 
 body[page="sport"] {
-  background-image: url(https://sirplay.altechlab.com/gradmin-api/skin/3/image/4d1d77cdcf2fd28b9c90bd9da8e8ecc7.jpeg);
+  // background-image: url(https://sirplay.altechlab.com/gradmin-api/skin/3/image/4d1d77cdcf2fd28b9c90bd9da8e8ecc7.jpeg);
   background-size: 1760px;
   background-position: center 37px;
   background-repeat: no-repeat;
-  background-color: #000000;
+  background-color: #171717;
 }
 #sport-frame {
   margin-top: 0 !important;
