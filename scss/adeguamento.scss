@@ -1499,15 +1499,19 @@ img {
 }
 #collapser-container-hotbet .widget-bestseller-tab-result-box,
 #collapser-container-hotbet .widget-hotbet-tab-result-box {
-  border-top: 1px solid #eda417;
-  border-bottom: 1px solid #eda417;
+  border: none;
   font-family: "Roboto", sans-serif;
+  border-bottom: 1px solid #4e4e4e;
 }
 #collapser-container-hotbet .widget-hotbet-tab-result-container {
-  border-right: 1px solid #eda417;
+  border-right: 1px solid #676767;
   font-family: "Roboto", sans-serif;
 }
-
+#collapser-container-hotbet
+  .widget-hotbet-tab-result-quotes-box:last-child
+  .widget-hotbet-tab-result-container {
+  border-right: 0;
+}
 /* -- BANNERS ReStyles -- */
 .DG-pager a {
   background: #95ec92;
@@ -6642,7 +6646,11 @@ html {
 .widget-btn-td {
   padding: 0px 0;
 }
-
+.puls-widg-hotbet {
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+}
 .widget-tab-box-hotbet {
   padding: 0px;
   .widget-info-text-container {
@@ -6657,22 +6665,26 @@ html {
 .widget-hotbet-tab-result-box {
   padding: 0px 0;
 }
+.hotbet-tab-result-progress-td .progress {
+  height: 4px;
+}
+.widget-hotbet-tab-result-quotes-box:first-child
+  .widget-hotbet-tab-result-container
+  .widget-hotbet-tab-result-percent-box {
+  border-bottom: 1px solid #555555;
+  height: 28px;
+  line-height: 28px;
+}
 .widget-hotbet-tab-result-quotes-box:first-child
   .widget-hotbet-tab-result-container {
   padding: 0;
   .widget-hotbet-tab-result-percent-box {
-    border-bottom: 1px solid #555555;
-    height: 26px;
-    line-height: 26px;
-    .hotbet-tab-result-progress-td .progress {
-      height: 4px;
-    }
     .hotbet-tab-result-quote-td {
-      padding: 0;
+      padding: 0 !important;
     }
     .btn-widget.white {
-      height: 26px;
-      line-height: 26px;
+      height: 28px;
+      line-height: 28px;
       padding: 0;
       text-align: center;
       margin: 0;
@@ -6701,7 +6713,7 @@ html {
     border-radius: 0;
   }
   .hotbet-tab-result-quote-td {
-    padding: 0;
+    padding: 0 !important;
   }
 }
 .widget-hotbet-blasoni.column {
