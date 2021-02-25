@@ -6457,3 +6457,11 @@ $base: #000000;
   display: inline-block;
 }
 /* fine widget live*/
+span.live-collapse-opened {
+  font-family: "Font Awesome 5 Pro";
+  font-style: normal;
+  background: none;
+  &:before {
+    content: "\f053";
+  }
+}
