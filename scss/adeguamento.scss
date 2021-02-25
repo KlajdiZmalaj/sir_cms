@@ -1,5 +1,7 @@
-﻿@import url("https://fonts.googleapis.com/css?family=Open Sans:400,700");
+﻿$url: "test.sirplay.it";
 
+@import url("https://fonts.googleapis.com/css?family=Open Sans:400,700");
+@import url("https://#{$url}/external_css/SIRPLAY/fontAwesome/css/all.min.css");
 /* body */
 body {
   background: #40404000;
@@ -6484,4 +6486,18 @@ $base: #000000;
 #widget-tab-box-thriller,
 #widget-tab-box-cassaforte {
   padding: 0px 5px;
+}
+span.live-collapse-opened {
+  font-family: "Font Awesome 5 Pro";
+  font-style: normal;
+  background: none;
+  &:before {
+    content: "\f053";
+  }
+}
+.fa {
+  font-weight: 300;
+  font: inherit;
+  font-family: "Font Awesome 5 Pro";
+  font-size: inherit;
 }
