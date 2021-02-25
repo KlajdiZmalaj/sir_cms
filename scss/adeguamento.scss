@@ -6503,6 +6503,18 @@ $base: #000000;
 .widget-btn-td {
   padding: 0px 0;
 }
+
+.widget-tab-box-hotbet {
+  padding: 0px;
+  .widget-info-text-container {
+    padding: 5px;
+    background-color: #333333;
+  }
+}
+.widget-hotbet-blasoni.column {
+  padding: 5px 0px 5px 0px;
+}
+
 #widget-tab-box-favorita,
 #widget-tab-box-thriller,
 #widget-tab-box-cassaforte {
