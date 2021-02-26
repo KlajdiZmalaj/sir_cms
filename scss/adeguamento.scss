@@ -3,6 +3,28 @@
 @import url("https://fonts.googleapis.com/css?family=Open Sans:400,700");
 @import url("https://#{$url}/external_css/SIRPLAY/fontAwesome/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+html:root {
+  --active-color: #ffe01a;
+  --teableHeadersBg: #2c2c2c;
+  --teableHeadersCol: #a0a0a0;
+  --teableSubHeadersBg: #525252;
+  --teableSubHeadersCol: #ffffff;
+  --tableBorders: #5c5c5c;
+
+  --accent: #ffe01a;
+  --accent-bg: #ffe01a;
+  --accent-txt: #222;
+  --primary-bg: #4a4a4a;
+  --primary-txt: #fff;
+  --secondary-bg: #212121;
+  --secondary-txt: #fff;
+  --mainBg: #333333;
+  --mainBgCol: #fff;
+  --bg1: #404040;
+  --col1: #fff;
+}
+
 @mixin borderBottom3d {
   background-color: #222222;
   border-bottom: 1px solid #444;
@@ -50,8 +72,8 @@ body#jspregistrazione {
 }
 /*sfondo contenitore menu a sinistra*/
 #shortcut-live-menu-container {
-  background: #525252;
-  color: #fff;
+  background: var(--primary-bg);
+  color: var(--primary-txt);
   height: 32px;
   margin: 0 0 0 0;
   border-radius: 0;
@@ -64,7 +86,7 @@ body#jspregistrazione {
 
 a:hover,
 a:focus {
-  color: linear-gradient(180deg, #ffe01a, #e79211);
+  color: var(--active-color);
   font-family: "Roboto", sans-serif;
 }
 
@@ -117,11 +139,11 @@ a:focus {
 }
 /* avvenimento menu a sx, collapser disciplina e text shadow */
 .live-menu-title {
-  background: #525252 !important;
+  background: var(--primary-bg) !important;
+  color: var(--primary-txt);
   text-shadow: none;
   border-radius: 0px;
   margin: 0 0 2px 0;
-  color: #dedede;
   font-size: 13px;
   font-weight: normal;
   font-family: "Open Sans", sans-serif;
@@ -146,7 +168,7 @@ a:focus {
 }
 
 a {
-  color: linear-gradient(180deg, #ffe01a, #e79211);
+  color: var(--active-color);
   font-family: "Roboto", sans-serif;
 }
 
@@ -180,8 +202,9 @@ a {
 }
 /* barra di navigazione live prematch colore testo */
 .nav-pills > li > a {
-  color: #000;
-  background-color: #fff;
+  color: var(--mainBgCol);
+  background: var(--mainBg);
+  border-radius: 0 !important;
   font-family: "Roboto", sans-serif;
 }
 .buttons-container-header {
@@ -231,7 +254,7 @@ a {
 
 /*non attivo*/
 .buttons-container-header .btn-live {
-  background-color: #c89304 !important;
+  background-color: var(--active-color) !important;
   background-image: none;
   border-radius: 0px;
   font-family: "Roboto", sans-serif;
@@ -293,7 +316,7 @@ a {
 }
 /*svuota tutto hover*/
 .btn-tit-ltl:hover {
-  background: linear-gradient(180deg, #ffe01a, #e79211);
+  background: var(--active-color);
   /*color: #fff;*/
   font-family: "Roboto", sans-serif;
 }
@@ -324,7 +347,7 @@ a {
 #widget-hotbet-box .nav-tabs > li.active > a,
 #widget-hotbet-box .nav-tabs > li.active > a:focus,
 #widget-hotbet-box .nav-tabs > li.active > a:hover {
-  background: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background: var(--active-color);
   color: #232323 !important;
   text-shadow: none !important;
   font-weight: 600;
@@ -464,11 +487,13 @@ a {
   background: rgba(0, 0, 0, 0);
   color: #fff;
   font-family: "Roboto", sans-serif;
+  border-bottom: 1px solid var(--tableBorders);
 }
 /* sezione destra, sfondo header collapser widget */
 .close-box-container {
-  background: #ffe01a !important;
-
+  background: var(--secondary-bg);
+  width: 241px;
+  border-radius: 0 !important;
   font-family: "Roboto", sans-serif;
 }
 /* carrello nav bar sfondo e testo sezione attiva e non attiva */
@@ -525,7 +550,7 @@ a {
   font-family: "Roboto", sans-serif;
 }
 .progress-bar-danger {
-  background-color: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background-color: var(--active-color) !important;
   font-family: "Roboto", sans-serif;
 }
 
@@ -533,7 +558,7 @@ a {
   border-color: #ffe01a !important;
   font-family: "Roboto", sans-serif;
   border: none !important;
-  background-color: #ffffff33;
+  background: var(--teableSubHeadersBg);
   padding: 5px;
 }
 
@@ -754,12 +779,13 @@ a {
 #menu_primary_container ul li ul li a:hover,
 #menu_primary_container ul li ul li ul li a:hover {
   color: #ffffff;
-  background: linear-gradient(180deg, #ffe01a, #e79211);
+  background: var(--active-color);
 }
 
 /*colore sfondo header menu a sx, colore font*/
 .left-menu-title {
-  background: #525252;
+  background: var(--primary-bg);
+  color: var(--primary-txt);
   text-shadow: none;
   border-radius: 0px;
   margin: 0 0 2px 0;
@@ -768,7 +794,7 @@ a {
 
 .left-menu-title a,
 .left-menu-title a:hover {
-  color: #dedede;
+  color: var(--primary-txt);
   text-shadow: none;
   font-family: "Open Sans";
   font-size: 13px;
@@ -959,15 +985,15 @@ a {
 /*bottone gruppo scommessa 1 menu bet-type, on mouse hover  */
 .game-btn:hover,
 #wrapper.prematch .games-btn-container.oven .game-event-btn:hover {
-  background: linear-gradient(180deg, #ffe01a, #e79211);
-  color: #fff !important;
+  background: var(--active-color);
+  color: #000 !important;
   font-family: "Roboto", sans-serif;
 }
 
 /*bottone gruppo scommessa 2, menu bet-type sfondo e testo*/
 .btn-default {
   background: #ffe01a;
-  color: #fff !important;
+  color: #000 !important;
   text-shadow: 0px 1px 0px #4490a1 !important;
   font-family: "Roboto", sans-serif;
 }
@@ -1314,7 +1340,7 @@ td .dropdown-menu-esiti ul li a {
 
 /* pulsante giorno della settimana selezionato */
 #menu-live-next-events-dates-ul li a.selected {
-  background: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background: var(--active-color) !important;
   text-shadow: none;
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -1440,7 +1466,7 @@ img {
 
 /* -- printer icon -- */
 .shopping-cart-bet-options-box .showReservation {
-  background-color: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background-color: var(--active-color) !important;
   font-family: "Roboto", sans-serif;
 }
 
@@ -1448,7 +1474,7 @@ img {
 #shopping-cart .nav-tabs > li.active > a,
 #shopping-cart .nav-tabs > li.active > a:focus,
 #shopping-cart .nav-tabs > li.active > a:hover {
-  background: linear-gradient(180deg, #ffe01a, #e79211);
+  background: var(--active-color);
   font-family: "Roboto", sans-serif;
 }
 .shopping-cart-bet-options-box {
@@ -1489,7 +1515,7 @@ img {
   font-family: "Roboto", sans-serif;
 }
 .carosello-widget-match-name {
-  color: linear-gradient(180deg, #ffe01a, #e79211);
+  color: var(--active-color);
   font-family: "Roboto", sans-serif;
 }
 
@@ -1653,7 +1679,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 .btn-azzurro {
-  background: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background: var(--active-color) !important;
   text-shadow: none !important;
   font-family: "Roboto", sans-serif;
 }
@@ -1676,7 +1702,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 .widget-last-result-row-number.selected {
-  background: linear-gradient(180deg, #ffe01a, #e79211);
+  background: var(--active-color);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='linear-gradient(180deg,#ffe01a,#e79211)', endColorstr='linear-gradient(180deg,#ffe01a,#e79211)',GradientType=1 );
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -1689,7 +1715,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 .match-separator-table .tbl-title-box {
-  background-color: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background-color: var(--active-color) !important;
   font-family: "Roboto", sans-serif;
 }
 
@@ -1702,7 +1728,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 #coupon-multiple .cart-total-price {
-  background-color: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background-color: var(--active-color) !important;
   font-family: "Roboto", sans-serif;
 }
 
@@ -1732,7 +1758,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 .modifiche_quote_section {
-  background: linear-gradient(180deg, #ffe01a, #e79211);
+  background: var(--active-color);
   font-family: "Roboto", sans-serif;
 }
 
@@ -1822,7 +1848,7 @@ i.fa.fa-print {
   background: #ffe01a;
   background-image: url(images/ico-delete-all2.png) !important;
   background: url(images/ico-delete-all2.png) no-repeat center center
-    linear-gradient(180deg, #ffe01a, #e79211) !important;
+    var(--active-color) !important;
   font-family: "Roboto", sans-serif;
 }
 /* padlocks */
@@ -1836,16 +1862,15 @@ html body .ico-lock-mini-button {
 }
 
 .box-useful-links-ul a:hover {
-  color: linear-gradient(180deg, #ffe01a, #e79211);
+  color: var(--active-color);
   font-family: "Roboto", sans-serif;
 }
 
 #widget-tab-box-thriller thead tr,
 #widget-tab-box-cassaforte thead tr,
 #widget-tab-box-favorita thead tr {
-  border-bottom: 1px solid linear-gradient(180deg, #ffe01a, #e79211);
-  border-color: linear-gradient(180deg, #ffe01a, #e79211);
   font-family: "Roboto", sans-serif;
+  border-bottom: none;
 }
 
 .menu_primary li a:hover,
@@ -1854,13 +1879,13 @@ html body .ico-lock-mini-button {
   background: transparent;
   border-radius: 2px;
   text-shadow: none;
-  color: linear-gradient(180deg, #ffe01a, #e79211);
+  color: var(--active-color);
   font-family: Open Sans, sans-serif;
 }
 
 .match-info-text-team-names-box.match-finished {
   color: #000;
-  background: linear-gradient(180deg, #ffe01a, #e79211);
+  background: var(--active-color);
   padding: 10px 3px;
   font-family: "Roboto", sans-serif;
 }
@@ -1937,7 +1962,7 @@ html body .ico-lock-mini-button {
 }
 
 .sr-bar-progress .sr-bar-arrow {
-  border-color: linear-gradient(180deg, #ffe01a, #e79211); /* arrow vertix */
+  border-color: var(--active-color); /* arrow vertix */
   font-family: "Roboto", sans-serif;
 }
 
@@ -1963,9 +1988,9 @@ html body .ico-lock-mini-button {
 #prematch-market-selected-container .games-btn-container.oven .game-event-btn,
 #wrapper.prematch .games-btn-container.oven .game-event-btn,
 #center-content .games-btn-container.oven .game-btn {
-  background: #3c3c3c;
-  color: #fff !important;
-  border-radius: 3px !important;
+  background: var(--teableHeadersBg);
+  color: var(--teableSubHeadersCol) !important;
+  border-radius: 0px !important;
   font-size: 11px;
   font-weight: bold;
   text-shadow: none !important;
@@ -1976,13 +2001,15 @@ html body .ico-lock-mini-button {
 #prematch-market-selected-container .games-btn-container .game-event-btn,
 #wrapper.prematch .games-btn-container .game-event-btn,
 #center-content .games-btn-container .game-btn {
-  background: #5a5a5a;
-  color: #fff !important;
-  border-radius: 3px !important;
+  background: var(--teableSubHeadersBg);
+  color: var(--teableSubHeadersCol);
+  border-radius: 0px !important;
   font-size: 11px;
   text-shadow: none !important;
   box-shadow: none !important;
   font-family: "Roboto", sans-serif;
+  color: var(--teableSubHeadersCol);
+  background: var(--teableSubHeadersBg);
 }
 
 #wrapper.prematch .games-btn-container.oven .dropdown-toggle:hover,
@@ -1994,7 +2021,7 @@ html body .ico-lock-mini-button {
 }
 
 #shortcut-live-menu-container .btn:hover {
-  background: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background: var(--active-color) !important;
   color: #000;
   font-family: "Roboto", sans-serif;
 }
@@ -2014,7 +2041,7 @@ html body .ico-lock-mini-button {
 }
 
 .footer-title {
-  color: linear-gradient(180deg, #ffe01a, #e79211);
+  color: var(--active-color);
   margin: 0 0 10px 0;
   font-family: "Roboto", sans-serif;
 }
@@ -2045,7 +2072,7 @@ html body .ico-lock-mini-button {
 }
 
 body .game-event-btn.selected {
-  background: linear-gradient(180deg, #ffe01a, #e79211);
+  background: var(--active-color);
   color: #fff !important;
   font-family: "Roboto", sans-serif;
 }
@@ -2090,12 +2117,13 @@ body .live-multi-match-1col-box a .text-white {
 }
 
 body #fluid-prematch-matches-container .date-time-row {
-  background: #000 !important;
   font-family: "Roboto", sans-serif;
-}
-body #fluid-prematch-matches-container .date-time-row td {
-  color: #fff;
-  font-family: "Roboto", sans-serif;
+  background: var(--teableSubHeadersBg);
+  color: var(--teableSubHeadersCol);
+  td {
+    color: var(--teableSubHeadersCol);
+    font-family: "Roboto", sans-serif;
+  }
 }
 
 #fluid-prematch-matches-container {
@@ -2116,12 +2144,12 @@ body #fluid-prematch-matches-container .date-time-row td {
 }
 
 #fluid-prematch-matches-container .heading-row {
-  background: #c89304;
+  color: var(--teableHeadersCol);
+  background: var(--teableHeadersBg);
   font-family: "Roboto", sans-serif;
-}
-
-#fluid-prematch-matches-container .heading-row td {
-  color: #fff;
+  td {
+    color: var(--teableHeadersCol);
+  }
 }
 
 .fluid-prematch-matches-alias-td,
@@ -2158,10 +2186,7 @@ body #fluid-prematch-matches-container .date-time-row td {
   font-family: "Roboto", sans-serif;
 }
 .overview-live-title-selected {
-  background: linear-gradient(180deg, #ffe01a, #e79211);
-  border-top: none;
-  color: #fff;
-
+  padding-bottom: 0;
   font-size: 18px;
   line-height: 18px;
   padding: 7px 5px;
@@ -2179,7 +2204,11 @@ body #fluid-prematch-matches-container .date-time-row td {
   padding-right: 2px;
   font-family: "Roboto", sans-serif;
 }
-
+#overview-live-box {
+  .header-container-scroller.invisibile {
+    display: none;
+  }
+}
 #overview-live-box .nav-tabs > li.active > a,
 #overview-live-box .nav-tabs > li.active > a:focus,
 #overview-live-box .nav-tabs > li.active > a:hover,
@@ -2219,6 +2248,10 @@ body .fluid-heading-span {
 body .fluid-overview-sport-title {
   color: white;
   font-family: "Roboto", sans-serif;
+  top: -6px;
+}
+.live_general .ico-flag-ltl {
+  margin-top: -7px;
 }
 #fluid-overview-live-container .fluid-overview-live-sport-title {
   background: transparent !important;
@@ -2232,11 +2265,25 @@ body .fluid-overview-sport-title {
   font-family: "Roboto", sans-serif;
 }
 #fluid-overview-live-container .simple-row td {
-  font-size: 14px;
-  text-align: left;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  font-size: 12px;
   font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  .time-box {
+    text-align: left;
+  }
+
+  &.fluid-overview-live-quotes-box-table {
+    top: 0 !important;
+    td {
+      line-height: 13px !important;
+    }
+  }
+  .hdnButton {
+    height: 28px !important;
+    padding: 0;
+  }
 }
 #fluid-overview-live-container .player {
   font-size: 13px;
@@ -2360,6 +2407,8 @@ body .match-titles-table .border-right {
 .overview-live-tab-title-container {
   bottom: -4px;
   font-family: "Roboto", sans-serif;
+  left: 0;
+  margin-top: 0px !important;
 }
 
 #fluid-overview-live-table .heading-row {
@@ -2368,7 +2417,7 @@ body .match-titles-table .border-right {
 }
 
 #fluid-overview-live-container {
-  border-top: 6px solid #404144;
+  border-top: 0;
   border-bottom: 1px solid #404144;
   font-family: "Roboto", sans-serif;
 }
@@ -2413,7 +2462,7 @@ body .match-titles-table .border-right {
 }
 
 .live-match-widget-switch-buttons-box {
-  background: linear-gradient(180deg, #ffe01a, #e79211);
+  background: var(--active-color);
   font-family: "Roboto", sans-serif;
 }
 
@@ -2473,7 +2522,7 @@ body .match-titles-table .border-right {
 
 .panel-contogioco .panel-heading {
   color: #fff;
-  background: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background: var(--active-color) !important;
   text-shadow: none;
   height: 29px;
   padding: 5px 10px;
@@ -2492,7 +2541,7 @@ body .match-titles-table .border-right {
 }
 
 .corporate-color {
-  color: linear-gradient(180deg, #ffe01a, #e79211);
+  color: var(--active-color);
   font-family: "Roboto", sans-serif;
 }
 
@@ -2517,7 +2566,7 @@ td .btn:hover,
 }
 
 .cart-potential-winning-box {
-  background: linear-gradient(180deg, #ffe01a, #e79211);
+  background: var(--active-color);
   font-family: "Roboto", sans-serif;
 }
 
@@ -2544,13 +2593,6 @@ td .btn:hover,
     #686868 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8d8d8d', endColorstr='#686868',GradientType=0 ); /* IE6-9 */
-  font-family: "Roboto", sans-serif;
-}
-
-.nav-pills > li > a {
-  background: #4b4b4b;
-  color: #cdcdcd !important;
-  border-radius: 0 !important;
   font-family: "Roboto", sans-serif;
 }
 
@@ -2591,7 +2633,7 @@ td .btn:hover,
 }
 
 .cart.btn-yellow {
-  background: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background: var(--active-color) !important;
   font-family: "Roboto", sans-serif;
 }
 
@@ -2605,7 +2647,7 @@ td .btn:hover,
 #content.casino-content .nav-tabs > li.active > a,
 #content.casino-content .nav-tabs > li.active > a:focus,
 #content.casino-content .nav-tabs > li.active > a:hover {
-  background: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background: var(--active-color) !important;
   text-shadow: none;
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -2613,7 +2655,7 @@ td .btn:hover,
 
 .casino-game-section-title,
 .gioco-name-box {
-  background: linear-gradient(180deg, #ffe01a, #e79211);
+  background: var(--active-color);
   text-shadow: none;
   border-radius: 0;
   padding: 10px;
@@ -2647,7 +2689,7 @@ td .btn:hover,
 }
 
 .game-help-text-box {
-  background: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background: var(--active-color) !important;
   text-shadow: none;
   box-shadow: none;
   color: #fff;
@@ -2660,7 +2702,7 @@ td .btn:hover,
 }
 
 .casinolive-btn {
-  background: linear-gradient(180deg, #ffe01a, #e79211);
+  background: var(--active-color);
   text-shadow: none;
   box-shadow: none;
   color: #000;
@@ -2690,7 +2732,7 @@ td .btn:hover,
 
 .tv-widget-btn,
 .tv-widget-btn:hover {
-  background: linear-gradient(180deg, #ffe01a, #e79211);
+  background: var(--active-color);
   color: #fff;
   font-family: "Roboto", sans-serif;
 }
@@ -2731,7 +2773,7 @@ td .btn:hover,
 
 .menu-header {
   color: #fff;
-  background: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background: var(--active-color) !important;
   text-shadow: none;
   font-weight: normal;
   padding: 5px 10px;
@@ -2743,18 +2785,18 @@ td .btn:hover,
 .nav-side-menu li .sub-menu li.active a,
 .nav-side-menu ul .sub-menu li.active,
 .nav-side-menu li .sub-menu li.active {
-  color: linear-gradient(180deg, #ffe01a, #e79211);
+  color: var(--active-color);
   font-family: "Roboto", sans-serif;
 }
 
 .nav-side-menu ul .active,
 .nav-side-menu li .active {
-  border-left: 3px solid linear-gradient(180deg, #ffe01a, #e79211);
+  border-left: 3px solid var(--active-color);
   font-family: "Roboto", sans-serif;
 }
 
 .areaPrincipale table th {
-  background: linear-gradient(180deg, #ffe01a, #e79211);
+  background: var(--active-color);
   color: #fff;
   font-family: "Roboto", sans-serif;
 }
@@ -2775,7 +2817,7 @@ td .btn:hover,
 .datepicker td.active:hover,
 .datepicker td.active,
 .datepicker td.active:hover {
-  background: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background: var(--active-color) !important;
   color: #fff;
   font-family: "Roboto", sans-serif;
 }
@@ -2843,8 +2885,8 @@ td .btn:hover,
 }
 
 .header-user-dates-txt .user-dates .glyphicon {
-  border: 1px solid linear-gradient(180deg, #ffe01a, #e79211);
-  color: linear-gradient(180deg, #ffe01a, #e79211);
+  border: 1px solid var(--active-color);
+  color: var(--active-color);
 }
 
 .pagination > .active > a,
@@ -2871,7 +2913,7 @@ td .btn:hover,
 .giocabilita-q4:hover,
 .giocabilita-q5:hover,
 .btn-g.giocabilita-s:hover {
-  background-color: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background-color: var(--active-color) !important;
   text-shadow: none;
   font-family: "Roboto", sans-serif;
 }
@@ -2879,7 +2921,7 @@ td .btn:hover,
 /* Homepage */
 
 .blog-container {
-  background: linear-gradient(180deg, #ffe01a, #e79211);
+  background: var(--active-color);
   font-family: "Roboto", sans-serif;
 }
 
@@ -2894,7 +2936,7 @@ td .btn:hover,
 }
 
 .content-box > i:not(.fa-rss) {
-  background: linear-gradient(180deg, #ffe01a, #e79211);
+  background: var(--active-color);
   font-family: "Roboto", sans-serif;
 }
 
@@ -2913,7 +2955,7 @@ td .btn:hover,
 .latest-events-view-mode.nav-tabs > li.active > a:focus,
 .latest-events-view-mode.nav-tabs > li.active > a:hover {
   color: #000;
-  background: linear-gradient(180deg, #ffe01a, #e79211);
+  background: var(--active-color);
   font-family: "Roboto", sans-serif;
 }
 
@@ -2923,7 +2965,7 @@ td .btn:hover,
 }
 
 .latest-events-table th {
-  background: linear-gradient(180deg, #ffe01a, #e79211);
+  background: var(--active-color);
   color: #232323;
   border: 1px solid #b99257;
   font-family: "Roboto", sans-serif;
@@ -2944,7 +2986,7 @@ td .btn:hover,
 
 .content-box:hover > i:not(.fa-rss) {
   background: #000;
-  color: linear-gradient(180deg, #ffe01a, #e79211);
+  color: var(--active-color);
   font-family: "Roboto", sans-serif;
 }
 
@@ -3025,7 +3067,7 @@ body #wrapper .game-event-btn.selected,
 body #wrapper .game-event-btn.selected,
 #center-content .game-btn:hover,
 #center-content .game-btn.selected {
-  background: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background: var(--active-color) !important;
   color: #000 !important;
   text-shadow: none;
   font-weight: 700;
@@ -3079,7 +3121,7 @@ body #wrapper .game-event-btn.selected,
 #legend-box .giocabilita-q5:hover {
   color: #fff;
   text-shadow: none !important;
-  background: linear-gradient(180deg, #ffe01a, #e79211);
+  background: var(--active-color);
   border-radius: 0px !important;
   font-family: "Roboto", sans-serif;
   box-shadow: inset 0px 0px 0px 1px #000;
@@ -3094,7 +3136,7 @@ body #wrapper .game-event-btn.selected,
 .giocabilita-q5-ex:hover {
   color: #000 !important;
   text-shadow: none !important;
-  background: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background: var(--active-color) !important;
 
   font-weight: normal !important;
   border-radius: 4px !important;
@@ -3266,7 +3308,7 @@ body .prematch-fluid-giocabilita-q5:visited,
 }
 
 .banker-letter-box.oven {
-  background: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background: var(--active-color) !important;
   color: #fff !important;
   font-family: "Roboto", sans-serif;
 }
@@ -3274,7 +3316,7 @@ body .prematch-fluid-giocabilita-q5:visited,
 /* barra contatti */
 
 .social-box {
-  background: linear-gradient(180deg, #ffe01a, #e79211);
+  background: var(--active-color);
   padding: 5px 0;
   font-family: "Roboto", sans-serif;
 }
@@ -3365,7 +3407,7 @@ span.ui-icon.ui-icon-closethick:before {
 }
 
 .btn-azure {
-  background: linear-gradient(180deg, #ffe01a, #e79211);
+  background: var(--active-color);
   padding: 7px 3px;
   vertical-align: initial;
   text-shadow: none !important;
@@ -3390,7 +3432,7 @@ body select {
 #widget-hotbet-box .nav-tabs > li.active > a,
 #widget-hotbet-box .nav-tabs > li.active > a:focus,
 #widget-hotbet-box .nav-tabs > li.active > a:hover {
-  background: #222 !important;
+  background: var(--teableSubHeadersBg);
   color: #fff !important;
   font-family: "Roboto", sans-serif;
 }
@@ -3405,7 +3447,7 @@ body select {
 /* */
 
 #cookie-bar .cb-enable {
-  background: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background: var(--active-color) !important;
   color: #fff;
   border-radius: 2px;
   line-height: 17px;
@@ -3447,14 +3489,6 @@ body select {
 
 .fluid-heading-span {
   margin: 5px 0 3px 0;
-  font-family: "Roboto", sans-serif;
-}
-
-#fluid-overview-live-container .simple-row td {
-  font-size: 11px;
-  text-align: center;
-  padding-top: 1px;
-  padding-bottom: 1px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -3518,7 +3552,7 @@ body select {
 }
 
 body .handicap-green-bg {
-  background: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background: var(--active-color) !important;
   color: #fff;
   font-family: "Roboto", sans-serif;
 }
@@ -3528,9 +3562,12 @@ body .hdnButton {
   font-family: "Roboto", sans-serif;
 }
 
-#overview-live-box .buttons-container-header.tabs-container {
-  overflow: hidden;
-  font-family: "Roboto", sans-serif;
+#overview-live-box {
+  .buttons-container-header.tabs-container {
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+    background: var(--mainBg);
+  }
 }
 
 .areaPrincipale .dataTables_paginate {
@@ -3538,8 +3575,10 @@ body .hdnButton {
   font-family: "Roboto", sans-serif;
 }
 
-#fluid-overview-live-container .calcio .player .name {
-  font-family: "Roboto", sans-serif;
+#fluid-overview-live-container {
+  .calcio .player .name {
+    font-family: "Roboto", sans-serif;
+  }
 }
 
 body .service-tennis {
@@ -3559,7 +3598,7 @@ body .service-tennis {
 .datepicker td.active:hover.disabled,
 .datepicker td.active[disabled],
 .datepicker td.active:hover[disabled] {
-  background: linear-gradient(180deg, #ffe01a, #e79211);
+  background: var(--active-color);
   font-family: "Roboto", sans-serif;
 }
 
@@ -3643,7 +3682,7 @@ select {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: linear-gradient(180deg, #ffe01a, #e79211);
+  color: var(--active-color);
 }
 
 .how-to-play:before {
@@ -3736,15 +3775,22 @@ body .tooltip-alias-search-1 {
   font-family: "Roboto", sans-serif;
 }
 
-.fluid-prematch-black-tab,
-.overview-live-black-tab {
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  background: #c89304 !important;
-}
-
 .fluid-prematch-black-tab {
-  background: #212121;
+  font-family: "Roboto", sans-serif;
+  background: var(--teableHeadersBg);
+  color: var(--teableHeadersCol);
+}
+.overview-live-black-tab {
+  background: transparent;
+}
+.generalSportButtonHeader {
+  &:first-child {
+    margin-left: 1%;
+  }
+}
+.fluid-prematch-black-tab {
+  background: var(--teableHeadersBg);
+  color: var(--teableHeadersCol);
 }
 
 .sr-widget .sr-header-1 {
@@ -3816,7 +3862,7 @@ body .tooltip-alias-search-1 {
 }
 
 #List_auto_width tr.Black_bg {
-  background-color: linear-gradient(180deg, #ffe01a, #e79211) !important;
+  background-color: var(--active-color) !important;
   color: #000;
   font-family: "Roboto", sans-serif;
 }
@@ -3993,7 +4039,7 @@ table td {
 }
 .nav-side-menu ul .active,
 .nav-side-menu li .active {
-  border-left: 3px solid linear-gradient(180deg, #ffe01a, #e79211);
+  border-left: 3px solid var(--active-color);
   background-color: #222222;
 }
 
@@ -4055,7 +4101,7 @@ table td {
   position: relative;
   height: 43px;
   text-align: center;
-  background: linear-gradient(to bottom, #212121 0%, #000000 100%);
+  background: var(--secondary-bg);
   color: #fff;
   margin: 0;
   width: auto;
@@ -4077,6 +4123,11 @@ body .giocabilita-s.hand-pointer:hover {
 
 .buttons-container-box {
   background: #222;
+  .buttons-container-header {
+    .clearfix {
+      display: none;
+    }
+  }
 }
 
 .qualification-group {
@@ -4132,11 +4183,6 @@ li:hover .prematch-left-menu-match-number {
 
 .selectedAvv {
   background: #222 !important;
-}
-
-.close-box-container {
-  width: 241px;
-  border-radius: 0 !important;
 }
 
 .cart-system-bet-all-box {
@@ -4216,7 +4262,7 @@ li:hover .prematch-left-menu-match-number {
 
 .tab-coupon-final-count-box .evidence-color,
 .cart-event-summary-table .evidence-color {
-  color: linear-gradient(180deg, #ffe01a, #e79211);
+  color: var(--active-color);
 }
 
 a.giocabilita-q5-ex span {
@@ -4306,10 +4352,6 @@ td .btn:hover,
   font-weight: bold;
 }
 
-.overview-live-title-selected {
-  font-size: 16px;
-}
-
 .widget-last-result-score {
   font-size: 24px;
   line-height: 19px;
@@ -4325,7 +4367,8 @@ td .btn:hover,
 }
 
 #content.box-prematch .prematch-fluid-btn-g {
-  line-height: 20px;
+  line-height: 32px;
+  height: 32px;
 }
 
 .casino-game-section-title.no-top-margin {
@@ -4340,10 +4383,6 @@ td .btn:hover,
 
 #wrapper.overview-live-content .fluid-overview-live-initials-td {
   background: #676767;
-}
-
-#fluid-overview-live-container .simple-row td {
-  font-size: 12px;
 }
 
 .form-btn-box a {
@@ -4508,101 +4547,12 @@ td .btn:hover,
 }
 
 /*BACKROUNG LIVE SPORT */
-
-.overview-live-title-selected.sport-class-1 {
-  color: #fff;
-  background: #141414;
-  border-top: 1px solid #141414;
-}
-.overview-live-title-selected.sport-class-2 {
-  color: #fff;
-  background: #141414;
-  border-top: 1px solid #141414;
-}
-.overview-live-title-selected.sport-class-3 {
-  color: #fff;
-  background: #141414;
-  border-top: 1px solid #141414;
-}
-.overview-live-title-selected.sport-class-4 {
-  color: #fff;
-  background: #141414;
-  border-top: 1px solid #141414;
-}
-.overview-live-title-selected.sport-class-5 {
-  color: #fff;
-  background: #141414;
-  border-top: 1px solid #141414;
-}
-.overview-live-title-selected.sport-class-6 {
-  color: #fff;
-  background: #141414;
-  border-top: 1px solid #141414;
-}
-.overview-live-title-selected.sport-class-7 {
-  color: #fff;
-  background: #141414;
-  border-top: 1px solid #141414;
-}
-.overview-live-title-selected.sport-class-8 {
-  color: #fff;
-  background: #141414;
-  border-top: 1px solid #141414;
-}
-.overview-live-title-selected.sport-class-9 {
-  color: #fff;
-  background: #141414;
-  border-top: 1px solid #141414;
-}
-.overview-live-title-selected.sport-class-10 {
-  color: #fff;
-  background: #141414;
-  border-top: 1px solid #141414;
-}
-.overview-live-title-selected.sport-class-11 {
-  color: #fff;
-  background: #141414;
-  border-top: 1px solid #141414;
-}
-.overview-live-title-selected.sport-class-12 {
-  color: #fff;
-  background: #141414;
-  border-top: 1px solid #141414;
-}
-.overview-live-title-selected.sport-class-23 {
-  color: #fff;
-  background: #141414;
-  border-top: 1px solid #141414;
-}
-.overview-live-title-selected.sport-class-32 {
-  color: #fff;
-  background: #141414;
-  border-top: 1px solid #141414;
-}
-.overview-live-title-selected.sport-class-19 {
-  color: #fff;
-  background: #141414;
-  border-top: 1px solid #141414;
-}
-.overview-live-title-selected.sport-class-37 {
-  color: #fff;
-  background: #141414;
-  border-top: 1px solid #141414;
-}
-.overview-live-title-selected.sport-class-20 {
-  color: #fff;
-  background: #141414;
-  border-top: 1px solid #141414;
-}
-.overview-live-title-selected.sport-class-22 {
-  color: #fff;
-  background: #141414;
-  border-top: 1px solid #141414;
-}
-.overview-live-title-selected.sport-class-21 {
-  color: #fff;
-  background: #141414;
-  border-top: 1px solid #141414;
+#fluid-overview-live-container {
+  > div {
+    background: var(--secondary-bg);
+    border-top: 0;
+    color: var(--secondary-txt);
+  }
 }
 
 /* PAGINA PRICINPALE LIVE */
@@ -4615,6 +4565,7 @@ td .btn:hover,
   display: flex;
   justify-content: center;
   align-items: center;
+  @include quote3d;
 }
 
 #fluid-overview-live-container .player {
@@ -6495,11 +6446,30 @@ html {
   }
   .widget-bestseller-table .btn-widget {
     @include quote3d;
-    margin: 2px;
+    margin: 0px;
   }
   .fluid-prematch-quotes-table.quotes-16 .prematch-fluid-btn-g {
     @include quote3d;
+    margin-right: 0px;
+    border-bottom: 0;
   }
+
+  #fluid-prematch-matches-container {
+    .td-space-2-left {
+      padding-left: 0px;
+    }
+    .td-space-1-right {
+      padding-right: 0px;
+    }
+    .simple-row td {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .match-stats-icon {
+      height: 32px;
+    }
+  }
+
   .team-title-box p {
     font-weight: 500;
     font-family: "Roboto";
@@ -6742,6 +6712,13 @@ html {
   height: 18px;
   background-size: contain;
 }
+
+#widget-bestseller-box .buttons-container-header,
+#widget-hotbet-box .buttons-container-header {
+  position: relative;
+  background: var(--teableHeadersBg);
+}
+
 .widget-bestseller-table {
   margin: 0px 0 0 0;
   .giocabilita-s {
@@ -6751,11 +6728,13 @@ html {
     border-top: 1px solid #555555;
   }
   thead {
-    background: #333333;
+    background: var(--teableSubHeadersBg);
+    color: var(--teableSubHeadersCol);
   }
   th {
     padding: 0 0 2px 0;
     font-weight: 500;
+    color: var(--teableSubHeadersCol);
   }
   .spacer {
     height: 0px;
@@ -6826,7 +6805,7 @@ html {
 .widget-hotbet-tab-result-quotes-title {
   font-family: "Lato";
   text-align: center;
-  background: #525252;
+  background: var(--teableSubHeadersBg);
   height: 26px;
   line-height: 26px;
 }
@@ -6868,4 +6847,15 @@ span.live-collapse-opened {
   &:before {
     content: "\f053";
   }
+}
+.underliner {
+  height: 3px;
+  background: var(--active-color);
+}
+.nationsFilterSelection.active > .allIcon {
+  background-color: var(--active-color);
+}
+
+#overview-live-content {
+  border-top: 1px solid var(--tableBorders);
 }
