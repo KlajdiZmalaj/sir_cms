@@ -2576,23 +2576,8 @@ td .btn:hover,
 }
 
 .cart-header {
-  background: #8d8d8d; /* Old browsers */
-  background: -moz-linear-gradient(
-    top,
-    #8d8d8d 0%,
-    #686868 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    top,
-    #8d8d8d 0%,
-    #686868 100%
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #8d8d8d 0%,
-    #686868 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8d8d8d', endColorstr='#686868',GradientType=0 ); /* IE6-9 */
+  background: var(--primary-bg);
+  color: var(--primary-txt);
   font-family: "Roboto", sans-serif;
 }
 
