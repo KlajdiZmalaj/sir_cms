@@ -92,7 +92,7 @@ a:focus {
 
 /*sfondo avvenimento menu a sx*/
 .live-menu-pref li {
-  background: #000;
+  background: var(--secondary-bg);
   font-family: "Roboto", sans-serif;
 }
 /*colore font descrizione manifestazione avvenimento menu a sx*/
@@ -148,11 +148,9 @@ a:focus {
   font-weight: normal;
   font-family: "Open Sans", sans-serif;
 }
-
 .live-menu-title-header-tournament {
-  background: #676363 !important;
+  background: var(--bg1);
 }
-
 .live-menu-title a > span:nth-child(2) {
   font-size: 8pt;
 }
@@ -207,10 +205,7 @@ a {
   border-radius: 0 !important;
   font-family: "Roboto", sans-serif;
 }
-.buttons-container-header {
-  background: #525252;
-  font-family: "Roboto", sans-serif;
-}
+
 #widget-bestseller-box .nav-tabs > li > a {
   font-family: "Open Sans";
   font-size: 13px;
@@ -254,40 +249,23 @@ a {
 
 /*non attivo*/
 .buttons-container-header .btn-live {
-  background-color: var(--active-color) !important;
+  background-color: var(--primary-bg) !important;
   background-image: none;
   border-radius: 0px;
   font-family: "Roboto", sans-serif;
-}
-
-.buttons-container-header .btn-live.selected {
-  background: #3a3a3a !important;
-  border-radius: 0px;
-  font-family: "Roboto", sans-serif;
+  color: var(--primary-txt);
+  height: 31px;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 50px;
 }
 
 /*attivo*/
 .btn-live.selected {
-  background: rgb(206, 206, 206);
-  background: -moz-linear-gradient(
-    top,
-    rgba(206, 206, 206, 1) 0%,
-    rgba(255, 255, 255, 1) 82%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    top,
-    rgba(206, 206, 206, 1) 0%,
-    rgba(255, 255, 255, 1) 82%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  background: linear-gradient(
-    to bottom,
-    rgba(206, 206, 206, 1) 0%,
-    rgba(255, 255, 255, 1) 82%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cecece', endColorstr='#ffffff',GradientType=0 );
+  background: var(--tableBorders) !important;
+  border-radius: 0px;
   font-family: "Roboto", sans-serif;
 }
 /*color font e shadow bottone sport*/
@@ -1209,8 +1187,7 @@ td .dropdown-menu-esiti ul li a {
 }
 /* OVERWRITING JS background-changes */
 #center-content .live-match-primary-container .info-text-box-container {
-  background: #2c3137 !important;
-  font-family: "Roboto", sans-serif;
+  background: var(--teableHeadersBg);
 }
 
 /*live singolo, colore sfondo testo descrizione scommessa */
@@ -1342,7 +1319,7 @@ td .dropdown-menu-esiti ul li a {
 #menu-live-next-events-dates-ul li a.selected {
   background: var(--active-color) !important;
   text-shadow: none;
-  color: #fff;
+  color: #000;
   font-family: "Roboto", sans-serif;
 }
 
@@ -1350,15 +1327,16 @@ td .dropdown-menu-esiti ul li a {
 .menu-live-next-event-sport-title {
   background: #ffe01a !important;
   text-shadow: none;
-  color: #fff;
+  color: #000;
   font-family: "Roboto", sans-serif;
+  border-radius: 0;
 }
 
 /* bordo box singolo match calendario */
 .live-next-event-multi-boxes-content-container {
   /* display: table; */
   border: none;
-  background: #222;
+  background: var(--secondary-bg);
   font-family: "Roboto", sans-serif;
 }
 
@@ -1373,14 +1351,14 @@ td .dropdown-menu-esiti ul li a {
 
 /* sfondo e colore del box dell avvenimento dove viene specificata la data*/
 .live-next-event-multi-boxes-time {
-  background-color: #222;
-  color: #fff;
-  border-left: 1px solid #222;
-  border-right: 1px solid #222;
+  background-color: var(--secondary-bg);
+  color: var(--secondary-txt);
+  border-left: 1px solid var(--tableBorders);
+  border-right: 1px solid var(--tableBorders);
   font-family: "Roboto", sans-serif;
 }
 .live-next-event-multi-boxes-match-info .match-name {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--tableBorders);
   font-family: "Roboto", sans-serif;
 }
 
@@ -1393,10 +1371,9 @@ td .dropdown-menu-esiti ul li a {
 .live-next-event-multi-boxes-match-info .match-name a:hover,
 .live-next-event-multi-boxes-match-info .match-info a:hover {
   background: #ffe01a;
-  color: #fff;
+  color: #000;
   box-shadow: none;
   border: none;
-
   font-family: "Roboto", sans-serif;
 }
 
@@ -1955,9 +1932,8 @@ html body .ico-lock-mini-button {
 
 .live-match-match-title {
   border-color: transparent;
-  background: #111;
+  background: var(--secondary-bg);
   border: none;
-  font-family: "Roboto", sans-serif;
   color: #ffbe02;
 }
 
@@ -2008,8 +1984,6 @@ html body .ico-lock-mini-button {
   text-shadow: none !important;
   box-shadow: none !important;
   font-family: "Roboto", sans-serif;
-  color: var(--teableSubHeadersCol);
-  background: var(--teableSubHeadersBg);
 }
 
 #wrapper.prematch .games-btn-container.oven .dropdown-toggle:hover,
@@ -2022,11 +1996,6 @@ html body .ico-lock-mini-button {
 
 #shortcut-live-menu-container .btn:hover {
   background: var(--active-color) !important;
-  color: #000;
-  font-family: "Roboto", sans-serif;
-}
-
-#prematch-market-selected-container .games-btn-container .game-event-btn {
   color: #000;
   font-family: "Roboto", sans-serif;
 }
@@ -2089,10 +2058,7 @@ body div.live-team-game-situation {
   font-size: 12px;
   font-family: "Roboto", sans-serif;
 }
-.live-detail-event-box .right {
-  margin-right: -3px;
-  font-family: "Roboto", sans-serif;
-}
+
 .live-detail-event-box .left {
   margin-right: 10px;
   font-size: 13px;
@@ -2825,20 +2791,21 @@ td .btn:hover,
 }
 
 .buttons-container-header {
-  background: #525252;
-  color: #fff;
   border-radius: 0px;
   font-family: "Roboto", sans-serif;
   height: auto;
   display: flex;
-  border-bottom: 1px solid #5c5c5c;
-  box-shadow: inset 0px -1px 0px 0px #0b0b0b;
+  border-bottom: 1px solid var(--tableBorders);
   align-items: center;
   justify-content: space-between;
+  padding: 0px 5px;
+  height: 32px;
+  background: var(--teableHeadersBg);
+  color: var(--teableSubHeadersCol);
 }
 
 .buttons-container-header span {
-  color: #dedede;
+  color: var(--primary-txt);
   font-weight: normal;
 }
 
@@ -3510,16 +3477,16 @@ body select {
 }
 
 #menu-live-next-events-dates-btn-container {
-  background: transparent;
-  font-family: "Roboto", sans-serif;
+  background: var(--bg1);
 }
-
 #menu-live-next-event-sport-ul li a {
-  background-color: #bbbbbb;
-  color: #0d0d0d;
-  font-family: "Roboto", sans-serif;
+  background-color: transparent;
+  border: 1px solid var(--tableBorders);
 }
-
+#live-next-event-multi-boxes-container li {
+  border: 1px solid var(--tableBorders);
+  background: var(--primary-bg);
+}
 #id_closebutton {
   float: right;
   color: #fff;
@@ -4420,16 +4387,15 @@ td .btn:hover,
 }
 
 .livebet-widget-game-result-container {
-  background: -webkit-linear-gradient(top, #e6e6e6 0%, #fff 100%);
-  background-image: -moz-linear-gradient(top, #e6e6e6 0%, #fff 100%);
-  background-image: -ms-linear-gradient(top, #e6e6e6 0%, #fff 100%);
-  background-image: -o-linear-gradient(top, #e6e6e6 0%, #fff 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6e6e6', EndColorStr='#fff');
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6e6e6',EndColorStr='#fff')";
+  background: var(--teableHeadersBg);
+  color: var(--teableSubHeadersCol);
 }
-
+.livebet-widget-game-result {
+  color: var(--active-color);
+}
 .btn-live {
   box-shadow: none !important;
+  margin: 0 0 0 1px;
 }
 
 #content {
@@ -6815,6 +6781,9 @@ html {
 }
 #left-column {
   padding: 0 8px 0 0;
+  .sidebar {
+    border-right: 1px solid var(--tableBorders);
+  }
 }
 #shopping-cart {
   padding: 0 0px 0 8px;
@@ -6843,4 +6812,98 @@ span.live-collapse-opened {
 
 #overview-live-content {
   border-top: 1px solid var(--tableBorders);
+}
+
+#menu-live-next-event-sport-container {
+  background-color: var(--bg1);
+}
+
+//smile casino
+
+#casino-principale {
+  margin-top: 0px;
+  background-color: #212121;
+}
+
+.main-content.casino.cg-bg-live {
+  background: #333333;
+}
+
+.riga-titoli-casino {
+  border-bottom: 2px solid #212121;
+}
+.voce-casino {
+  color: #fff !important;
+  padding-bottom: 3px;
+  border-bottom: 3px solid transparent;
+}
+
+.casino a.voce-casino:hover,
+.casino a.voce-casino.selezionato {
+  transition: all 200ms ease-in-out;
+  padding-bottom: 3px;
+}
+
+.selezionato span {
+  filter: none;
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  margin-right: 5px;
+}
+
+.exa_ico_novita,
+.exa_ico_slot,
+.exa_ico_jackpot,
+.exa_ico_suggeriti {
+  filter: none;
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  margin-right: 5px;
+}
+
+.row.mosaico-casino {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.descIconGameFooter {
+  background-color: #3c3c3c;
+  color: #fff;
+  border-top: 0;
+  font-weight: 700;
+}
+
+a.blocco-mosaico {
+  border-radius: 4px;
+}
+
+.bottone-selettore div {
+  width: 3px;
+  margin: 0 1px;
+}
+
+.row.selettore.allinea-sinistra div.col-md-12 {
+  padding: 5px 10px;
+}
+
+.style-filtri {
+  padding-left: 0;
+}
+
+#casino-principale::after {
+  content: "";
+  background-image: url(https://nextra.pcluster.info/masterbet/images/casinonew.jpg);
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-position: center;
+  background-size: contain;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  left: -93px;
+  top: 50px;
 }

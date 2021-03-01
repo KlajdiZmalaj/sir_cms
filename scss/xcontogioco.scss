@@ -55,6 +55,11 @@ html:root {
   --landing-casino-game-play-btn-text-color: #fff;
   --landing-casino-game-try-btn-bg-color: #425468;
   --landing-casino-game-try-btn-text-color: #fff;
+
+  --mainBg: #333333;
+  --mainBgCol: #fff;
+  --secondary-bg: #212121;
+  --tableBorders: #5c5c5c;
 }
 
 .logo img {
@@ -110,8 +115,142 @@ body[page="sport"] {
   background-size: 1760px;
   background-position: center 37px;
   background-repeat: no-repeat;
-  background-color: #171717;
+  background: var(--mainBg);
+  color: var(--mainBgCol);
 }
 #sport-frame {
   margin-top: 0 !important;
+}
+body,
+html {
+  background: var(--mainBg);
+  color: var(--mainBgCol);
+}
+
+//smile casino
+.casino {
+  .grid-message {
+    color: var(--mainBgCol);
+  }
+  #casino-principale {
+    margin-top: 0px;
+    background-color: var(--secondary-bg);
+  }
+  &.cg-bg-live {
+    background: var(--mainBg) !important;
+  }
+  .riga-titoli-casino {
+    border-bottom: 2px solid var(--secondary-bg);
+    .voce-casino {
+      color: #fff !important;
+      padding-bottom: 5px;
+      border-bottom: 3px solid transparent;
+    }
+    a.voce-casino:hover,
+    a.voce-casino.selezionato {
+      transition: all 200ms ease-in-out;
+      padding-bottom: 5px;
+      span {
+        filter: none;
+        height: 20px;
+        width: 20px;
+        background-size: contain;
+        margin-right: 5px;
+      }
+    }
+  }
+  .exa_ico_home,
+  .exa_ico_novita,
+  .exa_ico_slot,
+  .exa_ico_jackpot,
+  .exa_ico_suggeriti {
+    filter: none;
+    height: 20px;
+    width: 20px;
+    background-size: contain;
+    margin-right: 5px;
+  }
+
+  .row.mosaico-casino {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .descIconGameFooter {
+    background-color: #3c3c3c;
+    color: #fff;
+    border-top: 0;
+    font-weight: 700;
+  }
+
+  a.blocco-mosaico {
+    border-radius: 4px;
+  }
+
+  .bottone-selettore div {
+    width: 3px;
+    margin: 0 1px;
+  }
+
+  .row.selettore.allinea-sinistra div.col-md-12 {
+    padding: 5px 10px;
+  }
+
+  .style-filtri {
+    padding-left: 0;
+  }
+  input.cerca {
+    border: 1px solid var(--tableBorders);
+    background: var(--secondary-bg);
+    color: #fff;
+  }
+  .bottone-selettore {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  #contentGames {
+    animation-name: fadeInTop;
+    animation-duration: 500ms;
+  }
+
+  a.blocco-mosaico .overlay-mosaico {
+    animation-name: none;
+    animation-duration: 0;
+  }
+  a.blocco-mosaico:hover .overlay-mosaico {
+    opacity: 1;
+    animation-name: fadeInTop;
+    animation-duration: 500ms;
+  }
+}
+
+// #casino-principale::after {
+//   content: "";
+//   background-image: url(https://nextra.pcluster.info/masterbet/images/casinonew.jpg);
+//   width: 100px;
+//   height: 100px;
+//   position: absolute;
+//   left: 0;
+//   top: 0;
+//   background-position: center;
+//   background-size: contain;
+//   -webkit-transform: rotate(-90deg);
+//   transform: rotate(-90deg);
+//   left: -93px;
+//   top: 50px;
+// }
+@keyframes fadeInTop {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeInTop {
+  -webkit-animation-name: fadeInTop;
+  animation-name: fadeInTop;
 }
