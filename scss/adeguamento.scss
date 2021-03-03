@@ -206,11 +206,23 @@ a {
   font-family: "Roboto", sans-serif;
 }
 
-#widget-bestseller-box .nav-tabs > li > a {
-  font-family: "Open Sans";
-  font-size: 13px;
-  font-weight: 700;
-  font-family: "Roboto", sans-serif;
+#widget-bestseller-box {
+  .widget-tab-favorita-icon,
+  .widget-tab-thriller-icon,
+  .widget-tab-cassaforte-icon {
+    display: none;
+  }
+  .nav-tabs > li > a {
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    border-radius: 0;
+    border-left: 1px solid var(--tableBorders);
+    .widget-tab-border {
+      border-right: none;
+    }
+  }
 }
 
 .ui-widget-header .ui-icon {
@@ -249,7 +261,7 @@ a {
 
 /*non attivo*/
 .buttons-container-header .btn-live {
-  background-color: var(--primary-bg) !important;
+  border-left: 1px solid var(--tableBorders);
   background-image: none;
   border-radius: 0px;
   font-family: "Roboto", sans-serif;
@@ -259,7 +271,7 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-width: 50px;
+  min-width: 60px;
 }
 
 /*attivo*/

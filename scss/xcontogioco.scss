@@ -19,7 +19,7 @@ html:root {
   --menu-bar-text-color: #fff;
   --submenu-bar-background-color: #212121;
   --submenu-bar-text-color: #fff;
-  --login-btn-bg-color: #ffffff;
+  --login-btn-bg-color: #ffd919;
   --login-btn-text-color: #000000;
   --signup-btn-bg-color: #ffd919;
   --signup-btn-text-color: #222;
@@ -70,6 +70,78 @@ html:root {
   height: 60px !important;
   padding-top: 0;
   padding-bottom: 0;
+  position: absolute;
+  bottom: 50px;
+}
+
+.blocco-header.login-form-header.margine-su-1x {
+  margin-top: 0;
+}
+.cg-text-muted.persoPass {
+  position: relative;
+  font-size: 0;
+  display: inline-block;
+  float: right;
+  &:after {
+    content: "?";
+    position: absolute;
+    font-size: 18px;
+    background-color: #525252;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    padding: 2px;
+    top: -2px;
+  }
+}
+.login-header {
+  padding-right: 0;
+  flex: 1 1;
+  max-width: 100%;
+  input:-internal-autofill-selected,
+  input:-webkit-autofill,
+  input:focus,
+  input:-webkit-autofill:focus {
+    background: var(--header-input-bg-color) !important;
+    color: var(--header-input-text-color) !important;
+  }
+  .blocco-header {
+    justify-content: flex-start;
+    flex: initial;
+    padding: 5px 18px;
+    line-height: normal;
+    padding-right: 0;
+    input {
+      padding: 5px;
+    }
+    &.selettore-lingua {
+      display: none;
+    }
+    .bottone-registrazione {
+      border-radius: 32px;
+      padding: 0 18px;
+      position: absolute;
+      bottom: -52px;
+      right: 0;
+      &:before {
+        content: "\f234";
+        font-family: "Font Awesome 5 Pro";
+        padding-right: 5px;
+      }
+    }
+  }
+}
+.bottone.bottone-login[onclick="cg_login()"] {
+  font-size: 0;
+  flex: 0;
+  margin-right: 0px;
+  padding: 0px 10px;
+}
+.bottone.bottone-login[onclick="cg_login()"]:before {
+  content: "\f2f6";
+  font-family: "Font Awesome 5 Pro";
+  font-size: 16px;
 }
 
 p.testo-disclaimer {
@@ -80,27 +152,38 @@ p.testo-disclaimer {
 .barra-superiore .blocco-header {
   font-size: 12px !important;
 }
-.container-fluid.fissato-alto .row.barra-superiore {
-  height: 30px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  .info-utili {
-    font-size: 14px;
+.container-fluid.fissato-alto {
+  .row.barra-superiore {
     height: 30px;
-    .cg-contatti span {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 1320px;
+    margin: 0 auto;
+    .info-utili {
+      font-size: 14px;
+      height: 30px;
+      .cg-contatti span {
+        font-size: 13px;
+      }
+    }
+    .disclaimer {
       font-size: 13px;
+      height: 30px;
+      justify-content: flex-end;
+      .cg-header-logo {
+        width: 60px;
+        height: 26px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+      }
     }
   }
-  .disclaimer {
-    font-size: 13px;
-    height: 30px;
-    justify-content: space-between;
-    .cg-header-logo {
-      width: 60px;
-      height: 26px;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: right;
+  #nascondimenu {
+    background: var(--intermediate-bar-bg-color);
+    .row.barra-intermedia {
+      width: 1320px;
+      margin: 0 auto;
     }
   }
 }
@@ -253,4 +336,112 @@ html {
 .fadeInTop {
   -webkit-animation-name: fadeInTop;
   animation-name: fadeInTop;
+}
+
+//header icons
+.menu-principale-barra ul.menu-principale li {
+  margin: 5px 10px 0px 10px;
+  a {
+    position: relative;
+    font-weight: 500;
+    padding: 1rem 0;
+    &.active,
+    &:hover {
+      color: var(--active-color) !important;
+      border: none;
+    }
+  }
+}
+.menu-principale-barra .sottomenu-principale ul a {
+  &.active,
+  &:hover {
+    color: var(--active-color) !important;
+    border: none;
+  }
+}
+
+#cg-header {
+  border-bottom: 3px solid var(--active-color);
+}
+
+.menu-principale-barra ul.menu-principale a {
+  &::before {
+    width: 32px;
+    height: 32px;
+    display: block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    bottom: 5px;
+    filter: grayscale(1);
+  }
+  &.active {
+    &::before {
+      filter: none;
+    }
+  }
+}
+.menu-principale-barra ul.menu-principale a[data-ref="sport"]:before {
+  content: "";
+  background-image: url(https://test.sirplay.it/external_css/SIRPLAY/img/sport.svg);
+}
+.menu-principale-barra ul.menu-principale a[data-ref="ingame"]:before {
+  content: "";
+  background-image: url(https://test.sirplay.it/external_css/SIRPLAY/img/live.svg);
+}
+.menu-principale-barra ul.menu-principale a[data-ref="xcasinopt"]:before {
+  content: "";
+  background-image: url(https://test.sirplay.it/external_css/SIRPLAY/img/casino.svg);
+}
+.menu-principale-barra ul.menu-principale a[data-ref="xcasino"]:before {
+  content: "";
+  background-image: url(https://test.sirplay.it/external_css/SIRPLAY/img/casino.svg);
+}
+.menu-principale-barra ul.menu-principale a[data-ref="xcasinolive"]:before {
+  content: "";
+  background-image: url(https://test.sirplay.it/external_css/SIRPLAY/img/casinoL.svg);
+}
+.menu-principale-barra ul.menu-principale a[data-ref="poker"]:before {
+  content: "";
+  background-image: url(https://test.sirplay.it/external_css/SIRPLAY/img/poker.svg);
+}
+.menu-principale-barra ul.menu-principale a[data-ref="xbingo"]:before {
+  content: "";
+  background-image: url(https://test.sirplay.it/external_css/SIRPLAY/img/bingo.svg);
+}
+.menu-principale-barra ul.menu-principale a[data-ref="virtuali"]:before {
+  content: "";
+  background-image: url(https://test.sirplay.it/external_css/SIRPLAY/img/virual.svg);
+}
+.menu-principale-barra ul.menu-principale a[data-ref="ippica-isibet"]:before {
+  content: "";
+  background-image: url(https://test.sirplay.it/external_css/SIRPLAY/img/ippica.svg);
+}
+
+.menu-principale-barra ul.menu-principale a[data-ref="promo"]:before {
+  content: "";
+  background-image: url(https://test.sirplay.it/external_css/SIRPLAY/img/promotions.svg);
+}
+.menu-principale-barra ul.menu-principale a[data-ref="cg-mobile-mode"]:before {
+  content: "";
+  background-image: url(https://test.sirplay.it/external_css/SIRPLAY/img/sport.svg);
+}
+
+body[subpage="sport"] {
+  .sottomenu-main {
+    display: none;
+  }
+  .logo {
+    bottom: 11px;
+  }
+}
+
+a.consulta-footer,
+a.consulta-chat {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 7px 10px;
 }
