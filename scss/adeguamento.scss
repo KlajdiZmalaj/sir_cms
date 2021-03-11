@@ -26,18 +26,19 @@ html:root {
 }
 
 @mixin borderBottom3d {
-  background-color: #222222;
-  border-bottom: 1px solid #444;
+  background-color: var(--secondary-bg);
+  border-bottom: 1px solid var(--bg1);
   box-shadow: inset 0px -1px 0px 0px #000;
 }
 @mixin quote3d {
-  background: #222;
+  background: var(--secondary-bg);
   border-right: 1px solid #000;
-  box-shadow: inset -2px 0px 0px -1px #444, inset 0px 2px 0px -1px #444,
-    inset 0px -2px 0px -1px #000, inset 2px 0 0px -1px #000;
+  box-shadow: inset -2px 0px 0px -1px var(--bg1),
+    inset 0px 2px 0px -1px var(--bg1), inset 0px -2px 0px -1px #000,
+    inset 2px 0 0px -1px #000;
   border-top: 1px solid #000;
-  border-bottom: 1px solid #444;
-  border-left: 1px solid #444;
+  border-bottom: 1px solid var(--bg1);
+  border-left: 1px solid var(--bg1);
   margin-left: -2px;
 }
 /* body */
@@ -97,13 +98,7 @@ a:focus {
 }
 /*colore font descrizione manifestazione avvenimento menu a sx*/
 .live-menu-team-game {
-  color: #c1c1c1;
-  font-family: "Roboto", sans-serif;
-}
-
-.live-menu-team-title {
-  color: #ffffff;
-  font-weight: bold;
+  color: var(--teableHeadersCol);
 }
 
 .bootstrap-switch {
@@ -139,17 +134,18 @@ a:focus {
 }
 /* avvenimento menu a sx, collapser disciplina e text shadow */
 .live-menu-title {
-  background: var(--primary-bg) !important;
   color: var(--primary-txt);
   text-shadow: none;
   border-radius: 0px;
-  margin: 0 0 2px 0;
+  margin: 0 0 0px 0;
   font-size: 13px;
   font-weight: normal;
   font-family: "Open Sans", sans-serif;
+  @include borderBottom3d;
+  background: var(--primary-bg);
 }
 .live-menu-title-header-tournament {
-  background: var(--bg1);
+  background: var(--mainBg);
 }
 .live-menu-title a > span:nth-child(2) {
   font-size: 8pt;
@@ -157,16 +153,10 @@ a:focus {
 /* avvenimento menu a sx, font color collapser disciplina */
 .live-menu-title a,
 .live-menu-title a:hover {
-  color: #dedede;
+  color: var(--col1);
   text-shadow: none;
   font-size: 13px;
-  font-weight: 700;
-  font-family: "Open Sans", sans-serif;
-  font-family: "Roboto", sans-serif;
-}
-
-a {
-  color: var(--active-color);
+  font-weight: 500;
   font-family: "Roboto", sans-serif;
 }
 
@@ -194,9 +184,12 @@ a {
 
 /*barra di navigazione live prematch colore sfondo numero avvenimenti e colore font */
 .match-number-container {
-  background: #ffe01a;
-  color: #000;
+  background: var(--tableBorders);
+  color: var(--primary-txt);
   font-family: "Roboto", sans-serif;
+  padding: 3px 7px;
+  border-radius: 10px;
+  min-width: 38px;
 }
 /* barra di navigazione live prematch colore testo */
 .nav-pills > li > a {
@@ -260,18 +253,73 @@ a {
 /* live sezione centrale, colore bottone sport disattivo e attivo */
 
 /*non attivo*/
-.buttons-container-header .btn-live {
-  border-left: 1px solid var(--tableBorders);
-  background-image: none;
+#center-content-effective {
+  .prematch-box {
+    .buttons-container-header {
+      .btn-live.arrow {
+        height: 25px;
+        line-height: 25px;
+        min-width: 40px;
+        border-left: 1px solid var(--bg1);
+      }
+    }
+  }
+}
+.buttons-container-header {
   border-radius: 0px;
   font-family: "Roboto", sans-serif;
-  color: var(--primary-txt);
-  height: 31px;
-  line-height: 30px;
+  height: auto;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  min-width: 60px;
+  justify-content: space-between;
+  padding: 0px 5px;
+  height: 36px;
+  background: var(--teableHeadersBg);
+  color: var(--teableSubHeadersCol);
+
+  .btn-live {
+    border-left: 1px solid var(--tableBorders);
+    background-image: none;
+    border-radius: 0px;
+    font-family: "Roboto", sans-serif;
+    color: var(--primary-txt);
+    height: 36px;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 60px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    margin: 0 0 0 0px;
+    span {
+      color: #fff !important;
+    }
+    .ico-live-sport {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .nav-tabs > li > a {
+    height: 36px;
+    padding-top: 10px !important;
+  }
+  span {
+    color: var(--primary-txt);
+    font-weight: normal;
+  }
+  a,
+  a:hover {
+    color: var(--teableSubHeadersCol) !important;
+    font-weight: normal;
+    text-shadow: none;
+    font-family: "Roboto", sans-serif;
+  }
+  .puls-widg-livebetting,
+  .puls-widg-hotbet,
+  .puls-widg-bestseller {
+    display: none;
+  }
 }
 
 /*attivo*/
@@ -337,14 +385,15 @@ a {
 #widget-hotbet-box .nav-tabs > li.active > a,
 #widget-hotbet-box .nav-tabs > li.active > a:focus,
 #widget-hotbet-box .nav-tabs > li.active > a:hover {
-  background: var(--active-color);
-  color: #232323 !important;
+  background: var(--teableSubHeadersBg);
+  color: #fff !important;
   text-shadow: none !important;
   font-weight: 600;
   font-family: "Open Sans";
   font-size: 13px;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
+  left: 0;
 }
 
 .box-age-18 {
@@ -413,22 +462,6 @@ a {
   font-family: "Roboto", sans-serif;
 }
 
-#widget-bestseller-box .nav-tabs > li > a,
-.nav-tabs > li > a {
-  font-family: "Open Sans", sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  text-shadow: none;
-  font-family: "Roboto", sans-serif;
-}
-
-#widget-bestseller-box .nav-tabs > li > a,
-#widget-hotbet-box .nav-tabs > li > a {
-  color: #fff !important;
-  text-shadow: none;
-  font-family: "Roboto", sans-serif;
-}
-
 /* -- change buttons . gray normal and green active  */
 
 .btn-g.giocabilita-q5-ex {
@@ -464,12 +497,6 @@ a {
 
 .nav-tabs > li {
   margin-bottom: 0px;
-  font-family: "Roboto", sans-serif;
-}
-
-.widget-bestseller-tab-title-box,
-.widget-hotbet-tab-title-box {
-  margin-bottom: 4px !important;
   font-family: "Roboto", sans-serif;
 }
 
@@ -552,19 +579,36 @@ a {
   padding: 5px;
 }
 
-#collapser-container-hotbet .match-team-name {
-  color: #fff;
-  font-family: "Roboto", sans-serif;
+#collapser-container-hotbet {
+  .widget-hotbet-match-container {
+    padding: 10px;
+    background: linear-gradient(
+      45deg,
+      #111111,
+      #252525 50%,
+      #252525 50%,
+      #2a2a2a 80%,
+      #303030 105%
+    );
+  }
+  .match-team-name {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+  }
 }
 
 #widget-hotbet-tab-result-percent-table td {
   color: #fff;
   font-family: "Roboto", sans-serif;
+  padding: 0px 3px;
 }
 
 .match-name-container td.event-title p {
-  color: #fff;
-  font-family: "Roboto", sans-serif;
+  max-width: 195px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 /*carello colore contorno*/
@@ -585,12 +629,13 @@ a {
 }
 /* carrello, colore sfondo singola/multipla */
 .shopping-cart-result-box {
-  border-bottom: 1px solid #444;
+  border-bottom: none;
+  -webkit-box-shadow: none;
   box-shadow: none;
-  color: #dedede;
-  background: #242424 !important;
   font-family: "Roboto", sans-serif;
   margin: 0;
+  background: var(--bg1);
+  color: var(--col1);
 }
 
 .result-letter-box {
@@ -817,6 +862,12 @@ a {
   margin: 0;
   font-family: "Roboto", sans-serif;
   @include borderBottom3d;
+  &.hand-pointer {
+    background-color: var(--primary-bg);
+    .left-menu-sport-title {
+      text-transform: uppercase !important;
+    }
+  }
 }
 /*colore font tasti disciplina*/
 #left-menu-primary li a {
@@ -860,9 +911,6 @@ a {
   font-family: "Roboto", sans-serif;
 }
 /*bestseller colore di: Giorno & Ora, PARTITA, ESITI, VALORE IMPORTO, VINCITA TOTALE*/
-.corporate-blue {
-  color: #fff;
-}
 
 /*bestseller colore testo Importo:, Quota totale:, Vincita totale*/
 .widget-bestseller-tab-result-general-box {
@@ -870,7 +918,7 @@ a {
   font-family: "Roboto", sans-serif;
 }
 /*sfondo colore avvenimenti best seller*/
-.widget-bestseller-table tr {
+.widget-bestseller-table tbody tr {
   background: transparent;
   font-family: "Roboto", sans-serif;
   @include borderBottom3d;
@@ -890,12 +938,14 @@ a {
 .btn-widget.white {
   background: #444;
   font-size: 13px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 8px;
   color: #fff;
   text-shadow: none;
   font-family: "Roboto", sans-serif;
-  box-shadow: inset 1px 1px 0px #222222;
+  box-shadow: none;
+  border-radius: 0;
+  text-align: center;
 }
 
 .btn-widget.white:hover {
@@ -952,6 +1002,7 @@ a {
 .widget-last-winnings-container {
   background: transparent;
   font-family: "Roboto", sans-serif;
+  margin-top: 10px;
 }
 
 /* sfondo e font box ultimi risultati */
@@ -1097,11 +1148,7 @@ a {
 
 /* Casella dei box prematch che contiene l alias e la data-ora dell'evento*/
 /* colore di background e testo della data-ora*/
-.time-col {
-  background-color: #333;
-  color: yellow;
-  font-family: "Roboto", sans-serif;
-}
+
 .sport-prematch-container table p {
   color: white;
   font-family: "Roboto", sans-serif;
@@ -1211,19 +1258,6 @@ td .dropdown-menu-esiti ul li a {
 }
 
 /*live singolo, colore sfondo box quota */
-.live-multi-match-3col-box a,
-.live-multi-match-2col-box a,
-.live-multi-match-1col-box a {
-  background-color: #343434;
-  /* box-shadow: inset 0px 0px 5px #080808; */
-  border: 1px solid #0d0d0d;
-  font-family: "Roboto", sans-serif;
-}
-
-.live-match-primary-container .text-white {
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-}
 
 /*live singolo, colore sfondo box quota on mouse hover*/
 .live-multi-match-3col-box a:hover,
@@ -1238,10 +1272,7 @@ td .dropdown-menu-esiti ul li a {
   font-family: "Roboto", sans-serif;
 }
 /*colore font descrizione esito quota live singolo*/
-.text-white {
-  color: #ff8000;
-  font-family: "Roboto", sans-serif;
-}
+
 /*colore font esito quota non giocabile live singolo*/
 .text-darkgray {
   color: #fff !important;
@@ -1290,11 +1321,6 @@ td .dropdown-menu-esiti ul li a {
 .live-multi-top-content-right .top-content-btns:hover {
   box-shadow: 0px -1px 1px #484747;
   background-color: #484747;
-  font-family: "Roboto", sans-serif;
-}
-
-#menu-live-multi-boxes-container .text-white {
-  color: #fff;
   font-family: "Roboto", sans-serif;
 }
 
@@ -1490,7 +1516,7 @@ img {
   border-bottom: 1px solid #4e4e4e;
 }
 #collapser-container-hotbet .widget-hotbet-tab-result-container {
-  border-right: 1px solid #676767;
+  border-right: 1px solid var(--secondary-bg);
   font-family: "Roboto", sans-serif;
 }
 #collapser-container-hotbet
@@ -1521,14 +1547,6 @@ img {
 #betbutton,
 #prenota_bet_button span {
   color: white !important;
-  font-family: "Roboto", sans-serif;
-}
-
-.buttons-container-header a,
-.buttons-container-header a:hover {
-  color: #dedede !important;
-  font-weight: normal;
-  text-shadow: none;
   font-family: "Roboto", sans-serif;
 }
 
@@ -1699,30 +1717,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 /* LAST MINUTE TABLE CHANGES  */
 .sport-match-separator-box {
-  background: #5a5a5a;
-  font-family: "Roboto", sans-serif;
-}
-
-.match-separator-table .tbl-title-box {
-  background-color: var(--active-color) !important;
+  background: var(--teableSubHeadersBg);
   font-family: "Roboto", sans-serif;
 }
 
 .match-separator-table .tbl-title-box,
 .prematch-separator-table .tbl-title-box {
-  background-color: #5a5a5a !important;
-  color: white;
-  text-shadow: 0 0 1px #000;
+  background-color: var(--teableSubHeadersBg) !important;
   font-family: "Roboto", sans-serif;
 }
 
 #coupon-multiple .cart-total-price {
   background-color: var(--active-color) !important;
-  font-family: "Roboto", sans-serif;
-}
-
-.text-white {
-  color: #fff;
   font-family: "Roboto", sans-serif;
 }
 
@@ -1871,13 +1877,54 @@ html body .ico-lock-mini-button {
   color: var(--active-color);
   font-family: Open Sans, sans-serif;
 }
+.live-match-primary-container {
+  .match-info-text-team-names-box.match-finished {
+    padding: 0px 0px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: var(--col1);
+    margin-top: -22px;
+  }
+  .live-match-switch {
+    width: 20px;
+    height: 20px;
+    background-size: contain !important;
+  }
 
-.match-info-text-team-names-box.match-finished {
-  color: #000;
-  background: var(--active-color);
-  padding: 10px 3px;
-  font-family: "Roboto", sans-serif;
+  #prematch-market-selected-container .games-btn-container .game-event-btn {
+    border-radius: 12px !important;
+  }
+
+  .games-btn-container {
+    background: var(--accent-txt);
+    padding: 5px;
+  }
+  .info-text-box-container.title-big {
+    position: relative;
+    padding: 5px 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    .info-text-box-2-col {
+      width: auto !important;
+    }
+    .liveToolbar {
+      position: absolute;
+      right: 63px;
+      top: 5px;
+    }
+    .ico-multilive-stats {
+      width: 20px;
+      height: 20px;
+      background-size: contain;
+    }
+    .ico-fav-live-singolo {
+      width: 20px;
+      height: 20px;
+      background-size: contain;
+    }
+  }
 }
+
 /* Live "tuto, 1, 2,..." */
 .sr-pills .sr-pills-header .sr-pill.sr-active {
   background: #ffe01a;
@@ -1937,16 +1984,13 @@ html body .ico-lock-mini-button {
   font-family: "Roboto", sans-serif;
 }
 
-.live-match-primary-container .text-white {
-  color: white;
-  font-family: "Roboto", sans-serif;
-}
-
 .live-match-match-title {
   border-color: transparent;
   background: var(--secondary-bg);
   border: none;
-  color: #ffbe02;
+  color: var(--secondary-txt);
+  display: flex;
+  justify-content: space-between;
 }
 
 .sr-bar-progress .sr-bar-arrow {
@@ -1976,14 +2020,13 @@ html body .ico-lock-mini-button {
 #prematch-market-selected-container .games-btn-container.oven .game-event-btn,
 #wrapper.prematch .games-btn-container.oven .game-event-btn,
 #center-content .games-btn-container.oven .game-btn {
-  background: var(--teableHeadersBg);
+  background: var(--bg1);
   color: var(--teableSubHeadersCol) !important;
   border-radius: 0px !important;
   font-size: 11px;
   font-weight: bold;
   text-shadow: none !important;
   box-shadow: none !important;
-  font-family: "Roboto", sans-serif;
 }
 
 #prematch-market-selected-container .games-btn-container .game-event-btn,
@@ -2062,13 +2105,27 @@ body .game-event-btn.selected {
 body .live-menu-team-detail-events {
   font-size: 12px;
   line-height: 20px;
-  border-top-color: #9fa3a7;
+  border-top-color: var(--tableBorders);
   font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  > .live-detail-event-box {
+    border-left: 1px solid var(--tableBorders);
+    border-bottom: 1px solid var(--tableBorders);
+    width: auto;
+    flex: 1 1;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    .event-arrow-up,
+    .event-arrow-down {
+      position: absolute;
+    }
+  }
 }
+
 body div.live-team-game-situation {
-  color: white;
-  font-size: 12px;
-  font-family: "Roboto", sans-serif;
+  color: var(--col1);
 }
 
 .live-detail-event-box .left {
@@ -2076,23 +2133,11 @@ body div.live-team-game-situation {
   font-size: 13px;
   color: #ffd02a;
   width: 19px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
 
 /* MULTILIVE */
-.live-multi-match-3col-box a .text-white,
-body .live-multi-match-2col-box a .text-white,
-body .live-multi-match-1col-box a .text-white {
-  color: white;
-  font-family: "Roboto", sans-serif;
-}
-
-.prematch-avvenimento-tbl-title.text-white {
-  color: white !important;
-  font-family: "Roboto", sans-serif;
-}
 
 body #fluid-prematch-matches-container .date-time-row {
   font-family: "Roboto", sans-serif;
@@ -2103,21 +2148,17 @@ body #fluid-prematch-matches-container .date-time-row {
     font-family: "Roboto", sans-serif;
   }
 }
-
+.quota-value {
+  color: var(--col1);
+}
 #fluid-prematch-matches-container {
-  border-top: 1px solid #636363;
-  background: #202020;
-  font-family: "Roboto", sans-serif;
+  border-top: none;
+  background: var(--secondary-bg);
 }
 
 #fluid-prematch-matches-container .simple-row:hover,
 .simple-row:hover .fluid-prematch-info-esiti-td {
-  background-color: #000 !important;
-  font-family: "Roboto", sans-serif;
-}
-
-.fluid-prematch-matches-hidden-td {
-  border-right: 1px solid #555555;
+  background-color: va(--bg1) !important;
   font-family: "Roboto", sans-serif;
 }
 
@@ -2133,9 +2174,6 @@ body #fluid-prematch-matches-container .date-time-row {
 .fluid-prematch-matches-alias-td,
 .fluid-prematch-matches-time-td,
 .fluid-prematch-matches-event-td {
-  color: #000000;
-  border-right: 1px solid #555555;
-  font-family: "Open Sans", sans-serif;
   font-family: "Roboto", sans-serif;
 }
 
@@ -2146,7 +2184,7 @@ body #fluid-prematch-matches-container .date-time-row {
 }
 
 .fluid-prematch-info-esiti-td {
-  background: #222;
+  background: var(--secondary-bg);
   font-family: "Roboto", sans-serif;
 }
 
@@ -2164,10 +2202,10 @@ body #fluid-prematch-matches-container .date-time-row {
   font-family: "Roboto", sans-serif;
 }
 .overview-live-title-selected {
-  padding-bottom: 0;
   font-size: 18px;
   line-height: 18px;
-  padding: 7px 5px;
+  padding: 0px 5px;
+  padding-top: 5px;
   font-family: "Roboto", sans-serif;
 }
 .fluid-overview-live-time-td {
@@ -2214,7 +2252,7 @@ body
   #fluid-overview-live-container
   .fluid-overview-live-no-subtitle-bg
   .fluid-overview-live-full-time-td {
-  background-color: #5a5a5a;
+  background-color: var(--teableSubHeadersBg);
   font-family: "Roboto", sans-serif;
 }
 
@@ -2226,10 +2264,10 @@ body .fluid-heading-span {
 body .fluid-overview-sport-title {
   color: white;
   font-family: "Roboto", sans-serif;
-  top: -6px;
+  top: -9px;
 }
 .live_general .ico-flag-ltl {
-  margin-top: -7px;
+  margin-top: -10px;
 }
 #fluid-overview-live-container .fluid-overview-live-sport-title {
   background: transparent !important;
@@ -2248,6 +2286,9 @@ body .fluid-overview-sport-title {
   text-align: center;
   padding-top: 1px;
   padding-bottom: 1px;
+  &.fluid-overview-live-time-td {
+    padding-left: 5px;
+  }
   .time-box {
     text-align: left;
   }
@@ -2377,20 +2418,19 @@ body .match-titles-table .border-right {
 
 .match-separator-table .tbl-title-box td,
 .prematch-separator-table .tbl-title-box td {
-  color: #dedede;
+  color: var(--col1);
   text-shadow: none;
   font-family: "Roboto", sans-serif;
 }
 
 .overview-live-tab-title-container {
-  bottom: -4px;
   font-family: "Roboto", sans-serif;
   left: 0;
   margin-top: 0px !important;
 }
 
 #fluid-overview-live-table .heading-row {
-  background: #333;
+  background: var(--teableHeadersBg);
   font-family: "Roboto", sans-serif;
 }
 
@@ -2398,11 +2438,13 @@ body .match-titles-table .border-right {
   border-top: 0;
   border-bottom: 1px solid #404144;
   font-family: "Roboto", sans-serif;
-}
-
-#fluid-overview-live-container .subtitle-row td table td {
-  background: #333;
-  font-family: "Roboto", sans-serif;
+  .subtitle-row td table td {
+    background: var(--teableHeadersBg);
+    font-family: "Roboto", sans-serif;
+    &.fluid-overview-alias-td {
+      padding-left: 5px;
+    }
+  }
 }
 
 .menu-live-multi-title {
@@ -2549,7 +2591,7 @@ td .btn:hover,
 }
 
 .cart-event-summary.cart-event-option {
-  border-bottom: 1px solid #555555;
+  border-bottom: 1px solid var(--tableBorders);
   font-family: "Roboto", sans-serif;
 }
 
@@ -2591,7 +2633,7 @@ td .btn:hover,
 }
 
 .team-chose-cart-table .evidence-color {
-  color: #eda417;
+  color: var(--accent);
   font-family: "Roboto", sans-serif;
 }
 
@@ -2802,40 +2844,13 @@ td .btn:hover,
   font-family: "Roboto", sans-serif;
 }
 
-.buttons-container-header {
-  border-radius: 0px;
-  font-family: "Roboto", sans-serif;
-  height: auto;
-  display: flex;
-  border-bottom: 1px solid var(--tableBorders);
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 5px;
-  height: 32px;
-  background: var(--teableHeadersBg);
-  color: var(--teableSubHeadersCol);
-}
-
-.buttons-container-header span {
-  color: var(--primary-txt);
-  font-weight: normal;
-}
-
 .widget-news .timeStampText,
 .widget-news-nonews .timeStampText {
   color: #c5c5c5;
 }
 
 .live-match-match-box {
-  border: 1px solid #222;
-  background: #222;
-  font-family: "Roboto", sans-serif;
-}
-
-.active .match-number-container {
-  background: #222;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
+  border: 1px solid var(--secondary-bg);
 }
 
 #ui-datepicker-div {
@@ -3062,7 +3077,7 @@ body #wrapper .game-event-btn.selected,
   color: #fff;
   text-shadow: none !important;
   background-image: none;
-  background-color: #333;
+  background: var(--secondary-bg);
   zoom: 1;
   font-size: 12px;
   line-height: 7px;
@@ -3083,7 +3098,7 @@ body #wrapper .game-event-btn.selected,
 .prematch-avvenimento-tbl-btn-container a:hover,
 .overview-live-fluid-giocabilita-s:hover,
 #legend-box .giocabilita-q5:hover {
-  color: #fff;
+  color: var(--accent-txt);
   text-shadow: none !important;
   background: var(--active-color);
   border-radius: 0px !important;
@@ -3092,30 +3107,20 @@ body #wrapper .game-event-btn.selected,
 }
 
 .giocabilita-s:hover span {
-  color: #fff;
+  color: var(--accent-txt);
 }
 
 /* bottone selezionato */
 .giocabilita-q5-ex,
 .giocabilita-q5-ex:hover {
-  color: #000 !important;
+  color: var(--accent-txt) !important;
   text-shadow: none !important;
   background: var(--active-color) !important;
-
   font-weight: normal !important;
-  border-radius: 4px !important;
-  box-shadow: inset 0px 0px 0px 1px #000;
   font-family: "Roboto", sans-serif;
-}
-
-.giocabilita-q5-ex span,
-.giocabilita-q5-ex:hover span {
-  color: #fff;
-}
-
-.giocabilita-q5-ex span,
-.giocabilita-q5-ex:hover span {
-  color: #fff;
+  span {
+    color: var(--accent-txt) !important;
+  }
 }
 
 /* fine bottoni */
@@ -3148,11 +3153,6 @@ body #wrapper .game-event-btn.selected,
 .tooltip.bottom-left .tooltip-arrow,
 .tooltip.bottom-right .tooltip-arrow {
   border-bottom-color: #837878;
-  font-family: "Roboto", sans-serif;
-}
-
-.buttons-container-header .nav-tabs > li > a {
-  top: 4px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -3390,17 +3390,6 @@ body select {
   font-family: "Roboto", sans-serif;
 }
 
-#widget-bestseller-box .nav-tabs > li.active > a,
-#widget-bestseller-box .nav-tabs > li.active > a:focus,
-#widget-bestseller-box .nav-tabs > li.active > a:hover,
-#widget-hotbet-box .nav-tabs > li.active > a,
-#widget-hotbet-box .nav-tabs > li.active > a:focus,
-#widget-hotbet-box .nav-tabs > li.active > a:hover {
-  background: var(--teableSubHeadersBg);
-  color: #fff !important;
-  font-family: "Roboto", sans-serif;
-}
-
 #widget-container .tab-content > .active,
 #widget-container #widget-hotbet-box .tab-content > .active {
   background: #222 !important;
@@ -3460,14 +3449,16 @@ body select {
   background: #232528;
   font-family: "Roboto", sans-serif;
 }
-
+.live-multi-3col-singolar-box {
+  background: var(--teableHeadersBg);
+  border: 1px solid var(--secondary-bg);
+}
 .live-multi-match-3col-box a,
 .live-multi-match-2col-box a,
 .live-multi-match-1col-box a {
-  background-color: #333;
+  background: var(--teableHeadersBg);
   box-shadow: none !important;
   border: none !important;
-  border-radius: 3px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -3542,6 +3533,7 @@ body .hdnButton {
 #fluid-overview-live-container {
   .calcio .player .name {
     font-family: "Roboto", sans-serif;
+    color: var(--col1);
   }
 }
 
@@ -3743,18 +3735,15 @@ body .tooltip-alias-search-1 {
   font-family: "Roboto", sans-serif;
   background: var(--teableHeadersBg);
   color: var(--teableHeadersCol);
+  font-size: 11px;
 }
 .overview-live-black-tab {
   background: transparent;
 }
 .generalSportButtonHeader {
   &:first-child {
-    margin-left: 1%;
+    margin-left: 10px;
   }
-}
-.fluid-prematch-black-tab {
-  background: var(--teableHeadersBg);
-  color: var(--teableHeadersCol);
 }
 
 .sr-widget .sr-header-1 {
@@ -3801,11 +3790,6 @@ body .tooltip-alias-search-1 {
 
 .prematch-avvenimento-tbl-btn-container a {
   box-shadow: none !important;
-  font-family: "Roboto", sans-serif;
-}
-
-.widget-bestseller-table .spacer {
-  border-top: 1px solid #eda417;
   font-family: "Roboto", sans-serif;
 }
 
@@ -4086,7 +4070,7 @@ body .giocabilita-s.hand-pointer:hover {
 }
 
 .buttons-container-box {
-  background: #222;
+  background: var(--secondary-bg);
   .buttons-container-header {
     .clearfix {
       display: none;
@@ -4128,8 +4112,8 @@ li:hover .prematch-left-menu-match-number {
 }
 
 #fluid-overview-live-container .handycap-grey-bg {
-  background: #111;
-  color: #fff;
+  background: var(--bg1);
+  color: var(--col1);
 }
 
 .prematch-avvenimento-tbl-btn-container a {
@@ -4162,32 +4146,32 @@ li:hover .prematch-left-menu-match-number {
 
 .tab-coupon-final-count-box,
 .cart-event-summary-table {
-  background: #000;
+  background: var(--secondary-bg);
 }
 
 .cart-boxes-number {
-  background: #111;
+  background: var(--secondary-bg);
 }
 
 .widget-last-result-container,
 .widget-last-winnings-box {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid var(--tableBorders);
 }
 
 #left-menu-primary li:hover ul li a {
   color: inherit;
 }
 
-.prematch-separator-table .tbl-title-box td {
-  border-right: 1px solid #333;
-}
-
 .prematch-separator-table .tbl-title-box {
-  border-left: 1px solid #333;
+  border-left: none;
+  td {
+    border-right: none;
+    padding: 5px 0;
+  }
 }
 
 .stampa-quote-intervallo-tempo-container {
-  border-top: 1px solid #333;
+  border-top: 1px solid var(--tableBorders);
 }
 
 .live-menu-pref li.selected {
@@ -4229,10 +4213,6 @@ li:hover .prematch-left-menu-match-number {
   color: var(--active-color);
 }
 
-a.giocabilita-q5-ex span {
-  color: #fff !important;
-}
-
 .areaPrincipale .search-filters-container {
   background: #333;
 }
@@ -4249,7 +4229,6 @@ a.giocabilita-q5-ex span {
 .left.left-menu-sport-title {
   float: none;
   /* display: block; */
-  width: 111px;
   overflow: hidden;
   display: block;
   white-space: nowrap;
@@ -4262,13 +4241,7 @@ a.giocabilita-q5-ex span {
   font-size: 12px;
 }
 
-#wrapper.prematch .game-btn-8,
-#wrapper.live_prematch .game-btn-8 {
-  font-size: 11px;
-}
-
 td.fluid-prematch-matches-time-td {
-  background: #242424;
   border: none;
 }
 
@@ -4310,19 +4283,25 @@ td .btn:hover,
   font-size: 10px;
 }
 
-.fluid-prematch-black-tab {
-  font-size: 11px;
-  padding: 2px 0;
-  font-weight: bold;
-}
-
 .widget-last-result-score {
   font-size: 24px;
   line-height: 19px;
 }
 
+@keyframes animateBg {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
 .progress-bar-success {
-  background-color: #ffe01a !important;
+  background-size: 400% 400%;
+  animation: animateBg 2s infinite linear;
+  background-color: #ffd919;
+  background-image: linear-gradient(90deg, #00a651, #ffd919, #00a651, #ffd919);
 }
 
 .cart-event-summary-table .system-event {
@@ -4333,6 +4312,12 @@ td .btn:hover,
 #content.box-prematch .prematch-fluid-btn-g {
   line-height: 32px;
   height: 32px;
+  margin-left: 0;
+  margin-right: 0;
+  border-bottom: 0;
+  border-top: 0;
+  border-right: 0;
+  // background: var(--secondary-bg);
 }
 
 .casino-game-section-title.no-top-margin {
@@ -4388,28 +4373,49 @@ td .btn:hover,
     font-family: "Roboto", sans-serif;
   }
 }
+@keyframes pulse {
+  0% {
+    transform: scale(0.98);
+  }
 
-.buttons-container-header .btn-live span {
-  color: #fff !important;
+  70% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.98);
+  }
 }
-
 .livebet-widget-bg.calcio-live {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-
+.livebet-widget-title-box .livebet-widget-player:first-child {
+  padding: 5px 5px 5px 7px;
+}
 .livebet-widget-game-result-container {
   background: var(--teableHeadersBg);
   color: var(--teableSubHeadersCol);
+  .livebet-status-icon-container.green {
+    left: auto;
+    right: 12px;
+    top: 0;
+    background: none;
+    &:after {
+      content: "LIVE";
+      color: #fff;
+      background: #d2161e;
+      border-radius: 22px;
+      padding: 2px 6px;
+      font-size: 9px;
+      animation: pulse 2s ease 0s infinite;
+      transform: scale(1);
+    }
+  }
 }
 .livebet-widget-game-result {
   color: var(--active-color);
 }
-.btn-live {
-  box-shadow: none !important;
-  margin: 0 0 0 1px;
-}
-
 #content {
   padding: 0px !important;
   background: #40404000;
@@ -4506,7 +4512,7 @@ td .btn:hover,
 .giocabilita-s {
   box-shadow: inset 0px 0px 0px 1px #000;
   font-family: "Roboto", sans-serif;
-  border: 1px solid #5e5e5e;
+  border: 1px solid var(--bg1);
 }
 
 /*BACKROUNG LIVE SPORT */
@@ -4547,9 +4553,12 @@ td.fluid-overview-live-time-td span {
 .corporate-blue {
   color: #ffe01a;
 }
-
+.live-menu-title .ico-expand {
+  filter: invert(1);
+}
 .live-menu-title .collapsed .ico-expand {
   filter: invert(1);
+  margin-top: 0;
 }
 
 /*widget live */
@@ -6373,16 +6382,20 @@ $base: #000000;
 /* fine widget live*/
 
 html {
-  #widget-container .tab-content > .active,
-  #widget-container #widget-hotbet-box .tab-content > .active {
-    background: #2220 !important;
-    backdrop-filter: blur(10px);
-  }
-  #widget-hotbet-box .tab-content {
-    background: url("https://#{$url}/external_css/SIRPLAY/img/widgetBg.png")
-      no-repeat top center;
-    background-position: center;
-    background-size: cover;
+  #widget-hotbet-box {
+    .tab-content {
+      background: none;
+    }
+    .progress {
+      height: 5px;
+    }
+    .nav-tabs > li > a {
+      text-shadow: none;
+      border-left: 1px solid var(--tableBorders);
+      span {
+        border: none;
+      }
+    }
   }
   .widget-bestseller-tab-title-container,
   .widget-hotbet-tab-title-container {
@@ -6393,7 +6406,7 @@ html {
   }
   #cart-multiple,
   #cart-systems {
-    width: 100%;
+    width: 100% !important;
   }
   .box-prematch div#center-content:before {
     content: "";
@@ -6407,14 +6420,26 @@ html {
     background-position: center;
     background-color: #1c1c1c;
   }
-  .widget-bestseller-table .btn-widget {
-    @include quote3d;
-    margin: 0px;
-  }
-  .fluid-prematch-quotes-table.quotes-16 .prematch-fluid-btn-g {
-    @include quote3d;
-    margin-right: 0px;
-    border-bottom: 0;
+  .widget-bestseller-table {
+    tbody {
+      tr {
+        .widget-btn-td {
+          .btn-widget {
+            @include quote3d;
+            margin: 0px;
+            border-right: 0;
+            border-bottom: 0;
+            border-top: 0;
+            margin-top: -1px;
+          }
+          &:not(first-child) {
+            .btn-widget {
+              border-left: 0;
+            }
+          }
+        }
+      }
+    }
   }
 
   #fluid-prematch-matches-container {
@@ -6427,9 +6452,15 @@ html {
     .simple-row td {
       padding-top: 0;
       padding-bottom: 0;
+      &.fluid-prematch-intertd-spacer {
+        width: 0;
+      }
     }
     .match-stats-icon {
       height: 32px;
+    }
+    .simple-row {
+      @include borderBottom3d;
     }
   }
 
@@ -6479,15 +6510,11 @@ html {
   .cart-banker-letter-td {
     vertical-align: middle;
   }
-  #cart-events-wrapper {
-    border: 3px solid #f5c020;
-    border-radius: 0;
-  }
   #cart-container .nav-pills li {
     &.active {
       a {
-        background-color: #ffbe02;
-        color: #222 !important;
+        background-color: var(--active-color);
+        color: var(--accent-txt);
       }
     }
   }
@@ -6515,6 +6542,8 @@ html {
     display: flex;
     flex-flow: column;
     align-items: stretch;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   div#checkbet-submit > div {
     padding: 7px !important;
@@ -6563,9 +6592,10 @@ html {
             width: 100%;
             height: 48px;
             align-items: center;
-            justify-content: center;
             display: flex;
             border-bottom: 3px solid transparent;
+            font-size: 11px;
+            justify-content: space-between;
           }
           &.active {
             > a {
@@ -6598,10 +6628,10 @@ html {
   }
   .filtro-palinsesto {
     border-width: 1px;
-    border-color: #444;
     padding: 3px;
     margin-top: 3px;
-    background-color: #434343;
+    background-color: var(--mainBg);
+    border-color: var(--tableBorders);
     width: 46%;
   }
   span.live-collapse-opened {
@@ -6653,6 +6683,9 @@ html {
 #shopping-cart .fixableElement {
   border-left: 1px solid #515151 !important;
   box-shadow: -1px 0px 0 0px #000 !important;
+  #cart-container {
+    width: 100%;
+  }
 }
 #left-column .fixableElement {
   border-right: 1px solid #000 !important;
@@ -6687,9 +6720,6 @@ html {
   .giocabilita-s {
     border: none;
   }
-  tbody {
-    border-top: 1px solid #555555;
-  }
   thead {
     background: var(--teableSubHeadersBg);
     color: var(--teableSubHeadersCol);
@@ -6700,9 +6730,7 @@ html {
     color: var(--teableSubHeadersCol);
   }
   .spacer {
-    height: 0px;
-    border-top: none;
-    padding: 0px 0;
+    display: none;
   }
   .btn-widget {
     margin: 0 0px;
@@ -6729,7 +6757,7 @@ html {
     padding: 5px;
     background-color: #333333;
   }
-  .progress-bar-striped,
+
   .progress-striped .progress-bar {
     background-image: none;
   }
@@ -6758,19 +6786,22 @@ html {
       height: 28px;
       line-height: 28px;
       padding: 0;
-      text-align: center;
-      margin: 0;
-      border-left: 1px solid #555555;
-      border-radius: 0;
+      margin: 0 0px;
+      box-shadow: none;
+      @include quote3d;
+      margin-top: -1px;
+      border-bottom: 0;
+      border-top: 0;
     }
   }
 }
 .widget-hotbet-tab-result-quotes-title {
   font-family: "Lato";
   text-align: center;
-  background: var(--teableSubHeadersBg);
+  background: var(--mainBg);
   height: 26px;
   line-height: 26px;
+  font-size: 11px;
 }
 .widget-hotbet-tab-result-quotes-box:last-child
   .widget-hotbet-tab-result-container {
@@ -6783,6 +6814,7 @@ html {
     margin: 0;
     border-left: 1px solid #555555;
     border-radius: 0;
+    @include quote3d;
   }
   .hotbet-tab-result-quote-td {
     padding: 0 !important;
@@ -6790,11 +6822,40 @@ html {
 }
 .widget-hotbet-blasoni.column {
   padding: 5px 0px 5px 0px;
+  max-width: 300px;
+  width: auto;
+  min-width: 150px;
+  .match-blasoni-box {
+    position: relative;
+    .match-team-1-blason {
+      position: absolute;
+      left: 5px;
+      top: 0;
+    }
+    .match-team-name.team-1 {
+      left: 55px;
+      position: absolute;
+      top: 11px;
+    }
+    .match-team-2-blason {
+      position: absolute;
+      left: 5px;
+      bottom: 0;
+    }
+    .match-team-name.team-2 {
+      position: absolute;
+      bottom: 15px;
+      left: 55px;
+    }
+  }
 }
 #left-column {
   padding: 0 8px 0 0;
   .sidebar {
     border-right: 1px solid var(--tableBorders);
+    .led-box {
+      display: none;
+    }
   }
 }
 #shopping-cart {
@@ -6918,4 +6979,90 @@ a.blocco-mosaico {
   transform: rotate(-90deg);
   left: -93px;
   top: 50px;
+}
+
+#upcoming-box-container {
+  .sport-prematch-container {
+    @include borderBottom3d;
+  }
+  .match-titles-table td {
+    height: 26px;
+    padding: 0;
+  }
+  .spacer-1 {
+    height: 0;
+    border-top: 0;
+  }
+  .giocabilita-s {
+    height: 27px;
+  }
+  #tbd-fav-table td {
+    padding: 0;
+  }
+  .btn-g {
+    width: 45px;
+    min-width: 28px;
+    @include quote3d;
+    margin-right: 0px;
+    margin-left: 0px;
+    border-right: 0;
+    margin: 0px;
+    border-right: 0;
+    border-bottom: 0;
+    border-top: 0;
+    margin-top: -1px;
+    line-height: 16px;
+  }
+  .hide-1024.mini-button-box,
+  .game-bonus-container {
+    display: none;
+  }
+  .hide-1024.mini-button-box:last-child {
+    display: table-cell;
+  }
+  .next-live-btns-container table tr td.small {
+    display: none;
+  }
+  .prematch-separator-table .tbl-title-box td.td-center:nth-child(7),
+  .prematch-separator-table .tbl-title-box td.td-center:nth-child(8),
+  .prematch-separator-table .tbl-title-box td.td-center:nth-child(13) {
+    display: none;
+  }
+  #tbd-fav-table td.hand-pointer:nth-child(7),
+  #tbd-fav-table td.hand-pointer:nth-child(8),
+  #tbd-fav-table td.hand-pointer:nth-child(13) {
+    display: none;
+  }
+  .next-live-btns-container {
+    padding: 0 5px;
+
+    tbody {
+      .tbl-title-box.hide-1024 td:nth-child(4),
+      .tbl-title-box.hide-1024 td:nth-child(7) {
+        display: none;
+      }
+      .tbl-title-box.hide-1024 td:nth-child(7),
+      .tbl-title-box.hide-1024 td:nth-child(8) {
+        width: 20px;
+        min-width: 20px;
+        max-width: 20px;
+      }
+      .tbl-title-box:nth-child(2) {
+        td:nth-child(7),
+        td:nth-child(8),
+        td:nth-child(13) {
+          display: none;
+        }
+      }
+    }
+  }
+  .sport-match-container-header {
+    .match-name-container {
+      tbody {
+        tr:nth-child(1) {
+          display: none;
+        }
+      }
+    }
+  }
 }

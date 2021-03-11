@@ -157,11 +157,13 @@ p.testo-disclaimer {
     height: 30px;
     padding-top: 0px;
     padding-bottom: 0px;
-    width: 1320px;
+    width: 1240px;
     margin: 0 auto;
+    background: transparent;
     .info-utili {
       font-size: 14px;
       height: 30px;
+      padding-left: 0;
       .cg-contatti span {
         font-size: 13px;
       }
@@ -171,7 +173,7 @@ p.testo-disclaimer {
       height: 30px;
       justify-content: flex-end;
       .cg-header-logo {
-        width: 60px;
+        width: 56px;
         height: 26px;
         background-repeat: no-repeat;
         background-size: contain;
@@ -182,8 +184,15 @@ p.testo-disclaimer {
   #nascondimenu {
     background: var(--intermediate-bar-bg-color);
     .row.barra-intermedia {
-      width: 1320px;
+      width: 1240px;
       margin: 0 auto;
+    }
+    .row.bg-bianco {
+      background: var(--secondary-bg);
+      .menu-principale-barra.w-100 {
+        max-width: 1240px;
+        margin: 0 auto;
+      }
     }
   }
 }
@@ -211,28 +220,101 @@ html {
 }
 
 //smile casino
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.98);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.98);
+  }
+}
+body[page="xcasino"] {
+  .casino.cg-bg-live {
+    background: url(https://test.sirplay.it/external_css/SIRPLAY/img/backgCasino.png)
+      top center no-repeat !important;
+  }
+  .casino #contentGames:before {
+    background: url(../SIRPLAY/img/banner1Casino.svg) center center no-repeat !important;
+    top: -16px;
+  }
+}
 .casino {
+  .exa_ico_home {
+    background: url(../SIRPLAY/img/slot-machine.svg);
+    background-repeat: no-repeat;
+  }
+  .exa_ico_novita {
+    background: url(../SIRPLAY/img/new.svg);
+    background-repeat: no-repeat;
+  }
+  .exa_ico_slot {
+    background: url(../SIRPLAY/img/slot.svg);
+    background-repeat: no-repeat;
+  }
+  .exa_ico_jackpot {
+    background: url(../SIRPLAY/img/jackpot.svg);
+    background-repeat: no-repeat;
+  }
+  .exa_ico_suggeriti {
+    background: url(../SIRPLAY/img/dealer.svg);
+    background-repeat: no-repeat;
+  }
+
+  .exa_ico_dice {
+    background: url(../SIRPLAY/img/tableG.svg);
+    background-repeat: no-repeat;
+  }
+  .exa_ico_carte {
+    background: url(../SIRPLAY/img/cards.svg);
+    background-repeat: no-repeat;
+  }
+
   .grid-message {
     color: var(--mainBgCol);
   }
   #casino-principale {
     margin-top: 0px;
-    background-color: var(--secondary-bg);
+    max-width: 100%;
+    .bg-filtri-casino {
+      background: #000;
+      display: flex;
+      flex-direction: row;
+      flex: 1 1;
+      justify-content: space-between;
+      max-width: 1240px;
+      margin: 0 auto;
+      align-items: center;
+    }
+    &:before {
+      content: "";
+      background: #000;
+      width: 100%;
+      height: 40px;
+      position: absolute;
+      left: 0;
+    }
   }
   &.cg-bg-live {
-    background: var(--mainBg) !important;
+    background: url(https://test.sirplay.it/external_css/SIRPLAY/img/backgCasino.jpg)
+      top center no-repeat !important;
+    background-attachment: fixed !important;
   }
   .riga-titoli-casino {
-    border-bottom: 2px solid var(--secondary-bg);
+    background: transparent;
     .voce-casino {
       color: #fff !important;
-      padding-bottom: 5px;
-      border-bottom: 3px solid transparent;
     }
     a.voce-casino:hover,
     a.voce-casino.selezionato {
       transition: all 200ms ease-in-out;
-      padding-bottom: 5px;
+      border-bottom: none;
+      color: var(--active-color) !important;
       span {
         filter: none;
         height: 20px;
@@ -246,7 +328,9 @@ html {
   .exa_ico_novita,
   .exa_ico_slot,
   .exa_ico_jackpot,
-  .exa_ico_suggeriti {
+  .exa_ico_suggeriti,
+  .exa_ico_dice,
+  .exa_ico_carte {
     filter: none;
     height: 20px;
     width: 20px;
@@ -254,40 +338,77 @@ html {
     margin-right: 5px;
   }
 
-  .row.mosaico-casino {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
   .descIconGameFooter {
-    background-color: #3c3c3c;
+    background-image: linear-gradient(
+      180deg,
+      #363636 0%,
+      #202020 82.3%,
+      #313131 100%
+    );
     color: #fff;
     border-top: 0;
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 13px;
+    padding-top: 10px !important;
+    height: 40px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
   }
 
   a.blocco-mosaico {
-    border-radius: 4px;
+    border-radius: 8px;
+    background-color: var(--mainBg);
   }
 
   .bottone-selettore div {
     width: 3px;
     margin: 0 1px;
   }
-
+  #menuContainer {
+    width: auto !important;
+  }
   .row.selettore.allinea-sinistra div.col-md-12 {
-    padding: 5px 10px;
+    padding: 6px 10px;
+    width: auto;
+    flex: auto;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .style-filtri {
     padding-left: 0;
+    border: 1px solid var(--tableBorders);
+    border-radius: 4px;
+    padding: 0 5px;
+    height: 26px;
   }
   input.cerca {
     border: 1px solid var(--tableBorders);
-    background: var(--secondary-bg);
+    background: transparent;
     color: #fff;
+    border-radius: 4px;
+    height: 26px;
   }
+  .tipoPaginaLancio {
+    &#tpl_1 {
+      margin-right: 0;
+    }
+
+    &.active {
+      background: transparent;
+      i {
+        color: var(--active-color);
+      }
+    }
+  }
+
   .bottone-selettore {
+    margin-right: 5px;
+    &:first-child {
+      margin-left: 10px;
+    }
     &:last-child {
       margin-right: 0;
     }
@@ -295,6 +416,42 @@ html {
   #contentGames {
     animation-name: fadeInTop;
     animation-duration: 500ms;
+    position: relative;
+    padding-top: 300px;
+    max-width: 1240px;
+    margin: 0 auto;
+    .overlay-mosaico {
+      background: transparent;
+    }
+    .blocco-mosaico.game {
+      &:first-child {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        .img-fluid {
+          height: calc(100% - 40px);
+          transition: filter 0.3s;
+        }
+      }
+      &:hover {
+        .img-fluid {
+          -webkit-filter: blur(20px);
+          filter: blur(20px);
+        }
+      }
+    }
+    &:before {
+      content: "";
+      background: url("../SIRPLAY/img/banner1Casino.png") center center
+        no-repeat !important;
+      position: absolute;
+      width: 100%;
+      height: 300px;
+      left: 0;
+      transform: scale(1);
+      animation: pulse 2s ease 0s infinite;
+    }
   }
 
   a.blocco-mosaico .overlay-mosaico {
@@ -362,6 +519,7 @@ html {
 
 #cg-header {
   border-bottom: 3px solid var(--active-color);
+  background: var(--mainBg);
 }
 
 .menu-principale-barra ul.menu-principale a {
@@ -436,6 +594,19 @@ body[subpage="sport"] {
   }
   .logo {
     bottom: 11px;
+    padding-left: 0;
+  }
+}
+body[subpage="xcasinopt"],
+body[subpage="xcasino"],
+body[subpage="xcasinolive"],
+body[subpage="poker"],
+body[subpage="xbingo"],
+body[subpage="virtuali"],
+body[subpage="ippica"] {
+  .logo {
+    bottom: 11px;
+    padding-left: 0;
   }
 }
 
