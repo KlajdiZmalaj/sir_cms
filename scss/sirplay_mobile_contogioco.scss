@@ -1,24 +1,469 @@
-// html:root {
-//   --active-color: #ffe01a;
-//   --teableHeadersBg: #2c2c2c;
-//   --teableHeadersCol: #a0a0a0;
-//   --teableSubHeadersBg: #525252;
-//   --teableSubHeadersCol: #ffffff;
-//   --tableBorders: #5c5c5c;
+@import "vars";
 
-//   --accent: #ffe01a;
-//   --accent-bg: #ffe01a;
-//   --accent-txt: #222;
-//   --primary-bg: #4a4a4a;
-//   --primary-txt: #fff;
-//   --secondary-bg: #212121;
-//   --secondary-txt: #fff;
-//   --mainBg: #333333;
-//   --mainBgCol: #fff;
-//   --bg1: #404040;
-//   --col1: #fff;
-// }
+.cg-slide-logo,
+.cg-side-header-logo {
+  background-image: url($logoUrl);
+}
 
+.cg-recover-logo,
+.cg-signup-logo {
+  background-image: url($logoUrl);
+}
+
+.cg-signup-top-navbar {
+  background: var(--bg1);
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--accent);
+}
+.cg-signup-userdata-icon,
+.cg-signup-document-icon,
+.cg-signup-home-icon,
+.cg-signup-mobile-icon,
+.cg-signup-mobile-icon,
+.cg-signup-account-icon,
+.cg-signup-deposit-icon,
+.cg-signup-check-icon {
+  filter: invert(1);
+}
+.cg-top-header {
+  background: var(--secondary-bg);
+  color: var(--secondary-color);
+  .cg-top-navbar {
+    background: var(--bg1);
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--accent);
+    .cg-deposit-button {
+      background: var(--accent-bg);
+      color: var(--accent-txt);
+      border-radius: 16px;
+      font-weight: 500;
+    }
+  }
+}
+
+#cg-left-side-menu {
+  background-color: var(--bg1);
+  color: var(--col1);
+  #cg-slide-top-container {
+    border-bottom: 1px solid var(--tableBorders);
+  }
+  #cg-slide-menu-top {
+    background-color: var(--mainBg);
+    color: var(--mainBgCol);
+    .cg-slide-close-button {
+      .cg-slide-cross-color {
+        color: red;
+      }
+    }
+    .cg-slide-buttons {
+      border-radius: 32px;
+      background: var(--tableBorders);
+      color: var(--col1);
+      border-width: 0;
+      height: 35px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32%;
+      > div {
+        line-height: 35px;
+      }
+      &#cg-slide-login-button:before {
+        content: "\f2f6";
+        font-family: "Font Awesome 5 Pro";
+        padding-right: 5px;
+        font-size: 14px;
+        font-weight: 100;
+      }
+      &#cg-slide-signup-button:before {
+        content: "\f234";
+        font-family: "Font Awesome 5 Pro";
+        padding-right: 5px;
+        font-size: 14px;
+        font-weight: 100;
+      }
+    }
+    .cg-slide-alternative-button {
+      border-color: var(--accent);
+      background-color: var(--accent);
+      color: var(--accent-txt);
+      font-weight: 500;
+    }
+  }
+  #cg-slide-body-container {
+    color: var(--col1);
+    .cg-slide-menu-separator {
+      display: none;
+    }
+    #cg-slide-scroll-buttons {
+      .cg-slide-title {
+        display: none;
+      }
+    }
+    .cg-slide-field-wrapper {
+      border: none;
+      margin: 1px auto;
+    }
+    .cg-slide-function-field {
+      background-color: var(--secondary-bg);
+      color: var(--secondary-color);
+      border-bottom-color: var(--tableBorders);
+      border-radius: 0;
+      &#cg-external-chat {
+        position: relative;
+        &:before {
+          content: "\f4b6";
+          font-family: "Font Awesome 5 Pro";
+          position: absolute;
+          top: 14px;
+          left: 8px;
+        }
+        .cg-slide-filled-label {
+          padding-left: 20px;
+        }
+      }
+      &#cg-desktop-mode {
+        position: relative;
+        &:before {
+          content: "\f108";
+          font-family: "Font Awesome 5 Pro";
+          position: absolute;
+          top: 14px;
+          left: 8px;
+        }
+        .cg-slide-filled-label {
+          padding-left: 20px;
+        }
+      }
+    }
+    i.cg-slide-icon {
+      filter: grayscale(1);
+    }
+  }
+}
+#cg-slide-paragrafo-60 {
+  .cg-slide-title,
+  .cg-slide-menu-separator {
+    display: none;
+  }
+}
+#cg-slide-paragrafo-63 {
+  .cg-slide-title {
+    display: none;
+  }
+}
+#cg-slide-footer2 {
+  .cg-slide-footer-title {
+    font-weight: normal !important;
+  }
+  .cg-slide-image {
+    height: 30px;
+    width: 35px;
+  }
+}
+.cg-info-body.cg-info-section {
+  background-color: var(--bg1) !important;
+  color: var(--secondary-color) !important;
+  .cg-info-select-container {
+    background: var(--bg1);
+    border-color: var(--tableBorders);
+    color: var(--col1);
+  }
+  .cg-info-go-back {
+    background: var(--bg1);
+    border-color: var(--tableBorders);
+    .cg-cross {
+      color: var(--accent);
+    }
+  }
+  .cg-arrow {
+    color: var(--accent);
+  }
+  #cg-info-select-showed-container {
+    border: solid 1px var(--tableBorders);
+  }
+}
+
+#cg-info-select-showed {
+  .cg-info-select-item.cg-acceso {
+    background: var(--bg1);
+    color: var(--col1);
+    border-left: solid 4px var(--accent);
+  }
+  .cg-info-select-item {
+    background: var(--bg1);
+    color: var(--col1);
+    border-bottom: 1px solid var(--tableBorders);
+  }
+  .cg-info-select-item.cg-info-disabled {
+    opacity: 0.5;
+    background: var(--bg1);
+  }
+}
+
+.cg-menuTabMobile {
+  background: var(--secondary-bg);
+  color: var(--secondary-txt);
+  box-shadow: 0 -7px 18px -9px #000;
+  .cg-labelMenu {
+    color: var(--secondary-txt);
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-top: 6px;
+  }
+  .cg-iconContainer .cg-selection-border {
+    margin-top: 0px;
+    height: 0;
+  }
+  .cg-buttonMenuMobile {
+    border-right: 1px solid var(--tableBorders);
+    &.cg-acceso {
+      .cg-labelMenu {
+        color: var(--accent);
+      }
+      i.cg-icon {
+        filter: none;
+      }
+    }
+  }
+  .cg-iconContainer i.cg-icon {
+    filter: grayscale(1);
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+  }
+  .cg-tabTitleCotainer {
+    height: 40px;
+    background: var(--mainBg);
+    #cg-title {
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+  }
+  .filtri-container {
+    margin-top: 10px;
+    border-bottom: 1px solid var(--tableBorders);
+    padding-bottom: 10px;
+    .filtroTitleContainer {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.cg-wrapper-login-section {
+  background: var(--bg1);
+  color: var(--secondary-txt);
+  height: calc(100% - 100px);
+  #cg-unloggedMask {
+    width: 80%;
+    margin-left: 10%;
+  }
+  #cg-unloggedMask > .cg-inputContainer {
+    margin-top: 5%;
+    margin-left: 0;
+    width: 100%;
+  }
+  .cg-icoUserContainerLoginSection {
+    text-align: center;
+    color: var(--accent);
+    margin-bottom: 20px;
+    font-size: 30px;
+    margin-left: 0;
+    .cg-ico-user {
+      display: none;
+    }
+  }
+  .cg-loginButton {
+    border: none;
+    margin-top: 30px;
+    > div {
+      font-weight: 600;
+    }
+  }
+  input {
+    width: 100%;
+    max-width: 100%;
+    background: var(--mainBg);
+    border: 0;
+    border-radius: 0;
+    color: var(--mainBgCol);
+  }
+  input:-webkit-autofill {
+    box-shadow: 0 0 0 1000px var(--mainBg) inset;
+    -webkit-text-fill-color: var(--mainBgCol);
+  }
+}
+.cart-fixed-content {
+  background: var(--mainBg) !important;
+  .result-close-box {
+    border-left: none;
+    position: absolute;
+    top: 0;
+    right: 5%;
+  }
+  .arrow-container {
+    width: 40px;
+  }
+  .shopping-cart-date-close-btn {
+    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/delete.svg)
+      no-repeat center center;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+  }
+  .coupon-result-text-box {
+    width: 90%;
+  }
+  .effectiveCartContainer {
+    background: var(--mainBg);
+    color: var(--col1);
+    margin: 0;
+    width: 100%;
+    border: none;
+  }
+  .coupon-multiple-amount-input,
+  .sistemi-input-result {
+    background: var(--tableBorders);
+    border: none;
+    color: var(--col1);
+  }
+  .nav-pills {
+    background: var(--secondary-bg);
+    color: var(--secondary-color);
+  }
+  .tab-coupon-final-count-box {
+    font-weight: 400;
+  }
+  .vincita-totale {
+    background: var(--teableSubHeadersBg);
+    margin-left: 0;
+    width: 100%;
+    border-radius: 0;
+    color: var(--teableSubHeadersCol);
+    padding: 10px 0px;
+    box-shadow: none;
+    border: none;
+    font-size: 13px;
+    text-transform: inherit;
+    > div:first-child {
+      opacity: 0.8;
+    }
+    .potential-win-multiple {
+      font-weight: 500;
+      font-size: 18px;
+    }
+  }
+  .container-bet-bet-refill {
+    display: flex;
+    > .btn {
+      box-shadow: none;
+      border-radius: 0;
+      border: none;
+      flex: 1 1;
+      > div {
+        padding-top: 13px;
+      }
+    }
+  }
+}
+body .reservationAreaContainer {
+  background: var(--secondary-bg);
+  box-shadow: 0 1px 5px #242424;
+  box-shadow: none;
+  .mainText {
+    padding-top: 6%;
+  }
+}
+body .formReloadReservation > .reloadReservationButton {
+  background: var(--accent);
+  color: var(--accent-txt);
+}
+#coupon-prenotazioni {
+  padding: 10px 0px;
+}
+.headerPrenotazioniEffettuate {
+  width: 97%;
+  height: 29px;
+  border-radius: 5px;
+  background: var(--secondary-bg);
+  color: var(--secondary-txt);
+  margin: 15px 1.5%;
+}
+.border-bottom {
+  background: var(--accent);
+}
+.multiple_number,
+.single_number {
+  background: none var(--accent) !important;
+  color: var(--accent-txt) !important;
+}
+.border-bottom {
+  background: var(--accent);
+}
+
+.cg-menuTabMobile {
+  .cg-tabLayerMobile {
+    background: var(--bg1);
+    color: var(--col1);
+  }
+  .cg-field-wrapper {
+    background: var(--teableSubHeadersBg);
+    color: var(--teableSubHeadersCol);
+    border: 1px solid var(--tableBorders);
+  }
+  .cg-function-field {
+    background: var(--teableHeadersBg);
+    color: var(--teableSubHeadersCol);
+    border-bottom: 1px solid var(--tableBorders);
+  }
+  #cg-logged-section-logout {
+    background: var(--accent-bg);
+    color: var(--accent-txt);
+  }
+}
+
+.popup-content {
+  background: var(--mainBg);
+  color: var(--col1);
+  border: 1px solid var(--tableBorders);
+  .event-desc {
+    color: var(--col1);
+  }
+  .event-desc:not(:last-child) {
+    border-bottom: 1px solid var(--tableBorders);
+  }
+}
+.shopping-cart-result-box {
+  margin: 5px 5px;
+
+  .coupon-result-text-box.multiple_live_entry:before,
+  .system-master.system_live_entry:before {
+    background: #b30c00;
+  }
+
+  .cart-desc-scom {
+    font-size: 11px;
+    color: var(--teableSubHeadersCol);
+    opacity: 0.7;
+  }
+  .coupon-result-title {
+    font-size: 13px;
+    opacity: 0.8;
+    font-weight: 400;
+  }
+  .title-winner {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--accent);
+    opacity: 0.8;
+  }
+  .right.bold {
+    font-weight: 400;
+    color: var(--accent);
+    opacity: 0.8;
+  }
+}
 /*:root {
 --top-navbar-color:#1a1f23;
 --bottom-navbar-color:#1a1f23!important;
@@ -45,30 +490,39 @@
 --button-slider-text-color: #000000;
 }*/
 
-// body {
-//   background: #404040 !important;
-// }
+body {
+  background: var(--bg1) !important;
+  color: var(--col1) !important;
+}
 
-// .contentMain {
-//   background: #404040 !important;
-// }
+.contentMain {
+  background: var(--bg1) !important;
+  color: var(--col1) !important;
+}
 
-// .loader-container {
-//   background: #404040 !important;
-// }
+.loader-container {
+  background: var(--bg1) !important;
+  color: var(--col1) !important;
+}
 
-// .bouncing-loader > div {
-//   background: #ffd919 !important;
-// }
+.bouncing-loader > div {
+  background: var(--accent) !important;
+}
 
-// .cg-nav-logo {
-//   background-image: url("/external_cms/SIRPLAY/logo_siriplay.png");
-//   height: 40px;
-//   width: 100%;
-//   position: absolute;
-//   top: 5px;
-// }
+.cg-nav-logo {
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  top: 3px;
+  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/sirplay_logo.svg);
+  left: -37px;
+}
 
+.cg-bank-subsection {
+  .xp-field-wrapper {
+    background: transparent;
+  }
+}
 // .cg-info-popup > div {
 //   background-color: #1a1f23 !important;
 //   border-radius: 0px !important;
@@ -121,79 +575,88 @@
 //   border-radius: 0px !important;
 // }
 
-// /* ico */
-// .cg-ico-prematch,
-// .cg-ico-sport,
-// .cg-slide-ico-prematch {
-//   background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-prematch.svg) !important;
-// }
+/* ico */
+.cg-ico-prematch,
+.cg-ico-sport,
+.cg-slide-ico-prematch {
+  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/sport.svg) !important;
+}
 
-// #cg-slide-live-button .cg-ico-prematch {
-//   background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-live.svg) !important;
-// }
+#cg-slide-live-button .cg-ico-prematch {
+  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/live.svg) !important;
+}
 
-// .cg-ico-live {
-//   background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-live.svg) !important;
-// }
+.cg-ico-live {
+  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/live.svg) !important;
+}
 
-// .cg-ico-cart {
-//   background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/footer-icons/footer-cart.svg) !important;
-// }
-// .cg-ico-casino {
-//   background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-casino.svg) !important;
-// }
+.cg-ico-cart {
+  background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/footer-icons/footer-cart.svg) !important;
+}
+.cg-ico-casino {
+  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/casino.svg) !important;
+}
 
-// .cg-slide-ico-poker {
-//   background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-poker.svg) !important;
-// }
+.cg-slide-ico-poker {
+  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/poker.svg) !important;
+}
 
-// .cg-slide-ico-bingo {
-//   background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-bingo.svg) !important;
-// }
+.cg-slide-ico-bingo {
+  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/bingo.svg) !important;
+}
 
-// .cg-ico-user {
-//   background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/footer-icons/user2.svg);
-// }
+.cg-ico-user {
+  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/user.svg);
+}
 
-// .cg-searchIcoLite {
-//   background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/icons-prematch/search-icon.svg) !important;
-// }
+.cg-searchIcoLite {
+  background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/icons-prematch/search-icon.svg) !important;
+}
 
-// .cg-homeMenuIcoLite {
-//   background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/mobile-images/ico-images/menu-options.svg");
-// }
+.cg-homeMenuIcoLite {
+  background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/mobile-images/ico-images/menu-options.svg");
+}
 
-// .cg-showedIco {
-//   background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/contogioco/showed-eye-white.svg");
-// }
+.cg-showedIco {
+  background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/contogioco/showed-eye-white.svg");
+}
 
-// .cg-notShowedIco {
-//   text-align: center;
-//   background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/contogioco/hidden-eye-white.svg");
-// }
-// .cg-ico-search {
-//   background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/footer-icons-casino/footer-search.svg") !important;
-// }
+.cg-notShowedIco {
+  text-align: center;
+  background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/contogioco/hidden-eye-white.svg");
+}
+.cg-ico-search {
+  background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/search.svg") !important;
+}
 
-// .cg-slide-ico-lotterie {
-//   background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-lottery.svg");
-// }
+.cg-slide-ico-lotterie {
+  background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-lottery.svg");
+}
 
-// .cg-slide-ico-casino-live {
-//   background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-livecasino.svg") !important;
-// }
+.cg-slide-ico-casino-live {
+  background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/casinoL.svg") !important;
+}
 
-// .cg-slide-ico-virtual {
-//   background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-virtual.svg") !important;
-// }
+.cg-slide-ico-virtual {
+  background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/virual.svg") !important;
+}
 
-// .cg-slide-ico-carte {
-//   background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-cardgames.svg) !important;
-// }
+.cg-slide-ico-carte {
+  background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-cardgames.svg) !important;
+}
 
-// .cg-slide-ico-gv {
-//   background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-scratch.svg) !important;
-// }
+.cg-slide-ico-gv {
+  background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-scratch.svg) !important;
+}
+.ion-md-send:before {
+  font-size: 25px;
+  color: #ffe01a;
+}
+
+.ion-md-albums:before {
+  font-size: 25px;
+  color: #ffe01a;
+}
 
 // .cg-signup-userdata-icon {
 //   background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/mobile-images/ico-images/user-white.svg");
@@ -503,14 +966,31 @@
 //   height: 35px !important;
 //   width: 35px !important;
 // }
-// .cg-slide-ico-home {
-//   background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-home.svg) !important;
-// }
+.cg-slide-ico-home {
+  background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-home.svg) !important;
+}
 
-// .cg-slide-ico-promo {
-//   background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-promotions.svg) !important;
-// }
+.cg-slide-ico-promo {
+  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/promotions.svg) !important;
+}
 
+.cg-recover-separator {
+  background: var(--teableSubHeadersBg);
+  text-shadow: none;
+  color: var(--teableSubHeadersCol);
+  border-top: 1px solid var(--tableBorders);
+  box-shadow: none;
+}
+body {
+  .cg-recover-input-border {
+    background: var(--bg1);
+    color: var(--col1);
+    .cg-recover-input {
+      background-color: transparent !important;
+      color: var(--col1) !important;
+    }
+  }
+}
 // .cg-ico-message {
 //   background-image: url("img/msg-white.svg") !important;
 // }

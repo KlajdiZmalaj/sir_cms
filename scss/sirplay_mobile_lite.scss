@@ -1,63 +1,65 @@
-:root {
-  --primary-color: white;
-  --primary-color-border: rgba(0, 0, 0, 0.12);
-  --secondary-color: white;
-  --heading-color: #363e42;
-  --heading-border-color: rgba(255, 255, 255, 0.8);
-  --heading-text-color: white;
-  --nav-text-color: white;
-  --nav-item-color: white;
-  --nav-item-selected-color: rgba(255, 255, 255, 0.12);
-  --nav-selection-color: #fdcd09;
-  --list-element-color: #fff;
-  --list-element-border-color: rgba(0, 0, 0, 0.12);
-  --popup-background-color: #fff;
-  --popup-border-color: #cbcdd1;
-  --top-navbar-color: #fff;
-  --top-navbar-text-color: #2b2b2b;
-  --bottom-navbar-color: white;
-  --bottom-navbar-border-color: rgba(0, 0, 0, 0.12);
-  --bottom-navbar-text-color: #2b2b2b;
-  --bet-background-color: #ededed;
-  --bet-border-color: rgba(0, 0, 0, 0.12);
-  --separator-color: rgba(0, 0, 0, 0.12);
-  --message-box-color: #1f2428;
-  --message-box-text-color: white;
-  --nav-go-back-color: #141d22;
-  --nav-go-back-border-color: rgba(255, 255, 255, 0.12);
-  --nav-go-back-text-color: white;
-  --nav-filtri-color: white;
-  --nav-filtri-border-color: rgba(0, 0, 0, 0.12);
-  --nav-filtri-text-color: #2b2b2b;
-  --nav-temporal-filter-color: #141d22;
-  --nav-temporal-filter-border-color: transparent;
-  --nav-temporal-filter-text-color: #2b2b2b;
-  --nav-live-sports-color: #141d22;
-  --nav-live-sports-border-color: transparent;
-  --nav-live-sports-text-color: #2b2b2b;
-  --popup-selection-color: #fccd06;
-  --field-wrapper-background: #2e3639;
-  --general-field-background: #fffffb;
-  --fixed-field-background: #efefef;
-  --arrow-color: #fccd06;
-  --nome-esito-color: #2b2b2b;
-  --quota-color: #2b2b2b;
-  --selector-color: #f5f5f6;
-  --selector-border-color: #cbcdd1;
-  --notification-circle-color: #fccd06;
-  --notification-circle-text-color: black;
-  --search-navbar-color: #fccd06;
-  --search-navbar-text-color: #2b2b2b;
-  --score-background-color: #1daa63;
-  --score-text-color: white;
-  --period-desc-color: #0d3652;
-  --deposit-button-background-color: #1daa63;
-  --deposit-button-text-color: white;
-  --loader-color: #fccd06;
-}
+@import "vars";
+
+// :root {
+//   --primary-color: white;
+//   --primary-color-border: rgba(0, 0, 0, 0.12);
+//   --secondary-color: white;
+//   --heading-color: #363e42;
+//   --heading-border-color: rgba(255, 255, 255, 0.8);
+//   --heading-text-color: white;
+//   --nav-text-color: white;
+//   --nav-item-color: white;
+//   --nav-item-selected-color: rgba(255, 255, 255, 0.12);
+//   --nav-selection-color: #fdcd09;
+//   --list-element-color: #fff;
+//   --list-element-border-color: rgba(0, 0, 0, 0.12);
+//   --popup-background-color: #fff;
+//   --popup-border-color: #cbcdd1;
+//   --top-navbar-color: #fff;
+//   --top-navbar-text-color: #2b2b2b;
+//   --bottom-navbar-color: white;
+//   --bottom-navbar-border-color: rgba(0, 0, 0, 0.12);
+//   --bottom-navbar-text-color: #2b2b2b;
+//   --bet-background-color: #ededed;
+//   --bet-border-color: rgba(0, 0, 0, 0.12);
+//   --separator-color: rgba(0, 0, 0, 0.12);
+//   --message-box-color: #1f2428;
+//   --message-box-text-color: white;
+//   --nav-go-back-color: #141d22;
+//   --nav-go-back-border-color: rgba(255, 255, 255, 0.12);
+//   --nav-go-back-text-color: white;
+//   --nav-filtri-color: white;
+//   --nav-filtri-border-color: rgba(0, 0, 0, 0.12);
+//   --nav-filtri-text-color: #2b2b2b;
+//   --nav-temporal-filter-color: #141d22;
+//   --nav-temporal-filter-border-color: transparent;
+//   --nav-temporal-filter-text-color: #2b2b2b;
+//   --nav-live-sports-color: #141d22;
+//   --nav-live-sports-border-color: transparent;
+//   --nav-live-sports-text-color: #2b2b2b;
+//   --popup-selection-color: #fccd06;
+//   --field-wrapper-background: #2e3639;
+//   --general-field-background: #fffffb;
+//   --fixed-field-background: #efefef;
+//   --arrow-color: #fccd06;
+//   --nome-esito-color: #2b2b2b;
+//   --quota-color: #2b2b2b;
+//   --selector-color: #f5f5f6;
+//   --selector-border-color: #cbcdd1;
+//   --notification-circle-color: #fccd06;
+//   --notification-circle-text-color: black;
+//   --search-navbar-color: #fccd06;
+//   --search-navbar-text-color: #2b2b2b;
+//   --score-background-color: #1daa63;
+//   --score-text-color: white;
+//   --period-desc-color: #0d3652;
+//   --deposit-button-background-color: #1daa63;
+//   --deposit-button-text-color: white;
+//   --loader-color: #fccd06;
+// }
 
 body {
-  background: #404040 !important;
+  background: var(--mainBg) !important;
 }
 
 .nav-logo {
@@ -74,117 +76,267 @@ body {
 
 .list-heading {
   color: #ffffff !important;
+  font-weight: 400;
+  padding-left: 20px;
 }
+
 .main-content {
-  background: #333 !important;
+  background: var(--teableSubHeadersBg) !important;
 }
 
-.list-element {
-  background: #15181d !important;
-  border-color: gray !important;
+#nav-container {
+  #nav-go-back {
+    background: var(--bg1);
+    color: var(--col1);
+    .arrow-container {
+      width: 40px;
+      .arrow {
+        color: var(--accent) !important;
+      }
+    }
+  }
+  .nav-slider-item-container {
+    border-right: 1px solid var(--tableBorders);
+    &.selected {
+      border-bottom: solid 2px var(--accent);
+    }
+    &:last-child {
+      border-right: 0;
+    }
+  }
 }
 
-.list-element-text,
-.list-element-info,
-.text-small,
-.event-desc {
-  color: white !important;
-}
+header {
+  background: var(--teableHeadersBg);
+  .bet-type-selector {
+    background: var(--secondary-bg);
+    border: solid 1px var(--tableBorders);
+    color: var(--secondary-txt);
+  }
 
-.event-desc {
-  background: #2e3639;
-  border-bottom: 1px solid gray !important;
-}
+  .search-overlay {
+    background: var(--bg1);
+    .input-container {
+      background: var(--mainBg);
+      color: var(--mainBgCol);
+      border-bottom: 1px solid var(--tableBorders);
+    }
+  }
+  #input-search-events {
+    color: var(--mainBgCol);
+  }
 
-.nav-item,
-.bottom-navbar {
-  background: #1a1f23 !important;
+  #nav-vista-estesa {
+    background: var(--teableHeadersBg);
+    color: var(--secondary-txt);
+  }
+  #nav-gruppi-scommessa,
+  #nav-bet-type,
+  #nav-classe-scommessa {
+    background: var(--teableHeadersBg);
+  }
 }
+#main-wrapper {
+  .menu-container {
+    a {
+      background: var(--mainBg);
+      color: var(--mainBgCol);
+      border-bottom: 1px solid var(--tableBorders);
+      font-size: 14px;
+      .prematch-sport-img {
+        width: 18px;
+        height: 18px;
+      }
+    }
+    .striped:nth-of-type(2n) {
+      //   background: var(--bg1);
+      color: var(--col1);
+    }
+  }
 
-.nav-live-sports,
-.bet-type-selector,
-.popup-content {
-  background: #20282b;
+  .heading {
+    background: var(--teableSubHeadersBg);
+    color: var(--teableSubHeadersCol);
+    border: none;
+    margin-bottom: 0px;
+    font-weight: 500;
+  }
+  .avvenimento {
+    background: var(--teableHeadersBg);
+    color: var(--teableHeadersCol);
+    .nome-avvenimento {
+      color: var(--teableHeadersCol);
+    }
+  }
+  .esiti-container {
+    border-bottom: 1px solid var(--bg1);
+    border-top: 1px solid #000;
+    background: transparent;
+    padding: 0px;
+    .esito {
+      @include quote3d;
+      margin: 0;
+      border: none !important;
+      .nome-esito {
+        color: var(--teableHeadersCol);
+      }
+      .quota-esito {
+        color: var(--accent);
+      }
+      &.bet-selected {
+        background: var(--accent);
+        .nome-esito {
+          color: var(--accent-txt);
+        }
+        .quota-esito {
+          color: var(--accent-txt);
+        }
+      }
+    }
+  }
 }
+#nav-live-sports {
+  .nav-slider-item-container {
+    border-right: 1px solid var(--tableBorders) !important;
+  }
+}
+#oddslist {
+  .list-element {
+    background: transparent;
+    font-size: 14px;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 30px;
+  }
+}
+// .overview-live-fluid-giocabilita-s {
+//     border: none !important;
+//     width: 100%;
+//     height: 32px;
+//     line-height: 0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     @include quote3d;
+//   }
 
-#nav-classe-scommessa,
-.overlay-content {
-  background: #20282b !important;
-  color: white !important;
+.arrow,
+.nav-section-title.expandable::after,
+.nav-breadcrumb:after {
+  color: var(--accent);
 }
+.current-period {
+  color: var(--teableHeadersCol);
+}
+.event-desc.selected {
+  border-left: solid 4px var(--accent);
+}
+// .list-element {
+//   background: #15181d !important;
+//   border-color: gray !important;
+// }
 
-#nav-bet-type {
-  background: #15181d;
-}
+// .list-element-text,
+// .list-element-info,
+// .text-small,
+// .event-desc {
+//   color: white !important;
+// }
 
-#nav-gruppi-scommessa,
-.esiti-container {
-  background: #15181d !important;
-}
+// .event-desc {
+//   background: #2e3639;
+//   border-bottom: 1px solid gray !important;
+// }
 
-#classe-scommessa-selector,
-#tipo-scommessa-selector {
-  border: none !important;
-}
+// .nav-item,
+// .bottom-navbar {
+//   background: #1a1f23 !important;
+// }
 
-.avvenimento {
-  background: #15181d !important;
-}
+// .nav-live-sports,
+// .bet-type-selector,
+// .popup-content {
+//   background: #20282b;
+// }
 
-.info-score {
-  background: linear-gradient(
-    180deg,
-    #a0d743,
-    #a0d743 49%,
-    #a0d743 50%,
-    #a0d743
-  ) !important;
-}
+// #nav-classe-scommessa,
+// .overlay-content {
+//   background: #20282b !important;
+//   color: white !important;
+// }
 
-.esito {
-  background: #d4dde2 !important;
-  color: black !important;
-}
+// #nav-bet-type {
+//   background: #15181d;
+// }
 
-.nome-esito,
-.quota-esito {
-  color: black !important;
-}
+// #nav-gruppi-scommessa,
+// .esiti-container {
+//   background: #15181d !important;
+// }
 
-.bet-selected {
-  background: #fccd09 !important;
-}
+// #classe-scommessa-selector,
+// #tipo-scommessa-selector {
+//   border: none !important;
+// }
 
-.heading,
-#category-filter,
-#bet-type-current-selection {
-  border: none !important;
-}
+// .avvenimento {
+//   background: #15181d !important;
+// }
 
-.heading {
-  background: linear-gradient(180deg, #f8cb24, #e79211) !important;
-  border-radius: 0px !important;
-  font-weight: 500 !important;
-}
+// .info-score {
+//   background: linear-gradient(
+//     180deg,
+//     #a0d743,
+//     #a0d743 49%,
+//     #a0d743 50%,
+//     #a0d743
+//   ) !important;
+// }
 
-.manif-heading {
-  background: #20282b !important;
-  border-bottom: 1px solid gray !important;
-}
+// .esito {
+//   background: #d4dde2 !important;
+//   color: black !important;
+// }
 
-#input-search-events {
-  color: black !important;
-}
+// .nome-esito,
+// .quota-esito {
+//   color: black !important;
+// }
 
-::placeholder {
-  color: black !important;
-}
-.container-bet-bet-refill > .btn,
-.vincita-totale {
-  border-radius: 0px !important;
-  border: none !important;
-  box-shadow: none !important;
-}
+// .bet-selected {
+//   background: #fccd09 !important;
+// }
+
+// .heading,
+// #category-filter,
+// #bet-type-current-selection {
+//   border: none !important;
+// }
+
+// .heading {
+//   background: linear-gradient(180deg, #f8cb24, #e79211) !important;
+//   border-radius: 0px !important;
+//   font-weight: 500 !important;
+// }
+
+// .manif-heading {
+//   background: #20282b !important;
+//   border-bottom: 1px solid gray !important;
+// }
+
+// #input-search-events {
+//   color: black !important;
+// }
+
+// ::placeholder {
+//   color: black !important;
+// }
+// .container-bet-bet-refill > .btn,
+// .vincita-totale {
+//   border-radius: 0px !important;
+//   border: none !important;
+//   box-shadow: none !important;
+// }
 
 #cancelbutton {
   background: #d01f0f !important;
@@ -198,75 +350,75 @@ body {
   background: #25a125 !important;
 }
 
-.sport-heading {
-  background: #15181d !important;
-  border-bottom: 1px solid gray !important;
-}
+// .sport-heading {
+//   background: #15181d !important;
+//   border-bottom: 1px solid gray !important;
+// }
 
-.wrapper-login-section {
-  background: #20282b !important;
-}
+// .wrapper-login-section {
+//   background: #20282b !important;
+// }
 
-.registerButton,
-.loginLabel,
-.restorePasswordLink {
-  color: white !important;
-}
+// .registerButton,
+// .loginLabel,
+// .restorePasswordLink {
+//   color: white !important;
+// }
 
-.deposit-button {
-  background: #00b0dc !important;
-}
+// .deposit-button {
+//   background: #00b0dc !important;
+// }
 
-.icoUserContainerLoggedSection > .userLabel,
-.filled-label,
-#account-number-filled-field,
-#balance-filled-field,
-#balance-withdrawable-filled-field,
-#balance-bonus-filled-field {
-  color: white !important;
-}
+// .icoUserContainerLoggedSection > .userLabel,
+// .filled-label,
+// #account-number-filled-field,
+// #balance-filled-field,
+// #balance-withdrawable-filled-field,
+// #balance-bonus-filled-field {
+//   color: white !important;
+// }
 
-.function-field {
-  color: white !important;
-  background: #15181d !important;
-}
+// .function-field {
+//   color: white !important;
+//   background: #15181d !important;
+// }
 
-.field-container {
-  border-bottom: 1px solid gray !important;
-}
+// .field-container {
+//   border-bottom: 1px solid gray !important;
+// }
 
-.lastFieldContainer {
-  border-bottom-left-radius: 0% !important;
-  border-bottom-right-radius: 0% !important;
-}
+// .lastFieldContainer {
+//   border-bottom-left-radius: 0% !important;
+//   border-bottom-right-radius: 0% !important;
+// }
 
-/* ico */
-.ico-prematch {
-  background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/mobile-images/ico-images/prematch.svg");
-}
+// /* ico */
+// .ico-prematch {
+//   background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/mobile-images/ico-images/prematch.svg");
+// }
 
-.ico-live {
-  background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/mobile-images/ico-images/live.svg");
-}
+// .ico-live {
+//   background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/mobile-images/ico-images/live.svg");
+// }
 
-.ico-cart {
-  background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/mobile-images/ico-images/shopping-cart.svg");
-}
-.ico-casino {
-  background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/mobile-images/ico-images/casino.svg");
-}
+// .ico-cart {
+//   background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/mobile-images/ico-images/shopping-cart.svg");
+// }
+// .ico-casino {
+//   background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/mobile-images/ico-images/casino.svg");
+// }
 
-.ico-user {
-  background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/mobile-images/ico-images/user.svg");
-}
+// .ico-user {
+//   background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/mobile-images/ico-images/user.svg");
+// }
 
-.searchIcoLite {
-  background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/mobile-images/ico-images/search-icon.svg");
-}
+// .searchIcoLite {
+//   background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/mobile-images/ico-images/search-icon.svg");
+// }
 
-.homeMenuIcoLite {
-  background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/mobile-images/ico-images/menu-options.svg");
-}
+// .homeMenuIcoLite {
+//   background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/mobile-images/ico-images/menu-options.svg");
+// }
 
 /* widget live*/
 /*
