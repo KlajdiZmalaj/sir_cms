@@ -99,9 +99,11 @@ a:focus {
 .live-menu-title-header-tournament {
   background: var(--mainBg);
 }
+
 .live-menu-title a > span:nth-child(2) {
   font-size: 8pt;
 }
+
 /* avvenimento menu a sx, font color collapser disciplina */
 .live-menu-title a,
 .live-menu-title a:hover {
@@ -111,16 +113,16 @@ a:focus {
   font-weight: 500;
   font-family: "Roboto", sans-serif;
 }
+
 #menu-live {
   .live-collapse-detail {
     background: none;
     position: relative;
+    top: 6px;
+    line-height: 22px;
     &:after {
       content: "\f3bf";
       font-family: "Font Awesome 5 Pro";
-      position: absolute;
-      top: 6px;
-      left: 3px;
     }
   }
   .collapse-live-menu li,
@@ -908,7 +910,7 @@ a:focus {
   font-family: "Roboto", sans-serif;
   @include borderBottom3d;
   &.hand-pointer {
-    background-color: var(--primary-bg);
+    background: var(--green);
     .left-menu-sport-title {
       text-transform: uppercase !important;
     }
@@ -1211,13 +1213,17 @@ a:focus {
 /* menu piccolo di sinistra con le sole icone degli sport */
 #mini-submenu,
 #mini-live {
-  background: #8d8d8d;
-  background: -moz-linear-gradient(top, #8d8d8d 0%, #686868 100%);
-  background: -webkit-linear-gradient(top, #8d8d8d 0%, #686868 100%);
-  background: linear-gradient(to bottom, #8d8d8d 0%, #686868 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8d8d8d', endColorstr='#686868',GradientType=0 );
-  color: #fff;
+  background: var(--teableSubHeadersBg);
+  color: var(--teableSubHeadersCol);
   font-family: "Roboto", sans-serif;
+  box-shadow: none;
+}
+
+.ico-left-menu-expand {
+  background: url(https://#{$skinHost}/external_css/#{$skinName}/img/closed.svg)
+    no-repeat center center;
+  background-size: contain;
+  filter: invert(1);
 }
 
 /* sfondo lente di ingrandimento*/
@@ -2003,6 +2009,8 @@ html body .ico-lock-mini-button {
         content: "\f012";
         font-family: "Font Awesome 5 Pro";
         font-size: 16px;
+        top: 9px;
+        position: absolute;
       }
     }
     .ico-fav-live-singolo {
@@ -6598,7 +6606,7 @@ html {
     height: 230px;
     position: relative;
     display: block;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #1c1c1c;

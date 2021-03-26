@@ -564,6 +564,12 @@ body[subpage="ippica"] {
   }
 }
 
+body[subpage="live"] {
+  .logo {
+    bottom: 50px;
+  }
+}
+
 a.consulta-footer,
 a.consulta-chat {
   border-top-left-radius: 5px;
