@@ -426,13 +426,17 @@ a:focus {
 /* sezione centrale colore sfondo header manifestazione */
 .sport-team-title-container {
   background-image: none;
-  color: #fff;
-  background: #333;
+  color: var(--col1);
+  background: var(--bg1);
   font-family: "Roboto", sans-serif;
+  .arrow-tlt-black.collapse-btn {
+    height: 4px;
+    line-height: 4px;
+  }
 }
 /* sezione centrale colore font header manifestazione */
 .sport-team-title {
-  color: #cecece;
+  color: var(--teableHeadersCol);
   font-family: "Roboto", sans-serif;
 }
 /* sezione centrale colore sfondo header scommesse avvenimento */
@@ -1169,14 +1173,14 @@ a:focus {
 
 /*bottone esito "+122"*/
 .prematch-event-selected-btn-table td {
-  background-color: #101215;
+  background-color: var(--secondary-bg);
   font-family: "Roboto", sans-serif;
 }
 
 /* colore font descrizione esito bottone esito "+122" */
 .prematch-avvenimento-tbl-title {
-  color: #fff !important;
-  text-shadow: 0 0 1px #000 !important;
+  background-color: var(--secondary-bg);
+  color: var(--secondary-txt);
   font-family: "Roboto", sans-serif;
 }
 
@@ -2394,6 +2398,9 @@ body .fluid-overview-sport-title {
   padding-bottom: 1px;
   &.fluid-overview-live-time-td {
     padding-left: 5px;
+  }
+  &.fluid-prematch-matches-alias-td {
+    text-align: center;
   }
   .time-box {
     text-align: left;
@@ -4461,6 +4468,7 @@ td .btn:hover,
   border-bottom: 0;
   border-top: 0;
   border-right: 0;
+  width: 100%;
   // background: var(--secondary-bg);
 }
 
@@ -6644,7 +6652,11 @@ html {
       padding-top: 0;
       padding-bottom: 0;
       &.fluid-prematch-intertd-spacer {
-        width: 0;
+        width: 3px;
+        border-left: 1px solid var(--bg1);
+        &:first-child {
+          width: 0px;
+        }
       }
     }
     .match-stats-icon {
