@@ -182,6 +182,18 @@ html {
     transform: scale(0.98);
   }
 }
+
+body[page="xcasinolive"] {
+  .casino.cg-bg-live {
+    background: url(https://gradm-api.pcluster.info/api/skin/48/image/a8b17a54a5fe1e1c66d7e95f45785911.jpeg)
+      top center no-repeat !important;
+    background-attachment: fixed !important;
+  }
+  .casino #contentGames:before {
+    content: "";
+    background: none !important;
+  }
+}
 body[page="xcasino"] {
   .modal-body {
     background-color: var(--bg1);
@@ -284,7 +296,8 @@ body[page="xcasino"] {
   .exa_ico_jackpot,
   .exa_ico_suggeriti,
   .exa_ico_dice,
-  .exa_ico_carte {
+  .exa_ico_carte,
+  .exa_ico_live {
     filter: none;
     height: 20px;
     width: 20px;
@@ -851,9 +864,73 @@ a .colore-1 {
   color: var(--accent);
 }
 .promozioni-sfondo {
+  width: 1000px;
+  margin: 0 auto;
   .card {
     background: var(--secondary-bg);
-    border: 1px solid var(--tableBorders);
+    border: none;
+
+    .card-img-top,
+    .card-text {
+      display: none;
+    }
+
+    .card-body {
+      height: 300px;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      align-items: center;
+      color: var(--accent);
+    }
+
+    .d-flex.justify-content-center.align-items-center.margine-giu.margine-su {
+      display: none !important;
+    }
+
+    &[data-target="#cg-promo-3"]:after {
+      content: "";
+      background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/mulribonus.png);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+    &[data-target="#cg-promo-4"] {
+      display: none;
+    }
+    &[data-target="#cg-promo-5"]:after {
+      content: "";
+      background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/benvenutocasino.png);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      top: 5%;
+    }
+    &[data-target="#cg-promo-6"]:after {
+      content: "";
+      background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/bonusC.png);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: 70%;
+      left: 12%;
+      top: 5%;
+    }
+    &[data-target="#cg-promo-7"]:after {
+      content: "";
+      background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/benvbingo.png);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      top: 5%;
+    }
   }
 }
 
