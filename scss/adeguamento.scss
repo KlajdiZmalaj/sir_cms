@@ -289,7 +289,9 @@ a:focus {
   height: 36px;
   background: var(--teableHeadersBg);
   color: var(--teableSubHeadersCol);
-
+  .right {
+    display: flex;
+  }
   .btn-live {
     border-left: 1px solid var(--tableBorders);
     background-image: none;
@@ -959,7 +961,8 @@ a:focus {
 }
 /*manifestazione selezionata*/
 .manif-selected {
-  background-color: #ffe01a !important;
+  background-color: var(--accent)!important;
+  color: var(--accent-txt) !important;
   font-family: "Roboto", sans-serif;
 }
 /*bestseller colore di: Giorno & Ora, PARTITA, ESITI, VALORE IMPORTO, VINCITA TOTALE*/
@@ -6666,7 +6669,7 @@ html {
       padding-top: 0;
       padding-bottom: 0;
       &.fluid-prematch-intertd-spacer {
-        width: 3px;
+        width: 0px;
         border-left: 1px solid var(--bg1);
         &:first-child {
           width: 0px;
@@ -7368,4 +7371,49 @@ a.blocco-mosaico {
 .tennis,
 .football-sala {
   background: transparent;
+}
+
+#collapse_manifestazioni-concessinario {
+  li {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #151515;
+    .ico-flag.big {
+      display: block;
+      width: 100%;
+      text-align: center;
+      height: 24px;
+      margin-bottom: 4px;
+    }
+    &:last-child {
+      width: 100%;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      height: 27px;
+      padding: 2px;
+      padding-left: 30px;
+      .ico-flag.big {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+  .it.big {
+    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/flags/serieA.svg)
+      no-repeat top center;
+  }
+  .england.big {
+    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/flags/premierL.svg)
+      no-repeat top center;
+  }
+  .es.big {
+    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/flags/laliga.svg)
+      no-repeat top center;
+  }
+  .de.big {
+    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/flags/bundesL.svg)
+      no-repeat top center;
+  }
 }

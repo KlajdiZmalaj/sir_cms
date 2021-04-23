@@ -447,6 +447,7 @@ body[page="xcasino"] {
 //   left: -93px;
 //   top: 50px;
 // }
+
 @keyframes fadeInTop {
   from {
     opacity: 0;
@@ -476,6 +477,7 @@ body[page="xcasino"] {
     }
   }
 }
+
 .menu-principale-barra .sottomenu-principale ul a {
   &.active,
   &:hover {
@@ -571,6 +573,7 @@ body[subpage="poker"],
 body[subpage="xbingo"],
 body[subpage="virtuali"],
 body[subpage="ippica"],
+body[page="promo"],
 body[subpage="promo"] {
   .logo {
     bottom: 11px;
