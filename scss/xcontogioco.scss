@@ -126,6 +126,9 @@ p.testo-disclaimer {
   }
   #nascondimenu {
     background: var(--intermediate-bar-bg-color);
+    .cg-checkbet-container {
+      height: 50px;
+    }
     .row.barra-intermedia {
       width: 1240px;
       margin: 0 auto;
@@ -188,6 +191,7 @@ body[page="xcasinolive"] {
     background: url(https://gradm-api.pcluster.info/api/skin/48/image/a8b17a54a5fe1e1c66d7e95f45785911.jpeg)
       top center no-repeat !important;
     background-attachment: fixed !important;
+    background-position-y: 50px !important;
   }
   .casino #contentGames:before {
     content: "";
@@ -971,5 +975,11 @@ body {
         background: var(--bg1);
       }
     }
+  }
+}
+
+body[page="contidigioco"] {
+  #nascondimenu .logo {
+    position: relative;
   }
 }
