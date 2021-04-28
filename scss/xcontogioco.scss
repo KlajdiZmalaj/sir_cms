@@ -767,7 +767,7 @@ body[subpage="live"] {
     }
   }
 }
-.modal-account {
+body .modal-account {
   background: var(--mainBg);
   color: var(--mainBgCol);
   border: 1px solid var(--tableBorders);
@@ -817,10 +817,16 @@ body[subpage="live"] {
     }
   }
 }
-.contenuto-modal-account {
+body .contenuto-modal-account {
   background: var(--teableSubHeadersBg);
   color: var(--teableSubHeadersCol);
   border: 1px solid var(--tableBorders);
+
+  .bg-bianco {
+    background: var(--teableSubHeadersBg);
+    color: var(--teableSubHeadersCol);
+  }
+
   .tabella_giocate thead th {
     color: var(--mainBgCol);
   }
@@ -865,7 +871,7 @@ body[subpage="live"] {
 .colore-1 a,
 a.colore-1,
 a .colore-1 {
-  color: var(--col1);
+  color: var(--green);
 }
 .cg-function-arrow {
   color: var(--accent);
@@ -978,8 +984,29 @@ body {
   }
 }
 
-body[page="contidigioco"] {
+.cg-pvr-page {
   #nascondimenu .logo {
     position: relative;
+    bottom: 0px;
+  }
+}
+
+.barra-intermedia-footer {
+  .row.cg-footer-sections {
+    justify-content: flex-start;
+    position: relative;
+    &::after {
+      content: "powered by";
+      background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/altechLabs.svg);
+      position: absolute;
+      width: 210px;
+      height: 100%;
+      background-repeat: no-repeat;
+      right: 0;
+      top: 4px;
+      background-size: 120px;
+      background-position-x: right;
+      text-transform: uppercase;
+    }
   }
 }
