@@ -958,3 +958,18 @@ body {
     border-top: 1px solid var(--tableBorders);
   }
 }
+
+.cg-pvr-page {
+  .container.contenitore-landing-2 {
+    .landing-live-now {
+      .titolo-widget-quote {
+        background: var(--bg1);
+      }
+    }
+    .tabellaQuote {
+      .tabellaQuoteCella {
+        background: var(--bg1);
+      }
+    }
+  }
+}
