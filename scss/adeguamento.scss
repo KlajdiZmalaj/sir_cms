@@ -512,6 +512,16 @@ a:focus {
   color: #fff;
   border: none;
   font-family: "Roboto", sans-serif;
+  &#print-all {
+    .right {
+      span.btn-live {
+        color: #fff !important;
+        i {
+          color: #fff !important;
+        }
+      }
+    }
+  }
 }
 
 .nav-tabs > li {
@@ -961,7 +971,7 @@ a:focus {
 }
 /*manifestazione selezionata*/
 .manif-selected {
-  background-color: var(--accent)!important;
+  background-color: var(--accent) !important;
   color: var(--accent-txt) !important;
   font-family: "Roboto", sans-serif;
 }
@@ -1620,6 +1630,7 @@ img {
 .titoloNazioneStampaQuote {
   color: #b9b9b9;
   font-family: "Roboto", sans-serif;
+  border: 1px solid var(--teableHeadersCol);
 }
 
 .coupon-result-title {
