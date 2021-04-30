@@ -591,6 +591,12 @@ body[page="xcasino"] {
   content: "";
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/movimentazioni.svg);
 }
+
+.menu-principale-barra ul.menu-principale a[data-ref="mieipunti"]:before {
+  content: "";
+  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/points.svg);
+}
+
 .menu-principale-barra ul.menu-principale a[data-ref="gestionepunto"]:before {
   content: "";
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/pointM.svg);
