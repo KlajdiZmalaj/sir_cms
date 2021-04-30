@@ -1861,7 +1861,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 body .ui-slider .ui-slider-handle {
   background-image: none !important;
-  background: #f6a120 !important;
+  background: var(--accent) !important;
   font-family: "Roboto", sans-serif;
 }
 
@@ -6899,8 +6899,8 @@ html {
     margin: 0;
   }
   .ui-slider .ui-slider-handle {
-    border-radius: 0;
-    width: 5px !important;
+    border-radius: 50px;
+    width: 12px !important;
   }
   a.ui-slider-handle.ui-state-default.ui-corner-all:before {
     content: "";

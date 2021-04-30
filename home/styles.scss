@@ -1,0 +1,89 @@
+html:root {
+  --active-color: #ffe01a;
+  --teableHeadersBg: #2c2c2c;
+  --teableHeadersCol: #a0a0a0;
+  --teableSubHeadersBg: #525252;
+  --teableSubHeadersCol: #ffffff;
+  --tableBorders: #5c5c5c;
+  --accent: #ffe01a;
+  --accent-bg: #ffe01a;
+  --accent-txt: #222;
+  --primary-bg: #4a4a4a;
+  --primary-txt: #fff;
+  --secondary-bg: #212121;
+  --secondary-txt: #fff;
+  --mainBg: #333333;
+  --mainBgCol: #fff;
+  --bg1: #404040;
+  --col1: #fff;
+}
+
+body {
+  background-color: var(--secondary-bg);
+  margin: 0;
+  img {
+    width: 100%;
+  }
+  .bottomBanners {
+    max-width: 1247px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto 38%;
+    grid-gap: 5px;
+    width: 100%;
+    padding: 20px 0;
+    .bottomBanner {
+      position: relative;
+      a {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        filter: grayscale(1);
+      }
+      &:last-child {
+        img {
+          filter: grayscale(0);
+        }
+      }
+      &:hover {
+        img {
+          filter: grayscale(0);
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .bottomBanners {
+      display: grid;
+      grid-template-columns: auto;
+      grid-gap: 10px;
+      .bottomBanner {
+        width: 100%;
+        img {
+          width: 100%;
+          height: auto;
+          filter: grayscale(1);
+        }
+        &:last-child {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          img {
+            filter: grayscale(0);
+          }
+        }
+        &:hover {
+          img {
+            filter: grayscale(0);
+          }
+        }
+      }
+    }
+  }
+}

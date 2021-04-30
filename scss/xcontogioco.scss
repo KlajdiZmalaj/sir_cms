@@ -95,6 +95,24 @@ p.testo-disclaimer {
 .barra-superiore .blocco-header {
   font-size: 12px !important;
 }
+.barra-superiore .blocco-header.flex-container.cg-contatti {
+  a span {
+    font-size: 0 !important;
+  }
+}
+.barra-superiore .blocco-header.flex-container.cg-contatti {
+  .fab.fa-whatsapp:after {
+    content: "Whatsapp 3511909851";
+    position: relative;
+    left: 5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+  }
+  .fab.fa-whatsapp {
+    font-size: 13px;
+  }
+}
 .container-fluid.fissato-alto {
   .row.barra-superiore {
     height: 30px;
@@ -561,6 +579,40 @@ body[page="xcasino"] {
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/sport.svg);
 }
 
+.menu-principale-barra ul.menu-principale a[data-ref="contidigioco"]:before {
+  content: "";
+  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/contiGioco.svg);
+}
+.menu-principale-barra ul.menu-principale a[data-ref="ricerche"]:before {
+  content: "";
+  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/richerche.svg);
+}
+.menu-principale-barra ul.menu-principale a[data-ref="movimentazioni"]:before {
+  content: "";
+  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/movimentazioni.svg);
+}
+.menu-principale-barra ul.menu-principale a[data-ref="gestionepunto"]:before {
+  content: "";
+  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/pointM.svg);
+}
+.menu-principale-barra ul.menu-principale a[data-ref="saldocassa"]:before {
+  content: "";
+  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/saldoCassa.svg);
+}
+
+.menu-principale-barra ul.menu-principale a[data-ref="fatture"]:before {
+  content: "";
+  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/contabilita.svg);
+}
+.menu-principale-barra ul.menu-principale a[data-ref="cambiopassword"]:before {
+  content: "";
+  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/changePass.svg);
+}
+.menu-principale-barra ul.menu-principale a[data-ref="external-chat"]:before {
+  content: "";
+  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/chat.svg);
+}
+
 body[subpage="sport"] {
   .sottomenu-main {
     display: none;
@@ -570,17 +622,24 @@ body[subpage="sport"] {
     padding-left: 0;
   }
 }
+body[subpage="home"],
 body[subpage="xcasinopt"],
 body[subpage="xcasino"],
 body[subpage="xcasinolive"],
 body[subpage="poker"],
 body[subpage="xbingo"],
 body[subpage="virtuali"],
-body[subpage="ippica"],
+body[subpage="ippica"] {
+  .logo {
+    bottom: 11px;
+    padding-left: 0;
+  }
+}
+
 body[page="promo"],
 body[subpage="promo"] {
   .logo {
-    bottom: 11px;
+    bottom: 50px;
     padding-left: 0;
   }
 }
@@ -873,79 +932,83 @@ a.colore-1,
 a .colore-1 {
   color: var(--green);
 }
+
 .cg-function-arrow {
   color: var(--accent);
 }
-.promozioni-sfondo {
-  width: 1000px;
-  margin: 0 auto;
-  .card {
-    background: var(--secondary-bg);
-    border: none;
-
-    .card-img-top,
-    .card-text {
-      display: none;
-    }
-
-    .card-body {
-      height: 300px;
-      display: flex;
-      justify-content: flex-end;
-      flex-direction: column;
-      align-items: center;
-      color: var(--accent);
-    }
-
-    .d-flex.justify-content-center.align-items-center.margine-giu.margine-su {
-      display: none !important;
-    }
-
-    &[data-target="#cg-promo-3"]:after {
-      content: "";
-      background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/mulribonus.png);
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-repeat: no-repeat;
-      background-size: 100%;
-    }
-    &[data-target="#cg-promo-4"] {
-      display: none;
-    }
-    &[data-target="#cg-promo-5"]:after {
-      content: "";
-      background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/benvenutocasino.png);
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-repeat: no-repeat;
-      background-size: 100%;
-      top: 5%;
-    }
-    &[data-target="#cg-promo-6"]:after {
-      content: "";
-      background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/bonusC.png);
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-repeat: no-repeat;
-      background-size: 70%;
-      left: 12%;
-      top: 5%;
-    }
-    &[data-target="#cg-promo-7"]:after {
-      content: "";
-      background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/benvbingo.png);
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-repeat: no-repeat;
-      background-size: 100%;
-      top: 5%;
-    }
-  }
+.elemento-promozioni-modale {
+  background-color: var(--bg1);
 }
+// .promozioni-sfondo {
+//   width: 1240px;
+//   margin: 0 auto;
+//   .card {
+//     background: var(--secondary-bg);
+//     border: none;
+
+//     .card-img-top,
+//     .card-text {
+//       display: none;
+//     }
+
+//     .card-body {
+//       height: 300px;
+//       display: flex;
+//       justify-content: flex-end;
+//       flex-direction: column;
+//       align-items: center;
+//       color: var(--accent);
+//     }
+
+//     .d-flex.justify-content-center.align-items-center.margine-giu.margine-su {
+//       display: none !important;
+//     }
+
+//     &[data-target="#cg-promo-3"]:after {
+//       content: "";
+//       background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/mulribonus.png);
+//       position: absolute;
+//       width: 100%;
+//       height: 100%;
+//       background-repeat: no-repeat;
+//       background-size: 100%;
+//     }
+//     &[data-target="#cg-promo-4"] {
+//       display: none;
+//     }
+//     &[data-target="#cg-promo-5"]:after {
+//       content: "";
+//       background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/benvenutocasino.png);
+//       position: absolute;
+//       width: 100%;
+//       height: 100%;
+//       background-repeat: no-repeat;
+//       background-size: 100%;
+//       top: 5%;
+//     }
+//     &[data-target="#cg-promo-6"]:after {
+//       content: "";
+//       background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/bonusC.png);
+//       position: absolute;
+//       width: 100%;
+//       height: 100%;
+//       background-repeat: no-repeat;
+//       background-size: 70%;
+//       left: 12%;
+//       top: 5%;
+//     }
+//     &[data-target="#cg-promo-7"]:after {
+//       content: "";
+//       background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/benvbingo.png);
+//       position: absolute;
+//       width: 100%;
+//       height: 100%;
+//       background-repeat: no-repeat;
+//       background-size: 100%;
+//       top: 5%;
+//     }
+//   }
+// }
 
 .modal-registrazione {
   .nero,
@@ -967,6 +1030,10 @@ body {
   .spacer-cart-fields {
     border-top: 1px solid var(--tableBorders);
   }
+}
+
+#bottom-button-section .btn-login-ico {
+  background-color: #ffffff;
 }
 
 .cg-pvr-page {
@@ -1008,5 +1075,16 @@ body {
       background-position-x: right;
       text-transform: uppercase;
     }
+  }
+}
+
+.cg-mybet-section {
+  .mybet-container {
+    background: #fff;
+    color: #000;
+  }
+  .grey-box {
+    background: #eee;
+    color: #000;
   }
 }
