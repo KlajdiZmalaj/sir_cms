@@ -1,2 +1,112 @@
-html:root{--active-color: #ffe01a;--teableHeadersBg: #2c2c2c;--teableHeadersCol: #a0a0a0;--teableSubHeadersBg: #525252;--teableSubHeadersCol: #ffffff;--tableBorders: #5c5c5c;--accent: #ffe01a;--accent-bg: #ffe01a;--accent-txt: #222;--primary-bg: #4a4a4a;--primary-txt: #fff;--secondary-bg: #212121;--secondary-txt: #fff;--mainBg: #333333;--mainBgCol: #fff;--bg1: #404040;--col1: #fff}body{background-color:var(--secondary-bg);margin:0}body img{width:100%}body .bottomBanners{max-width:1247px;margin:0 auto;display:-ms-grid;display:grid;-ms-grid-columns:auto auto auto auto 38%;grid-template-columns:auto auto auto auto 38%;grid-gap:5px;width:100%;padding:20px 0}body .bottomBanners .bottomBanner{position:relative}body .bottomBanners .bottomBanner a{position:absolute;left:0;top:0;width:100%;height:100%}body .bottomBanners .bottomBanner img{width:100%;height:auto;-webkit-filter:grayscale(1);filter:grayscale(1)}body .bottomBanners .bottomBanner:last-child img{-webkit-filter:grayscale(0);filter:grayscale(0)}body .bottomBanners .bottomBanner:hover img{-webkit-filter:grayscale(0);filter:grayscale(0)}@media only screen and (max-width: 1024px){body .bottomBanners{display:-ms-grid;display:grid;-ms-grid-columns:auto;grid-template-columns:auto;grid-gap:10px}body .bottomBanners .bottomBanner{width:100%}body .bottomBanners .bottomBanner img{width:100%;height:auto;-webkit-filter:grayscale(1);filter:grayscale(1)}body .bottomBanners .bottomBanner:last-child{-ms-grid-column:1;grid-column-start:1;grid-column-end:3}body .bottomBanners .bottomBanner:last-child img{-webkit-filter:grayscale(0);filter:grayscale(0)}body .bottomBanners .bottomBanner:hover img{-webkit-filter:grayscale(0);filter:grayscale(0)}}
-/*# sourceMappingURL=styles.css.map */
+html:root {
+    --active-color: #ffe01a;
+    --teableHeadersBg: #2c2c2c;
+    --teableHeadersCol: #a0a0a0;
+    --teableSubHeadersBg: #525252;
+    --teableSubHeadersCol: #ffffff;
+    --tableBorders: #5c5c5c;
+    --accent: #ffe01a;
+    --accent-bg: #ffe01a;
+    --accent-txt: #222;
+    --primary-bg: #4a4a4a;
+    --primary-txt: #fff;
+    --secondary-bg: #212121;
+    --secondary-txt: #fff;
+    --mainBg: #333333;
+    --mainBgCol: #fff;
+    --bg1: #404040;
+    --col1: #fff
+}
+
+div#main_banner {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important
+}
+
+body {
+    background-color: var(--secondary-bg);
+    margin: 0
+}
+
+body img {
+    width: 100%
+}
+
+body .bottomBanners {
+    max-width: 1247px;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto auto 38%;
+    grid-template-columns: auto auto auto auto 38%;
+    grid-gap: 5px;
+    width: 100%;
+    padding: 20px 0
+}
+
+body .bottomBanners .bottomBanner {
+    position: relative
+}
+
+body .bottomBanners .bottomBanner a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%
+}
+
+body .bottomBanners .bottomBanner img {
+    width: 100%;
+    height: auto;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1)
+}
+
+body .bottomBanners .bottomBanner:last-child img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0)
+}
+
+body .bottomBanners .bottomBanner:hover img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0)
+}
+
+@media only screen and (max-width: 1024px) {
+    body .bottomBanners {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: auto;
+        grid-template-columns: auto;
+        grid-gap: 10px
+    }
+
+    body .bottomBanners .bottomBanner {
+        width: 100%
+    }
+
+    body .bottomBanners .bottomBanner img {
+        width: 100%;
+        height: auto;
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1)
+    }
+
+    body .bottomBanners .bottomBanner:last-child {
+        -ms-grid-column: 1;
+        grid-column-start: 1;
+        grid-column-end: 3
+    }
+
+    body .bottomBanners .bottomBanner:last-child img {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0)
+    }
+
+    body .bottomBanners .bottomBanner:hover img {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0)
+    }
+}

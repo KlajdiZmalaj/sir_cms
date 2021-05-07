@@ -533,6 +533,10 @@ body[page="xcasino"] {
     }
   }
 }
+.menu-principale-barra ul.menu-principale a[data-ref="home"]:before {
+  content: "";
+  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/home.svg);
+}
 .menu-principale-barra ul.menu-principale a[data-ref="sport"]:before {
   content: "";
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/sport.svg);
@@ -1097,4 +1101,10 @@ body {
 
 .cg-message-text {
   color: #222;
+}
+.iframe-main {
+  border: 0;
+}
+.controlli-sliderP {
+  background: transparent !important;
 }

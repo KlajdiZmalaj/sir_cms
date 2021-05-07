@@ -17,7 +17,9 @@ html:root {
   --bg1: #404040;
   --col1: #fff;
 }
-
+div#main_banner {
+  display: flex !important;
+}
 body {
   background-color: var(--secondary-bg);
   margin: 0;

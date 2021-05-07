@@ -17,13 +17,27 @@ window.fetchSportBanners = async (skin, token) => {
   const rightBanner = banners.filter(
     (a) => a.css_selector.name === "right_banner"
   );
+  console.log("mainBanner", mainBanner);
 
-  if (mainBanner[0]) {
-    $("#main_banner .title").text(mainBanner[0].title);
-    $("#main_banner .subtitle").text(mainBanner[0].subtitle);
-    $("#main_banner a").text(mainBanner[0].button);
-    $("#main_banner a").attr("href", mainBanner[0].link);
+  var mainBannerTemplate = `${mainBanner
+    .map(
+      (banner) =>
+        `<img class="newSliderSlide" src="${banner?.image?.path}" alt="" />`
+    )
+    .join("")}`;
+  if (mainBanner.length === 1) {
     $("#main_banner img").attr("src", mainBanner[0].image.path);
+  } else if (mainBanner.length > 1) {
+    $("#main_banner").html(mainBannerTemplate);
+    $("#main_banner").slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+    });
   }
   if (rightBanner[0]) {
     $("#rightB .title").text(rightBanner[0].title);
