@@ -17,6 +17,15 @@ window.fetchSportBanners = async (skin, token) => {
   const rightBanner = banners.filter(
     (a) => a.css_selector.name === "right_banner"
   );
+
+  let gameBanner = banners.filter(
+    (a) => a.css_selector.name === "game_banner"
+  );
+
+  let centerBanner = banners.filter(
+    (a) => a.css_selector.name === "center_banners"
+  );
+
   console.log("mainBanner", mainBanner);
 
   var mainBannerTemplate = `${mainBanner
@@ -25,6 +34,32 @@ window.fetchSportBanners = async (skin, token) => {
         `<img class="newSliderSlide" src="${banner?.image?.path}" alt="" />`
     )
     .join("")}`;
+
+    var template = `${gameBanner
+      .map(
+        (banner) =>
+          `<div class="sliderItem" onclick="${
+            banner.subtitle
+              ? `window.top.location.href = 'https://${window.location.host}/casino?token=&language=it&system_code=SIRPLAY&systemCodeLancioGioco=SIRPLAY&codiceGiocoInterno=${banner.subtitle}&codicePiattaforma=1&codiceLancioLive=&isReal=0&ip='`
+              : ""
+          }"><img class="newSliderSlide" src="${
+            banner?.image?.path
+          }" alt="" /><span>${banner.title || "gameTitle"}</span></div>`
+      )
+      .join("")}`;
+
+      var templateCenter = `${centerBanner
+        .map(
+          (banner) =>
+            `<a class="sliderItem" href="${
+              banner.link
+            }"><img class="newSliderSlide" src="${
+              banner?.image?.path
+            }" alt="" /></div>`
+        )
+        .join("")}`;
+
+
   if (mainBanner.length === 1) {
     $("#main_banner img").attr("src", mainBanner[0].image.path);
   } else if (mainBanner.length > 1) {
@@ -36,7 +71,7 @@ window.fetchSportBanners = async (skin, token) => {
       dots: true,
       autoplay: true,
       autoplaySpeed: 2000,
-      arrows: false,
+      arrows: true,
     });
   }
   if (rightBanner[0]) {
@@ -46,6 +81,32 @@ window.fetchSportBanners = async (skin, token) => {
     $("#rightB a").attr("href", rightBanner[0].link);
     $("#rightB img").attr("src", rightBanner[0].image.path);
   }
+
+  $(".carousel").html(template);
+  if(gameBanner[0]){
+    $(".carousel").slick({
+      infinite: true,
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      dots: false,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: true,
+      responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                
+            }
+        }
+    ]
+    });
+  }
+
+  $(".carouselCenter").html(templateCenter);
+
 };
 $(document).ready(() => {
   window.fetchSportBanners(
