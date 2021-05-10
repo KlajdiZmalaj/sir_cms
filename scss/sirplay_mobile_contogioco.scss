@@ -523,59 +523,24 @@ body {
     background: transparent;
   }
 }
-// .cg-info-popup > div {
-//   background-color: #1a1f23 !important;
-//   border-radius: 0px !important;
-//   width: 100%;
-//   bottom: 59px;
-// }
-
-// .cg-cookies-button-ok {
-//   background-color: #ffd919;
-//   padding: 10px 10px;
-//   color: #000;
-// }
-
-// .cg-cookies-button-more-info {
-//   background-color: #a0d743;
-//   padding: 10px 10px;
-// }
-
-// .cg-cookies-popup-text {
-//   padding: 15px 10px;
-// }
-
-// .cg-slide-scroll-button {
-//   max-width: 65px !important;
-// }
-
-// .cg-signup-popup-logo,
-// .cg-signup-logo,
-// .cg-recover-logo,
-// .cg-slide-logo {
-//   background-image: url("/external_cms/SIRPLAY/logo_siriplay.png");
-//   height: 45px;
-//   width: 35%;
-//   margin-top: 0px;
-//   margin-left: 25px;
-// }
-
-// .cg-recover-top-navbar {
-//   background: #000 !important;
-// }
-
-// .cg-slide-logo-dim {
-//   height: 36px !important;
-//   width: 130px !important;
-//   margin-top: 4px !important;
-// }
-
-// .cg-signup-popup-button {
-//   border-width: 0px !important;
-//   border-radius: 0px !important;
-// }
 
 /* ico */
+
+.cg-ico-message {
+  background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/msg.svg") !important;
+}
+.cg-ico-pvr-refresh-arrows {
+  background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/refresh-arrows.svg") !important;
+}
+.cg-ico-pvr-crea-conto {
+  background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/crea-conto.svg")!important;
+}
+.cg-ico-pvr-ricarica-conto {
+  background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/ricarica-conto.svg")!important;
+}
+.cg-ico-pvr-scratch-card {
+  background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/scratch-card.svg")!important;
+}
 .cg-ico-prematch,
 .cg-ico-sport,
 .cg-slide-ico-prematch {
@@ -686,4 +651,22 @@ body {
   background-color: var(--teableHeadersBg); 
   color: var(--teableHeadersCol);
   border-radius: 0;
+}
+.cg-odds-color {
+  color: inherit;
+}
+.cg-odd {
+  background: var(--bg1);
+  color: var(--col1);
+}
+
+.cg-odd.cg-selected, .cg-odd-live.cg-selected, .cg-odd-antepost.cg-selected {
+  background: var(--accent-bg);
+  color: var(--accent-txt);
+}
+.event-desc {
+  color: inherit;
+}
+.cg-function-arrow {
+  color: inherit;
 }
