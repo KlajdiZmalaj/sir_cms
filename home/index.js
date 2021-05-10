@@ -51,7 +51,7 @@ window.fetchSportBanners = async (skin, token) => {
   var templateCenter = `${centerBanner
     .map(
       (banner) =>
-        `<a class="sliderItem" href="${banner.link}"><img class="newSliderSlide" src="${banner?.image?.path}" alt="" /></div>`
+        `<a class="sliderItem" href="#" onclick="window.top.location.href='${banner.title}'" ><img class="newSliderSlide" src="${banner?.image?.path}" alt="" /></div>`
     )
     .join("")}`;
 
