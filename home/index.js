@@ -17,14 +17,16 @@ window.fetchSportBanners = async (skin, token) => {
   const rightBanner = banners.filter(
     (a) => a.css_selector.name === "right_banner"
   );
-  console.log("mainBanner", mainBanner);
 
   var mainBannerTemplate = `${mainBanner
     .map(
       (banner) =>
-        `<img class="newSliderSlide" src="${banner?.image?.path}" alt="" />`
+        `<div class="newSliderSlide">
+          <img src="${banner?.image?.path}" alt="" />
+         </div>`
     )
     .join("")}`;
+  console.log("mainBanner", mainBanner, mainBannerTemplate);
   if (mainBanner.length === 1) {
     $("#main_banner img").attr("src", mainBanner[0].image.path);
   } else if (mainBanner.length > 1) {
