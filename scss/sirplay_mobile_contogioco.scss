@@ -539,7 +539,7 @@ body {
   background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/ricarica-conto.svg")!important;
 }
 .cg-ico-pvr-scratch-card {
-  background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/scratch-card.svg")!important;
+  background: url("https://#{$skinHost}/external_css/#{$skinName}/img/scratch-card.svg")!important;
 }
 .cg-ico-prematch,
 .cg-ico-sport,
@@ -664,9 +664,11 @@ body {
   background: var(--accent-bg);
   color: var(--accent-txt);
 }
-.event-desc {
+.event-desc,.cg-signup-input-label,.cg-function-arrow  {
   color: inherit;
 }
-.cg-function-arrow {
-  color: inherit;
+
+
+.cg-info-go-back {
+  background: transparent;
 }
