@@ -581,6 +581,8 @@ a.scAggiuntiva.active {
 
 .widget-ultimi .contenuto-widget-ultime-v {
   border: none !important;
+  height: calc(100vh - 590px);
+  overflow: auto;
 }
 
 .widget-ultimi .cp-function-row,
@@ -937,8 +939,11 @@ tbody tr:nth-of-type(even) {
 
 .finestra-stampa-ticket-intestazione {
   background-color: var(--custom-brand-color-1) !important;
+  color: #222 !important;
 }
-
+.finestra-stampa-ticket-intestazione button {
+  color: inherit !important;
+}
 .finestra-stampa-ticket-contenitore-ricerca-e-risultati {
   background-color: var(--custom-brand-color-2) !important;
   border: none !important;
