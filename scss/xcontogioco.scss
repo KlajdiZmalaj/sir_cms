@@ -1108,3 +1108,16 @@ body {
 .controlli-sliderP {
   background: transparent !important;
 }
+.controlli-sliderP {
+  max-width: 240px;
+  width: 100% !important;
+}
+
+.scopri-promo {
+  background: var(--accent-bg);
+  color: var(--accent-txt) !important;
+  padding: 4px 8px;
+  font-weight: 300;
+  border: 1px solid var(--accent);
+  opacity: 0.9;
+}
