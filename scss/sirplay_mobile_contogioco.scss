@@ -1,674 +1,1573 @@
 @import "vars";
 
-.cg-slide-logo,
-.cg-side-header-logo {
-  background-image: url($logoUrl);
+:root {
+  --cg-ticket-background: #ffffff;
+  --nav-text-color: #222 !important;
+  --nav-item-color: #222 !important;
+}
+#cg-info-select-showed-container {
+  background: #fff;
+  color: #222;
+}
+.maiuscolo {
+  text-transform: uppercase !important;
 }
 
-.cg-recover-logo,
-.cg-signup-logo {
-  background-image: url($logoUrl);
+.oia-hide {
+  display: none !important;
 }
 
-.cg-signup-top-navbar {
-  background: var(--bg1);
-  color: var(--secondary-color);
-  border-bottom: 2px solid var(--accent);
-}
-.cg-signup-userdata-icon,
-.cg-signup-document-icon,
-.cg-signup-home-icon,
-.cg-signup-mobile-icon,
-.cg-signup-mobile-icon,
-.cg-signup-account-icon,
-.cg-signup-deposit-icon,
-.cg-signup-check-icon {
-  filter: invert(1);
-}
-.cg-top-header {
-  background: var(--secondary-bg);
-  color: var(--secondary-color);
-  .cg-top-navbar {
-    background: var(--bg1);
-    color: var(--secondary-color);
-    border-bottom: 2px solid var(--accent);
-    .cg-deposit-button {
-      background: var(--accent-bg);
-      color: var(--accent-txt);
-      border-radius: 16px;
-      font-weight: 500;
-    }
-  }
+.cg-step-selector,
+.cg-balance-selection.selected,
+#cg-message-header .cg-info-go-back {
+  background: 0 0 !important;
 }
 
-#cg-left-side-menu {
-  background-color: var(--bg1);
-  color: var(--col1);
-  #cg-slide-top-container {
-    border-bottom: 1px solid var(--tableBorders);
-  }
-  #cg-slide-menu-top {
-    background-color: var(--mainBg);
-    color: var(--mainBgCol);
-    .cg-slide-close-button {
-      .cg-slide-cross-color {
-        color: red;
-      }
-    }
-    .cg-slide-buttons {
-      border-radius: 32px;
-      background: var(--tableBorders);
-      color: var(--col1);
-      border-width: 0;
-      height: 35px;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 32%;
-      > div {
-        line-height: 35px;
-      }
-      &#cg-slide-login-button:before {
-        content: "\f2f6";
-        font-family: "Font Awesome 5 Pro";
-        padding-right: 5px;
-        font-size: 14px;
-        font-weight: 100;
-      }
-      &#cg-slide-signup-button:before {
-        content: "\f234";
-        font-family: "Font Awesome 5 Pro";
-        padding-right: 5px;
-        font-size: 14px;
-        font-weight: 100;
-      }
-    }
-    .cg-slide-alternative-button {
-      border-color: var(--accent);
-      background-color: var(--accent);
-      color: var(--accent-txt);
-      font-weight: 500;
-    }
-  }
-  #cg-slide-body-container {
-    color: var(--col1);
-    .cg-slide-menu-separator {
-      display: none;
-    }
-    #cg-slide-scroll-buttons {
-      .cg-slide-title {
-        display: none;
-      }
-    }
-    .cg-slide-field-wrapper {
-      border: none;
-      margin: 1px auto;
-    }
-    .cg-slide-function-field {
-      background-color: var(--secondary-bg);
-      color: var(--secondary-color);
-      border-bottom-color: var(--tableBorders);
-      border-radius: 0;
-      &#cg-external-chat {
-        position: relative;
-        &:before {
-          content: "\f4b6";
-          font-family: "Font Awesome 5 Pro";
-          position: absolute;
-          top: 14px;
-          left: 8px;
-        }
-        .cg-slide-filled-label {
-          padding-left: 20px;
-        }
-      }
-      &#cg-desktop-mode {
-        position: relative;
-        &:before {
-          content: "\f108";
-          font-family: "Font Awesome 5 Pro";
-          position: absolute;
-          top: 14px;
-          left: 8px;
-        }
-        .cg-slide-filled-label {
-          padding-left: 20px;
-        }
-      }
-    }
-    i.cg-slide-icon {
-      filter: grayscale(1);
-    }
-  }
-}
-#cg-slide-paragrafo-60 {
-  .cg-slide-title,
-  .cg-slide-menu-separator {
-    display: none;
-  }
-}
-#cg-slide-paragrafo-63 {
-  .cg-slide-title {
-    display: none;
-  }
-}
-#cg-slide-footer2 {
-  .cg-slide-footer-title {
-    font-weight: normal !important;
-  }
-  .cg-slide-image {
-    height: 30px;
-    width: 35px;
-  }
-}
-.cg-info-body.cg-info-section {
-  background-color: var(--bg1) !important;
-  color: var(--secondary-color) !important;
-  .cg-info-select-container {
-    background: var(--bg1);
-    border-color: var(--tableBorders);
-    color: var(--col1);
-  }
-  .cg-info-go-back {
-    background: var(--bg1);
-    border-color: var(--tableBorders);
-    .cg-cross {
-      color: var(--accent);
-    }
-  }
-  .cg-arrow {
-    color: var(--accent);
-  }
-  #cg-info-select-showed-container {
-    border: solid 1px var(--tableBorders);
-  }
+.cg-step-selector,
+#pad-ok button span,
+.cg-recover-separator,
+.cg-signup-button-border > div,
+div#cg-recover-button-fase1 > div,
+.container-bet-bet-refill > .btn > div {
+  text-shadow: none !important;
 }
 
-#cg-info-select-showed {
-  .cg-info-select-item.cg-acceso {
-    background: var(--bg1);
-    color: var(--col1);
-    border-left: solid 4px var(--accent);
-  }
-  .cg-info-select-item {
-    background: var(--bg1);
-    color: var(--col1);
-    border-bottom: 1px solid var(--tableBorders);
-  }
-  .cg-info-select-item.cg-info-disabled {
-    opacity: 0.5;
-    background: var(--bg1);
-  }
+.quota-esito,
+.list-element-info,
+.cart-desc-draw-odd,
+.nav-breadcrumb:after,
+.cg-odd-live > .cg-bottom,
+div#cg-pvr-fido-saldo-field,
+span#cg-voucher-serial-search,
+.nav-section-title.expandable::after {
+  color: #ffd800 !important;
 }
 
-.cg-menuTabMobile {
-  background: var(--secondary-bg);
-  color: var(--secondary-txt);
-  box-shadow: 0 -7px 18px -9px #000;
-  .cg-labelMenu {
-    color: var(--secondary-txt);
-    text-transform: uppercase;
-    font-size: 12px;
-    padding-top: 6px;
-  }
-  .cg-iconContainer .cg-selection-border {
-    margin-top: 0px;
-    height: 0;
-  }
-  .cg-buttonMenuMobile {
-    border-right: 1px solid var(--tableBorders);
-    &.cg-acceso {
-      .cg-labelMenu {
-        color: var(--accent);
-      }
-      i.cg-icon {
-        filter: none;
-      }
-    }
-  }
-  .cg-iconContainer i.cg-icon {
-    filter: grayscale(1);
-    width: 25px;
-    height: 25px;
-    background-repeat: no-repeat;
-  }
-  .cg-tabTitleCotainer {
-    height: 40px;
-    background: var(--mainBg);
-    #cg-title {
-      font-size: 18px;
-      margin-bottom: 0;
-    }
-  }
-  .filtri-container {
-    margin-top: 10px;
-    border-bottom: 1px solid var(--tableBorders);
-    padding-bottom: 10px;
-    .filtroTitleContainer {
-      margin-bottom: 0;
-    }
-  }
+#cg-slide-footer,
+#cg-casino-button,
+#gioco-responsabile-button,
+div#cg-slide-foote,
+#cg-footer-arrow-container,
+#cg-betslip-button .cg-icon,
+#cg-prematch-button .cg-icon,
+.cg-buttons-row.secondary-button-row,
+.prematch-sport-img #cg-live-button .cg-icon {
+  display: none !important;
 }
 
-.cg-wrapper-login-section {
-  background: var(--bg1);
-  color: var(--secondary-txt);
-  height: calc(100% - 100px);
-  #cg-unloggedMask {
-    width: 80%;
-    margin-left: 10%;
-  }
-  #cg-unloggedMask > .cg-inputContainer {
-    margin-top: 5%;
-    margin-left: 0;
-    width: 100%;
-  }
-  .cg-icoUserContainerLoginSection {
-    text-align: center;
-    color: var(--accent);
-    margin-bottom: 20px;
-    font-size: 30px;
-    margin-left: 0;
-    .cg-ico-user {
-      display: none;
-    }
-  }
-  .cg-loginButton {
-    border: none;
-    margin-top: 30px;
-    > div {
-      font-weight: 600;
-    }
-  }
-  input {
-    width: 100%;
-    max-width: 100%;
-    background: var(--mainBg);
-    border: 0;
-    border-radius: 0;
-    color: var(--mainBgCol);
-  }
-  input:-webkit-autofill {
-    box-shadow: 0 0 0 1000px var(--mainBg) inset;
-    -webkit-text-fill-color: var(--mainBgCol);
-  }
+.btn-delete,
+div#cancelbutton,
+#pad-close > button > span {
+  background-color: #f44336 !important;
 }
-.cart-fixed-content {
-  background: var(--mainBg) !important;
-  .result-close-box {
-    border-left: none;
-    position: absolute;
-    top: 0;
-    right: 5%;
-  }
-  .arrow-container {
-    width: 40px;
-  }
-  .shopping-cart-date-close-btn {
-    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/delete.svg)
-      no-repeat center center;
-    width: 25px;
-    height: 25px;
-    background-size: contain;
-  }
-  .coupon-result-text-box {
-    width: 90%;
-  }
-  .effectiveCartContainer {
-    background: var(--mainBg);
-    color: var(--col1);
-    margin: 0;
-    width: 100%;
-    border: none;
-  }
-  .coupon-multiple-amount-input,
-  .sistemi-input-result {
-    background: var(--tableBorders);
-    border: none;
-    color: var(--col1);
-  }
-  .nav-pills {
-    background: var(--secondary-bg);
-    color: var(--secondary-color);
-  }
-  .tab-coupon-final-count-box {
-    font-weight: 400;
-  }
-  .vincita-totale {
-    background: var(--teableSubHeadersBg);
-    margin-left: 0;
-    width: 100%;
-    border-radius: 0;
-    color: var(--teableSubHeadersCol);
-    padding: 10px 0px;
-    box-shadow: none;
-    border: none;
-    font-size: 13px;
-    text-transform: inherit;
-    > div:first-child {
-      opacity: 0.8;
-    }
-    .potential-win-multiple {
-      font-weight: 500;
-      font-size: 18px;
-    }
-  }
-  .container-bet-bet-refill {
-    display: flex;
-    > .btn {
-      box-shadow: none;
-      border-radius: 0;
-      border: none;
-      flex: 1 1;
-      > div {
-        padding-top: 13px;
-      }
-    }
-  }
+
+body,
+.striped,
+#cg-pvr-body,
+#nav-bet-type,
+.message-box,
+.cg-live-item,
+.wrapper-cart,
+.list-element,
+.overlay-content,
+.cg-recover-body,
+.esiti-container,
+.cg-tabLayerMobile,
+.cart-fixed-content,
+#nav-classe-scommessa,
+.striped:nth-of-type(2n),
+.cg-wrapper-login-section,
+#nav-classe-scommessa span,
+.cg-landing-section-container,
+#popup-bet-type .popup-content,
+.list-element-quota .esiti-container,
+#popup-tipo-scommessa .popup-content,
+#popup-category-filter .popup-content,
+#popup-classe-scommessa .popup-content,
+#popup-gruppo-scommessa .popup-content,
+#cg-pvr-confirm-popup .cg-header-popup-title,
+.bet-type-selector.expandable.nav-section-title {
+  background-color: #272727 !important;
 }
-body .reservationAreaContainer {
-  background: var(--secondary-bg);
-  box-shadow: 0 1px 5px #242424;
-  box-shadow: none;
-  .mainText {
-    padding-top: 6%;
-  }
+
+.tab-pane,
+.cg-odd-live,
+.cg-nav-go-back,
+#betting_section,
+.cg-field-wrapper,
+.cg-function-field,
+.effectiveCartContainer,
+.cg-step-selector.disabled,
+.sport-heading.text-medium,
+#nav-search-events .input-container {
+  background-color: #3c3c3c !important;
 }
-body .formReloadReservation > .reloadReservationButton {
-  background: var(--accent);
-  color: var(--accent-txt);
+
+.btn-play,
+.info-score,
+div#top-button,
+.border-bottom,
+.manif-heading,
+.cg-loginButto,
+.cg-loginButton,
+.vincita-totale,
+.reservationRow,
+.cg-buttons-row,
+nav.cg-top-navbar,
+.cart-sign-counters,
+#pad-ok button span,
+div#cg-left-side-menu,
+div#cg-slide-menu-top,
+.cg-signup-top-navbar,
+.cg-recover-top-navbar,
+.cg-signup-button-border,
+.cg-signup-section-header,
+.reservationAreaContainer,
+.sistemi-result-ncomb-title,
+.sistemi-result-import-title,
+.cg-step-selector.cg-selected,
+.headerPrenotazioniEffettuate,
+.cg-live-num-avvenimenti-sport,
+.cg-balance-selection.selected,
+#cg-date-to-container-activity,
+.ui-state-default.ui-state-active,
+.reservationRow:nth-child(2n + 0),
+.cg-radio-button.cg-radio-clicked > div,
+.system-master.system_live_entry:before,
+.system-master > .result-letter-box.oven,
+.coupon-result-text-box.multiple_live_entry:before,
+.cg-live-sport.cg-acceso > .cg-live-sport-underline,
+.cg-field-container.cg-function-field.cg-lastFieldContainer {
+  background-color: #171717 !important;
 }
-#coupon-prenotazioni {
-  padding: 10px 0px;
-}
-.headerPrenotazioniEffettuate {
-  width: 97%;
-  height: 29px;
-  border-radius: 5px;
-  background: var(--secondary-bg);
-  color: var(--secondary-txt);
-  margin: 15px 1.5%;
-}
-.border-bottom {
-  background: var(--accent);
-}
+
+.toast,
+.btn-reserve,
+.single_number,
 .multiple_number,
-.single_number {
-  background: none var(--accent) !important;
-  color: var(--accent-txt) !important;
-}
-.border-bottom {
-  background: var(--accent);
-}
-
-.cg-menuTabMobile {
-  .cg-tabLayerMobile {
-    background: var(--bg1);
-    color: var(--col1);
-  }
-  .cg-field-wrapper {
-    background: var(--teableSubHeadersBg);
-    color: var(--teableSubHeadersCol);
-    border: 1px solid var(--tableBorders);
-  }
-  .cg-function-field {
-    background: var(--teableHeadersBg);
-    color: var(--teableSubHeadersCol);
-    border-bottom: 1px solid var(--tableBorders);
-  }
-  #cg-logged-section-logout {
-    background: var(--accent-bg);
-    color: var(--accent-txt);
-  }
+div#prenotabutton,
+.warningEntryCart,
+.questionEntryCart,
+.esito.bet-selected,
+.cg-odd.cg-selected,
+.cg-notification-circle,
+.cg-header-popup-button,
+.cg-odd-live.cg-selected,
+#cg-slide-preleva-button,
+div#cg-slide-login-button,
+.cg-recover-button-border,
+.cg-signup-error-container,
+.cg-odd-antepost.cg-selected,
+div#cg-logged-section-logout,
+#cg-message-header .cg-info-go-back,
+.cg-iconContainer .cg-selection-border,
+.reservationRow > .reloadReservationButton,
+.formReloadReservation > .reloadReservationButton,
+#cg-pvr-confirm-popup
+  .cg-signup-popup-button
+  .formReloadReservation
+  > .reloadReservationButton {
+  background-color: #ffd800 !important;
 }
 
-.popup-content {
-  background: var(--mainBg);
-  color: var(--col1);
-  border: 1px solid var(--tableBorders);
-  .event-desc {
-    color: var(--col1);
-  }
-  .event-desc:not(:last-child) {
-    border-bottom: 1px solid var(--tableBorders);
-  }
-}
-.shopping-cart-result-box {
-  margin: 5px 5px;
-
-  .coupon-result-text-box.multiple_live_entry:before,
-  .system-master.system_live_entry:before {
-    background: #b30c00;
-  }
-
-  .cart-desc-scom {
-    font-size: 11px;
-    color: var(--teableSubHeadersCol);
-    opacity: 0.7;
-  }
-  .coupon-result-title {
-    font-size: 13px;
-    opacity: 0.8;
-    font-weight: 400;
-  }
-  .title-winner {
-    font-weight: 400;
-    font-size: 12px;
-    color: var(--accent);
-    opacity: 0.8;
-  }
-  .right.bold {
-    font-weight: 400;
-    color: var(--accent);
-    opacity: 0.8;
-  }
-}
-/*:root {
---top-navbar-color:#1a1f23;
---bottom-navbar-color:#1a1f23!important;
---top-navbar-text-color:#FFF;
---bottom-navbar-text-color:#FFF!important;
---notification-circle-color: #FCCD06;
---notification-circle-text-color: black;
---nav-selection-color: #fdcd09;
---primary-color:#20282b!important;
---background-color:#20282b;
---field-wrapper-background:#2e3639;
---general-border-color:#827b7b;
---arrow-color:#fccd06!important;
---loader-color:#fccd06;
---deposit-button-background-color:#00b0dc;
---ticket-background:#2e3639;
---menu-header-go-back:#000;
---calendar-text-color:#FFF;
---signup-label:#000;
---nav-selection-border2:#000;
---nav-selection-text2:#000;
---button-slider-border: #000000;
---button-slider-background: #fdcd09;
---button-slider-text-color: #000000;
-}*/
-
-body {
-  background: var(--bg1) !important;
-  color: var(--col1) !important;
+#cg-sport-live-container,
+.cg-no-ticket.cg-function-field,
+#cg-unloggedMask > .cg-inputContainer > input {
+  background-color: #3e3e3e !important;
 }
 
-.contentMain {
-  background: var(--bg1) !important;
-  color: var(--col1) !important;
+.heading,
+.nav-go-back,
+.main-content,
+.popup-content,
+#cg-landing-body,
+#nav-temporal-filter,
+#nav-gruppi-scommessa,
+.cg-recover-separator,
+.sr-widget .sr-header-1,
+#nav-go-back .popup-content,
+.sr-widget .sr-lmts.sr-lmts-pitch-crowd .sr-scoreboard-head {
+  background-color: #101010 !important;
 }
 
-.loader-container {
-  background: var(--bg1) !important;
-  color: var(--col1) !important;
+input[type="checkbox"].bigcheckbox:checked + label::after,
+input[type="checkbox"].systemCheckbox + label::after {
+  color: #ffd800 !important;
 }
 
-.bouncing-loader > div {
-  background: var(--accent) !important;
+.single_number,
+.multiple_number,
+#cg-message-header .cg-cross,
+div#cg-logged-section-logout,
+#cg-message-header .cg-info-go-back,
+.formReloadReservation > .reloadReservationButton {
+  color: #000 !important;
 }
 
+.cg-odds-color,
+.cg-notification-circle,
+#cg-slide-preleva-button,
+div#cg-slide-login-button,
+.esito.bet-selected .nome-esito,
+.esito.bet-selected .quota-esito,
+div#cg-recover-button-fase1 > div,
+.cg-odd-live.cg-selected > .cg-top,
+.cg-odd.cg-selected > .cg-odd-right,
+.cg-odd-live.cg-selected > .cg-bottom,
+.cg-odd-antepost.cg-selected
+  > .cg-top
+  .cg-odd-antepost.cg-selected
+  > .cg-bottom {
+  color: #101010 !important;
+}
+
+.arrow,
+.heading,
+.mainText,
+.btn-play,
+.event-desc,
+.btn-delete,
+.nome-esito,
+.avvenimento,
+.cg-odd-live,
+.list-heading,
+.cg-live-item,
+.combinations,
+.cg-loginLabel,
+.manif-heading,
+.errorEntryCart,
+.vincita-totale,
+.cart-desc-scom,
+.overlay-content,
+#cg-signup-title,
+.cg-from-to-title,
+.cart-total-price,
+.cg-field-wrapper,
+.split-stake-label,
+.list-element-text,
+.cg-step-selector,
+#pad-ok button span,
+.cg-live-text-sport,
+.ui-datepicker-title,
+.coupon-result-title,
+div#cg-slide-footer2,
+#input-search-events,
+.cg-slide-cross-color,
+.cg-recover-separator,
+.cg-loginButton > div,
+#nav-classe-scommessa,
+.cg-signup-input-label,
+.cg-slide-title > span,
+.cg-odd-live > .cg-top,
+.cg-slide-button-label,
+.cg-recover-input-label,
+.cg-arrow.cg-arrow-left,
+.cg-registerButton > div,
+.cg-signup-section-title,
+div#cg-recover-text-alert,
+.tab-coupon-final-divider,
+.sistemi-result-check-box,
+div#cg-slide-section-title,
+.cg-signup-input-container,
+.restorePasswordLink > span,
+div#cg-message-section-option,
+#cg-live-button .cg-labelMenu,
+.headerPrenotazioniEffettuate,
+#cg-contoButton .cg-labelMenu,
+#cg-date-to-container-activity,
+.cg-no-ticket.cg-function-field,
+#cg-date-from-container-activity,
+#cg-betslip-button .cg-labelMenu,
+#cg-activity-button-search > div,
+#cg-mybet-button .cg-labelMenu,
+#cg-prematch-button .cg-labelMenu,
+.cg-icoUserContainerLoggedSection,
+div#cg-date-from-container-voucher,
+#cg-message-header .cg-message-title,
+.cg-field-container .cg-filled-label,
+.modifiche_quote_section > div > label,
+input#input-search-events::placeholder,
+#cg-pvr-go-back .cg-arrow.cg-arrow-left,
+#cg-pvr-crea-conto-button .cg-labelMenu,
+.cg-signup-button-border.cg-detail > div,
+#cg-pvr-conto-scratch-button .cg-labelMenu,
+#cg-pvr-conto-ricarica-button .cg-labelMenu,
+#cg-pvr-confirm-popup .cg-header-popup-title,
+#cg-unloggedMask > .cg-inputContainer > input,
+.cg-signup-button-border.cg-detail-input > div,
+.bet-type-selector.expandable.nav-section-title,
+input[type="checkbox"].bigcheckbox + label::before,
+input[type="checkbox"].systemCheckbox + label::before,
+.cg-field-container.cg-function-field.cg-lastFieldContainer,
+.cg-field-container span.cg-arrow.cg-arrow-right.cg-function-arrow {
+  color: #fff !important;
+}
+
+.toast,
+.message-box,
+.errorEntryCart,
+.vincita-totale,
+.cg-signup-input,
+.cg-slide-buttons,
+.cg-field-wrapper,
+.cg-step-selector,
+.sistemi-input-result,
+.cg-header-popup-title,
+.cg-signup-popup-button,
+.cg-signup-button-border,
+.reservationAreaContainer,
+.cg-signup-error-container,
+.cg-slide-alternative-button,
+.coupon-multiple-amount-input,
+.container-bet-bet-refill > .btn,
+#cg-unloggedMask > .cg-inputContainer > input,
+.formReloadReservation > .reloadReservationButton {
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.heading,
+.tab-pane,
+.cg-nav-go-back,
+.cg-info-go-back,
+.cg-recover-separator,
+.effectiveCartContainer,
+.cg-recover-button-border,
+.cg-no-ticket.cg-function-field,
+.ui-state-default.ui-state-active,
+#nav-search-events .input-container,
+#popup-category-filter .popup-content,
+#popup-classe-scommessa .popup-content,
+#popup-gruppo-scommessa .popup-content,
+#nav-go-back .popup-content #popup-bet-type .popup-content,
+#cg-message-header .cg-info-go-back #popup-tipo-scommessa .popup-content {
+  border: none !important;
+}
+
+.heading,
+.mainText,
+.nome-esito,
+.avvenimento,
+.quota-esito,
+.combinations,
+.nav-breadcrumb,
+.cart-desc-scom,
+.vincita-totale,
+.cart-total-price,
+.nav-section-title,
+.split-stake-label,
+.list-element-text,
+.list-element-info,
+.nav-pills > li > a,
+.cart-desc-draw-odd,
+.coupon-result-title,
+#nav-classe-scommessa,
+#cg-slide-preleva-button,
+div#cg-slide-login-button,
+.sistemi-result-check-box,
+div#cg-logged-section-logout,
+#cg-live-button .cg-labelMenu,
+#cg-contoButton .cg-labelMenu,
+#cg-mybet-button .cg-labelMenu,
+#cg-betslip-button .cg-labelMenu,
+.container-bet-bet-refill > .btn,
+#cg-prematch-button .cg-labelMenu,
+div#cg-recover-button-fase1 > div,
+#nav-temporal-filter .nav-slider-item,
+#cg-pvr-crea-conto-button .cg-labelMenu,
+.reservationRow > .reloadReservationButton,
+#cg-pvr-conto-scratch-button .cg-labelMenu,
+#cg-pvr-conto-ricarica-button .cg-labelMenu,
+.formReloadReservation > .reloadReservationButton,
+.cg-notification-circle {
+  font-weight: 600 !important;
+  font-family: lato, sans-serif;
+}
+
+#cg-landing-body,
+#nav-search-events {
+  top: 60px;
+}
+
+.cg-signup-popup-logo,
+.cg-nav-logo,
+.cg-signup-logo,
+.cg-recover-logo {
+  background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/sirplay_logo.svg) !important;
+}
 .cg-nav-logo {
-  height: 33px;
   width: 100%;
-  position: absolute;
-  top: 5px;
-  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/sirplay_logo.svg);
- //@debug left: -37px;
+  max-width: 170px;
+}
+.cg-signup-popup-logo {
+  margin: 10px 0;
 }
 
-.cg-bank-subsection {
-  .xp-field-wrapper {
-    background: transparent;
-  }
-}
-
-/* ico */
-
-.cg-ico-message {
-  background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/msg.svg") !important;
-}
-.cg-ico-pvr-refresh-arrows {
-  background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/refresh-arrows.svg") !important;
-}
-.cg-ico-pvr-crea-conto {
-  background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/crea-conto.svg")!important;
-}
-.cg-ico-pvr-ricarica-conto {
-  background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/ricarica-conto.svg")!important;
-}
-.cg-ico-pvr-scratch-card {
-  background: url("https://#{$skinHost}/external_css/#{$skinName}/img/scratch-card.svg")!important;
-}
-.cg-ico-prematch,
-.cg-ico-sport,
-.cg-slide-ico-prematch {
-  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/sport.svg) !important;
-}
-.cg-slide-ico-home {
-  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/home.svg) !important;
-}
-.cg-slide-ico-promo {
-  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/medal.svg) !important;
-}
-#cg-slide-live-button .cg-ico-prematch {
-  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/live.svg) !important;
-}
-
-.cg-ico-live {
-  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/live.svg) !important;
-}
-
-.cg-ico-cart {
-  background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/footer-icons/footer-cart.svg) !important;
-}
-.cg-ico-casino {
-  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/casino.svg) !important;
-}
-
-.cg-ico-mybet {
-  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/myplays.svg) !important;
-}
-.cg-slide-ico-ippica {
-  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/horse.svg) !important;
-}
-
-.cg-slide-ico-poker {
-  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/poker.svg) !important;
-}
-
-.cg-slide-ico-bingo {
-  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/bingo.svg) !important;
-}
-
-.cg-ico-user {
-  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/user.svg);
-}
-
-.cg-searchIcoLite {
-  background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/icons-prematch/search-icon.svg) !important;
+#cg-contoButton i.cg-icon.cg-ico-user-logged,
+.cg-wrapper-login-section .cg-ico-user,
+.cg-icoUserContainerLoggedSection .cg-ico-user {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/user-logged.svg) !important;
 }
 
 .cg-homeMenuIcoLite {
-  background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/mobile-images/ico-images/menu-options.svg");
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/menu-options.svg) !important;
+}
+
+#cg-slide-home-button .cg-slide-icon.cg-slide-ico-home {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/home.svg) !important;
+}
+
+#cg-slide-prematch-button .cg-slide-icon.cg-slide-ico-prematch,
+#cg-slide-prematch-button .cg-slide-icon.cg-ico-prematch {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/prematch-slide-menu.svg) !important;
+}
+
+#cg-slide-live-button .cg-slide-icon.cg-ico-prematch {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/prematch.svg) !important;
+}
+
+#cg-slide-casino-button .cg-slide-icon.cg-ico-casino {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/casino.svg) !important;
+}
+
+#cg-betaland-casino-button .cg-ico-cg-betaland-casino-button {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/casino.svg) !important;
+}
+
+#cg-slide-poker-button .cg-slide-icon.cg-slide-ico-poker {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/poker-slide-menu.svg) !important;
+}
+
+#cg-betaland-poker-button .cg-ico-cg-betaland-poker-button {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/poker-slide-menu.svg) !important;
+}
+
+#cg-slide-lotterie-button .cg-slide-icon.cg-slide-ico-lotterie {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/bingo-slide-menu.svg) !important;
+}
+
+#cg-betaland-bingo-button .cg-ico-cg-betaland-bingo-button,
+.cg-slide-ico-bingo {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/bingo-slide-menu.svg) !important;
+}
+
+#sh-lotterie-mobile .cg-slide-icon.cg-ico-sh-lotterie-mobile {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/lotterie-slide-menu.svg) !important;
+}
+
+#cg-betaland-lotterie-button .cg-ico-cg-betaland-lotterie-button {
+  background-image: url(https://stag-resource.betaland.it/images/betaland/svg/lotterie-slide-menu.svg) !important;
+}
+
+#cg-slide-carte-button .cg-slide-icon.cg-slide-ico-carte {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/carte-slide-menu.svg) !important;
+}
+.cg-slide-ico-virtual,
+.cg-slide-ico-ippica,
+.cg-slide-ico-gv {
+  filter: invert(1);
+}
+#cg-betaland-skill-button .cg-ico-cg-betaland-skill-button {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/carte-slide-menu.svg) !important;
+}
+
+#cg-slide-promo-button .cg-slide-icon.cg-slide-ico-promo {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/promo.svg) !important;
+}
+
+#cg-search-event-button .cg-searchIcoLite {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/search-icon.svg) !important;
+}
+
+.cg-signup-userdata-icon {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/user.svg) !important;
+}
+
+.cg-signup-document-icon {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/id-card.svg) !important;
+}
+
+.cg-signup-home-icon {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/home.svg) !important;
+}
+
+.cg-signup-mobile-icon {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/phone-call.svg) !important;
+}
+
+.cg-signup-account-icon {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/locked.svg) !important;
+}
+
+.cg-signup-deposit-icon {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/wallet.svg) !important;
+}
+
+.cg-signup-check-icon {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/check-mark.svg) !important;
+}
+
+.cg-ico-pvr-scratch-card {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/scratch-card.svg) !important;
+}
+
+.cg-ico-pvr-ricarica-conto {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/ricarica-conto.svg) !important;
+}
+
+.cg-ico-pvr-crea-conto {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/crea-conto.svg) !important;
+}
+
+.cg-ico-sh-casino-classic {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/casino-classic.svg) !important;
+}
+
+.cg-ico-sh-casino-live,
+.cg-slide-ico-casino-live {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/casino-live.svg) !important;
+}
+
+#cg-betaland-livecasino-button .cg-ico-cg-betaland-livecasino-button {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/casino-live.svg) !important;
+}
+
+.top-arrow {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/top.svg) !important;
+}
+
+.cg-ico-pvr-refresh-arrows {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/refresh-arrows.svg) !important;
+  background-size: 100%;
+}
+
+#cg-slide-app-buttons .cg-slide-scroll-buttons-row {
+  margin-bottom: 0;
+}
+
+#cg-slide-app-buttons
+  .cg-slide-scroll-buttons-row
+  .cg-slide-scroll-button.cg-app {
+  display: contents;
+}
+
+#cg-slide-app-buttons
+  .cg-slide-scroll-buttons-row
+  .cg-slide-scroll-button.cg-app
+  .cg-slide-icon-container {
+  flex-direction: row;
+  border: 2px solid #ffd800;
+  border-radius: 10px;
+  width: 90%;
+  background-color: #2e7e46;
+  padding: 13px;
+}
+
+#cg-slide-app-buttons
+  .cg-slide-scroll-buttons-row
+  .cg-slide-scroll-button.cg-app
+  .cg-slide-icon-container
+  .cg-slide-icon.cg-app {
+  background-image: url(https://resources2.betaland.it/images/betaland/footer/logo_icon.png) !important;
+  height: 30px;
+}
+
+#cg-slide-app-buttons
+  .cg-slide-scroll-buttons-row
+  .cg-slide-scroll-button.cg-app
+  .cg-slide-icon-container
+  .cg-slide-button-label {
+  font-weight: 700;
+  font-size: 1rem !important;
+  line-height: 15px;
+}
+
+.overlay-content {
+  height: calc(100% - 60px) !important;
+  padding-top: 8px;
+}
+
+#cg-search-event-button {
+  width: 40px;
+}
+
+.cg-banner-container {
+  margin: 20px;
+}
+
+nav.cg-top-navbar {
+  height: 60px;
+}
+
+nav.cg-top-navbar > div:first-child {
+  justify-content: flex-start !important;
+}
+
+nav.cg-top-navbar .cg-navbar-item.cg-nav-buttons-container #cg-extenal-chat a {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
+.cg-navbar-item.cg-nav-buttons-container {
+  justify-content: flex-end;
+  padding: 0 !important;
+}
+
+.cg-liteButton {
+  width: 60px;
+  height: 60px;
+}
+
+#cg-menu-button.cg-liteButton {
+  border-right: 2px solid #2e7e46;
+}
+
+span.cg-deposit-button.cg-text-medium {
+  margin-right: 16px;
+  font-size: 12px !important;
+}
+
+div#cg-slide-signup-button,
+#cg-slide-deposita-button {
+  background-color: transparent;
+  border: 2px solid #fff !important;
+}
+
+div#cg-slide-menu-top {
+  padding-bottom: 16px;
+  height: auto;
+}
+
+div#cg-slide-top-container {
+  padding: 8px;
+}
+
+.cg-slide-button-label {
+  font-size: 0.7rem !important;
+}
+
+#nav-container {
+  padding-top: 60px !important;
+}
+
+.cg-tabLayerMobile {
+  top: 60px !important;
+  height: calc(100% - 118px) !important;
+}
+
+div#cg-loggedMask {
+  padding: 8px !important;
+  margin: 0 !important;
+}
+
+.cg-field-wrapper {
+  width: 100% !important;
+  margin: 0;
+  margin-top: 16px;
+  padding: 0 !important;
+}
+
+.cg-function-field {
+  border-radius: 0 !important;
+}
+
+.cg-field-container.cg-function-field.cg-lastFieldContainer {
+  border-radius: 0 !important;
+}
+
+.cg-field-container .cg-filled-label {
+  text-align: left;
+  padding-left: 16px;
+}
+
+.cg-field-container .cg-filled-field {
+  text-align: right;
+  padding-right: 16px;
+  font-size: 14px !important;
+}
+
+#cg-unloggedMask > .cg-inputContainer > input {
+  text-align: left;
+  padding-left: 16px;
+}
+
+#cg-unloggedMask > .cg-inputContainer > input::placeholder {
+  color: #b5b5b5;
+}
+
+.cg-loginButton {
+  border-radius: 0;
+}
+
+.cg-registerButton {
+  border: 2px solid #fff;
+  border-radius: 0;
+}
+
+#nav-temporal-filter,
+.nav-go-back {
+  height: 50px;
+}
+
+#nav-temporal-filter .nav-slider-item,
+.nav-section-title,
+.nav-breadcrumb {
+  font-size: 13px;
+}
+
+#nav-classe-scommessa span {
+  border-right: 1px solid #707070;
+}
+
+.nav-item-container.selected,
+.nav-slider-item-container.selected {
+  border-bottom-color: #ffd800 !important;
+}
+
+#nav-temporal-filter .nav-slider-item-container {
+  width: 25%;
+}
+
+.event-desc.selected {
+  border-left-color: #ffd800 !important;
+}
+
+#nav-gruppi-scommessa {
+  height: 50px;
+  padding: 6px;
+}
+
+.bet-type-selector.expandable.nav-section-title {
+  border: 0;
+  margin: 0;
+}
+
+#classe-scommessa-selector {
+  border-right: 1px solid #707070;
+}
+
+#nav-bet-type {
+  height: 50px;
+  border-radius: 0;
+  padding: 6px;
+}
+
+#category-filter {
+  font-size: 16px;
+  text-transform: uppercase;
+  border-right: 1px solid #707070;
+}
+
+.nav-pills {
+  height: 50px;
+}
+
+.cart-tab-content {
+  padding-top: 120px !important;
+}
+
+.coupon-button-box {
+  padding-top: 60px !important;
+}
+
+.nav-pills > li > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 14px;
+  line-height: unset;
+}
+
+#nav-classe-scommessa {
+  height: 100%;
+  min-height: 50px;
+  padding: 8px;
+  border-bottom: 1px solid #101010;
+}
+
+#nav-live-sports {
+  min-height: 75px;
+  padding-top: 5px;
+  height: 100%;
+}
+
+.sport-img-slider {
+  min-width: 75px;
+  min-height: 75px;
+}
+
+.sport-img-container {
+  height: 100%;
+}
+
+.sport-img {
+  margin: 10px auto;
+}
+
+.nav-slider-item {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.toast {
+  top: 63px !important;
+}
+
+.list-element {
+  height: 100%;
+  min-height: 50px;
+  padding: 8px;
+}
+
+.list-element-quota {
+  border-bottom: 1px solid #101010;
+}
+
+.list-element-text {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.list-element-info {
+  font-size: 14px;
+}
+
+.heading {
+  margin: 0 !important;
+  min-height: 50px !important;
+  font-size: 16px !important;
+}
+
+.avvenimento {
+  margin: 0;
+  background: #272727 !important;
+  padding: 4px 8px;
+}
+
+.esito {
+  background: #3c3c3c !important;
+  min-height: 46px !important;
+}
+
+.ora-avvenimento {
+  color: #b3b3b3 !important;
+}
+
+.nome-esito,
+.quota-esito {
+  font-size: 12px !important;
+}
+
+.esito.bet-selected hr {
+  border-color: #101010 !important;
+}
+
+#top-button {
+  z-index: 1;
+}
+
+.wrapper-cart {
+  min-height: 100vh;
+}
+
+.shopping-cart-accept-mod-quote {
+  font-weight: 600;
+}
+
+#betting_section {
+  margin: 0 1.5%;
+  width: 97%;
+}
+
+.coupon-result-text-box {
+  height: 100%;
+}
+
+.coupon-result-title,
+.cart-desc-scom {
+  margin: 6px 0;
+}
+
+.coupon-result-title {
+  font-size: 16px;
+}
+
+.cart-desc-scom {
+  font-size: 14px;
+}
+
+.cart-desc-draw-odd {
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+.tab-coupon-final-divider {
+  font-weight: 600;
+}
+
+.coupon-multiple-amount-input,
+.sistemi-input-result {
+  background-color: #fff;
+}
+
+.vincita-totale {
+  box-shadow: none !important;
+  padding: 8px 0;
+  font-size: 14px !important;
+}
+
+.vincita-totale .potential-win-multiple {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.modifiche_quote_section > div > label {
+  font-family: lato, sans-serif;
+}
+
+input[type="checkbox"].bigcheckbox + label::before,
+input[type="checkbox"].systemCheckbox + label::before {
+  border-radius: 0;
+}
+
+input[type="checkbox"].bigcheckbox:checked + label::after {
+  top: -17px;
+}
+
+input[type="checkbox"].systemCheckbox + label::after {
+  top: -12px;
+}
+
+.wave {
+  background-image: none !important;
+}
+
+.container-bet-bet-refill {
+  padding: 16px 5%;
+  min-height: unset;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-bet-bet-refill > .btn {
+  box-shadow: none !important;
+  width: 31%;
+  font-size: 16px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-bet-bet-refill > .btn-play,
+.container-bet-bet-refill > .btn > div {
+  padding: 0;
+  padding-top: 12px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+.container-bet-bet-refill > .btn-play {
+  text-transform: uppercase;
+}
+
+.errorEntryCart {
+  background-color: red !important;
+  font-family: lato, sans-serif;
+  font-size: 16px;
+  box-shadow: none;
+}
+
+.warningEntryCart,
+.questionEntryCart {
+  font-family: lato, sans-serif;
+  font-size: 16px;
+  border-radius: 0;
+}
+
+.sistemi-result-ncomb-title {
+  width: 75%;
+  border-radius: 0 !important;
+  font-weight: 600;
+}
+
+.sistemi-result-import-title {
+  width: 20%;
+  border-radius: 0 !important;
+}
+
+.sistemi-result-check-box,
+.split-stake-label {
+  width: 73% !important;
+}
+
+.sistemi-result-check-box,
+.combinations,
+.split-stake-label,
+.cart-total-price {
+  font-size: 14px;
+}
+
+.cart-total-price-system,
+.cart-bonus-min-system,
+.cart-bonus-max-system {
+  font-weight: 600;
+}
+
+.cart-total-price > .left {
+  margin-left: 0;
+}
+
+.tab-pane {
+  padding: 16px 8px;
+}
+
+.mainText {
+  width: 100%;
+  margin: 0;
+  font-size: 14px;
+}
+
+.reservationAreaContainer .mainText {
+  padding: 16px 8px 0;
+}
+
+.formReloadReservation {
+  width: 100%;
+  margin: 0;
+  padding: 16px 8px;
+}
+
+.reservationAreaContainer {
+  box-shadow: none;
+}
+
+.formReloadReservation > .inputReservationContainer {
+  width: 100% !important;
+  margin: 0;
+}
+
+.inputReservation {
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+
+.formReloadReservation > .reloadReservationButton {
+  width: 35% !important;
+  font-size: 16px;
+  margin-left: 0 !important;
+  top: 0;
+  position: relative;
+}
+
+.reloadReservationButtonLabel {
+  padding: 11px 0;
+  text-transform: uppercase;
+}
+
+.headerPrenotazioniEffettuate {
+  border-radius: 0 !important;
+  padding: 8px 0;
+  height: 100% !important;
+}
+
+.headerPrenotazioniEffettuate > .mainText {
+  padding-top: 0 !important;
+}
+
+.reservationRow {
+  padding: 16px 0;
+  border-bottom: 1px solid #101010;
+}
+
+.reservationRow > .inputReservationContainer {
+  height: auto;
+  margin: 0 0 16px;
+  width: 100%;
+}
+
+.reservationRow > .reloadReservationButton {
+  margin: 0;
+  border-radius: 0;
+  border: 0;
+  font-size: 15px;
+  width: 25%;
+}
+
+#cg-prematch-button {
+  width: 100%;
+  max-width: 25%;
+}
+
+#cg-prematch-button,
+#cg-live-button,
+#cg-betslip-button {
+  border-right: 2px solid #272727;
+}
+
+#cg-prematch-button .cg-icon,
+#cg-live-button .cg-icon,
+#cg-betslip-button .cg-icon,
+#cg-contoButton .cg-icon,
+#cg-mybet-button .cg-icon {
+  display: none;
+}
+
+#cg-contoButton i.cg-icon.cg-ico-user-logged {
+  display: block;
+  background-size: 17px;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-top: -3px;
+}
+
+#cg-prematch-button .cg-labelMenu,
+#cg-live-button .cg-labelMenu,
+#cg-betslip-button .cg-labelMenu,
+#cg-contoButton .cg-labelMenu,
+#cg-pvr-crea-conto-button .cg-labelMenu,
+#cg-pvr-conto-ricarica-button .cg-labelMenu,
+#cg-pvr-conto-scratch-button .cg-labelMenu,
+#cg-mybet-button .cg-labelMenu {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+#cg-pvr-crea-conto-button .cg-labelMenu,
+#cg-pvr-conto-ricarica-button .cg-labelMenu,
+#cg-pvr-conto-scratch-button .cg-labelMenu {
+  width: 100%;
+  overflow: hidden;
+  white-space: pre-wrap;
+  text-align: center;
+  font-size: 11px;
+}
+
+.cg-iconContainer .cg-selection-border {
+  position: absolute;
+  bottom: 0;
+}
+
+.cg-notification-circle {
+  font-size: 11px;
+}
+
+#cg-live-button .cg-notification-circle {
+  top: 8px;
+  right: 15px;
+}
+
+#cg-betslip-button .cg-notification-circle {
+  top: 5px;
+  right: 2px;
+}
+
+.cg-landing-section-container {
+  margin: 0;
+  border-radius: 0;
+  padding: 8px 0;
+  height: auto;
+}
+
+#cg-sport-live-container {
+  margin: 0;
+  border-radius: 0 !important;
+}
+
+.cg-live-item {
+  margin: 0;
+  border-radius: 0;
+  padding: 8px;
+}
+
+.cg-live-text-sport {
+  font-size: 1rem;
+  padding: 0 2px;
+}
+
+.cg-info-tournament {
+  font-size: 1rem;
+}
+
+.cg-odd-live {
+  border-radius: 0;
+  border: 0;
+  min-height: 0;
+  padding: 0 8px;
+}
+
+.cg-odd-live > .cg-top {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 4px 0;
+}
+
+.cg-odd-live > .cg-bottom {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 4px 0;
+  border-color: #272727;
+}
+
+.cg-odd.cg-selected > .cg-odd-right,
+.cg-odd-live.cg-selected > .cg-bottom,
+.cg-odd-antepost.cg-selected > .cg-bottom {
+  border-color: #101010;
+}
+
+div#top-button {
+  bottom: 70px !important;
+}
+
+.current-period {
+  color: #949494 !important;
+  font-size: 13px !important;
+}
+
+#cg-pvr-body {
+  top: 60px;
+  padding-bottom: 119px;
+}
+
+#cg-pvr-confirm-popup .cg-signup-popup-logo {
+  background-size: 120px;
+}
+
+.cg-signup-section-container {
+  border-top: 2px solid #3c3c3c !important;
+}
+
+.cg-step-selector {
+  background-color: rgba(46, 139, 75, 0.6) !important;
+}
+
+.cg-recover-separator {
+  background: 0 0;
+  height: 50px;
+  line-height: 50px;
+}
+
+div#cg-recover-text-alert {
+  font-size: 14px;
+  line-height: 19px !important;
+}
+
+div#cg-recover-button-fase1 > div {
+  line-height: 26px;
+}
+
+div#cg-message-option-button-container > div:nth-child(2) {
+  background: 0 0 !important;
+  background-color: #ffd800 !important;
+  border-radius: 0;
+  border: none;
+}
+
+div#cg-message-refresh {
+  background: 0 0 !important;
+  background-color: #ffd800 !important;
+  border-radius: 0;
+  border: none;
+  color: #fff !important;
+  font-size: 14px;
+}
+
+.cg-header-popup-title {
+  color: #fff !important;
+  background-color: #272727 !important;
+}
+
+.cg-header-popup-label a {
+  color: #ffd800;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.cg-filled-label {
+  font-size: 14px;
+}
+
+.cg-signup-popup-button > div {
+  color: #fff !important;
+}
+
+#cg-user-profile-residence-container input,
+#cg-user-profile-residence-container select,
+#cg-user-profile-contact-container input {
+  pointer-events: none;
+}
+
+#cg-user-profile-contact-container .cg-signup-input-border,
+#cg-user-profile-residence-container .cg-signup-input-border {
+  background: linear-gradient(
+    var(--cg-signup-field-gradient),
+    var(--cg-signup-disabled)
+  );
+  color: #000;
+}
+
+#cg-user-profile-document-container #cg-document-type,
+#cg-user-profile-document-container #cg-document-id,
+#cg-user-profile-document-container #cg-document-release,
+#cg-user-profile-document-container #cg-document-expire,
+#cg-user-profile-document-container #cg-document-release-place,
+#cg-user-profile-document-container #cg-document-release-day,
+#cg-user-profile-document-container #cg-document-release-month,
+#cg-user-profile-document-container #cg-document-release-year,
+#cg-user-profile-document-container #cg-document-expire-day,
+#cg-user-profile-document-container #cg-document-expire-month,
+#cg-user-profile-document-container #cg-document-expire-year {
+  pointer-events: none;
+}
+
+.cg-cookies-popup-container {
+  display: none;
+}
+
+#shopping-cart-tab-coupon .cart-tab-content {
+  padding-top: 150px !important;
+}
+
+.loader-label {
+  color: #fff !important;
+}
+
+.loader-cart-success .checkmark__circle {
+  stroke: #ffd800 !important;
+  fill: #ffd800 !important;
+}
+
+#acceptance-cart-loader .bouncing-cart-loader > div {
+  background-color: #ffd800 !important;
+}
+
+#lite-ticket-search-button,
+#lite-ticket-info-account {
+  background-color: #ffd800 !important;
+  color: #fff !important;
+}
+
+.function-field > .filled-label,
+.lite-select-range-field {
+  color: #fff !important;
+}
+
+#sp2-oia-gate,
+#sp5-oia-gate,
+#sp8-oia-gate,
+#sp11-oia-gate {
+  display: none;
+}
+
+.cg-pvr-contratti-item a:last-child {
+  display: none;
+}
+
+#cg-user-profile-contratto-container .cg-field-wrapper div:last-child {
+  display: none;
+}
+
+#cg-message-container .cg-message-preview {
+  background-color: #ededed !important;
+}
+
+#cg-loggedMask .cg-ico-message,
+.cg-iconContainer .cg-ico-message {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/msg.svg) !important;
 }
 
 .cg-showedIco {
-  background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/contogioco/showed-eye-white.svg");
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/showed-eye.svg) !important;
+  background-size: 100%;
 }
 
 .cg-notShowedIco {
-  text-align: center;
-  background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/contogioco/hidden-eye-white.svg");
-}
-.cg-ico-search {
-  background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/search.svg") !important;
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/hidden-eye.svg) !important;
+  background-size: 100%;
 }
 
-.cg-slide-ico-lotterie {
-  background-image: url("https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-lottery.svg");
+#cg-message-section-text-container .cg-message-text {
+  background-color: #ededed !important;
 }
 
-.cg-slide-ico-casino-live {
-  background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/casinoL.svg") !important;
+#cg-loggedMask .cg-ico-message > .cg-message-info-box {
+  background-color: #ffd800 !important;
 }
 
-.cg-slide-ico-virtual {
-  background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/virual.svg") !important;
+#cg-carousel-casino-container {
 }
 
-.cg-slide-ico-carte {
-  background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-cardgames.svg) !important;
+.cg-casino-game-opacity {
+  background-color: rgba(0, 0, 0, 0.65) !important;
 }
 
-.cg-slide-ico-gv {
-  background-image: url(https://www.scommettendo.it/external_cms/SCOMMETTENDO/new-mobile-images/ico/menu-icons/menu-scratch.svg) !important;
-}
-.ion-md-send:before {
-  font-size: 25px;
-  color: #ffe01a;
+.cg-casino-game-title,
+#cg-pvr-search-result {
+  color: #fff !important;
 }
 
-.ion-md-albums:before {
-  font-size: 25px;
-  color: #ffe01a;
+.cg-casino-buttons-container .cg-casino-game-button {
+  border: none !important;
+  background-color: #ffd800 !important;
 }
 
-.cg-buttonMenuMobile {
-  margin-left: auto;
+.cg-bouncing-loader > div,
+.bouncing-loader > div,
+.cg-signup-popup-button {
+  background: #ffd800 !important;
+}
+
+.cg-loader-container {
+  background-color: #272727 !important;
+}
+
+.cg-arrow {
+  color: #ffd800 !important;
+}
+
+.black ul.slick-dots li.slick-active {
+  background: #ffd800 !important;
+}
+
+.cg-errorLoginField {
+  color: #f44336;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+// .cg-favicon {
+//   background-image: url(https://resources2.betaland.it/images/betaland/beta.ico) !important;
+// }
+
+.info-avvenimento {
+  color: #fff !important;
+}
+
+.nome-avvenimento {
+  color: #fff;
+}
+
+.list-heading {
+  color: #fff !important;
+}
+
+.live-tv-icon {
+  background-image: url(https://resources2.betaland.it/images/betaland/svg/tv.svg) !important;
+}
+
+#betbutton.play {
+  padding-top: 0 !important;
+}
+
+#cg-mybet-button .cg-tabLayerMobile > div {
+  background-color: #272727 !important;
+}
+
+#cg-tabContainer {
+  background-color: #272727 !important;
+}
+
+.cg-mybet-section .nav-slider {
+  white-space: nowrap;
+  background-color: #3c3c3c;
+  overflow-x: auto;
+  overflow-y: hidden;
+  will-change: overflow-y;
+  box-shadow: inset 0 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: #fff !important;
+}
+
+.nav-slider-item {
+  color: #fff !important;
+}
+
+.cg-mybet-section .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111;
+  border-radius: 50%;
+  margin-left: 0.2rem;
+  height: 20px;
+  width: 20px;
+  font-size: 13px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.18);
+  background-color: #ffdb00 !important;
+  color: #000 !important;
+}
+
+.cg-mybet-section {
+  background-color: #272727 !important;
+}
+
+.cg-mybet-section .mybet-container {
+  margin: 1rem;
+  margin-bottom: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.18);
+  background-color: #3c3c3c !important;
+  color: #fff !important;
+}
+
+.light-grey-bg {
+  background: 0 0 !important;
+}
+
+.light-grey-bg {
+  background: 0 0 !important;
+}
+
+.grey-box {
+  background-color: transparent !important;
+}
+
+.grey {
+  color: #fff !important;
+}
+
+.cg-mybet-section .margin-top-10pc {
+  color: #fff;
+}
+
+#my-bets-container
+  .mybet-container
+  .d-flex.flex-column
+  .d-flex.flex-column.margine-su-giu
+  .d-flex.align-items-center
+  .d-flex.flex-column.justify-content-center
+  .d-flex.align-items-center.margine-su-giu.pointer
+  img {
+  background-color: #fff;
+}
+
+#my-bets-container
+  .mybet-container
+  .d-flex.flex-column.margine-su-giu
+  .d-flex.align-items-center
+  .d-flex.flex-column.justify-content-center
+  .d-flex.align-items-center.margine-su-giu.pointer
+  img {
+  background-color: #fff;
+}
+
+#my-bets-navbar .selected {
+  border-bottom-color: #ffd800;
+}
+.xp-field-wrapper {
+  color: #fff;
+}
+.xp-balance-selection {
+  color: #fff;
 }
 .cg-iconContainer {
-  color: inherit;
-}.xp-balance-selection {
   color: #fff;
-}.cg-mybet-section .mybet-container {
-  color: #222;
-}.cg-mybet-section {
-  color: #222;
-}
-.cg-landing-section-container {
-  background-color: var(--teableHeadersBg); 
-  color: var(--teableHeadersCol);
-  border-radius: 0;
-}
-.cg-odds-color {
-  color: inherit;
-}
-.cg-odd {
-  background: var(--bg1);
-  color: var(--col1);
 }
 
-.cg-odd.cg-selected, .cg-odd-live.cg-selected, .cg-odd-antepost.cg-selected {
-  background: var(--accent-bg);
-  color: var(--accent-txt);
-}
-.event-desc,.cg-signup-input-label,.cg-function-arrow  {
-  color: inherit;
-}
-
-
-.cg-info-go-back {
-  background: transparent;
+.cg-ico-search,
+.cg-ico-sport,
+.cg-ico-mybet {
+  filter: invert(1);
 }

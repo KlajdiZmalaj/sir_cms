@@ -624,7 +624,7 @@ body[page="xcasino"] {
 }
 
 body[subpage="sport"] {
-  .sottomenu-main {
+  &:not(.altezza-max) .sottomenu-main {
     display: none;
   }
   .logo {

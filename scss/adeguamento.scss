@@ -3248,7 +3248,7 @@ body #wrapper .game-event-btn.selected,
   box-shadow: inset 0px 0px 0px 1px #000;
 }
 
-.giocabilita-s:hover span {
+.giocabilita-s:not(.dropdown):hover span {
   color: var(--accent-txt);
 }
 
@@ -6647,7 +6647,7 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #1c1c1c;
-    display: none
+    display: none;
   }
   .widget-bestseller-table {
     tbody {
