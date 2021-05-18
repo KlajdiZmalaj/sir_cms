@@ -310,7 +310,7 @@ body {
 }
 
 .titolo-competizione-live.bg-grigio-scuro {
-  background-color: var(--custom-brand-clickable-bg-1-dark) !important;
+  background-color: #1a1a1a !important;
   color: #fff !important;
 }
 
@@ -326,7 +326,7 @@ body {
 .tabellaQuoteIntestazione .tabellaQuoteStatistiche,
 .tabellaQuoteIntestazione .tabellaQuoteAltre,
 .tabellaQuoteIntestazione .tabellaQuoteIntestazione-GruppoQuote {
-  background-color: var(--custom-brand-color-1) !important;
+  background: linear-gradient(#c5a606, #f5d017 9.36%, #ffdb23 40.39%, #ceae0c);
   color: #222 !important;
 }
 
@@ -336,17 +336,24 @@ body {
 }
 
 .tablesExpanded .contenitore-table.bg-bianco {
-  background-color: var(--custom-brand-color-2-dark) !important;
+  background-color: #1a1a1a !important;
+  border: solid 1px yellow;
+  margin-top: 0.5px;
+  border-radius: 0;
 }
 
 .tabellaQuoteIntestazione,
 .tablesExpanded .tabellaQuoteNew,
 .tablesExpanded .tabellaQuoteIntestazione.tabellaQuoteIntestazionePrematch {
-  background-color: var(--custom-brand-color-2) !important;
+  background-color: #1a1a1a !important;
+}
+
+.tabellaQuoteNew.text_s1.mb-2 {
+  border-top: solid 1px yellow;
+  border-radius: 0;
 }
 
 .tablesExpanded .tabellaQuoteNew:hover {
-  background-color: var(--custom-brand-color-1-opacity-style-1) !important;
 }
 
 .tabellaQuoteIntestazione .tabellaQuoteIntestazione-QuotaSingola,
@@ -355,11 +362,15 @@ body {
 .tabellaQuoteIntestazione button.dropdown-toggle span,
 .tablesExpanded .tabellaQuoteIntestazione-QuotaSingola > p,
 .tablesExpanded .tabellaQuoteIntestazione-QuotaSingola .sortContainer i {
-  color: var(--custom-white-color) !important;
+  color: #ffffff !important;
 }
 
 .stat-sel {
   color: var(--custom-white-color) !important;
+}
+
+.tabellaQuoteIntestazione.text_s1.mb-2 .dropdown-toggle::after {
+  color: #ffd919;
 }
 
 .stat-sel:hover {
@@ -420,7 +431,8 @@ body {
 .contenitoreSingolaQuota,
 .quota-con-nome,
 .quota-widget-evento.quota {
-  background-color: var(--custom-brand-clickable-bg-1-dark) !important;
+  background-color: #1a1a1a !important;
+  border: solid 1px #575757;
 }
 
 .gridInterernaQuotazioni button.dropdown-toggle {
@@ -459,7 +471,7 @@ body {
 .quota-con-nome.selezionata,
 .quota-widget-evento.quota:hover,
 .quota-widget-evento.quota.selezionata {
-  background-color: var(--custom-brand-active-color-1) !important;
+  background-color: #1a1a1a !important;
 }
 
 .titoloQuotazione,
@@ -472,7 +484,7 @@ body {
 .tipoQuotazione_1,
 .quota-con-nome span:last-child,
 .quota-widget-evento.quota > *:last-child {
-  color: white;
+  color: #929292;
 }
 
 .contenitoreSingolaQuota:hover,
@@ -493,7 +505,7 @@ body {
 .quota-widget-evento.quota.selezionata > span:last-child,
 .quota-widget-evento.quota:hover > *:last-child,
 .quota-widget-evento.quota.selezionata > *:last-child {
-  color: var(--custom-black-color) !important;
+  color: #fff !important;
 }
 
 .blocco-quote-espanse .scheda-giocata-sport,
@@ -724,7 +736,7 @@ a.scAggiuntiva.active {
 }
 
 .icone-sport-centrale > .row {
-  background-color: var(--custom-brand-color-1) !important;
+  background: linear-gradient(#c5a606, #f5d017 9.36%, #ffdb23 40.39%, #ceae0c);
   color: #222 !important;
 }
 
@@ -738,8 +750,8 @@ a.scAggiuntiva.active {
 
 #primo-blocco-sport .titolo-blocco-sport,
 .live-in-prematch {
-  background-color: var(--custom-brand-color-1) !important;
   color: #222 !important;
+  background: linear-gradient(#c5a606, #f5d017 9.36%, #ffdb23 40.39%, #ceae0c);
 }
 
 #primo-blocco-sport .titolo-blocco-sport span:first-child {
@@ -1367,4 +1379,12 @@ span#reservation-number {
 
 .titolo-blocco-sport {
   min-height: 25px;
+}
+
+.tabellaQuoteIntestazione .tabellaQuoteIntestazione-QuotaSingola > p {
+  color: #ffd919 !important;
+}
+
+.tabellaQuoteIntestazione button.dropdown-toggle .uo-selezionato {
+  color: #ffd919 !important;
 }
