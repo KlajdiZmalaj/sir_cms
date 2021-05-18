@@ -472,7 +472,7 @@ body {
 .tipoQuotazione_1,
 .quota-con-nome span:last-child,
 .quota-widget-evento.quota > *:last-child {
-  color: var(--custom-brand-active-color-1) !important;
+  color: white;
 }
 
 .contenitoreSingolaQuota:hover,
@@ -801,7 +801,7 @@ figure.paese-icona-live:hover {
 }
 
 .destra-top-match .titolo-blocco-sport {
-  background-color: var(--custom-brand-color-1) !important;
+  background: linear-gradient(#c5a606, #f5d017 9.36%, #ffdb23 40.39%, #ceae0c);
   color: #222 !important;
   margin-top: 8px !important;
 }
@@ -811,7 +811,7 @@ figure.paese-icona-live:hover {
 }
 
 .blocco-interno-evento .info-evento-centrale {
-  background-color: var(--custom-brand-color-1) !important;
+  background-color: black;
   color: var(--custom-white-color) !important;
 }
 
@@ -1092,7 +1092,7 @@ a.consulta-chat {
   border-right: 0;
 }
 :root {
-  --moltiplicatore-font-size: 1.05;
+  --moltiplicatore-font-size: 1.15;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1363,4 +1363,8 @@ span#reservation-number {
 }
 .up-arrow-on-overflow > * {
   background-color: #222;
+}
+
+.titolo-blocco-sport {
+  min-height: 25px;
 }

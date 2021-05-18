@@ -1396,9 +1396,6 @@ div#cg-message-refresh {
   background-color: #ffd800 !important;
 }
 
-#cg-carousel-casino-container {
-}
-
 .cg-casino-game-opacity {
   background-color: rgba(0, 0, 0, 0.65) !important;
 }
@@ -1570,4 +1567,57 @@ div#cg-message-refresh {
 .cg-ico-sport,
 .cg-ico-mybet {
   filter: invert(1);
+}
+
+.cg-promo-bonus-icon {
+  filter: invert(1);
+}
+
+.cg-promo-football-icon {
+  filter: invert(1);
+}
+
+.cg-promo-slot-icon {
+  filter: invert(1);
+}
+
+.cg-step-selector.cg-filter-promo.cg-default.cg-selected {
+  border-radius: 5px !important;
+}
+
+div#cg-promo-preview-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.cg-container-border {
+  margin: 10px;
+  border: solid 1px black;
+  width: calc(100% / 2 - 20px);
+}
+
+.cg-step-selector.cg-filter-promo.cg-default.cg-selected {
+  border-radius: 5px !important;
+}
+
+.cg-promo-template-01 .cg-step-selector.cg-filter-promo {
+  min-width: 75px;
+  border-radius: 5px !important;
+}
+
+.cg-container-image-section {
+  height: 156px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cg-promo-item-img {
+  height: 300px;
+  width: 90%;
+}
+
+.cg-info-go-back {
+  background: linear-gradient(#3c3c3c 0%, #cecece 40%, #808080 100%);
 }

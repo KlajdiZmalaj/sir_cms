@@ -12,6 +12,7 @@
   padding-bottom: 0;
   position: absolute;
   // bottom: 50px;
+  margin-left: -10px;
 }
 .cg-error-container {
   background-color: #ff0000;
@@ -25,6 +26,7 @@
   font-size: 0;
   display: inline-block;
   float: right;
+
   &:after {
     content: "?";
     position: absolute;
@@ -656,7 +658,7 @@ body[subpage="promo"] {
 
 body[subpage="live"] {
   .logo {
-    bottom: 50px;
+    bottom: 10px;
   }
 }
 
