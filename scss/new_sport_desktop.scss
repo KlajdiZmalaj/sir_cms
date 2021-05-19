@@ -115,6 +115,17 @@ body {
 .sottomenu-nav > .nav {
   justify-content: unset !important;
   background-color: #464646 !important;
+  margin: auto;
+}
+
+.sottomenu-nav,
+.sottomenu-nav > .nav {
+  -webkit-box-pack: unset !important;
+  -ms-flex-pack: unset !important;
+  justify-content: unset !important;
+  background-color: #464646 !important;
+  margin: auto;
+  padding-right: 90px;
 }
 
 .sottomenu-nav .active,
@@ -542,7 +553,7 @@ body {
 }
 
 .titolo-widget-stampa.bg-nero {
-  background-color: var(--custom-brand-color-1) !important;
+  background: linear-gradient(#c5a606, #f5d017 9.36%, #ffdb23 40.39%, #ceae0c);
   color: #222 !important;
 }
 
@@ -756,6 +767,7 @@ a.scAggiuntiva.active {
 
 #primo-blocco-sport .titolo-blocco-sport span:first-child {
   font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .live-in-prematch span::before {
@@ -1104,7 +1116,7 @@ a.consulta-chat {
   border-right: 0;
 }
 :root {
-  --moltiplicatore-font-size: 1.15;
+  --moltiplicatore-font-size: 1.05;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1387,4 +1399,45 @@ span#reservation-number {
 
 .tabellaQuoteIntestazione button.dropdown-toggle .uo-selezionato {
   color: #ffd919 !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d8b711 !important;
+}
+
+span.voce-riduci.bianco {
+  font-weight: 100 !important;
+}
+
+.box-vincita-potenziale.testo-piccolo.bottoni-var-quote {
+  width: 90%;
+}
+.tabellaQuoteTempo p {
+  display: flex !important;
+}
+
+.tabellaQuoteTempo p::before {
+  margin-right: 5px;
+  margin-top: -2px;
+  display: none;
+  width: 15px;
+  display: block;
+  height: 15px;
+  background-size: contain;
+  background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/live2jz.svg);
+}
+
+.ricerca-titolo-blocco-sport input {
+  height: 20px;
+}
+
+.ricerca-titolo-blocco-sport::before {
+  content: "";
+  display: block;
+  background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/search-logo.svg);
+  height: 15px;
+  width: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 5px;
 }
