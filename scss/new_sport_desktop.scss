@@ -248,7 +248,7 @@ body {
 
 .elemento-competizioni-widget.singola-competizione:hover,
 .elemento-competizioni-widget.singola-competizione.competizione-attiva {
-  background-color: var(--custom-brand-color-1-opacity-style-1) !important;
+  background-color: #424242 !important;
 }
 
 .elemento-competizioni-widget.singola-competizione {
@@ -337,8 +337,8 @@ body {
 .tabellaQuoteIntestazione .tabellaQuoteStatistiche,
 .tabellaQuoteIntestazione .tabellaQuoteAltre,
 .tabellaQuoteIntestazione .tabellaQuoteIntestazione-GruppoQuote {
-  background: linear-gradient(#c5a606, #f5d017 9.36%, #ffdb23 40.39%, #ceae0c);
-  color: #222 !important;
+  color: #fff !important;
+  background: #212121;
 }
 
 .la-soffiata-box.bg-bianco,
@@ -356,12 +356,25 @@ body {
 .tabellaQuoteIntestazione,
 .tablesExpanded .tabellaQuoteNew,
 .tablesExpanded .tabellaQuoteIntestazione.tabellaQuoteIntestazionePrematch {
-  background-color: #1a1a1a !important;
+  background-color: #323232 !important;
 }
-
+.contenitoreRiga:not(:last-child),
+.mb-2,
+.my-2 {
+  margin-bottom: 0 !important;
+}
 .tabellaQuoteNew.text_s1.mb-2 {
-  border-top: solid 1px yellow;
+  box-shadow: 0px -1px #000;
+  border-top: solid 1px #505050;
   border-radius: 0;
+  margin-bottom: 0 !important;
+  padding: 0;
+  padding-bottom: 5px;
+}
+.contenitore-table-grande {
+  .tabellaQuoteIntestazione-GruppoQuote p {
+    white-space: nowrap;
+  }
 }
 
 .tablesExpanded .tabellaQuoteNew:hover {
@@ -442,8 +455,13 @@ body {
 .contenitoreSingolaQuota,
 .quota-con-nome,
 .quota-widget-evento.quota {
-  background-color: #1a1a1a !important;
-  border: solid 1px #575757;
+  background-color: transparent !important;
+  border: 0;
+}
+.risultatoEsattoGrid {
+  .quota {
+    padding: 2px;
+  }
 }
 
 .gridInterernaQuotazioni button.dropdown-toggle {
@@ -482,7 +500,7 @@ body {
 .quota-con-nome.selezionata,
 .quota-widget-evento.quota:hover,
 .quota-widget-evento.quota.selezionata {
-  background-color: #1a1a1a !important;
+  background-color: #fff !important;
 }
 
 .titoloQuotazione,
@@ -495,7 +513,7 @@ body {
 .tipoQuotazione_1,
 .quota-con-nome span:last-child,
 .quota-widget-evento.quota > *:last-child {
-  color: #929292;
+  color: #fff;
 }
 
 .contenitoreSingolaQuota:hover,
@@ -516,7 +534,7 @@ body {
 .quota-widget-evento.quota.selezionata > span:last-child,
 .quota-widget-evento.quota:hover > *:last-child,
 .quota-widget-evento.quota.selezionata > *:last-child {
-  color: #fff !important;
+  color: #222 !important;
 }
 
 .blocco-quote-espanse .scheda-giocata-sport,
@@ -1362,7 +1380,7 @@ a.consulta-chat {
 }
 
 .bg-grigio-chiaro {
-  background: #464646;
+  background: #505050 !important;
 }
 .tasto-abilita-carrello-scrollable[data-carrello-scrollable-abilitato="true"] {
   color: inherit !important;
@@ -1440,4 +1458,119 @@ span.voce-riduci.bianco {
   background-size: contain;
   background-repeat: no-repeat;
   margin-right: 5px;
+}
+.contenitore-table {
+  // .tabellaQuoteNew {
+  //   position: relative;
+  // }
+  .tabellaQuoteSquadre.pointer {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .tabellaQuoteSquadreSeparatore {
+    display: flex !important;
+    font-size: 0 !important;
+    &::before {
+      content: " - ";
+      font-size: 14px !important;
+    }
+  }
+  // .tabellaQuoteRisultatiParziali {
+  //   position: absolute;
+  //   left: 70%;
+  //   top: -20px;
+  // }
+}
+
+[page="ingame"] {
+  .tablesExpanded .tabellaQuoteNew,
+  .tablesExpanded .tabellaQuoteIntestazione {
+    grid-template-columns: 69px 29px 1fr max-content 19px 54px;
+    margin-bottom: 0 !important;
+  }
+  .tabellaQuoteNew.text_s1.mb-2 {
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    box-shadow: 0px -1px #000;
+    border-top: solid 1px #505050;
+
+    > * {
+      order: 10;
+    }
+    .tabellaQuoteTempo {
+      width: auto;
+      order: 1;
+      .tempo-live.text-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+      }
+      .risultato-live.grassetto {
+        display: none;
+      }
+    }
+    .tabellaQuoteCampetto {
+      width: 30px;
+      flex-shrink: 0;
+      order: 2;
+      img {
+        margin: 0 !important;
+      }
+    }
+
+    .tabellaQuoteContenitoreQuotazioni {
+      margin-left: auto;
+      width: auto;
+      order: 6;
+      flex-flow: row nowrap;
+      flex-shrink: 0;
+      .gridInterernaQuotazioni {
+        display: flex;
+        flex-flow: row nowrap;
+      }
+    }
+    .tabellaQuoteSquadre {
+      order: 4;
+      width: auto;
+      flex-grow: 0;
+      flex-shrink: 0;
+      max-width: 162px;
+    }
+    .tabellaQuoteRisultatiParziali {
+      order: 5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: none;
+      flex-grow: 1;
+      width: auto;
+      justify-content: flex-start;
+    }
+  }
+  body[data-available-table-space="2"]
+    .tablesExpanded
+    .gridInterernaQuotazioni
+    button.dropdown-toggle,
+  body[data-available-table-space="2"] .tablesExpanded .contenitoreSingolaQuota,
+  body[data-available-table-space="2"]
+    .tablesExpanded
+    .tabellaQuoteIntestazione-QuotaSingola {
+    min-width: 40px;
+    max-width: 40px;
+    flex-shrink: 0;
+  }
+}
+
+.competizione-sport {
+  .icons-container.force-grid-view {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  }
+  .icons-container.force-grid-view > .elementoDropdown {
+    min-width: 69px !important;
+  }
 }
