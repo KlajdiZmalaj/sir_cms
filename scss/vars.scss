@@ -151,3 +151,7 @@ body {
     border: 1px solid var(--tableBorders);
   }
 }
+
+.cg-favicon {
+  background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/sirfav.png");
+}
