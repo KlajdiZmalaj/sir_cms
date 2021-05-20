@@ -152,6 +152,7 @@ body {
 
 .sposta-sidebar {
   padding: 0.5rem !important;
+  display: none;
 }
 
 #tasto-mescola-sb {
@@ -223,6 +224,8 @@ body {
 
 .widget-competizioni-side .card.elemento-competizioni-widget {
   background-color: var(--custom-brand-color-2-dark) !important;
+  box-shadow: 0px -1px #000;
+  border-top: solid 1px #545454;
 }
 
 .regione-widget {
@@ -245,15 +248,22 @@ body {
 .regione-widget .contenitore-evento-widget .sotto-widget-evento hr {
   border-top: 1px solid #969696;
 }
-
+.apri-partite-in-evidenza.maiuscolo a {
+  background: #a70707;
+}
 .elemento-competizioni-widget.singola-competizione:hover,
 .elemento-competizioni-widget.singola-competizione.competizione-attiva {
   background-color: #424242 !important;
 }
-
+body .elemento-competizioni-widget.singola-competizione {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
 .elemento-competizioni-widget.singola-competizione {
   background-color: var(--custom-brand-color-2-dark) !important;
   color: var(--custom-white-color) !important;
+  box-shadow: 0px -1px #000;
+  border-top: solid 1px #545454;
 }
 
 .tablesCompacted#primo-blocco-sport,
@@ -324,7 +334,10 @@ body {
   background-color: #1a1a1a !important;
   color: #fff !important;
 }
-
+.icons-container-no-wrap > .icona-selezionata figure.paese-icona-live:after,
+.icons-container-no-wrap figure.paese-icona-live:hover::after {
+  transform: translateX(-50%) scale(0.9);
+}
 .icons-container-no-wrap > .icona-selezionata figure.paese-icona-live:after,
 .icons-container-no-wrap figure.paese-icona-live:hover::after {
   border-bottom: 10px solid var(--custom-brand-clickable-bg-1-dark) !important;
@@ -348,7 +361,7 @@ body {
 
 .tablesExpanded .contenitore-table.bg-bianco {
   background-color: #1a1a1a !important;
-  border: solid 1px yellow;
+  border: solid 1px #4d4d4d;
   margin-top: 0.5px;
   border-radius: 0;
 }
@@ -404,7 +417,14 @@ body {
 .tablesCompacted .tabellaQuoteNew .gridInterernaQuotazioni {
   background-color: transparent;
 }
-
+.tabellaQuoteNew.tabellaQuotePrematch {
+  .contenitoreSingolaQuota {
+    background: #323232 !important;
+    &.selezionata {
+      background: #fff !important;
+    }
+  }
+}
 .tablesCompacted .tabellaQuoteContenitoreQuotazioni {
   background-color: var(--custom-brand-color-2-dark) !important;
   border-radius: var(--custom-border-radius-2) !important;
@@ -1551,6 +1571,10 @@ span.voce-riduci.bianco {
       width: auto;
       justify-content: flex-start;
     }
+    .tabellaQuoteStatistiche {
+      flex-shrink: 0;
+      width: 35px;
+    }
   }
   body[data-available-table-space="2"]
     .tablesExpanded
@@ -1572,5 +1596,16 @@ span.voce-riduci.bianco {
   }
   .icons-container.force-grid-view > .elementoDropdown {
     min-width: 69px !important;
+  }
+}
+
+.elemento-competizioni-widget {
+  padding: 3px 5px;
+}
+.altezza-max-html {
+  a.consulta-footer,
+  a.consulta-chat {
+    padding: 6px !important;
+    white-space: nowrap;
   }
 }

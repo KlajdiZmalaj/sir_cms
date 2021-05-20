@@ -650,6 +650,12 @@ body[subpage="ippica"] {
 
 body[page="promo"],
 body[subpage="promo"] {
+  .container-fluid.fissato-alto
+    #nascondimenu
+    .row.bg-bianco
+    .menu-principale-barra.w-100 {
+    min-height: 120px;
+  }
   .logo {
     bottom: 50px;
     padding-left: 0;
