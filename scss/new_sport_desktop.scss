@@ -907,6 +907,7 @@ figure.paese-icona-live:hover {
   .box-slider-partite
   .titolo-box {
   background-color: var(--custom-brand-color-1) !important;
+  color: #222;
 }
 
 .sport-live-suite
@@ -1621,4 +1622,9 @@ span.voce-riduci.bianco {
 
 .widget-filtro-side div#collassaWidgetCompetition {
   border: 0;
+}
+.quote-extra .quota-con-nome span:last-child,
+.quota-con-nome span:last-child,
+.quota-widget-evento span:last-child {
+  color: #ffda21;
 }

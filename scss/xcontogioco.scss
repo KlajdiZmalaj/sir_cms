@@ -38,6 +38,9 @@
     padding: 2px;
     top: -2px;
   }
+  &[onclick="cg_recoverPassword(true)"]:after {
+    top: -18px;
+  }
 }
 .login-header {
   padding-right: 0;
@@ -1151,6 +1154,17 @@ body[page="ingame"]:not(.altezza-max) .logo a {
   left: 20px;
 }
 
-div#slick-slide04 {
-  display: none !important;
+// div#slick-slide04 {
+//   display: none !important;
+// }
+
+[page="promo"] {
+  .modal-content {
+    max-width: 440px;
+    margin: auto;
+    border-radius: 14px;
+  }
+  .cg-promo-signup-btn {
+    color: var(--promo-signup-button-text-color) !important;
+  }
 }
