@@ -390,9 +390,6 @@ body .elemento-competizioni-widget.singola-competizione {
   }
 }
 
-.tablesExpanded .tabellaQuoteNew:hover {
-}
-
 .tabellaQuoteIntestazione .tabellaQuoteIntestazione-QuotaSingola,
 .tablesExpanded .tabellaQuoteNew,
 .tablesExpanded .tabellaQuoteIntestazione.tabellaQuoteIntestazionePrematch,
@@ -1608,4 +1605,20 @@ span.voce-riduci.bianco {
     padding: 6px !important;
     white-space: nowrap;
   }
+}
+
+.elemento-competizioni-widget {
+  padding: 3px 5px;
+}
+.altezza-max-html {
+  a.consulta-footer,
+  a.consulta-chat {
+    padding: 6px !important;
+    white-space: nowrap;
+  }
+}
+@import "widget";
+
+.widget-filtro-side div#collassaWidgetCompetition {
+  border: 0;
 }

@@ -88,7 +88,6 @@
 //   }
 // }
 
-
 html:root {
   --active-color: #ffe01a;
   --teableHeadersBg: #2c2c2c;
@@ -114,9 +113,9 @@ html:root {
     display: -ms-flexbox !important;
     display: flex !important
 } */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
-*{
-  font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
 }
 #main_banner {
   .slick-dots {
@@ -127,13 +126,15 @@ html:root {
   }
   .slick-prev {
     left: 15px;
+    z-index: 1;
   }
   .slick-next {
     right: 15px;
   }
-  .slick-prev:before, .slick-next:before {
+  .slick-prev:before,
+  .slick-next:before {
     font-size: 18px;
-    color:var(--accent);
+    color: var(--accent);
   }
 }
 
@@ -188,23 +189,22 @@ body .bottomBanners .bottomBanner:hover img {
 }
 
 @media only screen and (max-width: 1024px) {
-
   body .bottomBanners {
-   display: block;
+    display: block;
   }
   body .bottomBanner {
     display: block;
     padding-bottom: 5px;
     a {
-      position: relative!important;
+      position: relative !important;
     }
   }
   body .carouselCenter {
     display: block;
     .sliderItem {
-    width: 100%;
-}
-}
+      width: 100%;
+    }
+  }
 }
 
 .cTitle {
@@ -268,4 +268,10 @@ body .bottomBanners .bottomBanner:hover img {
 }
 .carouselContainer .sliderItem {
   margin: 0 3px;
+}
+
+///jz
+
+.slick-dots {
+  bottom: -20px !important;
 }

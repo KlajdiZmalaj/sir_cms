@@ -7431,21 +7431,23 @@ a.blocco-mosaico {
   }
 }
 body {
-  #wrapper.prematch .game-btn-8, #wrapper.live_prematch .game-btn-8 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      white-space: nowrap;
-      word-break: break-all;    
-      height: 32px;
-      width: auto;
-      min-width: 97px;    
-      padding: 0 10px;
-    }
-    #wrapper.prematch .games-btn-container, #wrapper.live_prematch .games-btn-container {
-      display: flex;
-      flex-flow: row wrap;
-      align-items: center;
-      justify-content: flex-start;
-    }
- }
+  #wrapper.prematch .game-btn-8,
+  #wrapper.live_prematch .game-btn-8 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    word-break: break-all;
+    height: 32px;
+    width: auto;
+    min-width: 97px;
+    padding: 0 10px;
+  }
+  #wrapper.prematch .games-btn-container,
+  #wrapper.live_prematch .games-btn-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
