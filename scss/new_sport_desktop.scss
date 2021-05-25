@@ -1,18 +1,24 @@
 :root {
   --custom-white-color: #ffffff;
-  --custom-black-color: #000000;
+  --custom-black-color: #141414;
   --custom-brand-color-1: #ffd919;
+  --custom-brand-color-1-text: #000;
   --custom-brand-color-1-dark: #dab317;
   --custom-brand-color-1-opacity-style-1: #ffcc0152;
-  --custom-brand-color-2: #323232;
-  --custom-brand-color-2-dark: #272727;
+  --custom-brand-color-2: #141414;
+  --custom-brand-color-2-dark: #1C1C1C;
+  --custom-brand-color-3-dark: #4E4E4E;
+  --custom-brand-color-4-dark:  #2F2F2F;
+
   --custom-brand-color-3: #ffcb01;
   --custom-brand-active-color-1: #ffcb01;
+  --custom-brand-active-color-1-text: #000;
   --custom-brand-clickable-bg-1-dark: #4d4d4d;
   --custom-brand-clickable-bg-1-light: #777777;
   --custom-live-color: #dc3545;
   --custom-border-radius-1: 0.25rem;
   --custom-border-radius-2: 0.5rem;
+  --custom-border-color:#212121;
 }
 
 :root {
@@ -197,12 +203,11 @@ body {
 }
 
 #sidebar-sx {
-  background-color: var(--custom-brand-color-2) !important;
+  background-color: transparent !important;
+  border: 1px solid var(--custom-border-color);
 }
 
-#sidebar-sx > * {
-  background-color: var(--custom-brand-color-2-dark) !important;
-}
+
 
 .sidebar-sx-sport .widget-filtro-side {
   background-color: var(--custom-brand-color-2-dark) !important;
@@ -224,8 +229,10 @@ body {
 
 .widget-competizioni-side .card.elemento-competizioni-widget {
   background-color: var(--custom-brand-color-2-dark) !important;
-  box-shadow: 0px -1px #000;
-  border-top: solid 1px #545454;
+  padding: 7px 5px;
+}
+.widget-competizioni-side .card.elemento-competizioni-widget::before{
+  display: none;
 }
 
 .regione-widget {
@@ -249,21 +256,30 @@ body {
   border-top: 1px solid #969696;
 }
 .apri-partite-in-evidenza.maiuscolo a {
-  background: #a70707;
+  background: var(--custom-brand-color-3-dark);
+  text-align: left;
+  padding: 8px 10px;
+  height: 30px;
+  border-radius: 0;
+  &:last-child{
+    background: var(--custom-brand-color-1);
+    color: var(--custom-brand-color-1-text)!important;
+  }
+}
+.apri-partite-in-evidenza .margine-giu {
+  margin-bottom: 0;
 }
 .elemento-competizioni-widget.singola-competizione:hover,
 .elemento-competizioni-widget.singola-competizione.competizione-attiva {
   background-color: #424242 !important;
 }
 body .elemento-competizioni-widget.singola-competizione {
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 .elemento-competizioni-widget.singola-competizione {
   background-color: var(--custom-brand-color-2-dark) !important;
   color: var(--custom-white-color) !important;
-  box-shadow: 0px -1px #000;
-  border-top: solid 1px #545454;
 }
 
 .tablesCompacted#primo-blocco-sport,
@@ -331,8 +347,10 @@ body .elemento-competizioni-widget.singola-competizione {
 }
 
 .titolo-competizione-live.bg-grigio-scuro {
-  background-color: #1a1a1a !important;
+  background-color: (var(--custom-brand-color-4-dark)) !important;
   color: #fff !important;
+  border-radius: 0;
+  border-left: 2px solid var(--custom-brand-active-color-1);
 }
 .icons-container-no-wrap > .icona-selezionata figure.paese-icona-live:after,
 .icons-container-no-wrap figure.paese-icona-live:hover::after {
@@ -360,8 +378,7 @@ body .elemento-competizioni-widget.singola-competizione {
 }
 
 .tablesExpanded .contenitore-table.bg-bianco {
-  background-color: #1a1a1a !important;
-  border: solid 1px #4d4d4d;
+  background-color: transparent;
   margin-top: 0.5px;
   border-radius: 0;
 }
@@ -782,8 +799,10 @@ a.scAggiuntiva.active {
 }
 
 .icone-sport-centrale > .row {
-  background: linear-gradient(#c5a606, #f5d017 9.36%, #ffdb23 40.39%, #ceae0c);
-  color: #222 !important;
+  background: var(--custom-brand-color-2-dark);
+  color: var(--custom-white-color) !important;
+  padding: 8px 3px;
+  text-transform: uppercase;
 }
 
 #primo-blocco-sport .slider-icone-sport {
@@ -796,13 +815,17 @@ a.scAggiuntiva.active {
 
 #primo-blocco-sport .titolo-blocco-sport,
 .live-in-prematch {
-  color: #222 !important;
-  background: linear-gradient(#c5a606, #f5d017 9.36%, #ffdb23 40.39%, #ceae0c);
+  background: var( --custom-brand-color-2-dark);
+  color: var(--custom-white-color)!important;
+}
+.container-slider-icone-paese.has-icons-container-no-wrap {
+  padding: 0 7px;
 }
 
 #primo-blocco-sport .titolo-blocco-sport span:first-child {
   font-size: 1.25rem;
   font-weight: 600;
+  color: var(--custom-brand-active-color-1);
 }
 
 .live-in-prematch span::before {
@@ -827,6 +850,10 @@ figure.sport-icona-live:hover,
 .icona-selezionata figure.paese-icona-live,
 figure.paese-icona-live:hover {
   color: var(--custom-brand-active-color-1) !important;
+}
+figure.paese-icona-live .ico-cat {
+  height: 20px;
+  width: 20px;
 }
 
 .outrightsCont.bg-bianco,
@@ -1631,4 +1658,43 @@ span.voce-riduci.bianco {
 
 .customPopup__content__body {
   color: black;
+}
+
+
+#cg-header {
+  border-bottom: none;
+}
+
+.sottomenu-nav .active::after, 
+.sottomenu-nav a:hover::after {
+ display:none;
+}
+  
+.container-fluid.fissato-alto #nascondimenu .row.barra-intermedia {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.login-header .blocco-header .bottone-registrazione {
+  border-radius: 4px;
+  margin-left: 10px;
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--col1)!important;
+}
+
+
+// left menu
+.widget-ricerca-side {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-bottom: 1px solid var( --custom-border-color);
+  border-top: 1px solid var(--custom-border-color);
+  input {
+    background: var(--custom-brand-color-2);
+  }
+}
+ .live-badge {
+  background-color: var(--custom-brand-active-color-1);
+  color: var(--custom-brand-active-color-1-text);
 }
