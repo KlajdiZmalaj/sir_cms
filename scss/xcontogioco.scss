@@ -1180,3 +1180,42 @@ body[subpage="calendar"] {
     color: var(--promo-signup-button-text-color) !important;
   }
 }
+///////
+
+a#consultaFooter:hover {
+  color: #073862 !important;
+}
+
+a#nascondiFooter:hover {
+  color: #073862 !important;
+}
+
+.card-body > .grassetto,
+li.grassetto,
+a.grassetto {
+  color: #ffe01a;
+}
+
+html body[page="promo"] {
+  background-color: #0d0d0d;
+}
+
+html body[page="promo"] .card {
+  background-color: #262626;
+}
+
+html body[page="promo"] .content-wrapper {
+  background-color: #0d0d0d;
+}
+
+html body[page="promo"] #panel {
+  background-color: #0d0d0d;
+}
+
+i.fas {
+  margin-right: 0 !important;
+}
+
+button.bottone.cg-promo-info-btn.margine-dx {
+  font-weight: 600;
+}
