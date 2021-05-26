@@ -379,8 +379,12 @@ html {
 
   .tablesExpanded .contenitore-table.bg-bianco {
     background-color: transparent;
-    margin-top: 0.5px;
     border-radius: 0;
+    .tabellaQuoteContenitoreQuotazioni {
+      .contenitoreSetQuotazioni {
+        border-left: 1px solid var(--color2);
+      }
+    }
   }
 
   .tabellaQuoteIntestazione,
@@ -397,7 +401,6 @@ html {
     border-radius: 0;
     margin-top: 1px;
     padding: 0;
-    padding-bottom: 5px;
     background-color: var(--custom-brand-color-2-dark) !important;
     .tabellaQuoteCampetto {
       display: none;
@@ -866,7 +869,7 @@ html {
     figure.sport-icona-live:not(.sport-icona-live_template_2):after,
   .icons-container-no-wrap:not(.icons-container-no-arrow)
     figure.sport-icona-live:not(.sport-icona-live_template_2):hover::after {
-    border-bottom: 20px solid var(--custom-brand-color-1) !important;
+   display: none;
   }
 
   .icona-slider-sport,
@@ -882,10 +885,14 @@ html {
   .icona-selezionata figure.paese-icona-live,
   figure.paese-icona-live:hover {
     color: var(--custom-brand-active-color-1) !important;
+    border-bottom: 2px solid var(--custom-brand-active-color-1);
   }
   figure.paese-icona-live .ico-cat {
     height: 20px;
     width: 20px;
+  }
+  figure.paese-icona-live, figure.sport-icona-live {
+    border-radius: 0;
   }
 
   .outrightsCont.bg-bianco,
