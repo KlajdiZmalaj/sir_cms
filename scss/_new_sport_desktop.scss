@@ -1146,9 +1146,7 @@ html {
     width: 24px;
     height: 24px;
   }
-  .icone-controllo-sport-centrale img {
-    filter: invert(1) brightness(0) !important;
-  }
+
   .arrow-up {
     width: 0;
     height: 0;
@@ -1508,6 +1506,7 @@ html {
     background-size: contain;
     background-repeat: no-repeat;
     margin-right: 5px;
+    filter: invert(1);
   }
   .contenitore-table {
     // .tabellaQuoteNew {
