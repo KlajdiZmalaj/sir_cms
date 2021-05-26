@@ -1246,6 +1246,33 @@ button.bottone.cg-promo-info-btn.margine-dx {
 
 html {
   //pvr fixes
+  .dx-calendar-cell.dx-state-hover {
+    color: #222 !important;
+  }
+  .dx-calendar-cell {
+    border-radius: 0 !important;
+    color: inherit !important;
+  }
+  tr.dx-row.dx-data-row.dx-column-lines:nth-of-type(odd) {
+    background-color: #f7f7f7 !important;
+    color: #000;
+  }
+  tr.dx-row.dx-data-row.dx-column-lines:nth-of-type(even) {
+    background-color: #cecece !important;
+    color: #000;
+  }
+  .dx-datagrid-content .dx-datagrid-table .dx-row > td:first-child,
+  .dx-datagrid-content .dx-datagrid-table .dx-row > tr > td:first-child {
+    color: inherit !important;
+  }
+  .dx-datagrid-table
+    .dx-data-row.dx-state-hover:not(.dx-selection):not(.dx-row-inserted):not(.dx-row-removed):not(.dx-edit-row):not(.dx-row-focused)
+    > td:not(.dx-focused) {
+    color: inherit;
+  }
+  .dx-datagrid-summary-item {
+    color: inherit;
+  }
   .dx-treelist-container {
     background: #525252;
     color: #fff;
@@ -1258,8 +1285,8 @@ html {
     color: #222;
   }
   .dx-datagrid .dx-row-alt > td {
-    background-color: #333333;
-    color: #fff;
+    background-color: transparent;
+    color: inherit;
   }
   .dx-datagrid-headers .dx-datagrid-table .dx-row > td {
     background: #222;
