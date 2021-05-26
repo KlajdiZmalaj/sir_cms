@@ -223,7 +223,7 @@ body .bottomBanners .bottomBanner:hover img {
 }
 .carouselContainer::after {
   content: "";
-  background-color: var(--accent-bg);
+  background: linear-gradient(#cfb11c 0%, #d1b421 45.12%, #9e8714 100%);
   height: 117px;
   width: 100%;
   left: 0;
