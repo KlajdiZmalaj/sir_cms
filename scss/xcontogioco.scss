@@ -18,8 +18,18 @@
   background-color: #ff0000;
   color: #fff;
 }
+.toggleReservationBox.shown {
+  color: var(--accent) !important;
+}
 .blocco-header.login-form-header.margine-su-1x {
   margin-top: 0;
+}
+button.btn.bottone-largo.bg-colore-1.bianco.margin-bottom.mb-3.flex-item.pointer.bold {
+  color: #fff !important;
+}
+html .customPopup__content__header {
+  background-color: #292929;
+  color: white;
 }
 .cg-text-muted.persoPass {
   position: relative;
@@ -1223,6 +1233,71 @@ button.bottone.cg-promo-info-btn.margine-dx {
 .ui-menu {
   color: black;
   background: white;
+}
+///////
+
+.lista-selezionabili {
+  padding: 0 !important;
+}
+
+.box-paese > .nome-paese.d-flex.align-items-center.margine-giu.pointer {
+  padding: 4px 5px;
+}
+
+html {
+  //pvr fixes
+  .dx-treelist-container {
+    background: #525252;
+    color: #fff;
+  }
+  .bootstrap-datetimepicker-widget table td.day:hover,
+  .bootstrap-datetimepicker-widget table td.hour:hover,
+  .bootstrap-datetimepicker-widget table td.minute:hover,
+  .bootstrap-datetimepicker-widget table td.second:hover {
+    background: #ffeb3b;
+    color: #222;
+  }
+  .dx-datagrid .dx-row-alt > td {
+    background-color: #333333;
+    color: #fff;
+  }
+  .dx-datagrid-headers .dx-datagrid-table .dx-row > td {
+    background: #222;
+    color: #fff;
+    border: 0;
+  }
+  .cg-pvr-link {
+    color: inherit !important;
+  }
+  //gestiono punto
+  .dx-treelist-borders > .dx-treelist-rowsview,
+  .dx-treelist-borders > .dx-treelist-total-footer {
+    background: #222;
+    color: white;
+    border: 0;
+  }
+  .dx-datagrid-nodata {
+    color: inherit;
+  }
+
+  .dx-editor-cell .dx-texteditor .dx-texteditor-input {
+    background: #525252;
+    color: #fff;
+    border: 0;
+  }
+  .dx-treelist-headers .dx-treelist-table .dx-row > td,
+  .dx-treelist-borders > .dx-treelist-headers,
+  .dx-treelist-borders > .dx-treelist-rowsview,
+  .dx-treelist-borders > .dx-treelist-total-footer,
+  .dx-treelist .dx-column-lines > td {
+    border-color: #000 !important;
+  }
+  .dx-treelist-filter-row
+    .dx-editor-cell
+    .dx-editor-with-menu
+    .dx-texteditor-input {
+    border-radius: 0;
+  }
 }
 
 //IMPORT SPORTPAGE ON XCONTOGIOCO +++++++++++++++++++++++++++++++++
