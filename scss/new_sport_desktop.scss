@@ -6,9 +6,9 @@
   --custom-brand-color-1-dark: #dab317;
   --custom-brand-color-1-opacity-style-1: #ffcc0152;
   --custom-brand-color-2: #141414;
-  --custom-brand-color-2-dark: #1C1C1C;
-  --custom-brand-color-3-dark: #4E4E4E;
-  --custom-brand-color-4-dark:  #2F2F2F;
+  --custom-brand-color-2-dark: #1c1c1c;
+  --custom-brand-color-3-dark: #4e4e4e;
+  --custom-brand-color-4-dark: #2f2f2f;
 
   --custom-brand-color-3: #ffcb01;
   --custom-brand-active-color-1: #ffcb01;
@@ -18,7 +18,7 @@
   --custom-live-color: #dc3545;
   --custom-border-radius-1: 0.25rem;
   --custom-border-radius-2: 0.5rem;
-  --custom-border-color:#212121;
+  --custom-border-color: #212121;
 }
 
 :root {
@@ -207,8 +207,6 @@ body {
   border: 1px solid var(--custom-border-color);
 }
 
-
-
 .sidebar-sx-sport .widget-filtro-side {
   background-color: var(--custom-brand-color-2-dark) !important;
 }
@@ -231,7 +229,7 @@ body {
   background-color: var(--custom-brand-color-2-dark) !important;
   padding: 7px 5px;
 }
-.widget-competizioni-side .card.elemento-competizioni-widget::before{
+.widget-competizioni-side .card.elemento-competizioni-widget::before {
   display: none;
 }
 
@@ -261,9 +259,9 @@ body {
   padding: 8px 10px;
   height: 30px;
   border-radius: 0;
-  &:last-child{
+  &:last-child {
     background: var(--custom-brand-color-1);
-    color: var(--custom-brand-color-1-text)!important;
+    color: var(--custom-brand-color-1-text) !important;
   }
 }
 .apri-partite-in-evidenza .margine-giu {
@@ -815,8 +813,8 @@ a.scAggiuntiva.active {
 
 #primo-blocco-sport .titolo-blocco-sport,
 .live-in-prematch {
-  background: var( --custom-brand-color-2-dark);
-  color: var(--custom-white-color)!important;
+  background: var(--custom-brand-color-2-dark);
+  color: var(--custom-white-color) !important;
 }
 .container-slider-icone-paese.has-icons-container-no-wrap {
   padding: 0 7px;
@@ -1660,16 +1658,15 @@ span.voce-riduci.bianco {
   color: black;
 }
 
-
 #cg-header {
   border-bottom: none;
 }
 
-.sottomenu-nav .active::after, 
+.sottomenu-nav .active::after,
 .sottomenu-nav a:hover::after {
- display:none;
+  display: none;
 }
-  
+
 .container-fluid.fissato-alto #nascondimenu .row.barra-intermedia {
   width: 100%;
   padding: 0 15px;
@@ -1680,21 +1677,20 @@ span.voce-riduci.bianco {
   margin-left: 10px;
   border: 1px solid var(--accent);
   background: transparent;
-  color: var(--col1)!important;
+  color: var(--col1) !important;
 }
-
 
 // left menu
 .widget-ricerca-side {
   padding-bottom: 5px;
   padding-top: 5px;
-  border-bottom: 1px solid var( --custom-border-color);
+  border-bottom: 1px solid var(--custom-border-color);
   border-top: 1px solid var(--custom-border-color);
   input {
     background: var(--custom-brand-color-2);
   }
 }
- .live-badge {
+.live-badge {
   background-color: var(--custom-brand-active-color-1);
   color: var(--custom-brand-active-color-1-text);
 }
