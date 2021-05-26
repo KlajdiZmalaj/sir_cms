@@ -1563,92 +1563,116 @@ span.voce-riduci.bianco {
   //   top: -20px;
   // }
 }
-
 [page='ingame'] {
+  .tablesExpanded .tabellaQuoteRisultatiParziali {
+    height: 20px;
+  }
   .tablesExpanded .tabellaQuoteNew,
   .tablesExpanded .tabellaQuoteIntestazione {
-    grid-template-columns: 69px 29px 1fr max-content 19px 54px;
-    margin-bottom: 0 !important;
+    grid-template-columns: 104px 25px 1fr max-content 15px 45px;
+  }
+  .tablesExpanded .contenitoreSetQuotazioni {
+    align-items: stretch;
+  }
+  .gridInterernaQuotazioni {
+    border-left: 1px solid #505050;
+    box-shadow: -1px 0px #000;
   }
   .tabellaQuoteNew.text_s1.mb-2 {
-    display: flex;
-    flex-flow: row;
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-    box-shadow: 0px -1px #000;
-    border-top: solid 1px #505050;
-
-    > * {
-      order: 10;
-    }
-    .tabellaQuoteTempo {
-      width: auto;
-      order: 1;
-      .tempo-live.text-center {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        white-space: nowrap;
-      }
-      .risultato-live.grassetto {
-        display: none;
-      }
-    }
-    .tabellaQuoteCampetto {
-      width: 30px;
-      flex-shrink: 0;
-      order: 2;
-      img {
-        margin: 0 !important;
-      }
-    }
-
-    .tabellaQuoteContenitoreQuotazioni {
-      margin-left: auto;
-      width: auto;
-      order: 6;
-      flex-flow: row nowrap;
-      flex-shrink: 0;
-      .gridInterernaQuotazioni {
-        display: flex;
-        flex-flow: row nowrap;
-      }
-    }
-    .tabellaQuoteSquadre {
-      order: 4;
-      width: auto;
-      flex-grow: 0;
-      flex-shrink: 0;
-      max-width: 162px;
-    }
-    .tabellaQuoteRisultatiParziali {
-      order: 5;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transform: none;
-      flex-grow: 1;
-      width: auto;
-      justify-content: flex-start;
-    }
-    .tabellaQuoteStatistiche {
-      flex-shrink: 0;
-      width: 35px;
-    }
+    padding-bottom: 0;
   }
-  body[data-available-table-space='2']
-    .tablesExpanded
-    .gridInterernaQuotazioni
-    button.dropdown-toggle,
-  body[data-available-table-space='2'] .tablesExpanded .contenitoreSingolaQuota,
-  body[data-available-table-space='2']
-    .tablesExpanded
-    .tabellaQuoteIntestazione-QuotaSingola {
-    min-width: 40px;
-    max-width: 40px;
-    flex-shrink: 0;
+  .tempo-live.text-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
   }
 }
+// [page="ingame"] {
+//   .tablesExpanded .tabellaQuoteNew,
+//   .tablesExpanded .tabellaQuoteIntestazione {
+//     grid-template-columns: 69px 29px 1fr max-content 19px 54px;
+//     margin-bottom: 0 !important;
+//   }
+//   .tabellaQuoteNew.text_s1.mb-2 {
+//     display: flex;
+//     flex-flow: row;
+//     margin-bottom: 0 !important;
+//     padding-bottom: 0 !important;
+//     box-shadow: 0px -1px #000;
+//     border-top: solid 1px #505050;
+
+//     > * {
+//       order: 10;
+//     }
+//     .tabellaQuoteTempo {
+//       width: auto;
+//       order: 1;
+//       .tempo-live.text-center {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         white-space: nowrap;
+//       }
+//       .risultato-live.grassetto {
+//         display: none;
+//       }
+//     }
+//     .tabellaQuoteCampetto {
+//       width: 30px;
+//       flex-shrink: 0;
+//       order: 2;
+//       img {
+//         margin: 0 !important;
+//       }
+//     }
+
+//     .tabellaQuoteContenitoreQuotazioni {
+//       margin-left: auto;
+//       width: auto;
+//       order: 6;
+//       flex-flow: row nowrap;
+//       flex-shrink: 0;
+//       .gridInterernaQuotazioni {
+//         display: flex;
+//         flex-flow: row nowrap;
+//       }
+//     }
+//     .tabellaQuoteSquadre {
+//       order: 4;
+//       width: auto;
+//       flex-grow: 0;
+//       flex-shrink: 0;
+//       max-width: 162px;
+//     }
+//     .tabellaQuoteRisultatiParziali {
+//       order: 5;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       transform: none;
+//       flex-grow: 1;
+//       width: auto;
+//       justify-content: flex-start;
+//     }
+//     .tabellaQuoteStatistiche {
+//       flex-shrink: 0;
+//       width: 35px;
+//     }
+//   }
+//   body[data-available-table-space="2"]
+//     .tablesExpanded
+//     .gridInterernaQuotazioni
+//     button.dropdown-toggle,
+//   body[data-available-table-space="2"] .tablesExpanded .contenitoreSingolaQuota,
+//   body[data-available-table-space="2"]
+//     .tablesExpanded
+//     .tabellaQuoteIntestazione-QuotaSingola {
+//     min-width: 40px;
+//     max-width: 40px;
+//     flex-shrink: 0;
+//   }
+// }
 
 .competizione-sport {
   .icons-container.force-grid-view {
