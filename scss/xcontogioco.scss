@@ -1132,14 +1132,34 @@ body {
   max-width: 240px;
   width: 100% !important;
 }
-
-.scopri-promo {
+.cg-footer-logo {
+  background-size: contain;
+}
+html .scopri-promo {
   background: var(--accent-bg);
   color: var(--accent-txt) !important;
   padding: 4px 8px;
   font-weight: 300;
   border: 1px solid var(--accent);
   opacity: 0.9;
+  width: 130px;
+  cursor: pointer;
+  text-align: center;
+  height: 40px;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  right: 62px !important;
+  i {
+    display: none;
+  }
+  &:hover {
+    transform: unset !important;
+    transition: unset !important;
+  }
 }
 
 .altezza-max-html {
