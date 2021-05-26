@@ -1228,6 +1228,15 @@ button.bottone.cg-promo-info-btn.margine-dx {
   color: black;
   background: white;
 }
+///////
+
+.lista-selezionabili {
+  padding: 0 !important;
+}
+
+.box-paese > .nome-paese.d-flex.align-items-center.margine-giu.pointer {
+  padding: 4px 5px;
+}
 
 //IMPORT SPORTPAGE ON XCONTOGIOCO +++++++++++++++++++++++++++++++++
 @import "new_sport_desktop";
