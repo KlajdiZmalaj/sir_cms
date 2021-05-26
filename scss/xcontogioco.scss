@@ -1246,6 +1246,9 @@ button.bottone.cg-promo-info-btn.margine-dx {
 
 html {
   //pvr fixes
+  .dx-texteditor-input {
+    border-radius: 0 !important;
+  }
   .dx-calendar-cell.dx-state-hover {
     color: #222 !important;
   }
