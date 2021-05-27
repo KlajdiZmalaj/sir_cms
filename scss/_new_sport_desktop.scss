@@ -294,9 +294,19 @@ html {
   .nav.nav-tabs > a.active,
   .nav.nav-tabs > a:hover {
     border-color: var(--custom-brand-color-1) !important;
-    color: var(--custom-white-color) !important;
+    color: var(--custom-brand-color-1) !important;
   }
 
+  .tasto-nav-quote-landing.padding-verticale {
+    flex: 1 1;
+    text-align: center;
+    margin: 0px 1px;
+    background: var(--custom-brand-color-4-dark);
+  }
+
+  .tasto-nav-quote-landing.padding-verticale.active {
+    border-bottom: 0;
+  }
   .elenco-macro.containerElementiDropdown > *,
   .elenco-macro ~ .dropdown-box .elemento-macro,
   .aggregate .elemento-macro-sub {
@@ -468,15 +478,33 @@ html {
   }
 
   .blocco-quote-espanse .scheda-giocata-sport,
-  .blocco-quote-espanse
-    .scheda-giocata-sport
-    .titolo-partita-top-match
-    > .grigio,
   .tablesCompacted .tabellaQuoteNew {
     color: var(--custom-white-color) !important;
     font-weight: 700 !important;
   }
-
+  .blocco-quote-espanse
+    .scheda-giocata-sport
+    .titolo-partita-top-match
+    > .grigio {
+    color: var(--custom-brand-active-color-1);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .blocco-quote-espanse {
+    .titolo-partita-top-match.justify-content-center {
+      justify-content: left !important;
+      margin-bottom: 5px;
+      margin-top: 3px;
+      .titolo-partita-top-match-squadra {
+        flex: initial;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .titolo-partita-top-match-separatore {
+        color: var(--custom-white-color) !important;
+      }
+    }
+  }
   .tabellaQuoteSquadreSeparatore,
   .titolo-partita-top-match-separatore {
     color: var(--custom-brand-color-1) !important;
@@ -553,10 +581,12 @@ html {
   .contenitoreSingolaQuota:hover .titoloQuotazione,
   .contenitoreSingolaQuota.selezionata .titoloQuotazione,
   .quota-con-nome:hover,
-  .quota-con-nome.selezionata,
   .quota-widget-evento.quota:hover,
   .quota-widget-evento.quota.selezionata {
     background-color: #fff !important;
+  }
+  .quota-con-nome.selezionata {
+    background-color: var(--custom-brand-active-color-1) !important;
   }
 
   .titoloQuotazione,
@@ -612,7 +642,6 @@ html {
   .quota,
   .contenitoreSingolaQuota,
   .tipoQuotazione_1,
-  .tempo-torneo-top-match,
   .scheda-giocata-sport > .titolo-partita-top-match ~ .titolo-partita-top-match,
   .gridInterernaQuotazioni button.dropdown-toggle {
     font-weight: bolder;
@@ -620,28 +649,48 @@ html {
 
   .fastbet.fbet-unariga {
     background-color: var(--custom-brand-color-2-dark) !important;
+    color: #fff !important;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 2px 10px;
+    border-bottom: 0;
+    .fastbet input.input-personalizzato {
+      background: var(--custom-brand-color-4-dark) !important;
+    }
   }
 
   .fastbet.fbet-unariga .fas.fa-question-circle {
     color: var(--custom-brand-clickable-bg-1-light) !important;
   }
-
+  .titolo-widget-stampa {
+    background-color: var(--custom-brand-active-color-1);
+    color: var(--custom-brand-active-color-1-text);
+    font-weight: 600;
+    border-radius: 0;
+  }
   .titolo-widget-stampa.bg-nero {
-    background: linear-gradient(
-      #c5a606,
-      #f5d017 9.36%,
-      #ffdb23 40.39%,
-      #ceae0c
-    );
-    color: #222 !important;
+    background-color: var(--custom-brand-active-color-1);
+    color: var(--custom-brand-active-color-1-text);
+    font-weight: 600;
+    border-radius: 0;
   }
 
   .scAggiuntive {
-    background-color: var(--custom-brand-color-2-dark) !important;
+    border-bottom: 1px solid var(--custom-brand-active-color-1);
+    padding: 0px 0;
+    a.scAggiuntiva {
+      padding: 10px 0;
+      background: var(--custom-brand-color-4-dark);
+      margin: 0px 1px;
+    }
   }
 
   a.scAggiuntiva.active {
     color: var(--custom-brand-active-color-1) !important;
+  }
+  .widget-schedina-nav {
+    background: var(--custom-brand-color-2-dark);
   }
 
   .numero-eventi-segni {
@@ -656,7 +705,7 @@ html {
 
   .tab-content.tabelleSchedineNumerate .tab-content.widget-schedina,
   .lista-eventi-schedina.carrello-desktop_container-elementi {
-    background-color: var(--custom-brand-color-2-dark) !important;
+    background-color: var(--custom-brand-color-4-dark) !important;
   }
 
   .carrello-desktop_container-elementi > *,
@@ -676,8 +725,7 @@ html {
     .grid-schedina-body
     .grid-schedina-body_quote
     .grid-schedina-body_quote-riga
-    .grid-schedina-body_quote-riga_descrizione-quota
-    span {
+    .grid-schedina-body_quote-riga_descrizione-quota {
     color: var(--custom-brand-active-color-1);
   }
 
@@ -771,7 +819,9 @@ html {
   .grid-schedina .grid-schedina_bottone-generico:hover {
     color: var(--custom-brand-color-3) !important;
   }
-
+  .grid-schedina .grid-schedina-intestazione_contenitore-testo {
+    color: var(--color2) !important;
+  }
   .grid-schedina
     .grid-schedina-body
     .grid-schedina-body_quote
@@ -949,7 +999,10 @@ html {
   }
 
   .tempo-torneo-top-match {
-    font-size: 1rem !important;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--color2);
+    font-weight: 600;
   }
 
   .blocco-interno-evento .info-evento-centrale {
@@ -1466,10 +1519,12 @@ html {
   }
 
   #secondo-blocco-sport .icone-torneo-top-match {
-    overflow: visible;
+    display: none;
+    &.img-fluid.altre-top-match.img-flags.ico-cat {
+      display: flex;
+    }
   }
 
-  #secondo-blocco-sport .icone-torneo-top-match,
   #secondo-blocco-sport .icona-sport,
   #secondo-blocco-sport .img-flags.ico-cat {
     height: 1.5rem;
@@ -1731,7 +1786,6 @@ html {
     border: 0;
   }
   .quote-extra .quota-con-nome span:last-child,
-  .quota-con-nome span:last-child,
   .quota-widget-evento span:last-child {
     color: #ffda21;
   }
