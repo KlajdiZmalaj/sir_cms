@@ -595,6 +595,31 @@ html {
   .quota-widget-evento.quota > *:first-child {
     color: var(--custom-white-color) !important;
   }
+  .bottoni-schedina {
+    padding: 0px 0px;
+    background: var(--custom-brand-color-2-dark);
+    .bottone.bg-rosso.bianco.maiuscolo {
+      background: var(--custom-brand-color-4-dark);
+      border-radius: 0;
+      border-top: 2px solid red;
+      color: var(--custom-white-color) !important;
+      min-width: 33%;
+    }
+    .bottone.bg-arancio.bianco.maiuscolo {
+      background: var(--custom-brand-color-4-dark);
+      border-radius: 0;
+      border-top: 2px solid orange;
+      color: var(--custom-white-color) !important;
+      min-width: 33%;
+    }
+    .bottone.bg-verde.bianco.maiuscolo {
+      background: var(--custom-brand-color-4-dark);
+      border-radius: 0;
+      border-top: 2px solid green;
+      color: var(--custom-white-color) !important;
+      min-width: 33%;
+    }
+  }
 
   .tipoQuotazione_1,
   .quota-con-nome span:last-child,
@@ -845,6 +870,26 @@ html {
   .carrello-fixed .vincita-potenziale {
     background-color: var(--custom-brand-color-2-dark) !important;
     color: var(--custom-white-color) !important;
+  }
+  .carrello-fixed {
+    background: var(--custom-brand-color-2-dark);
+
+    .input-calc {
+      background: var(--custom-brand-color-3-dark);
+      color: var(--custom-white-color);
+      padding: 5px;
+      border-radius: 0;
+      border: none;
+      margin-bottom: 1px;
+      flex: 0 0 40%;
+    }
+
+    .bottoni-calc input {
+      background: var(--custom-brand-color-3-dark);
+      color: var(--color2);
+      border-radius: 0;
+      border: none;
+    }
   }
 
   .box-vincita-potenziale.bottoni-var-quote a.bottone,
