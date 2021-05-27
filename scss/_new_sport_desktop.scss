@@ -1645,9 +1645,14 @@ html {
 
   .ricerca-titolo-blocco-sport input {
     height: 20px;
+    border: 0px;
+    border-radius: 0;
+    padding: 4px;
+    background: var(--custom-brand-color-4-dark);
+    text-transform: uppercase;
   }
 
-  .ricerca-titolo-blocco-sport::before {
+  .ricerca-titolo-blocco-sport::after {
     content: '';
     display: block;
     background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/search-logo.svg);
@@ -1655,7 +1660,7 @@ html {
     width: 15px;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-right: 5px;
+    margin-left: 5px;
     filter: invert(1);
   }
   .contenitore-table {
@@ -1683,6 +1688,35 @@ html {
     // }
   }
 }
+
+@media screen and (min-width: 1920px) {
+  .tablesExpanded .tabellaQuoteNew,
+  .tablesExpanded .tabellaQuoteIntestazione {
+    grid-template-columns: 75px 30px 1fr max-content 20px 60px !important;
+  }
+}
+
+// .tablesExpanded .tabellaQuoteNew,
+// .tablesExpanded .tabellaQuoteIntestazione {
+//   grid-template-columns: 25px 1fr 75px max-content 20px 60px;
+// }
+// .sport-live-suite {
+//   .contenitore-table.bg-bianco {
+//     .tabellaQuoteTempo {
+//       grid-column: 3;
+//       grid-row: 1;
+//     }
+//     .tabellaQuoteSquadre {
+//       grid-column: 2;
+//       grid-row: 1;
+//     }
+//     .tabellaQuoteRisultatiParziali {
+//       grid-column: 1;
+//       grid-row: 1;
+//     }
+//   }
+// }
+
 [page='ingame'] {
   .tablesExpanded .tabellaQuoteRisultatiParziali {
     height: 20px;
