@@ -391,6 +391,7 @@ html {
   .tablesExpanded .tabellaQuoteNew,
   .tablesExpanded .tabellaQuoteIntestazione.tabellaQuoteIntestazionePrematch {
     background-color: #323232 !important;
+    border-radius: 0;
   }
   .contenitoreRiga:not(:last-child),
   .mb-2,
@@ -405,7 +406,17 @@ html {
     .tabellaQuoteCampetto {
       display: none;
     }
+    .tabellaQuoteRisultatiParziali {
+      grid-area: inherit;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      .tabellaQuoteRisultatiParziali-risultatoParziale {
+        display: none;
+      }
+    }
   }
+
   .contenitore-table-grande {
     .tabellaQuoteIntestazione-GruppoQuote p {
       white-space: nowrap;
@@ -927,14 +938,14 @@ html {
   }
 
   .destra-top-match .titolo-blocco-sport {
-    background: linear-gradient(
-      #c5a606,
-      #f5d017 9.36%,
-      #ffdb23 40.39%,
-      #ceae0c
-    );
-    color: #222 !important;
     margin-top: 8px !important;
+    background-color: var(--custom-brand-color-4-dark) !important;
+    color: #fff !important;
+    border-radius: 0;
+    border-left: 2px solid var(--custom-brand-active-color-1);
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px 10px;
   }
 
   .tempo-torneo-top-match {
@@ -1470,7 +1481,7 @@ html {
   }
 
   .bg-grigio-chiaro {
-    background: #505050 !important;
+    background: var(--custom-brand-color-4-dark) !important;
   }
   .tasto-abilita-carrello-scrollable[data-carrello-scrollable-abilitato='true'] {
     color: inherit !important;
