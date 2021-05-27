@@ -1266,6 +1266,10 @@ button.bottone.cg-promo-info-btn.margine-dx {
 
 html {
   //pvr fixes
+  .bootstrap-datetimepicker-widget table td,
+  .bootstrap-datetimepicker-widget table th {
+    border-radius: 0 !important;
+  }
   .dx-texteditor-input {
     border-radius: 0 !important;
   }
