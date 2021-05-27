@@ -239,8 +239,8 @@ html {
   }
 
   .regione-widget .contenitore-evento-widget .sotto-widget-evento {
-    background-color: #595959 !important;
     color: var(--custom-white-color);
+    background-color: var(--custom-brand-color-4-dark);
   }
 
   .regione-widget .contenitore-evento-widget .sotto-widget-evento hr {
@@ -307,16 +307,19 @@ html {
   .tasto-nav-quote-landing.padding-verticale.active {
     border-bottom: 0;
   }
+  .aggregate:not(.containerElementiDropdown) {
+    grid-gap: 1px;
+  }
   .elenco-macro.containerElementiDropdown > *,
   .elenco-macro ~ .dropdown-box .elemento-macro,
   .aggregate .elemento-macro-sub {
-    background-color: var(--custom-brand-clickable-bg-1-dark) !important;
+    background-color: var(--custom-brand-color-4-dark) !important;
   }
 
   .aggregate.containerElementiDropdown > *,
   .aggregate ~ .dropdown-box .elemento-macro,
   .aggregate .elemento-macro-sub {
-    background-color: var(--custom-brand-clickable-bg-1-light) !important;
+    background-color: var(--custom-brand-color-4-dark) !important;
     color: var(--custom-white-color) !important;
   }
 
@@ -356,14 +359,14 @@ html {
     font-size: 12px;
     padding: 10px 10px;
   }
-  .icons-container-no-wrap > .icona-selezionata figure.paese-icona-live:after,
-  .icons-container-no-wrap figure.paese-icona-live:hover::after {
-    transform: translateX(-50%) scale(0.9);
-  }
-  .icons-container-no-wrap > .icona-selezionata figure.paese-icona-live:after,
-  .icons-container-no-wrap figure.paese-icona-live:hover::after {
-    border-bottom: 10px solid var(--custom-brand-clickable-bg-1-dark) !important;
-  }
+  // .icons-container-no-wrap > .icona-selezionata figure.paese-icona-live:after,
+  // .icons-container-no-wrap figure.paese-icona-live:hover::after {
+  //   transform: translateX(-50%) scale(0.9);
+  // }
+  // .icons-container-no-wrap > .icona-selezionata figure.paese-icona-live:after,
+  // .icons-container-no-wrap figure.paese-icona-live:hover::after {
+  //   border-bottom: 10px solid var(--custom-brand-clickable-bg-1-dark) !important;
+  // }
 
   .tabellaQuoteIntestazione .tabellaQuoteAlias,
   .tabellaQuoteIntestazione .tabellaQuoteTempo,
@@ -574,8 +577,6 @@ html {
     color: var(--custom-white-color) !important;
   }
 
-  .contenitoreSingolaQuota:hover,
-  .contenitoreSingolaQuota.selezionata,
   .contenitoreSingolaQuota:hover .tipoQuotazione_1,
   .contenitoreSingolaQuota.selezionata .tipoQuotazione_1,
   .contenitoreSingolaQuota:hover .titoloQuotazione,
@@ -583,9 +584,11 @@ html {
   .quota-con-nome:hover,
   .quota-widget-evento.quota:hover,
   .quota-widget-evento.quota.selezionata {
-    background-color: #fff !important;
+    background-color: var(--custom-brand-active-color-1) !important;
   }
-  .quota-con-nome.selezionata {
+  .quota-con-nome.selezionata,
+  .contenitoreSingolaQuota:hover,
+  .contenitoreSingolaQuota.selezionata {
     background-color: var(--custom-brand-active-color-1) !important;
   }
 
@@ -992,6 +995,9 @@ html {
   figure.paese-icona-live:hover {
     color: var(--custom-brand-active-color-1) !important;
     border-bottom: 2px solid var(--custom-brand-active-color-1);
+  }
+  .icons-container-no-wrap > .icona-selezionata figure.paese-icona-live:after {
+    display: none;
   }
   figure.paese-icona-live .ico-cat {
     height: 20px;
@@ -1724,14 +1730,12 @@ html {
   .tablesExpanded .tabellaQuoteNew,
   .tablesExpanded .tabellaQuoteIntestazione {
     grid-template-columns: 104px 25px 1fr max-content 15px 45px;
+    border-radius: 0;
   }
   .tablesExpanded .contenitoreSetQuotazioni {
     align-items: stretch;
   }
-  .gridInterernaQuotazioni {
-    border-left: 1px solid #505050;
-    box-shadow: -1px 0px #000;
-  }
+
   .tabellaQuoteNew.text_s1.mb-2 {
     padding-bottom: 0;
   }
@@ -1740,6 +1744,21 @@ html {
     align-items: center;
     justify-content: center;
     white-space: nowrap;
+    display: grid;
+    .fraz-gioco {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .lampeggia.tempo-live {
+      grid-column: 1;
+      grid-row: 2;
+    }
+    .risultato-live.grassetto {
+      grid-column: 2;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      color: var(--custom-brand-active-color-1);
+    }
   }
 }
 // [page="ingame"] {
