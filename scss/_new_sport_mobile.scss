@@ -326,7 +326,6 @@ html {
   }
 
   .esiti-container {
-    padding: 0.5rem 0.5rem 0.6rem;
     background: #f7f8fa;
     color: #222;
     border-radius: 0 0 4px 4px;
@@ -557,7 +556,7 @@ html {
   }
 
   .info-score {
-    background: #ffd800 !important;
+    background: #fff !important;
     color: #222;
   }
 
@@ -650,11 +649,15 @@ html {
   }
 
   .esiti-container {
-    padding-top: 2px;
+    padding-top: 0px;
   }
 
   .nav-filter-item.selected {
-    background: #ffd800;
+    background: linear-gradient(
+      #e6c200 0%,
+      #ffd800 25.12%,
+      #e4c100 100%
+    ) !important;
     color: #222;
   }
 
@@ -663,7 +666,11 @@ html {
   }
 
   .nav-filters .nav-filter-item.categoryLiveContainer.selected {
-    background: #ffd800;
+    background: linear-gradient(
+      #e6c200 0%,
+      #ffd800 25.12%,
+      #e4c100 100%
+    ) !important;
     color: #222;
     border-radius: 4px;
   }
@@ -733,7 +740,7 @@ html {
   }
 
   .nav-slider-button {
-    background: #ffd800;
+    background: #cacaca;
     height: 47px;
     top: 2px;
     width: 100%;
