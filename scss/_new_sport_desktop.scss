@@ -1,12 +1,12 @@
 :root {
   --custom-white-color: #ffffff;
-  --custom-black-color: #141414;
+  --custom-black-color: #000;
   --custom-brand-color-1: #ffd919;
   --custom-brand-color-1-text: #000;
   --custom-brand-color-1-dark: #dab317;
   --custom-brand-color-1-opacity-style-1: #ffcc0152;
   --custom-brand-color-2: #141414;
-  --custom-brand-color-2-dark: #1c1c1c;
+  --custom-brand-color-2-dark: #141414;
   --custom-brand-color-3-dark: #4e4e4e;
   --custom-brand-color-4-dark: #2f2f2f;
 
@@ -239,8 +239,8 @@ html {
   }
 
   .regione-widget .contenitore-evento-widget .sotto-widget-evento {
-    background-color: #595959 !important;
     color: var(--custom-white-color);
+    background-color: var(--custom-brand-color-4-dark);
   }
 
   .regione-widget .contenitore-evento-widget .sotto-widget-evento hr {
@@ -283,7 +283,7 @@ html {
   .tablesCompacted#secondo-blocco-sport,
   .tablesExpanded#primo-blocco-sport,
   .tablesExpanded#secondo-blocco-sport {
-    background-color: var(--custom-brand-color-2) !important;
+    background-color: var(--custom-black-color) !important;
   }
 
   .tablesExpanded#primo-blocco-sport .sport-live-suite .collapse.bg-bianco {
@@ -294,24 +294,41 @@ html {
   .nav.nav-tabs > a.active,
   .nav.nav-tabs > a:hover {
     border-color: var(--custom-brand-color-1) !important;
-    color: var(--custom-white-color) !important;
+    color: var(--custom-brand-color-1) !important;
   }
 
+  .tasto-nav-quote-landing.padding-verticale {
+    flex: 1 1;
+    text-align: center;
+    margin: 0px 1px;
+    background: var(--custom-brand-color-4-dark);
+  }
+
+  .tasto-nav-quote-landing.padding-verticale.active {
+    border-bottom: 0;
+  }
+  .aggregate:not(.containerElementiDropdown) {
+    grid-gap: 1px;
+  }
   .elenco-macro.containerElementiDropdown > *,
   .elenco-macro ~ .dropdown-box .elemento-macro,
   .aggregate .elemento-macro-sub {
-    background-color: var(--custom-brand-clickable-bg-1-dark) !important;
+    background-color: var(--custom-brand-color-4-dark) !important;
   }
 
   .aggregate.containerElementiDropdown > *,
   .aggregate ~ .dropdown-box .elemento-macro,
   .aggregate .elemento-macro-sub {
-    background-color: var(--custom-brand-clickable-bg-1-light) !important;
+    background-color: var(--custom-brand-color-4-dark) !important;
     color: var(--custom-white-color) !important;
   }
 
   .dropdown-box {
-    background-color: var(--custom-brand-clickable-bg-1-dark) !important;
+    background-color: var(--custom-brand-color-4-dark) !important;
+    overflow: auto;
+    .fa-times-circle {
+      font-size: 20px;
+    }
   }
 
   .close-dropdown-box-btn {
@@ -346,14 +363,14 @@ html {
     font-size: 12px;
     padding: 10px 10px;
   }
-  .icons-container-no-wrap > .icona-selezionata figure.paese-icona-live:after,
-  .icons-container-no-wrap figure.paese-icona-live:hover::after {
-    transform: translateX(-50%) scale(0.9);
-  }
-  .icons-container-no-wrap > .icona-selezionata figure.paese-icona-live:after,
-  .icons-container-no-wrap figure.paese-icona-live:hover::after {
-    border-bottom: 10px solid var(--custom-brand-clickable-bg-1-dark) !important;
-  }
+  // .icons-container-no-wrap > .icona-selezionata figure.paese-icona-live:after,
+  // .icons-container-no-wrap figure.paese-icona-live:hover::after {
+  //   transform: translateX(-50%) scale(0.9);
+  // }
+  // .icons-container-no-wrap > .icona-selezionata figure.paese-icona-live:after,
+  // .icons-container-no-wrap figure.paese-icona-live:hover::after {
+  //   border-bottom: 10px solid var(--custom-brand-clickable-bg-1-dark) !important;
+  // }
 
   .tabellaQuoteIntestazione .tabellaQuoteAlias,
   .tabellaQuoteIntestazione .tabellaQuoteTempo,
@@ -468,15 +485,33 @@ html {
   }
 
   .blocco-quote-espanse .scheda-giocata-sport,
-  .blocco-quote-espanse
-    .scheda-giocata-sport
-    .titolo-partita-top-match
-    > .grigio,
   .tablesCompacted .tabellaQuoteNew {
     color: var(--custom-white-color) !important;
     font-weight: 700 !important;
   }
-
+  .blocco-quote-espanse
+    .scheda-giocata-sport
+    .titolo-partita-top-match
+    > .grigio {
+    color: var(--custom-brand-active-color-1);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .blocco-quote-espanse {
+    .titolo-partita-top-match.justify-content-center {
+      justify-content: left !important;
+      margin-bottom: 5px;
+      margin-top: 3px;
+      .titolo-partita-top-match-squadra {
+        flex: initial;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .titolo-partita-top-match-separatore {
+        color: var(--custom-white-color) !important;
+      }
+    }
+  }
   .tabellaQuoteSquadreSeparatore,
   .titolo-partita-top-match-separatore {
     color: var(--custom-brand-color-1) !important;
@@ -546,17 +581,19 @@ html {
     color: var(--custom-white-color) !important;
   }
 
-  .contenitoreSingolaQuota:hover,
-  .contenitoreSingolaQuota.selezionata,
   .contenitoreSingolaQuota:hover .tipoQuotazione_1,
   .contenitoreSingolaQuota.selezionata .tipoQuotazione_1,
   .contenitoreSingolaQuota:hover .titoloQuotazione,
   .contenitoreSingolaQuota.selezionata .titoloQuotazione,
   .quota-con-nome:hover,
-  .quota-con-nome.selezionata,
   .quota-widget-evento.quota:hover,
   .quota-widget-evento.quota.selezionata {
-    background-color: #fff !important;
+    background-color: var(--custom-brand-active-color-1) !important;
+  }
+  .quota-con-nome.selezionata,
+  .contenitoreSingolaQuota:hover,
+  .contenitoreSingolaQuota.selezionata {
+    background-color: var(--custom-brand-active-color-1) !important;
   }
 
   .titoloQuotazione,
@@ -564,6 +601,31 @@ html {
   .quota-con-nome span:first-child,
   .quota-widget-evento.quota > *:first-child {
     color: var(--custom-white-color) !important;
+  }
+  .bottoni-schedina {
+    padding: 0px 0px;
+    background: var(--custom-brand-color-2-dark);
+    .bottone.bg-rosso.bianco.maiuscolo {
+      background: var(--custom-brand-color-4-dark);
+      border-radius: 0;
+      border-top: 2px solid red;
+      color: var(--custom-white-color) !important;
+      min-width: 33%;
+    }
+    .bottone.bg-arancio.bianco.maiuscolo {
+      background: var(--custom-brand-color-4-dark);
+      border-radius: 0;
+      border-top: 2px solid orange;
+      color: var(--custom-white-color) !important;
+      min-width: 33%;
+    }
+    .bottone.bg-verde.bianco.maiuscolo {
+      background: var(--custom-brand-color-4-dark);
+      border-radius: 0;
+      border-top: 2px solid green;
+      color: var(--custom-white-color) !important;
+      min-width: 33%;
+    }
   }
 
   .tipoQuotazione_1,
@@ -612,7 +674,6 @@ html {
   .quota,
   .contenitoreSingolaQuota,
   .tipoQuotazione_1,
-  .tempo-torneo-top-match,
   .scheda-giocata-sport > .titolo-partita-top-match ~ .titolo-partita-top-match,
   .gridInterernaQuotazioni button.dropdown-toggle {
     font-weight: bolder;
@@ -620,28 +681,48 @@ html {
 
   .fastbet.fbet-unariga {
     background-color: var(--custom-brand-color-2-dark) !important;
+    color: #fff !important;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 2px 10px;
+    border-bottom: 0;
+    .fastbet input.input-personalizzato {
+      background: var(--custom-brand-color-4-dark) !important;
+    }
   }
 
   .fastbet.fbet-unariga .fas.fa-question-circle {
     color: var(--custom-brand-clickable-bg-1-light) !important;
   }
-
+  .titolo-widget-stampa {
+    background-color: var(--custom-brand-active-color-1);
+    color: var(--custom-brand-active-color-1-text);
+    font-weight: 600;
+    border-radius: 0;
+  }
   .titolo-widget-stampa.bg-nero {
-    background: linear-gradient(
-      #c5a606,
-      #f5d017 9.36%,
-      #ffdb23 40.39%,
-      #ceae0c
-    );
-    color: #222 !important;
+    background-color: var(--custom-brand-active-color-1);
+    color: var(--custom-brand-active-color-1-text);
+    font-weight: 600;
+    border-radius: 0;
   }
 
   .scAggiuntive {
-    background-color: var(--custom-brand-color-2-dark) !important;
+    border-bottom: 1px solid var(--custom-brand-active-color-1);
+    padding: 0px 0;
+    a.scAggiuntiva {
+      padding: 10px 0;
+      background: var(--custom-brand-color-4-dark);
+      margin: 0px 1px;
+    }
   }
 
   a.scAggiuntiva.active {
     color: var(--custom-brand-active-color-1) !important;
+  }
+  .widget-schedina-nav {
+    background: var(--custom-brand-color-2-dark);
   }
 
   .numero-eventi-segni {
@@ -656,7 +737,7 @@ html {
 
   .tab-content.tabelleSchedineNumerate .tab-content.widget-schedina,
   .lista-eventi-schedina.carrello-desktop_container-elementi {
-    background-color: var(--custom-brand-color-2-dark) !important;
+    background-color: var(--custom-brand-color-4-dark) !important;
   }
 
   .carrello-desktop_container-elementi > *,
@@ -676,8 +757,7 @@ html {
     .grid-schedina-body
     .grid-schedina-body_quote
     .grid-schedina-body_quote-riga
-    .grid-schedina-body_quote-riga_descrizione-quota
-    span {
+    .grid-schedina-body_quote-riga_descrizione-quota {
     color: var(--custom-brand-active-color-1);
   }
 
@@ -771,7 +851,9 @@ html {
   .grid-schedina .grid-schedina_bottone-generico:hover {
     color: var(--custom-brand-color-3) !important;
   }
-
+  .grid-schedina .grid-schedina-intestazione_contenitore-testo {
+    color: var(--color2) !important;
+  }
   .grid-schedina
     .grid-schedina-body
     .grid-schedina-body_quote
@@ -795,6 +877,24 @@ html {
   .carrello-fixed .vincita-potenziale {
     background-color: var(--custom-brand-color-2-dark) !important;
     color: var(--custom-white-color) !important;
+  }
+  .carrello-fixed {
+    background: var(--custom-brand-color-2-dark);
+
+    .input-calc {
+      padding: 5px;
+      border-radius: 0;
+      border: none;
+      margin-bottom: 1px;
+      flex: 0 0 40%;
+    }
+
+    .bottoni-calc input {
+      background: var(--custom-brand-color-3-dark);
+      color: var(--color2);
+      border-radius: 0;
+      border: none;
+    }
   }
 
   .box-vincita-potenziale.bottoni-var-quote a.bottone,
@@ -860,6 +960,7 @@ html {
   .live-in-prematch {
     background: var(--custom-brand-color-2-dark);
     color: var(--custom-white-color) !important;
+    border-radius: 0;
   }
   .container-slider-icone-paese.has-icons-container-no-wrap {
     padding: 0 7px;
@@ -886,6 +987,8 @@ html {
   .icona-slider-sport,
   .paese-icona-live {
     color: var(--custom-white-color) !important;
+    font-weight: 600;
+    font-size: 11px;
   }
   .icons-container .icona-slider-sport {
     border-right: 1px solid var(--custom-black-color);
@@ -898,6 +1001,11 @@ html {
     color: var(--custom-brand-active-color-1) !important;
     border-bottom: 2px solid var(--custom-brand-active-color-1);
   }
+  .icons-container-no-wrap > .icona-selezionata figure.paese-icona-live:after,
+  .icons-container-no-wrap figure.paese-icona-live:hover::after {
+    display: none;
+  }
+
   figure.paese-icona-live .ico-cat {
     height: 20px;
     width: 20px;
@@ -905,6 +1013,7 @@ html {
   figure.paese-icona-live,
   figure.sport-icona-live {
     border-radius: 0;
+    text-transform: uppercase;
   }
 
   .outrightsCont.bg-bianco,
@@ -949,7 +1058,10 @@ html {
   }
 
   .tempo-torneo-top-match {
-    font-size: 1rem !important;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--color2);
+    font-weight: 600;
   }
 
   .blocco-interno-evento .info-evento-centrale {
@@ -1058,7 +1170,7 @@ html {
   }
 
   .container-tabella-calendario td {
-    border-top: 1px solid #000 !important;
+    border-top: 1px solid var(--custom-black-color) !important;
   }
 
   .container-tabella-calendario th,
@@ -1139,8 +1251,10 @@ html {
   .right-paddle-paese,
   .dropdown.down-paddle,
   .down-paddle > button {
-    background-color: var(--custom-brand-active-color-1) !important;
-    color: var(--custom-brand-color-2-dark) !important;
+    background-color: var(--custom-brand-color-3-dark) !important;
+    border: none;
+    border-radius: 0;
+    color: var(--col1) !important;
   }
 
   .unaColonna .legenda {
@@ -1466,10 +1580,12 @@ html {
   }
 
   #secondo-blocco-sport .icone-torneo-top-match {
-    overflow: visible;
+    display: none;
+    &.img-fluid.altre-top-match.img-flags.ico-cat {
+      display: flex;
+    }
   }
 
-  #secondo-blocco-sport .icone-torneo-top-match,
   #secondo-blocco-sport .icona-sport,
   #secondo-blocco-sport .img-flags.ico-cat {
     height: 1.5rem;
@@ -1545,9 +1661,14 @@ html {
 
   .ricerca-titolo-blocco-sport input {
     height: 20px;
+    border: 0px;
+    border-radius: 0;
+    padding: 4px;
+    background: var(--custom-brand-color-4-dark);
+    text-transform: uppercase;
   }
 
-  .ricerca-titolo-blocco-sport::before {
+  .ricerca-titolo-blocco-sport::after {
     content: '';
     display: block;
     background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/search-logo.svg);
@@ -1555,7 +1676,7 @@ html {
     width: 15px;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-right: 5px;
+    margin-left: 5px;
     filter: invert(1);
   }
   .contenitore-table {
@@ -1583,6 +1704,36 @@ html {
     // }
   }
 }
+
+@media screen and (min-width: 1920px) {
+  .tablesExpanded .tabellaQuoteNew,
+  .tablesExpanded .tabellaQuoteIntestazione {
+    grid-template-columns: 75px 30px 1fr max-content 20px 60px !important;
+    border-radius: 0;
+  }
+}
+
+// .tablesExpanded .tabellaQuoteNew,
+// .tablesExpanded .tabellaQuoteIntestazione {
+//   grid-template-columns: 25px 1fr 75px max-content 20px 60px;
+// }
+// .sport-live-suite {
+//   .contenitore-table.bg-bianco {
+//     .tabellaQuoteTempo {
+//       grid-column: 3;
+//       grid-row: 1;
+//     }
+//     .tabellaQuoteSquadre {
+//       grid-column: 2;
+//       grid-row: 1;
+//     }
+//     .tabellaQuoteRisultatiParziali {
+//       grid-column: 1;
+//       grid-row: 1;
+//     }
+//   }
+// }
+
 [page='ingame'] {
   .tablesExpanded .tabellaQuoteRisultatiParziali {
     height: 20px;
@@ -1590,14 +1741,12 @@ html {
   .tablesExpanded .tabellaQuoteNew,
   .tablesExpanded .tabellaQuoteIntestazione {
     grid-template-columns: 104px 25px 1fr max-content 15px 45px;
+    border-radius: 0;
   }
   .tablesExpanded .contenitoreSetQuotazioni {
     align-items: stretch;
   }
-  .gridInterernaQuotazioni {
-    border-left: 1px solid #505050;
-    box-shadow: -1px 0px #000;
-  }
+
   .tabellaQuoteNew.text_s1.mb-2 {
     padding-bottom: 0;
   }
@@ -1606,6 +1755,21 @@ html {
     align-items: center;
     justify-content: center;
     white-space: nowrap;
+    display: grid;
+    .fraz-gioco {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .lampeggia.tempo-live {
+      grid-column: 1;
+      grid-row: 2;
+    }
+    .risultato-live.grassetto {
+      grid-column: 2;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      color: var(--custom-brand-active-color-1);
+    }
   }
 }
 // [page="ingame"] {
@@ -1731,7 +1895,6 @@ html {
     border: 0;
   }
   .quote-extra .quota-con-nome span:last-child,
-  .quota-con-nome span:last-child,
   .quota-widget-evento span:last-child {
     color: #ffda21;
   }
