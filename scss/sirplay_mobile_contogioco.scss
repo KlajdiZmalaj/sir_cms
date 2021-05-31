@@ -40,7 +40,7 @@ div#cg-recover-button-fase1 > div,
 div#cg-pvr-fido-saldo-field,
 span#cg-voucher-serial-search,
 .nav-section-title.expandable::after {
-  color: #ffd800 !important;
+  color: #fff !important;
 }
 
 #cg-slide-footer,
@@ -52,7 +52,7 @@ div#cg-slide-foote,
 #cg-prematch-button .cg-icon,
 .cg-buttons-row.secondary-button-row,
 .prematch-sport-img #cg-live-button .cg-icon {
-  display: none !important;
+  display: none;
 }
 
 .btn-delete,
@@ -87,7 +87,7 @@ body,
 #popup-gruppo-scommessa .popup-content,
 #cg-pvr-confirm-popup .cg-header-popup-title,
 .bet-type-selector.expandable.nav-section-title {
-  background-color: #272727 !important;
+  background-color: #1a1a1a !important;
 }
 
 .tab-pane,
@@ -100,7 +100,7 @@ body,
 .cg-step-selector.disabled,
 .sport-heading.text-medium,
 #nav-search-events .input-container {
-  background-color: #3c3c3c !important;
+  background-color: #1a1a1a !important;
 }
 
 .btn-play,
@@ -138,7 +138,7 @@ div#cg-slide-menu-top,
 .coupon-result-text-box.multiple_live_entry:before,
 .cg-live-sport.cg-acceso > .cg-live-sport-underline,
 .cg-field-container.cg-function-field.cg-lastFieldContainer {
-  background-color: #171717 !important;
+  background-color: #000 !important;
 }
 
 .toast,
@@ -167,13 +167,14 @@ div#cg-logged-section-logout,
   .cg-signup-popup-button
   .formReloadReservation
   > .reloadReservationButton {
-  background-color: #ffd800 !important;
+  background-color: #ffcc00 !important;
+  color: black !important;
 }
 
 #cg-sport-live-container,
 .cg-no-ticket.cg-function-field,
 #cg-unloggedMask > .cg-inputContainer > input {
-  background-color: #3e3e3e !important;
+  background-color: #272727 !important;
 }
 
 .heading,
@@ -219,6 +220,7 @@ div#cg-recover-button-fase1 > div,
   .cg-odd-antepost.cg-selected
   > .cg-bottom {
   color: #101010 !important;
+  font-weight: 600;
 }
 
 .arrow,
@@ -323,7 +325,6 @@ input[type="checkbox"].systemCheckbox + label::before,
 #cg-unloggedMask > .cg-inputContainer > input,
 .formReloadReservation > .reloadReservationButton {
   border: none !important;
-  border-radius: 0 !important;
 }
 
 .heading,
@@ -393,7 +394,7 @@ div#cg-recover-button-fase1 > div,
 .cg-nav-logo,
 .cg-signup-logo,
 .cg-recover-logo {
-  background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/sirplay_logo.svg) !important;
+  background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/newlogo_sirplay.svg) !important;
 }
 .cg-nav-logo {
   width: 100%;
@@ -410,7 +411,7 @@ div#cg-recover-button-fase1 > div,
 }
 
 .cg-homeMenuIcoLite {
-  background-image: url(https://resources2.betaland.it/images/betaland/svg/menu-options.svg) !important;
+  background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/menu%20logo.svg) !important;
 }
 
 #cg-slide-home-button .cg-slide-icon.cg-slide-ico-home {
@@ -556,10 +557,10 @@ div#cg-recover-button-fase1 > div,
   .cg-slide-scroll-button.cg-app
   .cg-slide-icon-container {
   flex-direction: row;
-  border: 2px solid #ffd800;
+  border: 0px;
   border-radius: 10px;
   width: 90%;
-  background-color: #2e7e46;
+  background-color: #ffcc00;
   padding: 13px;
 }
 
@@ -568,7 +569,6 @@ div#cg-recover-button-fase1 > div,
   .cg-slide-scroll-button.cg-app
   .cg-slide-icon-container
   .cg-slide-icon.cg-app {
-  background-image: url(https://resources2.betaland.it/images/betaland/footer/logo_icon.png) !important;
   height: 30px;
 }
 
@@ -580,6 +580,7 @@ div#cg-recover-button-fase1 > div,
   font-weight: 700;
   font-size: 1rem !important;
   line-height: 15px;
+  color: black !important;
 }
 
 .overlay-content {
@@ -592,7 +593,8 @@ div#cg-recover-button-fase1 > div,
 }
 
 .cg-banner-container {
-  margin: 20px;
+  ///margin: 20px;
+  margin: 0px;
 }
 
 nav.cg-top-navbar {
@@ -631,7 +633,7 @@ span.cg-deposit-button.cg-text-medium {
 div#cg-slide-signup-button,
 #cg-slide-deposita-button {
   background-color: transparent;
-  border: 2px solid #fff !important;
+  border: 0px solid #fff !important;
 }
 
 div#cg-slide-menu-top {
@@ -1112,15 +1114,20 @@ input[type="checkbox"].systemCheckbox + label::after {
 #cg-betslip-button .cg-icon,
 #cg-contoButton .cg-icon,
 #cg-mybet-button .cg-icon {
-  display: none;
+  height: 10px;
+  width: 10px;
+  margin-right: 0px;
+  margin-top: 1px;
+  filter: invert(1);
 }
 
 #cg-contoButton i.cg-icon.cg-ico-user-logged {
   display: block;
-  background-size: 17px;
+  background-size: 11px;
   background-repeat: no-repeat;
   width: 100%;
-  margin-top: -3px;
+  margin-top: 1px;
+  filter: inherit;
 }
 
 #cg-prematch-button .cg-labelMenu,
@@ -1167,7 +1174,7 @@ input[type="checkbox"].systemCheckbox + label::after {
 .cg-landing-section-container {
   margin: 0;
   border-radius: 0;
-  padding: 8px 0;
+  padding: 2px 0;
   height: auto;
 }
 
@@ -1185,6 +1192,7 @@ input[type="checkbox"].systemCheckbox + label::after {
 .cg-live-text-sport {
   font-size: 1rem;
   padding: 0 2px;
+  font-family: "Roboto";
 }
 
 .cg-info-tournament {
@@ -1199,16 +1207,18 @@ input[type="checkbox"].systemCheckbox + label::after {
 }
 
 .cg-odd-live > .cg-top {
-  font-size: 1rem;
+  font-size: 12px;
   font-weight: 600;
   padding: 4px 0;
+  font-family: "Roboto";
 }
 
 .cg-odd-live > .cg-bottom {
-  font-size: 1rem;
+  font-size: 12px;
   font-weight: 600;
   padding: 4px 0;
   border-color: #272727;
+  font-family: "Roboto";
 }
 
 .cg-odd.cg-selected > .cg-odd-right,
@@ -1620,6 +1630,417 @@ div#cg-promo-preview-container {
 
 .cg-info-go-back {
   background: linear-gradient(#3c3c3c 0%, #cecece 40%, #808080 100%);
+}
+//////////////
+.cg-navbar-item div#cg-contoButton {
+  max-width: 75px;
+  height: 32px;
+  border: 1px solid #ffcc00;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+#cg-contoButton > .cg-iconContainer {
+  flex-direction: column;
+}
+
+div#cg-logo-button {
+  flex: 0 40%;
+}
+
+.cg-banner {
+  border-radius: 0 !important;
+  background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/mobile%2060000.png) !important;
+}
+
+div#cg-landing-body {
+  padding: 0 0 !important;
+}
+
+#cg-carousel-banner .draggable,
+.cg-banner-height {
+  height: 40vh !important;
+  max-height: 225px !important;
+}
+
+ul.slick-dots li {
+  background: #707070;
+}
+
+.cg-casino-games {
+  padding: 7px 0px;
+}
+
+.cg-landing-section-margin {
+  margin: 0px !important;
+}
+
+.cg-casino-games > div {
+  border-radius: 0px;
+}
+
+.cg-prematch-item > div {
+  border-radius: 0px !important;
+  background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/Footbal_Stadium_Lawn_541321_1280x763.png) !important;
+}
+
+.cg-prematch-item {
+  padding: 0px !important;
+}
+
+.cg-prematch-item .cg-prematch-tournament {
+  color: #ffcc00;
+}
+
+.cg-odd {
+  width: 115px;
+}
+.cg-prematch-odds {
+  padding: 5px 0px;
+}
+
+.cg-prematch-teams .cg-versus {
+  text-align: inherit;
+}
+.cg-prematch-teams .cg-team {
+  font-size: 14px;
+  margin: 0px 15px;
+  width: auto;
+}
+
+.cg-prematch-teams {
+  display: flex;
+  justify-content: center;
+  padding: 3px;
+  text-transform: uppercase;
+  font-family: system-ui;
+}
+
+.cg-prematch-odds .cg-odd-left {
+  color: black !important;
+}
+
+.cg-odd-right {
+  border-left: 0px !important;
+}
+
+.cg-odd {
+  background-color: #2f2f2f !important;
+}
+
+.cg-odd.cg-selected > .cg-odd-right,
+.cg-odd-live.cg-selected > .cg-bottom,
+.cg-odd-antepost.cg-selected > .cg-bottom {
+  color: black !important;
+}
+
+.cg-odds-color {
+  color: white !important;
+}
+
+.cg-prematch-odds .cg-odd-left {
+  color: white !important;
+}
+
+.cg-selected > .cg-odd-left {
+  color: black !important;
+}
+
+i.cg-icon.cg-ico-prematch {
+  display: block !important;
+}
+
+i.cg-icon.cg-ico-cart {
+  display: block !important;
+}
+
+////4
+
+i.cg-icon.cg-ico-prematch {
+  height: 28px !important;
+  width: 28px !important;
+}
+
+i.cg-icon.cg-ico-live {
+  height: 28px !important;
+  width: 28px !important;
+}
+
+i.cg-icon.cg-ico-cart {
+  height: 28px !important;
+  width: 28px !important;
+}
+i.cg-icon.cg-ico-mybet {
+  height: 28px !important;
+  width: 28px !important;
+}
+
+.cg-menuTabMobile > .cg-buttons-row .cg-labelMenu {
+  font-size: 9px !important;
+  margin-top: 5px !important;
+  font-family: "Roboto" !important;
+}
+
+i.cg-icon.cg-ico-user {
+  margin-right: 5px !important;
+}
+
+.cg-buttons-row .cg-icon {
+  opacity: 0.9;
+}
+
+.cg-buttons-row .cg-labelMenu {
+  opacity: 0.5;
+}
+
+html .cg-landing-section-title {
+  font-family: "Roboto";
+}
+
+.cg-live-teams > div:nth-child(1) > div:after {
+  content: "vs";
+  margin-left: 9px;
+  font-weight: bold !important;
+  font-family: "Roboto";
+}
+
+html .cg-match > div {
+  display: flex;
+}
+
+html .cg-match > div {
+  font-size: 14px !important;
+  font-family: "Roboto";
+}
+.cg-score-away:before {
+  content: "-";
+  margin: 0px 3px;
+  font-weight: bold;
+  font-family: "Roboto";
+}
+
+.cg-live-teams > div > div {
+  margin: auto 5px;
+  line-height: 24.5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.cg-live-score > div > div {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.cg-live-tournament {
+  font-weight: bold;
+  font-size: 14px !important;
+  color: #ffcc00 !important;
+}
+
+html .cg-info {
+  padding-top: 2px;
+  padding-bottom: 5px;
+}
+
+.cg-period-timer {
+  opacity: 0.6;
+}
+
+html .cg-live-item {
+  background: #262626 !important;
+  width: 90%;
+  margin-top: 8px !important;
+  margin: auto;
+}
+
+html .cg-live-odds-container .cg-odd-live {
+  flex-direction: row !important;
+}
+
+html .cg-odd-live,
+html .esito,
+html .esiti-container .esito {
+  border-radius: 0px !important;
+}
+
+.cg-odd-live {
+  border-radius: 0 !important;
+  padding: 4px 3px;
+}
+
+.cg-live-tournament {
+  text-align: inherit;
+}
+
+.nav-filters-expand-button {
+  background: none #cacaca !important;
+  border-radius: 15px;
+}
+
+.cg-slide-buttons > div {
+  font-size: 13px !important;
+  text-align: center;
+  font-weight: 500 !important;
+  line-height: 40px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+}
+
+.cg-slide-buttons > div {
+  font-size: 13px !important;
+  text-align: center;
+  font-weight: 500 !important;
+  line-height: 40px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  background: black;
+  color: white;
+  border: 1px solid #ffcc00;
+  border-radius: 5px;
+}
+
+.cg-slide-alternative-button {
+  background-color: #000000;
+  color: white;
+}
+
+.cg-slide-alternative-button > div {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  font-family: "Roboto";
+}
+
+.cg-slide-icon-container {
+  margin: 9px 0;
+}
+
+.cg-slide-scroll-button {
+  border: 1px solid #ffffff21;
+  border-radius: 6px;
+  margin: 0px 4px;
+}
+
+.container-carrello-mobile_intestazione_settings-dropdown {
+  background-color: #000 !important;
+}
+
+.cg-slide-function-field {
+  background-color: #0d0d0d !important;
+  color: #fff !important;
+}
+
+.cg-slide-lastFieldContainer {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.cg-slide-firstFieldContainer {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.cg-slide-field-wrapper {
+  width: 100% !important;
+  border-radius: 0 !important;
+  border-width: 0px !important;
+}
+
+#cg-slide-paragrafo-107 .cg-slide-title {
+  display: none;
+}
+
+#cg-slide-paragrafo-104 .cg-slide-title {
+  display: none;
+}
+
+.cg-slide-menu-separator {
+  display: none;
+}
+
+#cg-slide-paragrafo-110 .cg-slide-title {
+  display: none;
+}
+
+#cg-slide-app-buttons .cg-slide-scroll-buttons-row {
+  margin-bottom: 20px !important;
+}
+
+#cg-faq-contogioco .cg-slide-filled-label:before {
+  content: "FAQ - ";
+}
+
+#cg-faq-regole-sport .cg-slide-filled-label:before {
+  content: "FAQ - ";
+}
+
+.cg-slide-function-field > .cg-slide-filled-label {
+  font-weight: 500 !important;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.cg-slide-field-wrapper {
+  margin: 0px auto;
+}
+
+.cg-slide-footer-title {
+  color: #393939;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 11px;
+  font-family: "Roboto";
+}
+
+.cg-slide-image-container > .cg-slide-image {
+  filter: grayscale(1);
+  height: 25px;
+  position: inherit;
+  width: 25px;
+}
+
+.cg-slide-image-container {
+  border-bottom: 2px solid #ffffff21;
+  margin-bottom: 12px;
+}
+
+.cg-slide-image-container {
+  justify-content: flex-start !important;
+}
+
+#cg-slide-footer2 > div:last-child:after {
+  content: "";
+  height: 19px;
+  display: block;
+  background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/poweredbyaltech.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+}
+
+.cg-deposit-button {
+  background: #ffcc00;
+  color: #000;
+  font-weight: 600;
+  font-family: "Roboto";
+}
+
+.xp-field-container {
+  background: #1a1a1a !important;
+  height: 75px !important;
+}
+
+.cg-header-popup-title .cg-signup-popup-button > div {
+  color: black !important;
+}
+
+.esiti-container > .esito {
+  margin: 0 !important;
+}
+
+.container-carrello-mobile .input-puntata_bottone {
+  background-color: transparent !important;
+  border: 0px !important;
 }
 
 @import "new_sport_mobile";
