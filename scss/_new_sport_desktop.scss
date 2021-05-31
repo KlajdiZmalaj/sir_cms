@@ -45,8 +45,8 @@
       format('woff2');
 }
 
-body #xsport-container {
-  font-family: 'Roboto', sans-serif;
+html body #xsport-container {
+  font-family: 'Roboto', sans-serif !important;
 }
 
 html {
@@ -989,6 +989,8 @@ html {
   }
   #primo-blocco-sport .titolo-blocco-sport .voce-riduci.bianco {
     text-transform: uppercase;
+    font-weight: 600 !important;
+    font-size: 11px;
   }
 
   .live-in-prematch span::before {
@@ -1654,10 +1656,6 @@ html {
 
   ::-webkit-scrollbar-thumb {
     background: #d8b711 !important;
-  }
-
-  span.voce-riduci.bianco {
-    font-weight: 100 !important;
   }
 
   .box-vincita-potenziale.testo-piccolo.bottoni-var-quote {
