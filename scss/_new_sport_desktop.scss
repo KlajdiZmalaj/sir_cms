@@ -585,11 +585,8 @@ html {
     color: var(--custom-white-color) !important;
   }
 
-  .contenitoreSingolaQuota:hover .tipoQuotazione_1,
-  .contenitoreSingolaQuota.selezionata .tipoQuotazione_1,
   .contenitoreSingolaQuota:hover .titoloQuotazione,
   .contenitoreSingolaQuota.selezionata .titoloQuotazione,
-  .quota-con-nome:hover,
   .quota-widget-evento.quota:hover,
   .quota-widget-evento.quota.selezionata {
     background-color: var(--custom-brand-active-color-1) !important;
@@ -597,7 +594,17 @@ html {
   .quota-con-nome.selezionata,
   .contenitoreSingolaQuota:hover,
   .contenitoreSingolaQuota.selezionata {
-    background-color: var(--custom-brand-active-color-1) !important;
+    // background-color: var(--custom-brand-active-color-1) !important;
+    background-color: transparent;
+    border: 1px solid var(--custom-brand-active-color-1);
+    color: var(--custom-brand-color-1) !important;
+    span {
+      color: var(--custom-brand-color-1) !important;
+    }
+  }
+  .contenitoreSingolaQuota:hover .tipoQuotazione_1,
+  .contenitoreSingolaQuota.selezionata .tipoQuotazione_1 {
+    color: var(--custom-brand-color-1) !important;
   }
 
   .titoloQuotazione,
@@ -638,18 +645,8 @@ html {
     color: #fff;
   }
 
-  .contenitoreSingolaQuota:hover,
-  .contenitoreSingolaQuota.selezionata,
-  .contenitoreSingolaQuota:hover .tipoQuotazione_1,
-  .contenitoreSingolaQuota.selezionata .tipoQuotazione_1,
   .contenitoreSingolaQuota:hover .titoloQuotazione,
   .contenitoreSingolaQuota.selezionata .titoloQuotazione,
-  .quota-con-nome:hover,
-  .quota-con-nome.selezionata,
-  .quota-con-nome:hover span:first-child,
-  .quota-con-nome.selezionata span:first-child,
-  .quota-con-nome:hover span:last-child,
-  .quota-con-nome.selezionata span:last-child,
   .quota-widget-evento.quota:hover > span:first-child,
   .quota-widget-evento.quota.selezionata > span:first-child,
   .quota-widget-evento.quota:hover > span:last-child,
@@ -1968,4 +1965,52 @@ html {
 
 div#sidebar-dx {
   max-width: 300px !important;
+}
+
+@media screen and (min-width: 1920px) {
+  .contenitore-table .tablesExpanded .contenitoreSingolaQuota {
+    padding: 6px 0;
+    min-width: 40px;
+    max-width: 48px;
+    font-size: 11px;
+  }
+
+  body[data-available-table-space='3']
+    .tablesExpanded
+    .contenitoreSingolaQuota {
+    min-width: 45px;
+    max-width: 55px;
+    font-size: 11px;
+  }
+}
+
+.contenitore-table .contenitoreSingolaQuota:hover,
+.contenitore-table .contenitoreSingolaQuota.selezionata {
+  background-color: transparent !important;
+  color: var(--custom-brand-color-1) !important;
+  border: 1px solid var(--custom-brand-active-color-1);
+}
+html .quota-con-nome.selezionata {
+  color: var(--custom-brand-color-1) !important;
+  span {
+    color: var(--custom-brand-color-1) !important;
+    &:last-child {
+      color: var(--custom-brand-color-1) !important;
+    }
+  }
+}
+
+html .selezionata,
+html .quota:hover {
+  background-color: transparent !important;
+  color: var(--custom-brand-color-1) !important;
+  border: 1px solid var(--custom-brand-active-color-1) !important;
+}
+html {
+  .quota-con-nome:hover,
+  .quota-con-nome.selezionata,
+  .quota-con-nome:hover span:first-child,
+  .quota-con-nome:hover span:last-child {
+    color: var(--custom-brand-color-1) !important;
+  }
 }
