@@ -45,6 +45,10 @@
       format('woff2');
 }
 
+body #xsport-container {
+  font-family: 'Roboto', sans-serif;
+}
+
 html {
   #sposta-sb-1,
   #sposta-sb-2 {
@@ -424,13 +428,13 @@ html {
       display: none;
     }
     .tabellaQuoteRisultatiParziali {
-      grid-area: inherit;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      .tabellaQuoteRisultatiParziali-risultatoParziale {
-        display: none;
-      }
+      // grid-area: inherit;
+      // display: flex;
+      // flex-wrap: wrap;
+      // justify-content: flex-end;
+      // .tabellaQuoteRisultatiParziali-risultatoParziale {
+      //   display: none;
+      // }
     }
   }
 
@@ -759,6 +763,9 @@ html {
     .grid-schedina-body_quote-riga
     .grid-schedina-body_quote-riga_descrizione-quota {
     color: var(--custom-brand-active-color-1);
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
   }
 
   .widget-ultimi .contenuto-widget-ultime-v {
@@ -851,14 +858,26 @@ html {
   .grid-schedina .grid-schedina_bottone-generico:hover {
     color: var(--custom-brand-color-3) !important;
   }
+
   .grid-schedina .grid-schedina-intestazione_contenitore-testo {
     color: var(--color2) !important;
+    text-transform: uppercase;
+    font-size: 10px;
   }
+
   .grid-schedina
     .grid-schedina-body
     .grid-schedina-body_quote
     .grid-schedina-body_quote-riga:nth-child(even) {
     background-color: var(--custom-brand-color-2-dark) !important;
+  }
+
+  .grid-schedina
+    .grid-schedina-body
+    .grid-schedina-body_evento
+    .grid-schedina-body_evento_nome-squadra {
+    font-size: 12px;
+    font-weight: 600;
   }
 
   .carrello-desktop_container-elementi .tabella-puntate-sistema {
@@ -970,6 +989,9 @@ html {
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--custom-brand-active-color-1);
+  }
+  #primo-blocco-sport .titolo-blocco-sport .voce-riduci.bianco {
+    text-transform: uppercase;
   }
 
   .live-in-prematch span::before {
@@ -1688,6 +1710,9 @@ html {
       flex-flow: row;
       align-items: center;
       justify-content: flex-start;
+      span {
+        margin-left: 0;
+      }
     }
     .tabellaQuoteSquadreSeparatore {
       display: flex !important;
@@ -1709,7 +1734,7 @@ html {
   .tablesExpanded .tabellaQuoteNew,
   .tablesExpanded .tabellaQuoteIntestazione {
     grid-template-columns: 75px 30px 1fr max-content 20px 60px !important;
-    border-radius: 0;
+    border-radius: 0 !important;
   }
 }
 
@@ -1939,4 +1964,8 @@ html {
     background-color: var(--custom-brand-active-color-1);
     color: var(--custom-brand-active-color-1-text);
   }
+}
+
+div#sidebar-dx {
+  max-width: 300px !important;
 }
