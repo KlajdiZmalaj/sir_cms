@@ -1387,6 +1387,16 @@ html .widget-ultimi .contenuto-widget-ultime-v {
   margin-right: 10px !important;
 }
 
+#secondo-blocco-sport
+  .contenitore-table
+  .contenitoreSingolaQuota.bordo-tondo.mx-1 {
+  border: 1px solid #0000ff00;
+}
+
+.bg-grigio-chiaro.bordo-tondo.quota.quota-con-nome {
+  border: 1px solid #0000ff00;
+}
+
 //IMPORT SPORTPAGE ON XCONTOGIOCO +++++++++++++++++++++++++++++++++
 @import "new_sport_desktop";
 //IMPORT SPORTPAGE ON XCONTOGIOCO +++++++++++++++++++++++++++++++++

@@ -475,7 +475,7 @@ html {
     .contenitoreSingolaQuota {
       background: #323232 !important;
       &.selezionata {
-        background: #fff !important;
+        background: #323232 !important;
       }
     }
   }
@@ -589,7 +589,7 @@ html {
   .contenitoreSingolaQuota.selezionata .titoloQuotazione,
   .quota-widget-evento.quota:hover,
   .quota-widget-evento.quota.selezionata {
-    background-color: var(--custom-brand-active-color-1) !important;
+    background-color: rgba(255, 255, 255, 0) !important;
   }
   .quota-con-nome.selezionata,
   .contenitoreSingolaQuota:hover,
@@ -653,7 +653,7 @@ html {
   .quota-widget-evento.quota.selezionata > span:last-child,
   .quota-widget-evento.quota:hover > *:last-child,
   .quota-widget-evento.quota.selezionata > *:last-child {
-    color: #222 !important;
+    color: #ffe01a !important;
   }
 
   .blocco-quote-espanse .scheda-giocata-sport,
