@@ -692,6 +692,14 @@ html {
     input.input-personalizzato {
       background: var(--custom-brand-color-4-dark);
       color: var(--custom-white-color);
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 500;
+    }
+    .custom-select {
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 500;
     }
     .custom-select:disabled {
       background: var(--custom-brand-color-4-dark);
@@ -702,7 +710,6 @@ html {
 
   .fastbet.fbet-unariga .fas.fa-question-circle {
     color: var(--color2);
-    padding-right: 5px;
   }
   .titolo-widget-stampa {
     background-color: var(--custom-brand-active-color-1);
@@ -757,6 +764,13 @@ html {
   .reservationInputLabel {
     background-color: var(--custom-brand-color-4-dark) !important;
     color: var(--custom-white-color) !important;
+  }
+  .inserimento-puntata {
+    padding: 0;
+    .d-flex.align-items-center.justify-content-between {
+      padding: 3px 5px;
+      border-bottom: 2px solid var(--custom-brand-color-5-dark);
+    }
   }
 
   #betslip-container {
@@ -923,7 +937,7 @@ html {
       padding: 5px !important;
       text-align: right;
       height: 20px;
-      margin-bottom: 5px;
+      margin-bottom: 0px;
     }
 
     .label-for-amount-input.ellipsis {
