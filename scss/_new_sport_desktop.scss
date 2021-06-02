@@ -10,6 +10,7 @@
   --custom-brand-color-3-dark: #4e4e4e;
   --custom-brand-color-4-dark: #2f2f2f;
   --custom-brand-color-5-dark: #1c1c1c;
+  --custom-brand-color-6-dark: #262626;
 
   --custom-brand-color-3: #ffcb01;
   --custom-brand-active-color-1: #ffcb01;
@@ -223,7 +224,7 @@ html {
   }
 
   .widget-competizioni-side .card.elemento-competizioni-widget {
-    background-color: var(--custom-brand-color-2-dark) !important;
+    background-color: var(--custom-brand-color-6-dark) !important;
     padding: 7px 5px;
   }
   .widget-competizioni-side .card.elemento-competizioni-widget::before {
@@ -424,6 +425,7 @@ html {
     margin-top: 1px;
     padding: 0;
     padding-bottom: 5px;
+    // padding: 0;
     background-color: var(--custom-brand-color-2-dark) !important;
     .tabellaQuoteCampetto {
       display: none;
@@ -656,6 +658,7 @@ html {
 
   .titolo-giocate-extra {
     background-color: var(--custom-brand-color-2) !important;
+    border-radius: 0;
   }
 
   .evento-attivo {
@@ -1799,9 +1802,6 @@ html {
     align-items: stretch;
   }
 
-  .tabellaQuoteNew.text_s1.mb-2 {
-    padding-bottom: 0;
-  }
   .tempo-live.text-center {
     display: flex;
     align-items: center;
@@ -1921,6 +1921,7 @@ html {
 
   .elemento-competizioni-widget {
     padding: 3px 5px;
+    background-color: var(--custom-brand-color-6-dark);
   }
   .altezza-max-html {
     a.consulta-footer,
@@ -2021,6 +2022,9 @@ div#sidebar-dx {
   color: var(--custom-brand-color-1) !important;
   border: 1px solid var(--custom-brand-active-color-1);
 }
+.contenitore-table .contenitoreSingolaQuota {
+  border: 1px solid transparent;
+}
 html .quota-con-nome.selezionata {
   color: var(--custom-brand-color-1) !important;
   span {
@@ -2043,5 +2047,44 @@ html {
   .quota-con-nome:hover span:first-child,
   .quota-con-nome:hover span:last-child {
     color: var(--custom-brand-color-1) !important;
+  }
+}
+
+html {
+  .quote-extra .quota-con-nome {
+    border: 1px solid transparent;
+  }
+}
+
+html #secondo-blocco-sport {
+  background-color: var(--custom-brand-color-5-dark) !important;
+  .grigio.pl-2.pointer {
+    .voce-riduci.grigio {
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 5px;
+      display: block;
+      font-weight: 500;
+    }
+  }
+  .widget-elemento-live {
+    margin-bottom: 1px;
+    .quote-extra.bordo-tondo {
+      padding: 3px 0px;
+      .quote-extra-partita {
+        background-color: var(--custom-brand-color-6-dark);
+        .titolo-giocate-extra {
+          background-color: transparent !important;
+        }
+        .tabella-quote-extra {
+          background: transparent !important;
+          padding: 0 10px 10px 10px;
+        }
+      }
+    }
+  }
+  .titolo-blocco-sport.last-minute-t.bg-nero.bianco {
+    margin-top: 0px !important;
+    padding: 5px 10px;
   }
 }
