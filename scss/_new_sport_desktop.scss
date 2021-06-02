@@ -664,6 +664,7 @@ html {
 
   .titolo-giocate-extra {
     background-color: var(--custom-brand-color-2) !important;
+    border-radius: 0;
   }
 
   .evento-attivo {
@@ -2029,6 +2030,9 @@ div#sidebar-dx {
   color: var(--custom-brand-color-1) !important;
   border: 1px solid var(--custom-brand-active-color-1);
 }
+.contenitore-table .contenitoreSingolaQuota {
+  border: 1px solid transparent;
+}
 html .quota-con-nome.selezionata {
   color: var(--custom-brand-color-1) !important;
   span {
@@ -2051,5 +2055,44 @@ html {
   .quota-con-nome:hover span:first-child,
   .quota-con-nome:hover span:last-child {
     color: var(--custom-brand-color-1) !important;
+  }
+}
+
+html {
+  .quote-extra .quota-con-nome {
+    border: 1px solid transparent;
+  }
+}
+
+html #secondo-blocco-sport {
+  background-color: var(--custom-brand-color-5-dark) !important;
+  .grigio.pl-2.pointer {
+    .voce-riduci.grigio {
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 5px;
+      display: block;
+      font-weight: 500;
+    }
+  }
+  .widget-elemento-live {
+    margin-bottom: 1px;
+    .quote-extra.bordo-tondo {
+      padding: 3px 0px;
+      .quote-extra-partita {
+        background-color: #262626;
+        .titolo-giocate-extra {
+          background-color: transparent !important;
+        }
+        .tabella-quote-extra {
+          background: transparent !important;
+          padding: 0 10px 10px 10px;
+        }
+      }
+    }
+  }
+  .titolo-blocco-sport.last-minute-t.bg-nero.bianco {
+    margin-top: 0px !important;
+    padding: 5px 10px;
   }
 }
