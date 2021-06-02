@@ -2043,5 +2043,11 @@ html .esiti-container .esito {
   border: 0px !important;
 }
 
+@media only screen and (max-height: 650px) {
+  #cg-pagina-ippica-isibet #cg-iframe-container iframe {
+    height: calc(100% + 150px);
+  }
+}
+
 @import "new_sport_mobile";
 @import "widget";
