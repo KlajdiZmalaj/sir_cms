@@ -219,8 +219,8 @@ html {
 
 body[page="xcasinolive"] {
   .casino.cg-bg-live {
-    background: url(https://gradm-api.pcluster.info/api/skin/48/image/a8b17a54a5fe1e1c66d7e95f45785911.jpeg)
-      top center no-repeat !important;
+    background: url(https://gradm-api.pcluster.info/api/skin/48/image/a8b17a54a5fe1e1c66d7e95f45785911.jpeg) top center
+      no-repeat !important;
     background-attachment: fixed !important;
     background-position-y: 50px !important;
   }
@@ -235,13 +235,11 @@ body[page="xcasino"] {
     color: var(--col1);
   }
   .casino.cg-bg-live {
-    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/backgCasino.png)
-      top center no-repeat !important;
+    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/backgCasino.png) top center no-repeat !important;
     background-attachment: fixed !important;
   }
   .casino #contentGames:before {
-    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/banner1Casino.svg)
-      center center no-repeat !important;
+    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/banner1Casino.svg) center center no-repeat !important;
     top: -16px;
   }
 }
@@ -302,8 +300,7 @@ body[page="xcasino"] {
     }
   }
   &.cg-bg-live {
-    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/backgCasino.jpg)
-      top center no-repeat !important;
+    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/backgCasino.jpg) top center no-repeat !important;
     background-attachment: fixed !important;
   }
   .riga-titoli-casino {
@@ -341,12 +338,7 @@ body[page="xcasino"] {
   }
 
   .descIconGameFooter {
-    background-image: linear-gradient(
-      180deg,
-      #363636 0%,
-      #202020 82.3%,
-      #313131 100%
-    );
+    background-image: linear-gradient(180deg, #363636 0%, #202020 82.3%, #313131 100%);
     color: #fff;
     border-top: 0;
     font-weight: 500;
@@ -445,8 +437,7 @@ body[page="xcasino"] {
     }
     &:before {
       content: "";
-      background: url("../SIRPLAY/img/banner1Casino.png") center center
-        no-repeat !important;
+      background: url("../SIRPLAY/img/banner1Casino.png") center center no-repeat !important;
       position: absolute;
       width: 100%;
       height: 300px;
@@ -501,6 +492,7 @@ body[page="xcasino"] {
 //header icons
 .menu-principale-barra ul.menu-principale li {
   margin: 5px 10px 0px 10px;
+  text-align: center;
   a {
     position: relative;
     font-weight: 500;
@@ -661,10 +653,7 @@ body[subpage="ippica"] {
 
 body[page="promo"],
 body[subpage="promo"] {
-  .container-fluid.fissato-alto
-    #nascondimenu
-    .row.bg-bianco
-    .menu-principale-barra.w-100 {
+  .container-fluid.fissato-alto #nascondimenu .row.bg-bianco .menu-principale-barra.w-100 {
     min-height: 120px;
   }
   .logo {
@@ -1241,10 +1230,6 @@ html body[page="promo"] #panel {
   background-color: #0d0d0d;
 }
 
-i.fas {
-  margin-right: 0 !important;
-}
-
 button.bottone.cg-promo-info-btn.margine-dx {
   font-weight: 600;
 }
@@ -1345,10 +1330,7 @@ html {
   .dx-treelist .dx-column-lines > td {
     border-color: #000 !important;
   }
-  .dx-treelist-filter-row
-    .dx-editor-cell
-    .dx-editor-with-menu
-    .dx-texteditor-input {
+  .dx-treelist-filter-row .dx-editor-cell .dx-editor-with-menu .dx-texteditor-input {
     border-radius: 0;
   }
 }
@@ -1362,7 +1344,7 @@ html .widget-ricerca-side input {
 }
 
 .tabellaQuoteRisultatiParziali {
-  height: 20px;
+  height: 30px;
 }
 
 .contenitore-table {
@@ -1387,14 +1369,21 @@ html .widget-ultimi .contenuto-widget-ultime-v {
   margin-right: 10px !important;
 }
 
-#secondo-blocco-sport
-  .contenitore-table
-  .contenitoreSingolaQuota.bordo-tondo.mx-1 {
+#secondo-blocco-sport .contenitore-table .contenitoreSingolaQuota.bordo-tondo.mx-1 {
   border: 1px solid #0000ff00;
 }
 
 .bg-grigio-chiaro.bordo-tondo.quota.quota-con-nome {
   border: 1px solid #0000ff00;
+}
+
+.toolbox-submenu > div {
+  padding: 10px 6px 10px 10px;
+}
+
+.tablesExpanded .tabellaQuoteNew[data-numero-quote="12"] .contenitoreSingolaQuota,
+.tablesExpanded .tabellaQuoteNew[data-numero-quote="12"] button.dropdown-toggle {
+  max-height: 30px;
 }
 
 //IMPORT SPORTPAGE ON XCONTOGIOCO +++++++++++++++++++++++++++++++++
