@@ -1,4 +1,4 @@
-@import "vars";
+@import 'vars';
 
 /*HEADER e MENU*/
 
@@ -23,6 +23,7 @@
 }
 .blocco-header.login-form-header.margine-su-1x {
   margin-top: 0;
+  padding: 5px 5px 5px 0px;
 }
 button.btn.bottone-largo.bg-colore-1.bianco.margin-bottom.mb-3.flex-item.pointer.bold {
   color: #fff !important;
@@ -37,7 +38,7 @@ html .customPopup__content__header {
   display: inline-block;
 
   &:after {
-    content: "?";
+    content: '?';
     position: absolute;
     font-size: 18px;
     background-color: #525252;
@@ -48,12 +49,13 @@ html .customPopup__content__header {
     padding: 2px;
     top: -2px;
   }
-  &[onclick="cg_recoverPassword(true)"]:after {
+  &[onclick='cg_recoverPassword(true)']:after {
     top: -18px;
   }
 }
 .login-header {
   padding-right: 0;
+  padding-left: 0;
   flex: 1 1;
   max-width: 100%;
   input:-internal-autofill-selected,
@@ -82,22 +84,22 @@ html .customPopup__content__header {
       // bottom: -52px;
       // right: 0;
       &:before {
-        content: "\f234";
-        font-family: "Font Awesome 5 Pro";
+        content: '\f234';
+        font-family: 'Font Awesome 5 Pro';
         padding-right: 5px;
       }
     }
   }
 }
-.bottone.bottone-login[onclick="cg_login()"] {
+.bottone.bottone-login[onclick='cg_login()'] {
   font-size: 0;
   flex: 0;
   margin-right: 0px;
   padding: 0px 10px;
 }
-.bottone.bottone-login[onclick="cg_login()"]:before {
-  content: "\f2f6";
-  font-family: "Font Awesome 5 Pro";
+.bottone.bottone-login[onclick='cg_login()']:before {
+  content: '\f2f6';
+  font-family: 'Font Awesome 5 Pro';
   font-size: 16px;
 }
 
@@ -116,12 +118,12 @@ p.testo-disclaimer {
 }
 .barra-superiore .blocco-header.flex-container.cg-contatti {
   .fab.fa-whatsapp:after {
-    content: "Whatsapp 3511909851";
+    content: 'Whatsapp 3511909851';
     position: relative;
     left: 5px;
     text-transform: uppercase;
     font-size: 13px;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
   .fab.fa-whatsapp {
     font-size: 13px;
@@ -157,15 +159,22 @@ p.testo-disclaimer {
   }
   #nascondimenu {
     background: var(--intermediate-bar-bg-color);
+    display: flex;
+    justify-content: space-between;
     .cg-checkbet-container {
       height: 50px;
     }
     .row.barra-intermedia {
-      width: 1240px;
-      margin: 0 auto;
+      width: auto !important;
+      padding: 0 15px;
+      order: 2;
+      margin-right: 0;
+      margin-left: 0;
     }
     .row.bg-bianco {
-      background: var(--secondary-bg);
+      background: transparent;
+      order: 1;
+      width: auto;
       .menu-principale-barra.w-100 {
         // max-width: 1240px;
         margin: 0 auto;
@@ -174,12 +183,18 @@ p.testo-disclaimer {
   }
 }
 .menu-principale-barra ul.menu-principale {
-  border-bottom: 1px solid #444;
-  box-shadow: inset 0px -1px 0px 0px #000;
+  padding-left: 200px;
+  background: transparent;
+}
+.login-header .blocco-header input {
+  background: var(--custom-brand-color-6-dark);
+}
+input.elemento-input {
+  max-width: 12rem;
 }
 /*FINE HEADER e MENU*/
 
-body[page="sport"] {
+body[page='sport'] {
   background-size: 1760px;
   background-position: center 37px;
   background-repeat: no-repeat;
@@ -217,7 +232,7 @@ html {
   }
 }
 
-body[page="xcasinolive"] {
+body[page='xcasinolive'] {
   .casino.cg-bg-live {
     background: url(https://gradm-api.pcluster.info/api/skin/48/image/a8b17a54a5fe1e1c66d7e95f45785911.jpeg)
       top center no-repeat !important;
@@ -225,11 +240,11 @@ body[page="xcasinolive"] {
     background-position-y: 50px !important;
   }
   .casino #contentGames:before {
-    content: "";
+    content: '';
     background: none !important;
   }
 }
-body[page="xcasino"] {
+body[page='xcasino'] {
   .modal-body {
     background-color: var(--bg1);
     color: var(--col1);
@@ -293,7 +308,7 @@ body[page="xcasino"] {
       align-items: center;
     }
     &:before {
-      content: "";
+      content: '';
       background: #000;
       width: 100%;
       height: 40px;
@@ -444,8 +459,8 @@ body[page="xcasino"] {
       }
     }
     &:before {
-      content: "";
-      background: url("../SIRPLAY/img/banner1Casino.png") center center
+      content: '';
+      background: url('../SIRPLAY/img/banner1Casino.png') center center
         no-repeat !important;
       position: absolute;
       width: 100%;
@@ -546,97 +561,97 @@ body[page="xcasino"] {
     }
   }
 }
-.menu-principale-barra ul.menu-principale a[data-ref="home"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='home']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/home.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="sport"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='sport']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/sport.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="ingame"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='ingame']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/live.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="xcasino"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='xcasino']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/roulette.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="xcasinopt"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='xcasinopt']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/casino.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="xcasinolive"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='xcasinolive']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/casinoL.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="poker"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='poker']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/poker.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="xbingo"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='xbingo']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/bingo.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="virtuali"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='virtuali']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/virual.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="ippica-isibet"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='ippica-isibet']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/ippica.svg);
 }
 
-.menu-principale-barra ul.menu-principale a[data-ref="promo"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='promo']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/promotions.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="cg-mobile-mode"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='cg-mobile-mode']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/sport.svg);
 }
 
-.menu-principale-barra ul.menu-principale a[data-ref="contidigioco"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='contidigioco']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/contiGioco.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="ricerche"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='ricerche']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/richerche.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="movimentazioni"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='movimentazioni']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/movimentazioni.svg);
 }
 
-.menu-principale-barra ul.menu-principale a[data-ref="mieipunti"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='mieipunti']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/points.svg);
 }
 
-.menu-principale-barra ul.menu-principale a[data-ref="gestionepunto"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='gestionepunto']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/pointM.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="saldocassa"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='saldocassa']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/saldoCassa.svg);
 }
 
-.menu-principale-barra ul.menu-principale a[data-ref="fatture"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='fatture']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/contabilita.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="cambiopassword"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='cambiopassword']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/changePass.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="external-chat"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='external-chat']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/chat.svg);
 }
 
-body[subpage="sport"] {
+body[subpage='sport'] {
   &:not(.altezza-max) .sottomenu-main {
     display: none;
   }
@@ -645,22 +660,22 @@ body[subpage="sport"] {
     padding-left: 0;
   }
 }
-body[subpage="home"],
-body[subpage="xcasinopt"],
-body[subpage="xcasino"],
-body[subpage="xcasinolive"],
-body[subpage="poker"],
-body[subpage="xbingo"],
-body[subpage="virtuali"],
-body[subpage="ippica"] {
+body[subpage='home'],
+body[subpage='xcasinopt'],
+body[subpage='xcasino'],
+body[subpage='xcasinolive'],
+body[subpage='poker'],
+body[subpage='xbingo'],
+body[subpage='virtuali'],
+body[subpage='ippica'] {
   .logo {
     bottom: 11px;
     padding-left: 0;
   }
 }
 
-body[page="promo"],
-body[subpage="promo"] {
+body[page='promo'],
+body[subpage='promo'] {
   .container-fluid.fissato-alto
     #nascondimenu
     .row.bg-bianco
@@ -673,7 +688,7 @@ body[subpage="promo"] {
   }
 }
 
-body[subpage="live"] {
+body[subpage='live'] {
   .logo {
     bottom: 10px;
   }
@@ -686,7 +701,7 @@ a.consulta-chat {
   padding: 7px 10px;
 }
 //START POKER
-body[subpage="poker"] {
+body[subpage='poker'] {
   .cg-poker-banner-container {
     width: 1240px;
   }
@@ -815,7 +830,7 @@ body[subpage="poker"] {
 }
 //END POKER
 
-body[subpage="live"] {
+body[subpage='live'] {
   .container-fluid.fissato-alto .row.barra-superiore {
     width: 100%;
   }
@@ -1092,7 +1107,7 @@ body {
     justify-content: flex-start;
     position: relative;
     &::after {
-      content: "powered by";
+      content: 'powered by';
       background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/altechLabs.svg);
       position: absolute;
       width: 210px;
@@ -1164,8 +1179,8 @@ html .scopri-promo {
 .altezza-max-html {
   #nascondimenu .logo {
     position: absolute;
-    margin-left: 10px;
     left: 0;
+    margin-left: 10px !important;
   }
 }
 
@@ -1173,7 +1188,7 @@ ul.slick-dots li.slick-active {
   background: #ffd919 !important;
 }
 
-body[page="ingame"]:not(.altezza-max) .logo a {
+body[page='ingame']:not(.altezza-max) .logo a {
   height: 100%;
   display: flex;
   align-items: center;
@@ -1182,8 +1197,8 @@ body[page="ingame"]:not(.altezza-max) .logo a {
   bottom: 40px;
   left: 20px;
 }
-body[subpage="live-match"],
-body[subpage="calendar"] {
+body[subpage='live-match'],
+body[subpage='calendar'] {
   &:not(.altezza-max) .logo a {
     height: 100%;
     display: flex;
@@ -1199,7 +1214,7 @@ body[subpage="calendar"] {
 //   display: none !important;
 // }
 
-[page="promo"] {
+[page='promo'] {
   .modal-content {
     max-width: 440px;
     margin: auto;
@@ -1225,19 +1240,19 @@ a.grassetto {
   color: #ffe01a;
 }
 
-html body[page="promo"] {
+html body[page='promo'] {
   background-color: #0d0d0d;
 }
 
-html body[page="promo"] .card {
+html body[page='promo'] .card {
   background-color: #262626;
 }
 
-html body[page="promo"] .content-wrapper {
+html body[page='promo'] .content-wrapper {
   background-color: #0d0d0d;
 }
 
-html body[page="promo"] #panel {
+html body[page='promo'] #panel {
   background-color: #0d0d0d;
 }
 
@@ -1397,6 +1412,24 @@ html .widget-ultimi .contenuto-widget-ultime-v {
   border: 1px solid #0000ff00;
 }
 
+@media screen and (max-width: 1440px) {
+  .menu-principale-barra ul.menu-principale li {
+    margin: 5px 5px 0px 5px;
+  }
+  .logo img {
+    height: 60% !important;
+  }
+  .menu-principale-barra ul.menu-principale {
+    padding-left: 180px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .login-header .blocco-header input {
+    max-width: 10rem;
+  }
+}
+
 //IMPORT SPORTPAGE ON XCONTOGIOCO +++++++++++++++++++++++++++++++++
-@import "new_sport_desktop";
+@import 'new_sport_desktop';
 //IMPORT SPORTPAGE ON XCONTOGIOCO +++++++++++++++++++++++++++++++++
