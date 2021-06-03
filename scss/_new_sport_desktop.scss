@@ -278,15 +278,8 @@ html {
   }
 
   .tablesCompacted#primo-blocco-sport,
-  .tablesCompacted#secondo-blocco-sport {
-    background-color: var(--custom-brand-color-2) !important;
-  }
-
-  .tablesCompacted#primo-blocco-sport,
   .tablesCompacted#primo-blocco-sport .sport-live-suite .collapse.bg-bianco,
-  .tablesCompacted#secondo-blocco-sport,
-  .tablesExpanded#primo-blocco-sport,
-  .tablesExpanded#secondo-blocco-sport {
+  .tablesExpanded#primo-blocco-sport {
     background-color: var(--custom-black-color) !important;
   }
 
