@@ -138,7 +138,7 @@ p.testo-disclaimer {
 
 .container-fluid.fissato-alto {
   .row.barra-superiore {
-    height: 0px;
+    height: 30px;
     padding: 0 15px;
     .info-utili {
       font-size: 14px;
@@ -151,9 +151,6 @@ p.testo-disclaimer {
     .disclaimer {
       justify-content: flex-end;
       padding-right: 0;
-      position: absolute;
-      right: 45px;
-      bottom: -37px;
       .cg-header-logo {
         width: 56px;
         height: 26px;
@@ -197,20 +194,6 @@ p.testo-disclaimer {
 }
 input.elemento-input {
   max-width: 12rem;
-}
-.blocco-header.flex-container.cg-contatti {
-  position: fixed;
-  bottom: 0;
-  right: 335px;
-  background-color: var(--accent-bg);
-  color: var(--accent-txt);
-  height: 30px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  span {
-    color: var(--accent-txt);
-    font-weight: 700;
-  }
 }
 /*FINE HEADER e MENU*/
 
@@ -323,7 +306,6 @@ body[page='xcasino'] {
       flex-direction: row;
       flex: 1 1;
       justify-content: space-between;
-      max-width: 1240px;
       margin: 0 auto;
       align-items: center;
     }
