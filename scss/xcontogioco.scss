@@ -109,7 +109,12 @@ p.testo-disclaimer {
 }
 
 .barra-superiore .blocco-header {
-  font-size: 12px !important;
+  #cg-time {
+    display: none;
+  }
+  #cg-date {
+    display: none;
+  }
 }
 .barra-superiore .blocco-header.flex-container.cg-contatti {
   a span {
@@ -129,12 +134,11 @@ p.testo-disclaimer {
     font-size: 13px;
   }
 }
+
 .container-fluid.fissato-alto {
   .row.barra-superiore {
-    height: 30px;
+    height: 0px;
     padding: 0 15px;
-    margin: 0 auto;
-    background: transparent;
     .info-utili {
       font-size: 14px;
       height: 30px;
@@ -144,10 +148,11 @@ p.testo-disclaimer {
       }
     }
     .disclaimer {
-      font-size: 13px;
-      height: 30px;
       justify-content: flex-end;
       padding-right: 0;
+      position: absolute;
+      right: 45px;
+      bottom: -37px;
       .cg-header-logo {
         width: 56px;
         height: 26px;
@@ -191,6 +196,20 @@ p.testo-disclaimer {
 }
 input.elemento-input {
   max-width: 12rem;
+}
+.blocco-header.flex-container.cg-contatti {
+  position: fixed;
+  bottom: 0;
+  right: 335px;
+  background-color: var(--accent-bg);
+  color: var(--accent-txt);
+  height: 30px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  span {
+    color: var(--accent-txt);
+    font-weight: 700;
+  }
 }
 /*FINE HEADER e MENU*/
 
@@ -1101,7 +1120,9 @@ body {
     bottom: 0px;
   }
 }
-
+#nascondiHeader {
+  display: none;
+}
 .barra-intermedia-footer {
   .row.cg-footer-sections {
     justify-content: flex-start;
