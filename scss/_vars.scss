@@ -1,13 +1,13 @@
 html:root {
-  --active-color: #ffe01a;
+  --active-color: #ffcc00;
   --teableHeadersBg: #2c2c2c;
   --teableHeadersCol: #a0a0a0;
   --teableSubHeadersBg: #525252;
   --teableSubHeadersCol: #ffffff;
   --tableBorders: #5c5c5c;
 
-  --accent: #ffe01a;
-  --accent-bg: #ffe01a;
+  --accent: #ffcc00;
+  --accent-bg: #ffcc00;
   --accent-txt: #222;
   --primary-bg: #4a4a4a;
   --primary-txt: #fff;
@@ -26,7 +26,7 @@ html:root {
   --xp-background-color2: #525252;
   --xp-nav-selection-border: #00a651;
   --xp-nav-selection-color: #00a651;
-  --cg-arrow-color: #ffe01a;
+  --cg-arrow-color: #ffcc00;
   --cg-nav-selection-color2: #00a651;
   --cg-nav-selection-border2: #00a651;
   --cg-nav-selection-border: #5c5c5c;
@@ -34,7 +34,7 @@ html:root {
   --xp-general-field-border: #5c5c5c;
   --cg-signup-label: #d4d4d4;
   --close-betslip-button-color-bg: #565656;
-  --nav-selection-color: #ffe01a;
+  --nav-selection-color: #ffcc00;
   --cg-slider-top-footer-background: #212121;
   --cg-slider-top-footer-text: #fff;
   --cg-slider-top-footer-border: #5c5c5c;
@@ -49,9 +49,9 @@ html:root {
 
   //xcontogioco
 
-  --border-color-1: #ffe01a;
+  --border-color-1: #ffcc00;
   --bg-color-1: #000000;
-  --cg-top-button-background: #ffe01a;
+  --cg-top-button-background: #ffcc00;
   --topbar-bg-color: #3c3c3c;
   --topbar-text-color: #ffffff;
   --intermediate-bar-bg-color: #000000;
@@ -59,7 +59,7 @@ html:root {
   --intermediate-bar-muted-text-color: #ffffff;
   --header-input-bg-color: #525252;
   --header-input-text-color: #ffffff;
-  --user-img-border-color: #ffe01a;
+  --user-img-border-color: #ffcc00;
   --menu-bar-background-color: #212121;
   --menu-bar-text-color: #fff;
   --submenu-bar-background-color: #212121;
@@ -74,24 +74,24 @@ html:root {
   --deposit-button-bg-color: #ffd919;
   --deposit-button-text-color: #222;
   --deposit-button-border-color: #425468;
-  --footer-btn-bg-color: #ffe01a;
+  --footer-btn-bg-color: #ffcc00;
   --footer-btn-text-color: #073862;
   --topbar-footer-bg-color: #333333;
   --topbar-footer-text-color: #ffffff;
-  --topbar-footer-border-color: #ffe01a;
+  --topbar-footer-border-color: #ffcc00;
   --intermediatebar-footer-bg-color: #212121;
   --bottombar-footer-bg-color: #3c3c3c;
   --bottombar-footer-text-color: #ffffff;
   --footer-links-text-color: #ffffff;
-  --promo-page-title: #ffe01a;
-  --promo-title: #ffe01a;
-  --promo-info-button-bg-color: #ffe01a;
+  --promo-page-title: #ffcc00;
+  --promo-title: #ffcc00;
+  --promo-info-button-bg-color: #ffcc00;
   --promo-info-button-text-color: #000000;
-  --promo-signup-button-bg-color: #ffe01a;
+  --promo-signup-button-bg-color: #ffcc00;
   --promo-signup-button-text-color: #000000;
-  --promo-active-type-bg-color: #ffe01a;
+  --promo-active-type-bg-color: #ffcc00;
   --promo-active-type-text-color: #000000;
-  --promo-active-type-hover-bg-color: #ffe01a;
+  --promo-active-type-hover-bg-color: #ffcc00;
   --promo-active-type-hover-text-color: #000000;
   --landing-quota-hover-bg-color: #fdca00;
   --landing-quota-hover-text-color: #222;
@@ -107,17 +107,17 @@ html:root {
   --nav-temporal-filter-color: #404040;
 }
 
-$url: "sirplay.it";
-$skinHost: "sirplay.it";
-$skinName: "SIRPLAY";
-$logoUrl: "https://#{$skinHost}/external_css/#{$skinName}/img/sirplay_logo.svg";
+$url: 'sirplay.it';
+$skinHost: 'sirplay.it';
+$skinName: 'SIRPLAY';
+$logoUrl: 'https://#{$skinHost}/external_css/#{$skinName}/img/sirplay_logo.svg';
 
-@import url("https://fonts.googleapis.com/css?family=Open Sans:400,700");
-@import url("https://#{$url}/external_css/SIRPLAY/fontAwesome/css/all.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Open Sans:400,700');
+@import url('https://#{$url}/external_css/SIRPLAY/fontAwesome/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-$font: "Roboto", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+$font: 'Roboto', sans-serif;
 
 body {
   font-family: $font;
@@ -153,5 +153,5 @@ body {
 }
 
 .cg-favicon {
-  background-image: url("https://#{$skinHost}/external_css/#{$skinName}/img/sirfav.png");
+  background-image: url('https://#{$skinHost}/external_css/#{$skinName}/img/sirfav.png');
 }

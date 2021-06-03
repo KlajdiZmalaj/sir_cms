@@ -23,6 +23,7 @@
 }
 .blocco-header.login-form-header.margine-su-1x {
   margin-top: 0;
+  padding: 5px 5px 5px 0px;
 }
 button.btn.bottone-largo.bg-colore-1.bianco.margin-bottom.mb-3.flex-item.pointer.bold {
   color: #fff !important;
@@ -54,6 +55,7 @@ html .customPopup__content__header {
 }
 .login-header {
   padding-right: 0;
+  padding-left: 0;
   flex: 1 1;
   max-width: 100%;
   input:-internal-autofill-selected,
@@ -107,7 +109,12 @@ p.testo-disclaimer {
 }
 
 .barra-superiore .blocco-header {
-  font-size: 12px !important;
+  #cg-time {
+    display: none;
+  }
+  #cg-date {
+    display: none;
+  }
 }
 .barra-superiore .blocco-header.flex-container.cg-contatti {
   a span {
@@ -127,12 +134,11 @@ p.testo-disclaimer {
     font-size: 13px;
   }
 }
+
 .container-fluid.fissato-alto {
   .row.barra-superiore {
-    height: 30px;
+    height: 0px;
     padding: 0 15px;
-    margin: 0 auto;
-    background: transparent;
     .info-utili {
       font-size: 14px;
       height: 30px;
@@ -142,10 +148,11 @@ p.testo-disclaimer {
       }
     }
     .disclaimer {
-      font-size: 13px;
-      height: 30px;
       justify-content: flex-end;
       padding-right: 0;
+      position: absolute;
+      right: 45px;
+      bottom: -37px;
       .cg-header-logo {
         width: 56px;
         height: 26px;
@@ -157,15 +164,22 @@ p.testo-disclaimer {
   }
   #nascondimenu {
     background: var(--intermediate-bar-bg-color);
+    display: flex;
+    justify-content: space-between;
     .cg-checkbet-container {
       height: 50px;
     }
     .row.barra-intermedia {
-      width: 1240px;
-      margin: 0 auto;
+      width: auto !important;
+      padding: 0 15px;
+      order: 2;
+      margin-right: 0;
+      margin-left: 0;
     }
     .row.bg-bianco {
-      background: var(--secondary-bg);
+      background: transparent;
+      order: 1;
+      width: auto;
       .menu-principale-barra.w-100 {
         // max-width: 1240px;
         margin: 0 auto;
@@ -174,8 +188,28 @@ p.testo-disclaimer {
   }
 }
 .menu-principale-barra ul.menu-principale {
-  border-bottom: 1px solid #444;
-  box-shadow: inset 0px -1px 0px 0px #000;
+  padding-left: 200px;
+  background: transparent;
+}
+.login-header .blocco-header input {
+  background: var(--custom-brand-color-6-dark);
+}
+input.elemento-input {
+  max-width: 12rem;
+}
+.blocco-header.flex-container.cg-contatti {
+  position: fixed;
+  bottom: 0;
+  right: 335px;
+  background-color: var(--accent-bg);
+  color: var(--accent-txt);
+  height: 30px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  span {
+    color: var(--accent-txt);
+    font-weight: 700;
+  }
 }
 /*FINE HEADER e MENU*/
 
@@ -1075,7 +1109,9 @@ body {
     bottom: 0px;
   }
 }
-
+#nascondiHeader {
+  display: none;
+}
 .barra-intermedia-footer {
   .row.cg-footer-sections {
     justify-content: flex-start;
@@ -1153,8 +1189,8 @@ html .scopri-promo {
 .altezza-max-html {
   #nascondimenu .logo {
     position: absolute;
-    margin-left: 10px;
     left: 0;
+    margin-left: 10px !important;
   }
 }
 
@@ -1384,6 +1420,23 @@ html .widget-ultimi .contenuto-widget-ultime-v {
 .tablesExpanded .tabellaQuoteNew[data-numero-quote="12"] .contenitoreSingolaQuota,
 .tablesExpanded .tabellaQuoteNew[data-numero-quote="12"] button.dropdown-toggle {
   max-height: 30px;
+}
+@media screen and (max-width: 1440px) {
+  .menu-principale-barra ul.menu-principale li {
+    margin: 5px 5px 0px 5px;
+  }
+  .logo img {
+    height: 60% !important;
+  }
+  .menu-principale-barra ul.menu-principale {
+    padding-left: 180px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .login-header .blocco-header input {
+    max-width: 10rem;
+  }
 }
 
 //IMPORT SPORTPAGE ON XCONTOGIOCO +++++++++++++++++++++++++++++++++
