@@ -998,11 +998,13 @@ html {
   }
 
   #primo-blocco-sport .slider-icone-sport {
-    background-color: transparent !important;
+    background-color: var(--custom-brand-color-4-dark) !important;
+    height: 70px !important;
   }
 
   #primo-blocco-sport .container-slider-icone {
     background-color: var(--custom-brand-color-2-dark) !important;
+    height: 70px !important;
   }
 
   #primo-blocco-sport .titolo-blocco-sport,
@@ -1010,6 +1012,9 @@ html {
     background: var(--custom-brand-color-2-dark);
     color: var(--custom-white-color) !important;
     border-radius: 0;
+  }
+  #primo-blocco-sport .titolo-blocco-sport {
+    min-height: 40px;
   }
   .container-slider-icone-paese.has-icons-container-no-wrap {
     padding: 0 7px;
@@ -1045,7 +1050,16 @@ html {
     font-size: 11px;
   }
   .icons-container .icona-slider-sport {
-    border-right: 1px solid var(--custom-black-color);
+    background-color: var(--custom-brand-color-4-dark);
+    border-right: 1px solid var(--bg-color-1);
+    padding: 10px 5px 0px 5px;
+    height: 100%;
+    .sport-icona-live {
+      height: 100%;
+    }
+    figure > span:last-child {
+      padding-top: 5px;
+    }
   }
 
   .icona-selezionata figure.sport-icona-live,
