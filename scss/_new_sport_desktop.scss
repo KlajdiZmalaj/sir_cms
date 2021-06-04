@@ -418,6 +418,9 @@ html {
     border-radius: 0;
     margin-top: 0px;
     padding: 0;
+    //test
+    height: 50px;
+    //test
     background-color: var(--custom-brand-color-2-dark) !important;
     .tabellaQuoteCampetto {
       display: none;
@@ -1305,7 +1308,7 @@ html {
 
   a.consulta-footer,
   a.consulta-chat {
-    padding: 0.6rem 2rem !important;
+    padding: 3px 8px !important;
     background-color: var(--custom-brand-color-1) !important;
   }
 
@@ -1331,7 +1334,7 @@ html {
   }
 
   #cg-session-expiration-modal .nero {
-    color: #fff !important;
+    color: inherit;
   }
 
   .xs-loader-container {
@@ -2030,4 +2033,19 @@ html {
       padding: 5px 10px;
     }
   }
+}
+
+.contenitoreSingolaQuota.bordo-tondo.mx-1 {
+  border: 1px solid #8f8fae00;
+}
+
+html .quota-con-nome.selezionata,
+html .contenitoreSingolaQuota:hover,
+html .contenitoreSingolaQuota.selezionata {
+  background-color: transparent;
+  border: 1px solid var(--custom-brand-active-color-1) !important;
+}
+
+.gridInterernaQuotazioni .contenitoreSingolaQuota.bordo-tondo.mx-1 {
+  background: transparent !important;
 }
