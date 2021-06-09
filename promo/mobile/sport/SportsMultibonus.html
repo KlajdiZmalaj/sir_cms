@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <title>SPORT Multibonus</title>
 <style>
-	body {background: #000 !important;}
-	.panel .container {
+	.container {
 	  width: 100%;
 	  max-width: 1140px;
 	  margin-left: auto;
 	  margin-right: auto;
-	  color: #fff;
-	  font-family: "Open Sans", sans-serif;
+	  color: var(--col1);
+	  background: black;
+	  font-family: "Poppins", sans-serif;
 	}
 	.banner img {
 	  width: 100%;
@@ -19,23 +19,24 @@
 	.text {
 	  padding: 30px;
 	}
-  
+
 	.img-center {
 	  text-align: center;
 	  margin-top: 10px;
 	  margin-bottom: 10px;
 	}
-  
+
 	h1 {
-	  color: var(--accent-bg);
+	  color: var(--accent);
 	  font-size: 30px;
 	  font-weight: 600;
 	  text-align: center;
 	  text-transform: uppercase;
 	  margin-top: 20px;
+	  margin-bottom: 30px;
 	}
 	h2 {
-	  color: var(--accent-bg);
+	  color: var(--accent);
 	  font-size: 23px;
 	  font-weight: 500;
 	  text-align: left;
@@ -44,53 +45,39 @@
 	  display: inline-block;
 	}
 	h3 {
-	  color: var(--accent-bg);
+	  color: var(--accent);
 	  font-size: 18px;
 	  font-weight: 500;
 	  text-transform: uppercase;
 	  margin-top: 40px;
 	}
-  
-	.number {
-	  background-color: var(--accent-bg);
-	  width: 36px;
-	  height: 36px;
-	  color: var(--accent-txt);
-	  font-weight: 900;
-	  padding: 0;
-	  border-radius: 50%;
-	  line-height: 36px;
-	  margin-right: 10px;
-	  display: inline-block;
-	  text-align: center;
-	  vertical-align: middle;
-	}
-  
+
 	p {
 	  font-size: 14px !important;
 	  line-height: 1.6 !important;
 	}
 	p.description {
 	  font-size: 18px !important;
-	  line-height: 1.8 !important;
+	  line-height: 1.4 !important;
 	  text-align: center !important;
+	  margin-bottom: 30px;
 	}
 	p.example {
 	  font-style: italic;
 	  font-size: 15px !important;
-	  border: 1px solid var(--accent-bg);
+	  border: 1px solid var(--tableBorders);
 	  padding: 15px;
-	  color: var(--accent-bg);
+	  color: var(--accent);
 	  margin-top: 10px;
 	}
 	p.notes {
 	  font-style: italic;
 	  font-size: 13px;
 	}
-  
+
 	ul {
 	  font-size: 14px;
-	  line-height: 2.6;
+	  line-height: 1.6;
 	  padding-left: 50px;
 	}
 	dl {
@@ -105,15 +92,32 @@
 	  padding-left: 10px;
 	  margin-bottom: 10px;
 	}
-  
+	li {
+	  margin-bottom: 10px;
+	}
+
 	a {
-	  color: var(--accent-bg);
+	  color: var(--accent);
 	  text-decoration: none;
 	}
 	a:hover {
-	  color: var(--accent-bg);
+	  color: var(--accent);
 	}
-  
+	.number {
+	  background-color: var(--accent-bg);
+	  width: 36px;
+	  height: 36px;
+	  color: var(--accent-txt);
+	  font-weight: 900;
+	  padding: 0;
+	  border-radius: 50%;
+	  line-height: 36px;
+	  margin-right: 10px;
+	  display: inline-block;
+	  text-align: center;
+	  vertical-align: middle;
+	}
+
 	table {
 	  font-size: 14px;
 	  line-height: 1.6;
@@ -134,7 +138,18 @@
 	table th {
 	  padding: 5px;
 	}
-  
+
+	.leftcol {
+	  width: 48%;
+	  display: inline-block;
+	  float: left;
+	}
+	.rightcol {
+	  width: 48%;
+	  display: inline-block;
+	  float: right;
+	}
+
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	  .img-center img {
 		width: 100% !important;
@@ -142,6 +157,13 @@
 	  table {
 		width: 100%;
 		margin-left: 0 !important;
+	  }
+	  .leftcol {
+		float: none;
+	  }
+	  .leftcol {
+		float: none;
+		margin-top: 50px;
 	  }
 	}
   </style>

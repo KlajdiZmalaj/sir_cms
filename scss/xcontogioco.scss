@@ -1140,7 +1140,7 @@ body {
   background-color: #0000006b !important;
 }
 .controlli-sliderP {
-  max-width: 240px;
+  max-width: 260px;
   width: 100% !important;
 }
 .cg-footer-logo {
@@ -1395,6 +1395,7 @@ html .widget-ultimi .contenuto-widget-ultime-v {
 
 #secondo-blocco-sport .contenitore-table .contenitoreSingolaQuota.bordo-tondo.mx-1 {
   border: 1px solid #0000ff00;
+  background: #222222 !important;
 }
 
 .bg-grigio-chiaro.bordo-tondo.quota.quota-con-nome {
@@ -1542,6 +1543,114 @@ body[page="promo"] #nascondimenu .logo {
 .controlli-sliderP > i.fas {
   margin-right: 0px;
 }
+
+.controlli-sliderP {
+  justify-content: space-between !important;
+}
+
+.contenuto-modal-account {
+  padding-top: 40px;
+}
+body:not([page="promo"]) {
+  .menu-principale-barra ul.menu-principale a[data-ref="promo"]:after {
+    content: "4";
+    animation: blink;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -6px;
+    background: var(--accent-bg);
+    color: var(--accent-txt);
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 10px;
+    animation: heartbit 1s ease-out infinite;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  }
+}
+
+@keyframes heartbit {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 #ffcc00;
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px #ffcc0049;
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 #ffcc0044;
+  }
+}
+
+.cg-spinner-container.flex-container {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 9999999999999;
+  width: 100%;
+  /* display: block; */
+  left: 0;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column-reverse;
+  &::after {
+    content: "";
+    height: 200px;
+    width: 500px;
+    background-image: url("https://www.sirplay.it/external_css/SIRPLAY/img/sirplay_logo.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.cg-donut-spinner {
+  border: 4px solid rgba(255, 255, 255, 0.185) !important;
+  border-left-color: #ffffff !important;
+}
+
+html .bg-grigio-chiaro {
+  background: var(--custom-brand-color-4-dark) !important;
+}
+
+.blocco-quote-espanse .selezionata,
+.quota:hover {
+  background: transparent !important;
+  border: 1px solid var(--custom-brand-active-color-1) !important;
+  color: var(--landing-quota-hover-text-color) !important;
+}
+
+/* Second loading on scommesse
+
+html .xs-loader-container {
+  background-color: var(--custom-brand-color-2);
+  background: black;
+  height: 100vh;
+  z-index: 9999999999;
+  position: fixed;
+  top: 0;
+}
+
+html .xs-loader-container:before {
+  content: "";
+  position: absolute;
+  top: 240px;
+
+  background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/sirplay_logo.svg);
+  background-repeat: no-repeat;
+  height: 120px;
+  width: 500px;
+}
+*/
 
 //IMPORT SPORTPAGE ON XCONTOGIOCO +++++++++++++++++++++++++++++++++
 @import "new_sport_desktop";
