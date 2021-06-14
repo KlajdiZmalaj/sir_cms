@@ -536,7 +536,7 @@ body[page="xcasino"] {
 
 #cg-header {
   border-bottom: 3px solid var(--active-color);
-  background: var(--mainBg);
+  background: transparent;
 }
 
 .menu-principale-barra ul.menu-principale a {
@@ -1150,22 +1150,22 @@ html .scopri-promo {
   background: var(--accent-bg);
   color: var(--accent-txt) !important;
   padding: 4px 8px;
-  font-weight: 300;
   border: 1px solid var(--accent);
   opacity: 0.9;
-  width: 130px;
+  width: 120px;
   cursor: pointer;
   text-align: center;
-  height: 40px;
-  opacity: 1;
+  height: 25px;
   display: flex;
-  align-items: center;
   justify-content: center;
   text-transform: uppercase;
   font-weight: 500;
-  right: 62px !important;
+  font-size: 13px;
+  border-radius: 10px;
+  right: 90px !important;
   i {
-    display: none;
+    //display: none;
+    margin-left: 10px;
   }
   &:hover {
     transform: unset !important;
@@ -1554,7 +1554,7 @@ body[page="promo"] #nascondimenu .logo {
 }
 body:not([page="promo"]) {
   .menu-principale-barra ul.menu-principale a[data-ref="promo"]:after {
-    content: "1";
+    content: "12";
     animation: blink;
     display: block;
     position: absolute;
@@ -1827,6 +1827,10 @@ a.bg-colore-1.bianco.margine-giu {
   background: #0d961d;
 }
 
-div#sidebar-sx {
-  max-width: 190px !important;
+a#mostraHeader {
+  display: none;
+}
+
+.border.img-fluid.ico-cat.icoCategory1--12 {
+  background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/amichevoliicon.png);
 }
