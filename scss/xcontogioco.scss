@@ -382,6 +382,7 @@ body[page="xcasino"] {
   .exa_ico_jackpot,
   .exa_ico_suggeriti,
   .exa_ico_dice,
+  .exa_ico_sport,
   .exa_ico_carte,
   .exa_ico_live {
     filter: none;
@@ -1866,4 +1867,9 @@ a#mostraHeader {
 
 .border.img-fluid.ico-cat.icoCategory1--12 {
   background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/amichevoliicon.png);
+}
+
+.casino .exa_ico_sport {
+  background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/sport-502.png) !important;
+  background-repeat: no-repeat;
 }
