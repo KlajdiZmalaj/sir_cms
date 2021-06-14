@@ -236,8 +236,8 @@ html {
   }
 }
 .bg-filtri-casino {
-  #listaPiattaforme {
-    z-index: 999;
+  .style-filtri {
+    z-index: 9;
   }
   #listaPiattaforme:hover {
     #piattaforme {
