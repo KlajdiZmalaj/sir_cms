@@ -1616,7 +1616,7 @@ div#cg-promo-preview-container {
 }
 
 .cg-info-go-back {
-  background: linear-gradient(#3c3c3c 0%, #cecece 40%, #808080 100%);
+  background: black !important;
   margin-top: 10px !important;
   margin-right: 0px !important;
 }
@@ -2044,3 +2044,60 @@ html .esiti-container .esito {
 
 @import "new_sport_mobile";
 @import "widget";
+
+@keyframes heartbit {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 #ffcc00;
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px #ffcc0049;
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 #ffcc0044;
+  }
+}
+
+body .cg-hide {
+  .cg-homeMenuIcoLite:after {
+    content: "3";
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    right: 0;
+    background: var(--accent-bg);
+    color: var(--accent-txt);
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 11px;
+    animation: heartbit 1s ease-out infinite;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  }
+  #cg-slide-promo-button > .cg-slide-icon-container:after {
+    content: "3";
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    background: var(--accent-bg);
+    color: var(--accent-txt);
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 11px;
+    animation: heartbit 1s ease-out infinite;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  }
+}

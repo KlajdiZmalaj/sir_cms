@@ -3,7 +3,7 @@
 /*HEADER e MENU*/
 
 .logo img {
-  height: 70% !important;
+  height: 75% !important;
 }
 
 #nascondimenu .logo {
@@ -1225,11 +1225,11 @@ body[subpage="calendar"] {
 ///////
 
 a#consultaFooter:hover {
-  color: #073862 !important;
+  color: #ffc400 !important;
 }
 
 a#nascondiFooter:hover {
-  color: #073862 !important;
+  color: #ffc400 !important;
 }
 
 .card-body > .grassetto,
@@ -1400,6 +1400,7 @@ html .widget-ultimi .contenuto-widget-ultime-v {
 
 .bg-grigio-chiaro.bordo-tondo.quota.quota-con-nome {
   border: 1px solid #0000ff00;
+  background: #2f2f2f !important;
 }
 
 .toolbox-submenu > div {
@@ -1553,7 +1554,7 @@ body[page="promo"] #nascondimenu .logo {
 }
 body:not([page="promo"]) {
   .menu-principale-barra ul.menu-principale a[data-ref="promo"]:after {
-    content: "4";
+    content: "1";
     animation: blink;
     display: block;
     position: absolute;
@@ -1606,8 +1607,8 @@ body:not([page="promo"]) {
   flex-flow: column-reverse;
   &::after {
     content: "";
-    height: 200px;
-    width: 500px;
+    height: 70px;
+    width: 290px;
     background-image: url("https://www.sirplay.it/external_css/SIRPLAY/img/sirplay_logo.svg");
     background-repeat: no-repeat;
   }
@@ -1652,6 +1653,180 @@ html .xs-loader-container:before {
 }
 */
 
+.blocco-header.bottoni-login {
+  max-width: 180px !important;
+  max-height: 42px !important;
+}
+
 //IMPORT SPORTPAGE ON XCONTOGIOCO +++++++++++++++++++++++++++++++++
 @import "new_sport_desktop";
 //IMPORT SPORTPAGE ON XCONTOGIOCO +++++++++++++++++++++++++++++++++
+
+/////////////test
+@-webkit-keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: perspective(900px);
+    transform: perspective(900px);
+  }
+}
+
+@keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+/* 
+
+////optional animation for loading logo scommesse and live/////
+
+
+@keyframes jackInTheBox {
+  0% {
+      opacity: 0;
+      -webkit-transform: scale(.1) rotate(30deg);
+      transform: scale(.1) rotate(30deg);
+      -webkit-transform-origin: center bottom;
+      transform-origin: center bottom
+  }
+
+  50% {
+      -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg)
+  }
+
+  70% {
+      -webkit-transform: rotate(3deg);
+      transform: rotate(3deg)
+  }
+
+  to {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1)
+  }
+}
+*/
+.cg-spinner-container.flex-container::after {
+  animation: 0.3s flipInX;
+}
+
+.cg-donut-spinner {
+  display: none;
+}
+
+.tasti-bottom {
+  justify-content: center !important;
+}
+///////// chat live position
+/*
+.zopim {
+  left: 210px !important;
+  z-index: 9999999999 !important;
+  top: 0;
+}
+
+.fissato-alto {
+  z-index: 99999999 !important;
+}
+
+.meshim_widget_components_chatButton_Button .button_bar {
+  color: #715900;
+  background: blue !important;
+}
+
+.meshim_widget_components_ChatButton.br .button_bar {
+  border-bottom-left-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+
+*/
+
+.zopim {
+  right: 20px !important;
+}
+
+ul.slick-dots li {
+  width: 7px !important;
+  height: 7px !important;
+  background: #ffcc003d !important;
+}
+
+.controlli-sliderP {
+  bottom: -30px !important;
+  background: transparent !important;
+}
+.margine-giu {
+  margin-bottom: 40px;
+}
+
+.fa-chevron-left:before {
+  display: none;
+}
+
+.fa-chevron-right:before {
+  display: none;
+}
+
+////Header changes on 1650px res and up (start)
+
+body:not(.cg-pvr-page) {
+  @media (min-width: 1920px) {
+    .menu-principale-barra ul.menu-principale {
+      width: 95%;
+    }
+
+    .container-fluid.fissato-alto #nascondimenu {
+      height: 80px !important;
+    }
+  }
+
+  @media (min-width: 1450px) {
+    .container-fluid.fissato-alto #nascondimenu {
+      height: 72px;
+    }
+
+    .login-header {
+      top: 53px;
+      position: relative;
+    }
+    .menu-principale-barra ul.menu-principale {
+      width: 82%;
+    }
+
+    &[page="promo"] {
+      .container-fluid.fissato-alto #nascondimenu {
+        height: 120px !important;
+      }
+    }
+    .container-fluid.fissato-alto #nascondimenu .row.barra-intermedia {
+      background: #3c3c3c;
+    }
+  }
+}
+
+////Header changes on 1650px res and up(end)
+
+a.bg-colore-1.bianco.margine-giu {
+  background: #0d961d;
+}
+
+div#sidebar-sx {
+  max-width: 190px !important;
+}
