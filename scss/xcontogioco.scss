@@ -1367,6 +1367,12 @@ html {
   .dx-datagrid .dx-row-alt > td {
     background-color: transparent;
     color: inherit;
+    &.cg-pvr-color-green {
+      color: #008000;
+    }
+    &.cg-pvr-color-red {
+      color: #ff0000;
+    }
   }
   .dx-datagrid-headers .dx-datagrid-table .dx-row > td {
     background: #222;
