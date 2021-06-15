@@ -1,4 +1,4 @@
-@import "vars";
+@import 'vars';
 
 /*HEADER e MENU*/
 
@@ -38,7 +38,7 @@ html .customPopup__content__header {
   display: inline-block;
 
   &:after {
-    content: "?";
+    content: '?';
     position: absolute;
     font-size: 18px;
     background-color: #525252;
@@ -49,7 +49,7 @@ html .customPopup__content__header {
     padding: 2px;
     top: -2px;
   }
-  &[onclick="cg_recoverPassword(true)"]:after {
+  &[onclick='cg_recoverPassword(true)']:after {
     top: -18px;
   }
 }
@@ -84,23 +84,23 @@ html .customPopup__content__header {
       // bottom: -52px;
       // right: 0;
       &:before {
-        content: "\f234";
-        font-family: "Font Awesome 5 Pro";
+        content: '\f234';
+        font-family: 'Font Awesome 5 Pro';
         padding-right: 5px;
       }
     }
   }
 }
-.bottone.bottone-login[onclick="cg_login()"] {
+.bottone.bottone-login[onclick='cg_login()'] {
   font-size: 0;
   flex: 0;
   margin-right: 7px;
   padding: 0px 10px;
   border-radius: 20px;
 }
-.bottone.bottone-login[onclick="cg_login()"]:before {
-  content: "\f2f6";
-  font-family: "Font Awesome 5 Pro";
+.bottone.bottone-login[onclick='cg_login()']:before {
+  content: '\f2f6';
+  font-family: 'Font Awesome 5 Pro';
   font-size: 16px;
 }
 
@@ -124,12 +124,12 @@ p.testo-disclaimer {
 }
 .barra-superiore .blocco-header.flex-container.cg-contatti {
   .fab.fa-whatsapp:after {
-    content: "Whatsapp 3511909851";
+    content: 'Whatsapp 3511909851';
     position: relative;
     left: 5px;
     text-transform: uppercase;
     font-size: 13px;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
   .fab.fa-whatsapp {
     font-size: 13px;
@@ -199,7 +199,7 @@ input.elemento-input {
 }
 /*FINE HEADER e MENU*/
 
-body[page="sport"] {
+body[page='sport'] {
   background-size: 1760px;
   background-position: center 37px;
   background-repeat: no-repeat;
@@ -238,63 +238,37 @@ html {
 }
 .bg-filtri-casino {
   .style-filtri {
-    z-index: 9;
-  }
-  #listaPiattaforme:hover {
-    #piattaforme {
-      background: rgba(0, 0, 0, 0.85);
-      display: block !important;
-      grid-template-columns: 1.25fr 1fr;
-      grid-gap: 8px;
-      padding: 1rem 0.5rem;
-      min-width: 251px;
-    }
-  }
-  #piattaforme-dropdown:hover {
-    #piattaforme {
-      background: rgba(0, 0, 0, 0.85);
-      display: block !important;
-      grid-template-columns: 1.25fr 1fr;
-      grid-gap: 8px;
-      padding: 1rem 0.5rem;
-      min-width: 251px;
-    }
-  }
-  #piattaforme:hover {
-    background: rgba(0, 0, 0, 0.85);
-    display: block !important;
-    grid-template-columns: 1.25fr 1fr;
-    grid-gap: 8px;
-    padding: 1rem 0.5rem;
-    min-width: 251px;
+    z-index: 1;
   }
 }
 
-body[page="xcasinolive"] {
+body[page='xcasinolive'] {
   .casino.cg-bg-live {
-    background: url(https://gradm-api.pcluster.info/api/skin/48/image/a8b17a54a5fe1e1c66d7e95f45785911.jpeg) top center
-      no-repeat !important;
+    background: url(https://gradm-api.pcluster.info/api/skin/48/image/a8b17a54a5fe1e1c66d7e95f45785911.jpeg)
+      top center no-repeat !important;
     background-attachment: fixed !important;
     background-position-y: 50px !important;
     background-size: 100% !important;
   }
   .casino #contentGames:before {
-    content: "";
+    content: '';
     background: none !important;
   }
 }
-body[page="xcasino"] {
+body[page='xcasino'] {
   .modal-body {
     background-color: var(--bg1);
     color: var(--col1);
   }
   .casino.cg-bg-live {
-    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/backgCasino.png) top center no-repeat !important;
+    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/backgCasino.png)
+      top center no-repeat !important;
     background-attachment: fixed !important;
     background-size: 100% !important;
   }
   .casino #contentGames:before {
-    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/banner1Casino.svg) center center no-repeat !important;
+    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/banner1Casino.svg)
+      center center no-repeat !important;
     top: -16px;
   }
 }
@@ -345,7 +319,7 @@ body[page="xcasino"] {
       align-items: center;
     }
     &:before {
-      content: "";
+      content: '';
       background: #000;
       width: 100%;
       height: 40px;
@@ -354,7 +328,8 @@ body[page="xcasino"] {
     }
   }
   &.cg-bg-live {
-    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/backgCasino.jpg) top center no-repeat !important;
+    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/backgCasino.jpg)
+      top center no-repeat !important;
     background-attachment: fixed !important;
     background-size: 100% !important;
   }
@@ -394,7 +369,12 @@ body[page="xcasino"] {
   }
 
   .descIconGameFooter {
-    background-image: linear-gradient(180deg, #363636 0%, #202020 82.3%, #313131 100%);
+    background-image: linear-gradient(
+      180deg,
+      #363636 0%,
+      #202020 82.3%,
+      #313131 100%
+    );
     color: #fff;
     border-top: 0;
     font-weight: 500;
@@ -492,8 +472,9 @@ body[page="xcasino"] {
       }
     }
     &:before {
-      content: "";
-      background: url("../SIRPLAY/img/banner1Casino.png") center center no-repeat !important;
+      content: '';
+      background: url('../SIRPLAY/img/banner1Casino.png') center center
+        no-repeat !important;
       position: absolute;
       width: 100%;
       height: 300px;
@@ -594,97 +575,97 @@ body[page="xcasino"] {
     }
   }
 }
-.menu-principale-barra ul.menu-principale a[data-ref="home"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='home']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/home.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="sport"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='sport']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/sport.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="ingame"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='ingame']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/live.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="xcasino"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='xcasino']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/roulette.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="xcasinopt"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='xcasinopt']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/casino.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="xcasinolive"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='xcasinolive']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/casinoL.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="poker"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='poker']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/poker.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="xbingo"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='xbingo']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/bingo.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="virtuali"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='virtuali']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/virual.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="ippica-isibet"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='ippica-isibet']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/ippica.svg);
 }
 
-.menu-principale-barra ul.menu-principale a[data-ref="promo"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='promo']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/promotions.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="cg-mobile-mode"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='cg-mobile-mode']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/sport.svg);
 }
 
-.menu-principale-barra ul.menu-principale a[data-ref="contidigioco"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='contidigioco']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/contiGioco.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="ricerche"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='ricerche']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/richerche.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="movimentazioni"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='movimentazioni']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/movimentazioni.svg);
 }
 
-.menu-principale-barra ul.menu-principale a[data-ref="mieipunti"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='mieipunti']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/points.svg);
 }
 
-.menu-principale-barra ul.menu-principale a[data-ref="gestionepunto"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='gestionepunto']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/pointM.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="saldocassa"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='saldocassa']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/saldoCassa.svg);
 }
 
-.menu-principale-barra ul.menu-principale a[data-ref="fatture"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='fatture']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/contabilita.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="cambiopassword"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='cambiopassword']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/changePass.svg);
 }
-.menu-principale-barra ul.menu-principale a[data-ref="external-chat"]:before {
-  content: "";
+.menu-principale-barra ul.menu-principale a[data-ref='external-chat']:before {
+  content: '';
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/chat.svg);
 }
 
-body[subpage="sport"] {
+body[subpage='sport'] {
   &:not(.altezza-max) .sottomenu-main {
     display: none;
   }
@@ -693,23 +674,26 @@ body[subpage="sport"] {
     padding-left: 0;
   }
 }
-body[subpage="home"],
-body[subpage="xcasinopt"],
-body[subpage="xcasino"],
-body[subpage="xcasinolive"],
-body[subpage="poker"],
-body[subpage="xbingo"],
-body[subpage="virtuali"],
-body[subpage="ippica"] {
+body[subpage='home'],
+body[subpage='xcasinopt'],
+body[subpage='xcasino'],
+body[subpage='xcasinolive'],
+body[subpage='poker'],
+body[subpage='xbingo'],
+body[subpage='virtuali'],
+body[subpage='ippica'] {
   .logo {
     bottom: 11px;
     padding-left: 0;
   }
 }
 
-body[page="promo"],
-body[subpage="promo"] {
-  .container-fluid.fissato-alto #nascondimenu .row.bg-bianco .menu-principale-barra.w-100 {
+body[page='promo'],
+body[subpage='promo'] {
+  .container-fluid.fissato-alto
+    #nascondimenu
+    .row.bg-bianco
+    .menu-principale-barra.w-100 {
     min-height: 120px;
   }
   .logo {
@@ -718,7 +702,7 @@ body[subpage="promo"] {
   }
 }
 
-body[subpage="live"] {
+body[subpage='live'] {
   .logo {
     bottom: 10px;
   }
@@ -731,7 +715,7 @@ a.consulta-chat {
   padding: 7px 10px;
 }
 //START POKER
-body[subpage="poker"] {
+body[subpage='poker'] {
   .cg-poker-banner-container {
     width: 1240px;
   }
@@ -860,7 +844,7 @@ body[subpage="poker"] {
 }
 //END POKER
 
-body[subpage="live"] {
+body[subpage='live'] {
   .container-fluid.fissato-alto .row.barra-superiore {
     width: 100%;
   }
@@ -1139,7 +1123,7 @@ body {
     justify-content: flex-start;
     position: relative;
     &::after {
-      content: "powered by";
+      content: 'powered by';
       background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/altechLabs.svg);
       position: absolute;
       width: 210px;
@@ -1221,7 +1205,7 @@ ul.slick-dots li.slick-active {
   background: #ffd919 !important;
 }
 
-body[page="ingame"]:not(.altezza-max) .logo a {
+body[page='ingame']:not(.altezza-max) .logo a {
   height: 100%;
   display: flex;
   align-items: center;
@@ -1230,8 +1214,8 @@ body[page="ingame"]:not(.altezza-max) .logo a {
   bottom: 40px;
   left: 20px;
 }
-body[subpage="live-match"],
-body[subpage="calendar"] {
+body[subpage='live-match'],
+body[subpage='calendar'] {
   &:not(.altezza-max) .logo a {
     height: 100%;
     display: flex;
@@ -1247,7 +1231,7 @@ body[subpage="calendar"] {
 //   display: none !important;
 // }
 
-[page="promo"] {
+[page='promo'] {
   .modal-content {
     max-width: 440px;
     margin: auto;
@@ -1273,19 +1257,19 @@ a.grassetto {
   color: #ffe01a;
 }
 
-html body[page="promo"] {
+html body[page='promo'] {
   background-color: #0d0d0d;
 }
 
-html body[page="promo"] .card {
+html body[page='promo'] .card {
   background-color: #262626;
 }
 
-html body[page="promo"] .content-wrapper {
+html body[page='promo'] .content-wrapper {
   background-color: #0d0d0d;
 }
 
-html body[page="promo"] #panel {
+html body[page='promo'] #panel {
   background-color: #0d0d0d;
 }
 
@@ -1357,6 +1341,12 @@ html {
   .dx-datagrid .dx-row-alt > td {
     background-color: transparent;
     color: inherit;
+    &.cg-pvr-color-green {
+      color: #008000;
+    }
+    &.cg-pvr-color-red {
+      color: #ff0000;
+    }
   }
   .dx-datagrid-headers .dx-datagrid-table .dx-row > td {
     background: #222;
@@ -1389,7 +1379,10 @@ html {
   .dx-treelist .dx-column-lines > td {
     border-color: #000 !important;
   }
-  .dx-treelist-filter-row .dx-editor-cell .dx-editor-with-menu .dx-texteditor-input {
+  .dx-treelist-filter-row
+    .dx-editor-cell
+    .dx-editor-with-menu
+    .dx-texteditor-input {
     border-radius: 0;
   }
 }
@@ -1428,7 +1421,9 @@ html .widget-ultimi .contenuto-widget-ultime-v {
   margin-right: 10px !important;
 }
 
-#secondo-blocco-sport .contenitore-table .contenitoreSingolaQuota.bordo-tondo.mx-1 {
+#secondo-blocco-sport
+  .contenitore-table
+  .contenitoreSingolaQuota.bordo-tondo.mx-1 {
   border: 1px solid #0000ff00;
   background: #222222 !important;
 }
@@ -1442,8 +1437,12 @@ html .widget-ultimi .contenuto-widget-ultime-v {
   padding: 10px 6px 10px 10px;
 }
 
-.tablesExpanded .tabellaQuoteNew[data-numero-quote="12"] .contenitoreSingolaQuota,
-.tablesExpanded .tabellaQuoteNew[data-numero-quote="12"] button.dropdown-toggle {
+.tablesExpanded
+  .tabellaQuoteNew[data-numero-quote='12']
+  .contenitoreSingolaQuota,
+.tablesExpanded
+  .tabellaQuoteNew[data-numero-quote='12']
+  button.dropdown-toggle {
   max-height: 30px;
 }
 @media screen and (max-width: 1440px) {
@@ -1464,7 +1463,7 @@ html .widget-ultimi .contenuto-widget-ultime-v {
   }
 }
 
-html [page="promo"] {
+html [page='promo'] {
   .sottomenu-nav,
   .sottomenu-nav > .nav {
     padding-right: 0px !important;
@@ -1510,7 +1509,10 @@ body .modal-account {
   margin-top: 28px;
 }
 
-body:not(.cg-pvr-page) .container-fluid.fissato-alto #nascondimenu .row.barra-intermedia {
+body:not(.cg-pvr-page)
+  .container-fluid.fissato-alto
+  #nascondimenu
+  .row.barra-intermedia {
   max-height: 40px;
 }
 
@@ -1547,19 +1549,19 @@ body:not(.cg-pvr-page) .container-fluid.fissato-alto #nascondimenu .row.barra-in
   background-color: #222 !important;
 }
 
-[page="promo"] {
+[page='promo'] {
   .container-fluid.fissato-alto #nascondimenu .row.barra-intermedia {
     max-height: 90px;
   }
 }
 
-html [page="promo"] .sottomenu-nav,
-html [page="promo"] .sottomenu-nav > .nav {
+html [page='promo'] .sottomenu-nav,
+html [page='promo'] .sottomenu-nav > .nav {
   top: 5px;
 }
 
 @media (min-width: 1920px) {
-  html body[page="promo"] .content-wrapper {
+  html body[page='promo'] .content-wrapper {
     background-color: #0d0d0d;
     margin-top: 15px;
   }
@@ -1568,7 +1570,7 @@ html [page="promo"] .sottomenu-nav > .nav {
   max-width: 40% !important;
 }
 
-body[page="promo"] #nascondimenu .logo {
+body[page='promo'] #nascondimenu .logo {
   bottom: 50px;
 }
 
@@ -1587,9 +1589,9 @@ body[page="promo"] #nascondimenu .logo {
 .contenuto-modal-account {
   padding-top: 40px;
 }
-body:not([page="promo"]) {
-  .menu-principale-barra ul.menu-principale a[data-ref="promo"]:after {
-    content: "12";
+body:not([page='promo']) {
+  .menu-principale-barra ul.menu-principale a[data-ref='promo']:after {
+    content: '12';
     animation: blink;
     display: block;
     position: absolute;
@@ -1641,10 +1643,10 @@ body:not([page="promo"]) {
   justify-content: center;
   flex-flow: column-reverse;
   &::after {
-    content: "";
+    content: '';
     height: 70px;
     width: 290px;
-    background-image: url("https://www.sirplay.it/external_css/SIRPLAY/img/sirplay_logo.svg");
+    background-image: url('https://www.sirplay.it/external_css/SIRPLAY/img/sirplay_logo.svg');
     background-repeat: no-repeat;
   }
 }
@@ -1694,7 +1696,7 @@ html .xs-loader-container:before {
 }
 
 //IMPORT SPORTPAGE ON XCONTOGIOCO +++++++++++++++++++++++++++++++++
-@import "new_sport_desktop";
+@import 'new_sport_desktop';
 //IMPORT SPORTPAGE ON XCONTOGIOCO +++++++++++++++++++++++++++++++++
 
 /////////////test
@@ -1845,7 +1847,7 @@ body:not(.cg-pvr-page) {
       width: 82%;
     }
 
-    &[page="promo"] {
+    &[page='promo'] {
       .container-fluid.fissato-alto #nascondimenu {
         height: 120px !important;
       }
@@ -1873,4 +1875,23 @@ a#mostraHeader {
 .casino .exa_ico_sport {
   background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/sport-502.png) !important;
   background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1025px) {
+  body,
+  html body {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 1359px) {
+  html {
+    .gridInterernaQuotazioni .contenitoreSingolaQuota.bordo-tondo.mx-1 {
+      background: var(--custom-brand-color-4-dark) !important;
+    }
+    .gridInterernaQuotazioni button.dropdown-toggle {
+      background: var(--custom-brand-color-4-dark) !important;
+      opacity: 0.5;
+    }
+  }
 }

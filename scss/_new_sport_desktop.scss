@@ -30,19 +30,23 @@
 @font-face {
   font-family: metropolis-regular;
   src: url(https://www.betaland.it/external_css/BETALAND_ONLINE/fonts/metropolis/Metropolis-Regular.eot),
-    url(https://www.betaland.it/external_css/BETALAND_ONLINE/fonts/metropolis/Metropolis-Regular.woff) format("woff"),
-    url(https://www.betaland.it/external_css/BETALAND_ONLINE/fonts/metropolis/Metropolis-Regular.woff2) format("woff2");
+    url(https://www.betaland.it/external_css/BETALAND_ONLINE/fonts/metropolis/Metropolis-Regular.woff)
+      format('woff'),
+    url(https://www.betaland.it/external_css/BETALAND_ONLINE/fonts/metropolis/Metropolis-Regular.woff2)
+      format('woff2');
 }
 
 @font-face {
   font-family: metropolis-bold;
   src: url(https://www.betaland.it/external_css/BETALAND_ONLINE/fonts/metropolis/Metropolis-Bold.eot),
-    url(https://www.betaland.it/external_css/BETALAND_ONLINE/fonts/metropolis/Metropolis-Bold.woff) format("woff"),
-    url(https://www.betaland.it/external_css/BETALAND_ONLINE/fonts/metropolis/Metropolis-Bold.woff2) format("woff2");
+    url(https://www.betaland.it/external_css/BETALAND_ONLINE/fonts/metropolis/Metropolis-Bold.woff)
+      format('woff'),
+    url(https://www.betaland.it/external_css/BETALAND_ONLINE/fonts/metropolis/Metropolis-Bold.woff2)
+      format('woff2');
 }
 
 html body #xsport-container {
-  font-family: "Roboto", sans-serif !important;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 html {
@@ -72,7 +76,8 @@ html {
 
   .xs-loader:after {
     border: 6px solid var(--custom-brand-color-1) !important;
-    border-color: var(--custom-brand-color-1) transparent var(--custom-brand-color-1) transparent !important;
+    border-color: var(--custom-brand-color-1) transparent
+      var(--custom-brand-color-1) transparent !important;
   }
 
   .back-to-top {
@@ -137,7 +142,7 @@ html {
 
   .sottomenu-nav .active::after,
   .sottomenu-nav a:hover::after {
-    content: " ";
+    content: ' ';
     width: 100%;
     height: 4px;
     background-color: var(--custom-brand-color-1);
@@ -475,7 +480,10 @@ html {
     color: var(--custom-white-color) !important;
     font-weight: 700 !important;
   }
-  .blocco-quote-espanse .scheda-giocata-sport .titolo-partita-top-match > .grigio {
+  .blocco-quote-espanse
+    .scheda-giocata-sport
+    .titolo-partita-top-match
+    > .grigio {
     color: var(--custom-brand-active-color-1);
     font-weight: 600;
     text-transform: uppercase;
@@ -549,11 +557,17 @@ html {
     color: var(--custom-white-color) !important;
   }
 
-  .gridInterernaQuotazioni button.dropdown-toggle + .dropdown-menu > a.dropdown-item {
+  .gridInterernaQuotazioni
+    button.dropdown-toggle
+    + .dropdown-menu
+    > a.dropdown-item {
     color: var(--custom-white-color) !important;
   }
 
-  .gridInterernaQuotazioni button.dropdown-toggle + .dropdown-menu > a.dropdown-item:hover {
+  .gridInterernaQuotazioni
+    button.dropdown-toggle
+    + .dropdown-menu
+    > a.dropdown-item:hover {
     background-color: var(--custom-brand-color-2) !important;
     color: var(--custom-white-color) !important;
   }
@@ -841,7 +855,9 @@ html {
     border-color: var(--custom-brand-color-3) !important;
   }
 
-  .lista-selezionabili .custom-control-input:checked ~ .custom-control-label::before {
+  .lista-selezionabili
+    .custom-control-input:checked
+    ~ .custom-control-label::before {
     border-color: var(--custom-brand-color-1) !important;
     background-color: var(--custom-brand-color-1) !important;
   }
@@ -864,11 +880,17 @@ html {
     font-size: 10px;
   }
 
-  .grid-schedina .grid-schedina-body .grid-schedina-body_quote .grid-schedina-body_quote-riga:nth-child(even) {
+  .grid-schedina
+    .grid-schedina-body
+    .grid-schedina-body_quote
+    .grid-schedina-body_quote-riga:nth-child(even) {
     background-color: var(--custom-brand-color-2-dark) !important;
   }
 
-  .grid-schedina .grid-schedina-body .grid-schedina-body_evento .grid-schedina-body_evento_nome-squadra {
+  .grid-schedina
+    .grid-schedina-body
+    .grid-schedina-body_evento
+    .grid-schedina-body_evento_nome-squadra {
     font-size: 12px;
     font-weight: 600;
   }
@@ -936,8 +958,13 @@ html {
     margin-bottom: 1px !important;
   }
 
-  .contenuto-widget-ultime-v .d-grid.ultime-vincite > .info-schedina-ultime-v:nth-child(2),
-  .contenuto-widget-ultime-v .d-grid.ultime-vincite > .info-schedina-ultime-v:last-child > p:first-child {
+  .contenuto-widget-ultime-v
+    .d-grid.ultime-vincite
+    > .info-schedina-ultime-v:nth-child(2),
+  .contenuto-widget-ultime-v
+    .d-grid.ultime-vincite
+    > .info-schedina-ultime-v:last-child
+    > p:first-child {
     color: var(--custom-brand-active-color-1) !important;
   }
 
@@ -1113,40 +1140,65 @@ html {
     background-color: var(--custom-brand-color-1) !important;
   }
 
-  .competizione-interna.multibet-gruppo .sport-live-suite > *.bg-bianco:nth-child(3),
-  .competizione-interna.multibet-gruppo .sport-live-suite .container-slider-box-partite .slider-box-partite,
+  .competizione-interna.multibet-gruppo
+    .sport-live-suite
+    > *.bg-bianco:nth-child(3),
+  .competizione-interna.multibet-gruppo
+    .sport-live-suite
+    .container-slider-box-partite
+    .slider-box-partite,
   .box-slider-partite:last-child::after {
     background-color: transparent !important;
   }
 
-  .competizione-interna.multibet-gruppo .sport-live-suite .container-slider-box-partite,
+  .competizione-interna.multibet-gruppo
+    .sport-live-suite
+    .container-slider-box-partite,
   .contenitore-multilive {
     background-color: var(--custom-brand-color-2-dark) !important;
   }
 
-  .sport-live-suite .container-slider-box-partite .slider-box-partite .box-slider-partite .titolo-box {
+  .sport-live-suite
+    .container-slider-box-partite
+    .slider-box-partite
+    .box-slider-partite
+    .titolo-box {
     background-color: var(--custom-brand-color-1) !important;
     color: #222;
   }
 
-  .sport-live-suite .container-slider-box-partite .slider-box-partite .box-slider-partite .body-box-partite {
+  .sport-live-suite
+    .container-slider-box-partite
+    .slider-box-partite
+    .box-slider-partite
+    .body-box-partite {
     background-color: #141414 !important;
     border: 1px solid var(--custom-brand-clickable-bg-1-dark) !important;
     color: var(--custom-white-color) !important;
   }
 
-  .contenitore-multilive .box-multilive .titolo-evento-multilive .info-evento-centrale {
+  .contenitore-multilive
+    .box-multilive
+    .titolo-evento-multilive
+    .info-evento-centrale {
     background-color: var(--custom-brand-color-2) !important;
     color: var(--custom-white-color) !important;
     margin-right: 0 !important;
   }
 
-  .contenitore-multilive .box-multilive .titolo-evento-multilive .toolbox-multilive {
+  .contenitore-multilive
+    .box-multilive
+    .titolo-evento-multilive
+    .toolbox-multilive {
     background-color: var(--custom-brand-color-2) !important;
     color: var(--custom-white-color) !important;
   }
 
-  .contenitore-multilive .box-multilive .titolo-evento-multilive .toolbox-multilive i {
+  .contenitore-multilive
+    .box-multilive
+    .titolo-evento-multilive
+    .toolbox-multilive
+    i {
     color: var(--custom-white-color) !important;
   }
 
@@ -1366,7 +1418,7 @@ html {
 @media screen and (min-width: 1024px) {
   body,
   html {
-    font-size: 10px;
+    font-size: 11px;
     font-size: calc(10px * var(--moltiplicatore-font-size));
   }
 
@@ -1387,13 +1439,13 @@ html {
     font-size: calc(1.25rem * var(--moltiplicatore-font-size));
   }
 
-  body[data-available-table-space="1"] .tablesCompacted .text_s1 *,
-  body[data-available-table-space="2"] .tablesCompacted .text_s1 * {
+  body[data-available-table-space='1'] .tablesCompacted .text_s1 *,
+  body[data-available-table-space='2'] .tablesCompacted .text_s1 * {
     font-size: calc(10px * var(--moltiplicatore-font-size));
   }
 
-  body[data-available-table-space="3"] .tablesExpanded .text_s1 *,
-  body[data-available-table-space="4"] .tablesExpanded .text_s1 * {
+  body[data-available-table-space='3'] .tablesExpanded .text_s1 *,
+  body[data-available-table-space='4'] .tablesExpanded .text_s1 * {
     font-size: calc(11px * var(--moltiplicatore-font-size));
   }
 
@@ -1408,13 +1460,13 @@ html {
 }
 
 @media screen and (min-width: 1200px) {
-  body[data-available-table-space="1"] .tablesCompacted .text_s1 *,
-  body[data-available-table-space="2"] .tablesCompacted .text_s1 * {
+  body[data-available-table-space='1'] .tablesCompacted .text_s1 *,
+  body[data-available-table-space='2'] .tablesCompacted .text_s1 * {
     font-size: calc(11px * var(--moltiplicatore-font-size));
   }
 
-  body[data-available-table-space="3"] .tablesExpanded .text_s1 *,
-  body[data-available-table-space="4"] .tablesExpanded .text_s1 * {
+  body[data-available-table-space='3'] .tablesExpanded .text_s1 *,
+  body[data-available-table-space='4'] .tablesExpanded .text_s1 * {
     font-size: calc(11px * var(--moltiplicatore-font-size));
   }
 }
@@ -1424,25 +1476,25 @@ html {
     font-size: calc(1.5rem * var(--moltiplicatore-font-size));
   }
 
-  body[data-available-table-space="1"] .tablesExpanded .text_s1 *,
-  body[data-available-table-space="2"] .tablesExpanded .text_s1 * {
+  body[data-available-table-space='1'] .tablesExpanded .text_s1 *,
+  body[data-available-table-space='2'] .tablesExpanded .text_s1 * {
     font-size: calc(10px * var(--moltiplicatore-font-size));
   }
 
-  body[data-available-table-space="3"] .tablesExpanded .text_s1 *,
-  body[data-available-table-space="4"] .tablesExpanded .text_s1 * {
+  body[data-available-table-space='3'] .tablesExpanded .text_s1 *,
+  body[data-available-table-space='4'] .tablesExpanded .text_s1 * {
     font-size: calc(11px * var(--moltiplicatore-font-size));
   }
 }
 
 @media screen and (min-width: 1440px) {
-  body[data-available-table-space="1"] .tablesCompacted .text_s1 *,
-  body[data-available-table-space="2"] .tablesCompacted .text_s1 * {
+  body[data-available-table-space='1'] .tablesCompacted .text_s1 *,
+  body[data-available-table-space='2'] .tablesCompacted .text_s1 * {
     font-size: calc(11px * var(--moltiplicatore-font-size));
   }
 
-  body[data-available-table-space="3"] .tablesExpanded .text_s1 *,
-  body[data-available-table-space="4"] .tablesExpanded .text_s1 * {
+  body[data-available-table-space='3'] .tablesExpanded .text_s1 *,
+  body[data-available-table-space='4'] .tablesExpanded .text_s1 * {
     font-size: calc(11px * var(--moltiplicatore-font-size));
   }
 }
@@ -1470,47 +1522,71 @@ html {
     font-size: calc(1.75rem * var(--moltiplicatore-font-size));
   }
 
-  body[data-available-table-space="1"] .tablesExpanded .tabellaQuoteNew *,
-  body[data-available-table-space="2"] .tablesExpanded .tabellaQuoteNew *,
-  body[data-available-table-space="1"] .tablesExpanded .tabellaQuoteIntestazione *,
-  body[data-available-table-space="2"] .tablesExpanded .tabellaQuoteIntestazione * {
+  body[data-available-table-space='1'] .tablesExpanded .tabellaQuoteNew *,
+  body[data-available-table-space='2'] .tablesExpanded .tabellaQuoteNew *,
+  body[data-available-table-space='1']
+    .tablesExpanded
+    .tabellaQuoteIntestazione
+    *,
+  body[data-available-table-space='2']
+    .tablesExpanded
+    .tabellaQuoteIntestazione
+    * {
     font-size: calc(12px * var(--moltiplicatore-font-size));
   }
 
-  body[data-available-table-space="3"] .tablesExpanded .tabellaQuoteNew *,
-  body[data-available-table-space="4"] .tablesExpanded .tabellaQuoteNew *,
-  body[data-available-table-space="3"] .tablesExpanded .tabellaQuoteIntestazione *,
-  body[data-available-table-space="4"] .tablesExpanded .tabellaQuoteIntestazione * {
-    body[data-available-table-space="1"] .tablesExpanded .tabellaQuoteNew *,
-    body[data-available-table-space="2"] .tablesExpanded .tabellaQuoteNew *,
-    body[data-available-table-space="1"] .tablesExpanded .tabellaQuoteIntestazione *,
-    body[data-available-table-space="2"] .tablesExpanded .tabellaQuoteIntestazione * {
+  body[data-available-table-space='3'] .tablesExpanded .tabellaQuoteNew *,
+  body[data-available-table-space='4'] .tablesExpanded .tabellaQuoteNew *,
+  body[data-available-table-space='3']
+    .tablesExpanded
+    .tabellaQuoteIntestazione
+    *,
+  body[data-available-table-space='4']
+    .tablesExpanded
+    .tabellaQuoteIntestazione
+    * {
+    body[data-available-table-space='1'] .tablesExpanded .tabellaQuoteNew *,
+    body[data-available-table-space='2'] .tablesExpanded .tabellaQuoteNew *,
+    body[data-available-table-space='1']
+      .tablesExpanded
+      .tabellaQuoteIntestazione
+      *,
+    body[data-available-table-space='2']
+      .tablesExpanded
+      .tabellaQuoteIntestazione
+      * {
       font-size: calc(12px * var(--moltiplicatore-font-size));
     }
 
-    body[data-available-table-space="3"] .tablesExpanded .tabellaQuoteNew *,
-    body[data-available-table-space="4"] .tablesExpanded .tabellaQuoteNew *,
-    body[data-available-table-space="3"] .tablesExpanded .tabellaQuoteIntestazione *,
-    body[data-available-table-space="4"] .tablesExpanded .tabellaQuoteIntestazione * {
+    body[data-available-table-space='3'] .tablesExpanded .tabellaQuoteNew *,
+    body[data-available-table-space='4'] .tablesExpanded .tabellaQuoteNew *,
+    body[data-available-table-space='3']
+      .tablesExpanded
+      .tabellaQuoteIntestazione
+      *,
+    body[data-available-table-space='4']
+      .tablesExpanded
+      .tabellaQuoteIntestazione
+      * {
       font-size: calc(12px * var(--moltiplicatore-font-size));
     }
 
-    body[data-available-table-space="1"] .tablesExpanded .text_s1 *,
-    body[data-available-table-space="2"] .tablesExpanded .text_s1 * {
+    body[data-available-table-space='1'] .tablesExpanded .text_s1 *,
+    body[data-available-table-space='2'] .tablesExpanded .text_s1 * {
       font-size: calc(12px * var(--moltiplicatore-font-size));
     }
 
-    body[data-available-table-space="3"] .tablesExpanded .text_s1 *,
-    body[data-available-table-space="4"] .tablesExpanded .text_s1 * {
+    body[data-available-table-space='3'] .tablesExpanded .text_s1 *,
+    body[data-available-table-space='4'] .tablesExpanded .text_s1 * {
       font-size: calc(12px * var(--moltiplicatore-font-size));
     }
   }
 
   @media screen and (min-width: 2560px) {
-    body[data-available-table-space="1"] .tablesExpanded .text_s1 *,
-    body[data-available-table-space="2"] .tablesExpanded .text_s1 *,
-    body[data-available-table-space="3"] .tablesExpanded .text_s1 *,
-    body[data-available-table-space="4"] .tablesExpanded .text_s1 * {
+    body[data-available-table-space='1'] .tablesExpanded .text_s1 *,
+    body[data-available-table-space='2'] .tablesExpanded .text_s1 *,
+    body[data-available-table-space='3'] .tablesExpanded .text_s1 *,
+    body[data-available-table-space='4'] .tablesExpanded .text_s1 * {
       font-size: calc(12px * var(--moltiplicatore-font-size));
     }
 
@@ -1539,10 +1615,10 @@ html {
       font-size: calc(1rem * var(--moltiplicatore-font-size));
     }
 
-    body[data-available-table-space="1"] .tablesExpanded .text_s1 *,
-    body[data-available-table-space="2"] .tablesExpanded .text_s1 *,
-    body[data-available-table-space="3"] .tablesExpanded .text_s1 *,
-    body[data-available-table-space="4"] .tablesExpanded .text_s1 * {
+    body[data-available-table-space='1'] .tablesExpanded .text_s1 *,
+    body[data-available-table-space='2'] .tablesExpanded .text_s1 *,
+    body[data-available-table-space='3'] .tablesExpanded .text_s1 *,
+    body[data-available-table-space='4'] .tablesExpanded .text_s1 * {
       font-size: calc(14px * var(--moltiplicatore-font-size));
     }
 
@@ -1610,7 +1686,7 @@ html {
     .bg-grigio-chiaro {
       background: var(--custom-brand-color-4-dark) !important;
     }
-    .tasto-abilita-carrello-scrollable[data-carrello-scrollable-abilitato="true"] {
+    .tasto-abilita-carrello-scrollable[data-carrello-scrollable-abilitato='true'] {
       color: inherit !important;
     }
 
@@ -1677,7 +1753,7 @@ html {
     }
 
     .ricerca-titolo-blocco-sport::after {
-      content: "";
+      content: '';
       display: block;
       background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/search-logo.svg);
       height: 15px;
@@ -1704,7 +1780,7 @@ html {
         display: flex !important;
         font-size: 0 !important;
         &::before {
-          content: " - ";
+          content: ' - ';
           font-size: 14px !important;
         }
       }
@@ -1745,7 +1821,7 @@ html {
   //   }
   // }
 
-  [page="ingame"] {
+  [page='ingame'] {
     .tablesExpanded .tabellaQuoteRisultatiParziali {
       height: 20px;
     }
@@ -1898,7 +1974,7 @@ html {
       }
     }
   }
-  @import "widget";
+  @import 'widget';
   html {
     .widget-filtro-side div#collassaWidgetCompetition {
       border: 0;
@@ -1963,7 +2039,9 @@ html {
       font-size: 11px;
     }
 
-    body[data-available-table-space="3"] .tablesExpanded .contenitoreSingolaQuota {
+    body[data-available-table-space='3']
+      .tablesExpanded
+      .contenitoreSingolaQuota {
       min-width: 45px;
       max-width: 55px;
       font-size: 11px;
