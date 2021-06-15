@@ -160,7 +160,7 @@ p.testo-disclaimer {
       }
     }
   }
-  #nascondimenu {
+  #nascondimenu.show {
     background: var(--intermediate-bar-bg-color);
     display: flex;
     justify-content: space-between;
@@ -186,6 +186,7 @@ p.testo-disclaimer {
     }
   }
 }
+
 .menu-principale-barra ul.menu-principale {
   background: transparent;
   justify-content: center;
@@ -570,7 +571,7 @@ body[page="xcasino"] {
 
 #cg-header {
   border-bottom: 3px solid var(--active-color);
-  background: transparent;
+  background: gray;
 }
 
 .menu-principale-barra ul.menu-principale a {
