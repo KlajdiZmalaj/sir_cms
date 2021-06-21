@@ -4,6 +4,8 @@
   --cg-ticket-background: #ffffff;
   --nav-text-color: #222 !important;
   --nav-item-color: #222 !important;
+
+  --cg-altezza-header: 60px !important;
 }
 #cg-info-select-showed-container {
   background: #fff;
@@ -87,7 +89,7 @@ body,
 #popup-gruppo-scommessa .popup-content,
 #cg-pvr-confirm-popup .cg-header-popup-title,
 .bet-type-selector.expandable.nav-section-title {
-  background-color: #1a1a1a !important;
+  background-color: #272727 !important;
 }
 
 .tab-pane,
@@ -138,7 +140,7 @@ div#cg-slide-menu-top,
 .coupon-result-text-box.multiple_live_entry:before,
 .cg-live-sport.cg-acceso > .cg-live-sport-underline,
 .cg-field-container.cg-function-field.cg-lastFieldContainer {
-  background-color: #000 !important;
+  background-color: #272727 !important;
 }
 
 .toast,
@@ -1096,7 +1098,7 @@ input[type="checkbox"].systemCheckbox + label::after {
 #cg-prematch-button,
 #cg-live-button,
 #cg-betslip-button {
-  border-right: 2px solid #272727;
+  border-right: 2px solid #414141;
 }
 
 #cg-prematch-button .cg-icon,
@@ -1637,10 +1639,10 @@ div#cg-logo-button {
   flex: 0 40%;
 }
 
-.cg-banner {
-  border-radius: 0 !important;
-  background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/mobile%2060000.png) !important;
-}
+// .cg-banner {
+//   border-radius: 0 !important;
+//   background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/mobile%2060000.png) !important;
+// }
 
 div#cg-landing-body {
   padding: 0 0 !important;
@@ -1882,14 +1884,14 @@ html .esiti-container .esito {
   line-height: 40px;
   font-family: "Roboto";
   text-transform: uppercase;
-  background: black;
+  background: #272727;
   color: white;
   border: 1px solid #ffcc00;
   border-radius: 5px;
 }
 
 .cg-slide-alternative-button {
-  background-color: #000000;
+  background-color: #272727;
   color: white;
 }
 
@@ -1914,7 +1916,7 @@ html .esiti-container .esito {
 }
 
 .cg-slide-function-field {
-  background-color: #0d0d0d !important;
+  background-color: #272727 !important;
   color: #fff !important;
 }
 
@@ -2001,7 +2003,7 @@ html .esiti-container .esito {
   content: "";
   height: 19px;
   display: block;
-  background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/poweredbyaltech.png);
+  background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/poweredbylabs.png);
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 50px;
@@ -2064,7 +2066,7 @@ html .esiti-container .esito {
 
 body:not([page="promo"]) {
   .cg-homeMenuIcoLite:after {
-    content: "12";
+    content: "11";
     position: absolute;
     top: -10px;
     left: 20px;
@@ -2083,10 +2085,10 @@ body:not([page="promo"]) {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
   }
   #cg-slide-promo-button > .cg-slide-icon-container:after {
-    content: "12";
+    content: "11";
     position: absolute;
-    top: 10px;
-    right: 18px;
+    top: 5px;
+    right: 5px;
     background: var(--accent-bg);
     color: var(--accent-txt);
     width: 14px;
@@ -2100,4 +2102,35 @@ body:not([page="promo"]) {
     animation: heartbit 1s ease-out infinite;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
   }
+}
+
+.cg-tabTitleCotainer h2#cg-title {
+  color: white;
+}
+
+#cg-tabContainer h6.filtro-title {
+  color: white;
+}
+
+.cg-tabTitleCotainer i.cg-icon.ion-md-close {
+  filter: invert(1);
+}
+
+.cg-slide-field-container {
+  border-bottom-color: #ffffff33 !important;
+}
+
+.cg-signup-popup-logo {
+  background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/sirplay_logo.svg) !important;
+}
+
+html .sr-bb .srt-neutral-9 {
+  background-color: #ffffff24 !important;
+  font-size: 14px !important;
+  border: 0 !important;
+  color: white !important;
+  opacity: 1 !important;
+  border-radius: 6px !important;
+  padding: 8px !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
 }

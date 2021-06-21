@@ -1,19 +1,15 @@
 @font-face {
   font-family: metropolis-regular;
   src: url("https://#{$skinHost}/external_css/#{$skinName}/fonts/metropolis/Metropolis-Regular.eot"),
-    url(https://#{$skinHost}/external_css/#{$skinName}/fonts/metropolis/Metropolis-Regular.woff)
-      format("woff"),
-    url(https://#{$skinHost}/external_css/#{$skinName}/fonts/metropolis/Metropolis-Regular.woff2)
-      format("woff2");
+    url(https://#{$skinHost}/external_css/#{$skinName}/fonts/metropolis/Metropolis-Regular.woff) format("woff"),
+    url(https://#{$skinHost}/external_css/#{$skinName}/fonts/metropolis/Metropolis-Regular.woff2) format("woff2");
 }
 
 @font-face {
   font-family: metropolis-bold;
   src: url(https://#{$skinHost}/external_css/#{$skinName}/fonts/metropolis/Metropolis-Bold.eot),
-    url(https://#{$skinHost}/external_css/#{$skinName}/fonts/metropolis/Metropolis-Bold.woff)
-      format("woff"),
-    url(https://#{$skinHost}/external_css/#{$skinName}/fonts/metropolis/Metropolis-Bold.woff2)
-      format("woff2");
+    url(https://#{$skinHost}/external_css/#{$skinName}/fonts/metropolis/Metropolis-Bold.woff) format("woff"),
+    url(https://#{$skinHost}/external_css/#{$skinName}/fonts/metropolis/Metropolis-Bold.woff2) format("woff2");
 }
 
 :root {
@@ -206,7 +202,7 @@ html {
 
   a.list-element.striped {
     padding: 0.75rem;
-    background: #272727;
+    background: #4b4b4b !important;
     color: #fff;
     min-height: unset !important;
     height: unset !important;
@@ -294,11 +290,7 @@ html {
     color: #101010 !important;
   }
 
-  div#main-wrapper
-    > #main-container
-    > .avvenimento
-    .info-score.push-right
-    span {
+  div#main-wrapper > #main-container > .avvenimento .info-score.push-right span {
     font-size: 16px;
   }
 
@@ -308,10 +300,7 @@ html {
     align-items: center;
   }
 
-  div#main-wrapper
-    > #main-container
-    > .avvenimento
-    .arrow-container.arrow-container-small {
+  div#main-wrapper > #main-container > .avvenimento .arrow-container.arrow-container-small {
     position: absolute;
     right: 0;
   }
@@ -385,7 +374,7 @@ html {
   }
 
   .cg-menuTabMobile {
-    box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: none !important;
   }
 
   .cg-odd-live > .cg-top {
@@ -433,7 +422,7 @@ html {
   }
 
   nav.nav-buttons-container {
-    background: #000;
+    background: #272727;
     padding: 4px 0 !important;
     height: auto;
   }
@@ -443,7 +432,7 @@ html {
     padding-right: 40px;
     box-shadow: unset;
     position: sticky;
-    z-index: 99;
+    // z-index: 99;
     min-height: unset;
     top: 60px;
     height: unset;
@@ -464,7 +453,7 @@ html {
   }
 
   .list-element.sport-collapse {
-    background: #101010 !important;
+    background: #272727 !important;
     color: #f5f5f5;
     padding: 0.85rem 0.75rem;
     height: unset !important;
@@ -477,7 +466,7 @@ html {
   }
 
   .betslip-bottom-bar {
-    background: #101010;
+    background: #272727;
     color: #fff;
     padding-left: 38px;
     justify-content: space-around !important;
@@ -581,7 +570,7 @@ html {
   }
 
   .widget-schedina-giocate {
-    background: #101010;
+    background: #272727;
     color: #fff;
   }
 
@@ -599,8 +588,8 @@ html {
   }
 
   .carrello-fixed {
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 50%);
-    background: #101010;
+    //box-shadow: 0 -2px 4px rgba(0, 0, 0, 50%);
+    background: #272727;
     padding: 6px;
   }
 
@@ -613,7 +602,7 @@ html {
   }
 
   body#cg-pagina-sport {
-    background: #101010 !important;
+    background: #191919 !important;
     color: #fff;
   }
 
@@ -653,11 +642,7 @@ html {
   }
 
   .nav-filter-item.selected {
-    background: linear-gradient(
-      #e6c200 0%,
-      #ffd800 25.12%,
-      #e4c100 100%
-    ) !important;
+    background: linear-gradient(#e6c200 0%, #ffd800 25.12%, #e4c100 100%) !important;
     color: #222;
   }
 
@@ -666,11 +651,7 @@ html {
   }
 
   .nav-filters .nav-filter-item.categoryLiveContainer.selected {
-    background: linear-gradient(
-      #e6c200 0%,
-      #ffd800 25.12%,
-      #e4c100 100%
-    ) !important;
+    background: linear-gradient(#e6c200 0%, #ffd800 25.12%, #e4c100 100%) !important;
     color: #222;
     border-radius: 4px;
   }
@@ -695,7 +676,7 @@ html {
   }
 
   nav#nav-go-back {
-    background: #101010 !important;
+    background: #272727 !important;
     color: #fff;
     min-height: unset;
     padding-top: 8px;
@@ -774,7 +755,7 @@ html {
     padding: 4px;
     min-height: unset;
     height: unset;
-    background: #000;
+    background: #272727;
     color: #fff;
   }
 
@@ -845,8 +826,7 @@ html {
     content: "";
     height: 20px;
     width: 20px;
-    background: url(https://www.betaland.it/external_css/BETALAND_ONLINE/img/calendario.svg)
-      center center;
+    background: url(https://www.betaland.it/external_css/BETALAND_ONLINE/img/calendario.svg) center center;
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
@@ -903,9 +883,7 @@ html {
     color: #222;
   }
 
-  .container-carrello-mobile
-    .container-carrello-mobile_intestazione
-    .button_custom_notification {
+  .container-carrello-mobile .container-carrello-mobile_intestazione .button_custom_notification {
     background-color: #ffd800;
     color: #222;
   }
@@ -915,10 +893,7 @@ html {
     color: #222;
   }
 
-  .container-carrello-mobile
-    .container-carrello-mobile_intestazione
-    button.selected
-    i {
+  .container-carrello-mobile .container-carrello-mobile_intestazione button.selected i {
     color: #ffd800 !important;
   }
 
@@ -969,7 +944,7 @@ html {
 
   .main-content,
   div#cg-tabContainer {
-    background: #101010 !important;
+    background: #222222 !important;
   }
 
   .nav-item .arrow,
@@ -982,7 +957,7 @@ html {
   }
 
   nav.small-navbar {
-    background: #101010;
+    background: #272727;
   }
 
   span.arrow.arrow-collapse {
@@ -1004,10 +979,7 @@ html {
     color: #ccc;
   }
 
-  .grid-schedina
-    .grid-schedina-body
-    .grid-schedina-body_quote
-    .grid-schedina-body_quote-riga:nth-child(even) {
+  .grid-schedina .grid-schedina-body .grid-schedina-body_quote .grid-schedina-body_quote-riga:nth-child(even) {
     background: #3c3c3c;
   }
 
@@ -1038,12 +1010,7 @@ html {
     color: #ffd800 !important;
   }
 
-  #xsport-container
-    #main-wrapper
-    #main-container
-    .avvenimento
-    .info-avvenimento-live
-    i.fa.fa-star {
+  #xsport-container #main-wrapper #main-container .avvenimento .info-avvenimento-live i.fa.fa-star {
     color: rgba(255, 255, 255, 60%);
   }
 
@@ -1078,12 +1045,7 @@ html {
     color: #fff !important;
   }
 
-  #xsport-container
-    #main-wrapper
-    #main-container
-    .avvenimento
-    .info-avvenimento-live
-    i.fa.fa-star.giallo {
+  #xsport-container #main-wrapper #main-container .avvenimento .info-avvenimento-live i.fa.fa-star.giallo {
     color: #fc0;
   }
 
@@ -1111,11 +1073,7 @@ html {
     max-width: 100%;
   }
 
-  .container-carrello-mobile
-    .tabelleSchedineNumerate
-    > *.tab-pane.active
-    .tab-content
-    .tab-pane.active {
+  .container-carrello-mobile .tabelleSchedineNumerate > *.tab-pane.active .tab-content .tab-pane.active {
     padding: 0;
   }
 
@@ -1139,7 +1097,7 @@ html {
   }
 
   .cg-buttonMenuMobile.cg-acceso {
-    background: rgba(0, 0, 0, 15%);
+    background: #191919;
   }
 
   .heading .prematch-sport-img,
@@ -1214,4 +1172,12 @@ html {
     color: #000;
     font-weight: 400;
   }
+}
+
+html .sr-bb {
+  background: #272727 !important;
+}
+
+.betslip-bottom-bar {
+  bottom: 57px !important;
 }
