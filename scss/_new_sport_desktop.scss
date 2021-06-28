@@ -1077,8 +1077,8 @@ html {
   }
 
   figure.paese-icona-live .ico-cat {
-    height: 20px;
-    width: 20px;
+    height: 26px;
+    width: 26px;
   }
   figure.paese-icona-live,
   figure.sport-icona-live {
@@ -2200,13 +2200,4 @@ a.scAggiuntiva {
 html .custom-control-input:checked ~ .custom-control-label::before {
   background-color: red !important;
   border: 0 !important;
-}
-
-html {
-  .quota-con-nome:hover,
-  .quota-con-nome.selezionata,
-  .quota-con-nome:hover span:first-child,
-  .quota-con-nome:hover span:last-child {
-    color: var(--custom-brand-color-1) !important;
-  }
 }

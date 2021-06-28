@@ -613,6 +613,11 @@ body[page="xcasino"] {
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/ippica.svg);
 }
 
+.menu-principale-barra ul.menu-principale a[data-ref="lotterie"]:before {
+  content: "";
+  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/lotto2.png);
+}
+
 .menu-principale-barra ul.menu-principale a[data-ref="promo"]:before {
   content: "";
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/promotions.svg);
@@ -1109,9 +1114,7 @@ body {
     bottom: 0px;
   }
 }
-#nascondiHeader {
-  display: none;
-}
+
 .barra-intermedia-footer {
   .row.cg-footer-sections {
     justify-content: flex-start;
@@ -1530,13 +1533,17 @@ body:not(.cg-pvr-page) .container-fluid.fissato-alto #nascondimenu .row.barra-in
 
 html [page="promo"] .sottomenu-nav,
 html [page="promo"] .sottomenu-nav > .nav {
-  top: 5px;
+  top: 7px;
 }
 
 @media (min-width: 1920px) {
   html body[page="promo"] .content-wrapper {
     background-color: #0d0d0d;
-    margin-top: 15px;
+    margin-top: 9px;
+  }
+  html [page="promo"] .sottomenu-nav,
+  html [page="promo"] .sottomenu-nav > .nav {
+    top: 5px;
   }
 }
 .cg-aams-loghi-container {
@@ -1568,7 +1575,7 @@ body[page="promo"] #nascondimenu .logo {
 }
 body:not([page="promo"]) {
   .menu-principale-barra ul.menu-principale a[data-ref="promo"]:after {
-    content: "11";
+    content: "12";
     animation: blink;
     display: block;
     position: absolute;
@@ -1833,18 +1840,28 @@ body:not(.cg-pvr-page) {
       }
     }
     .container-fluid.fissato-alto #nascondimenu .row.barra-intermedia {
-      background: #3c3c3c;
+      background: transparent;
     }
   }
-  @media screen and (max-width: 1500px) {
+  @media screen and (max-width: 1550px) {
     .menu-principale-barra ul.menu-principale li {
       margin: 5px 5px 0px 5px;
     }
   }
 
-  @media screen and (max-width: 1400px) {
+  @media screen and (max-width: 1420px) {
     .menu-principale-barra ul.menu-principale li {
       margin: 5px 3px 0px 3px;
+    }
+
+    #nascondimenu .logo {
+      left: 5px !important;
+    }
+
+    @media screen and (min-width: 1350px) {
+      .menu-principale-barra ul.menu-principale {
+        width: 74%;
+      }
     }
   }
 }
@@ -1904,10 +1921,6 @@ body:not(.cg-pvr-page) {
 
 a.bg-colore-1.bianco.margine-giu {
   background: #0d961d;
-}
-
-a#mostraHeader {
-  display: none;
 }
 
 .border.img-fluid.ico-cat.icoCategory1--12 {
@@ -2036,6 +2049,10 @@ span.uo-selezionato.tinytext {
 
 .carousel-indicators {
   bottom: -27px !important;
+  justify-content: center !important;
+  left: unset !important;
+  right: 30% !important;
+  top: auto !important;
 }
 
 html .box-vincita-potenziale.bottoni-var-quote a.bottone,
@@ -2149,9 +2166,144 @@ body[data-available-table-space="2"] .tablesExpanded .text_s1 * {
   font-size: 11px !important;
 }
 
-html .quota-con-nome:hover,
-html .quota-con-nome.selezionata,
-html .quota-con-nome:hover span:first-child,
-html .quota-con-nome:hover span:last-child {
-  color: var(--custom-brand-color-1) !important;
+html .quote-extra .quota-con-nome span:last-child,
+html .quota-widget-evento span:last-child {
+  color: #ffda21;
 }
+html {
+  .quota-con-nome:hover span:last-child,
+  .quota-con-nome.selezionata span:last-child,
+  .quota-widget-evento:hover span:last-child,
+  .quota-widget-evento.selezionata span:last-child {
+    color: #ffda21 !important;
+  }
+}
+@media screen and (max-width: 1430px) {
+  .dueColonne.dueColonne_Template_1 {
+    grid-template-columns: auto 230px;
+  }
+}
+
+.scheda-top-match-nav a.padding-verticale {
+  border-bottom: 3px solid transparent;
+}
+
+.modal-header {
+  color: #000;
+}
+.modal-body {
+  color: black;
+}
+///////////////////////////////////test.sirplay (start)
+@media (min-width: 1920px) {
+  iframe#myIFrame {
+    margin-top: 43px !important;
+  }
+}
+
+iframe#myIFrame {
+  margin-top: 36px;
+}
+///////////////////////////////////test.sirplay  (end)
+
+///////////////////////////
+
+a#mostraHeader {
+  display: none;
+}
+
+#nascondiHeader {
+  display: none;
+}
+
+///////////////////////////
+
+html body[page="home"] {
+  background-color: #333 !important;
+}
+
+//////////////////////////////////////////// (new promozioni page start)
+body[page="promo"] {
+  .elenco-promo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr !important;
+    grid-gap: 2rem 1rem !important;
+    margin-top: 20px;
+  }
+
+  .card-text:last-child {
+    display: none;
+  }
+
+  .elemento-promozioni-modale .card-body {
+    height: auto !important;
+  }
+
+  .card-body > .grassetto,
+  li.grassetto,
+  a.grassetto {
+    color: white !important;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .card .margine-giu {
+    display: none !important;
+  }
+
+  .card {
+    background-color: transparent !important;
+  }
+
+  .card-title {
+    margin-bottom: 0 !important;
+  }
+
+  .card-body {
+    padding: 1.25rem 0 !important;
+  }
+
+  .promo-landing.container {
+    max-width: 100% !important;
+  }
+
+  .carosello-promo {
+    max-width: 76%;
+  }
+
+  .card-img,
+  .card-img-top {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    max-height: 210px;
+    max-width: 300px;
+  }
+  .promozioni-new {
+    padding-bottom: 0 !important;
+  }
+  .card.elemento-promozioni-modale:hover {
+    box-shadow: none !important;
+  }
+
+  .immagine-slider div {
+    display: none;
+  }
+
+  .container-fluid.fissato-alto #nascondimenu.show .row.bg-bianco .menu-principale-barra.w-100 {
+    border-bottom: 0 !important;
+  }
+
+  .card {
+    border: 0 !important;
+  }
+
+  .panel {
+    background: #141414;
+  }
+
+  .promo-landing.container {
+    background: #141414;
+  }
+}
+
+//////////////////////////////////////////// (new promozioni page end)
