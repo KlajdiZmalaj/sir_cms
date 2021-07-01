@@ -2307,3 +2307,61 @@ body[page="promo"] {
 }
 
 //////////////////////////////////////////// (new promozioni page end)
+
+.menu-principale-barra ul.menu-principale a[data-ref="lotterie"]:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -14px;
+  top: -10px;
+  background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/newpng.png);
+  width: 38px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+body[page="xcasinolive"] {
+  .exa_ico_live {
+    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/live-50.png) !important;
+    background-size: contain !important;
+    filter: inherit !important;
+    height: 23px !important;
+    width: 23px !important;
+    margin-right: 5px !important;
+  }
+
+  .exa_ico_jack {
+    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/jack-50.png) !important;
+    background-size: contain !important;
+    filter: inherit !important;
+    height: 23px !important;
+    width: 23px !important;
+    margin-right: 5px !important;
+  }
+
+  .exa_ico_roulette {
+    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/roulette-50.png) !important;
+    background-size: contain !important;
+    filter: inherit !important;
+    height: 23px !important;
+    width: 23px !important;
+    margin-right: 5px !important;
+  }
+
+  .exa_ico_chip {
+    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/chip-50.png) !important;
+    background-size: contain !important;
+    filter: inherit !important;
+    height: 23px !important;
+    width: 23px !important;
+    margin-right: 5px !important;
+  }
+}
+
+img {
+  pointer-events: none;
+}
