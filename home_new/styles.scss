@@ -366,3 +366,7 @@ body .bottomBanners .bottomBanner a:hover {
   max-width: 192px;
   margin-bottom: 7px;
 }
+
+img {
+  pointer-events: none;
+}

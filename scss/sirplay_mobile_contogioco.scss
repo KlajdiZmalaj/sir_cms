@@ -1591,7 +1591,7 @@ div#cg-promo-preview-container {
 
 .cg-container-border {
   margin: 10px;
-  border: solid 1px black;
+  border: solid 0px;
   width: calc(100% / 2 - 20px);
 }
 
@@ -2066,7 +2066,7 @@ html .esiti-container .esito {
 
 body:not([page="promo"]) {
   .cg-homeMenuIcoLite:after {
-    content: "11";
+    content: "10";
     position: absolute;
     top: -10px;
     left: 20px;
@@ -2085,7 +2085,7 @@ body:not([page="promo"]) {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
   }
   #cg-slide-promo-button > .cg-slide-icon-container:after {
-    content: "11";
+    content: "10";
     position: absolute;
     top: 5px;
     right: 5px;
@@ -2134,3 +2134,95 @@ html .sr-bb .srt-neutral-9 {
   padding: 8px !important;
   border-color: rgba(255, 255, 255, 0.12) !important;
 }
+
+body[id="cg-pagina-home"] {
+  #cg-landing-body .cg-banner {
+    border-radius: 0;
+  }
+}
+
+body[id="cg-pagina-sport"] {
+  .temporal-filters-sidebar span.temporal-filter-tab {
+    background: #3e3e3e;
+  }
+
+  .temporal-filter-tab.selected {
+    background-color: #272727 !important;
+  }
+
+  nav.temporal-filters-sidebar {
+    height: auto !important;
+  }
+}
+
+i.fa.fa-star.giallo.nav-slider-fav-icon.align-self-center.push-left.push-right {
+  width: auto;
+}
+
+#avvenimenti .heading span.text-medium {
+  color: white;
+}
+
+span.temporal-filter-tab.tab-heading.uppercase {
+  color: var(--active-color);
+}
+
+.small div#gruppo-scommessa-selector {
+  border-radius: 0;
+}
+
+#cg-slide-paragrafo-105 .cg-slide-title {
+  display: none;
+}
+
+.cg-recover-body .cg-recover-separator {
+  background: #3c3c3c !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 10px;
+}
+
+.cg-signup-checkbox-container .cg-signup-input-label a {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.cg-checkbox-error,
+.cg-signup-alert {
+  background: #ff000078 !important;
+}
+
+#cg-unloggedMask .cg-loginButton {
+  /* color: black !important; */
+  border: none;
+  background: #ffcc00 !important;
+}
+
+#cg-unloggedMask .cg-loginButton div {
+  color: black !important;
+}
+
+/// new promotion layout  (start)
+.cg-container-text {
+  display: none;
+}
+
+.cg-promo-scopri {
+  display: none;
+}
+
+.cg-container-title {
+  font-size: 12px !important;
+  padding: 5px 0 0 0 !important;
+}
+
+.cg-promo-body {
+  background: #141414 !important;
+  color: white !important;
+}
+
+.cg-promo-cards-icon {
+  filter: invert(1);
+}
+
+/// new promotion layout  (end)

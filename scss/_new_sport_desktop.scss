@@ -292,7 +292,7 @@ html {
   }
   .elemento-competizioni-widget.singola-competizione {
     //background-color: var(--custom-brand-color-2-dark) !important;
-    background-color: #5a5959 !important;
+    background-color: #4a4a4a !important;
     color: var(--custom-white-color) !important;
   }
 
@@ -397,7 +397,7 @@ html {
   .tabellaQuoteIntestazione .tabellaQuoteIntestazione-GruppoQuote {
     color: #fff !important;
     // background: #212121;
-    background: #4a4a4a;
+    background: #404040;
   }
 
   .tabellaQuoteIntestazione-GruppoQuote > p,
@@ -426,7 +426,7 @@ html {
   .tablesExpanded .tabellaQuoteNew,
   .tablesExpanded .tabellaQuoteIntestazione.tabellaQuoteIntestazionePrematch {
     //background-color: #323232 !important;
-    background-color: #4a4a4a !important;
+    background-color: #404040 !important;
     border-radius: 0;
   }
   .contenitoreRiga:not(:last-child),
@@ -441,7 +441,7 @@ html {
     //test
     min-height: 50px;
     //test
-    background-color: var(--custom-brand-color-2-dark) !important;
+    background-color: var(--custom-brand-color-2) !important;
     .tabellaQuoteCampetto {
       display: none;
     }
@@ -1741,7 +1741,7 @@ html {
         display: flex !important;
         font-size: 0 !important;
         &::before {
-          content: " - ";
+          content: "";
           font-size: 14px !important;
         }
       }
