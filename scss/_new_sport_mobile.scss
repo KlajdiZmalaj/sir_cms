@@ -202,7 +202,7 @@ html {
 
   a.list-element.striped {
     padding: 0.75rem;
-    background: #4b4b4b !important;
+    background: #333 !important;
     color: #fff;
     min-height: unset !important;
     height: unset !important;
@@ -281,7 +281,7 @@ html {
 
   .cg-odd-live.bet-selected,
   .esito.bet-selected {
-    background: #ffd800 !important;
+    background: #ffcc00 !important;
     color: #101010 !important;
   }
 
@@ -836,6 +836,11 @@ html {
     background-size: contain !important;
     width: 20px;
     height: 20px;
+    filter: invert(1);
+  }
+
+  .sport-img.icoTopLeague {
+    filter: none !important;
   }
 
   .sport-img-container {

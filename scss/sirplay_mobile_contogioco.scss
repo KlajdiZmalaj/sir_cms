@@ -548,10 +548,10 @@ div#cg-recover-button-fase1 > div,
 
 #cg-slide-app-buttons .cg-slide-scroll-buttons-row .cg-slide-scroll-button.cg-app .cg-slide-icon-container {
   flex-direction: row;
-  border: 0px;
+  border: 2px solid #ffcc00;
   border-radius: 10px;
   width: 90%;
-  background-color: #ffcc00;
+  background-color: transparent;
   padding: 13px;
 }
 
@@ -561,6 +561,7 @@ div#cg-recover-button-fase1 > div,
   .cg-slide-icon-container
   .cg-slide-icon.cg-app {
   height: 30px;
+  display: none;
 }
 
 #cg-slide-app-buttons
@@ -571,7 +572,9 @@ div#cg-recover-button-fase1 > div,
   font-weight: 700;
   font-size: 1rem !important;
   line-height: 15px;
-  color: black !important;
+  color: white !important;
+  display: flex;
+  align-items: center;
 }
 
 .overlay-content {
@@ -1092,7 +1095,6 @@ input[type="checkbox"].systemCheckbox + label::after {
 
 #cg-prematch-button {
   width: 100%;
-  max-width: 25%;
 }
 
 #cg-prematch-button,
@@ -1615,6 +1617,7 @@ div#cg-promo-preview-container {
 .cg-promo-item-img {
   height: 300px;
   width: 90%;
+  background-size: contain !important;
 }
 
 .cg-info-go-back {
@@ -2002,10 +2005,11 @@ html .esiti-container .esito {
 #cg-slide-footer2 > div:last-child:after {
   content: "";
   height: 19px;
-  display: block;
+  display: flex;
   background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/poweredbylabs.png);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   margin-top: 50px;
 }
 
@@ -2066,7 +2070,7 @@ html .esiti-container .esito {
 
 body:not([page="promo"]) {
   .cg-homeMenuIcoLite:after {
-    content: "10";
+    content: "11";
     position: absolute;
     top: -10px;
     left: 20px;
@@ -2085,7 +2089,7 @@ body:not([page="promo"]) {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
   }
   #cg-slide-promo-button > .cg-slide-icon-container:after {
-    content: "10";
+    content: "11";
     position: absolute;
     top: 5px;
     right: 5px;
@@ -2224,5 +2228,39 @@ span.temporal-filter-tab.tab-heading.uppercase {
 .cg-promo-cards-icon {
   filter: invert(1);
 }
+@media screen and (min-width: 1000px) {
+  .cg-promo-body[data-template="template-01"] .cg-promo-preview > :last-child,
+  .cg-skillgame-preview > :last-child {
+    width: unset !important;
+  }
+}
+.cg-promo-body[data-template="template-01"] .cg-promo-preview,
+.cg-skillgame-preview {
+  display: unset !important;
+}
 
+.cg-promo-body[data-template="template-01"] .cg-promo-preview > :first-child,
+.cg-skillgame-preview > :first-child {
+  width: unset !important;
+}
 /// new promotion layout  (end)
+
+#cg-slide-app-buttons
+  .cg-slide-scroll-buttons-row
+  .cg-slide-scroll-button.cg-app
+  .cg-slide-icon-container
+  .cg-slide-button-label:before {
+  width: 30px;
+  content: "";
+  background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/faviconScaledUp.png);
+  display: block;
+  height: 30px;
+  z-index: 9999;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+#cg-left-side-menu {
+  left: -81% !important;
+}
