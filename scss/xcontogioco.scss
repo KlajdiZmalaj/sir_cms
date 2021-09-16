@@ -260,18 +260,39 @@ body[page="xcasino"] {
     color: var(--col1);
   }
   .casino.cg-bg-live {
-    background: url(https://www.sirplay.it/external_css/SIRPLAY/img/casinobg2.jpg) top center no-repeat !important;
+    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/casinobg2.jpg) top center no-repeat !important;
     background-attachment: fixed !important;
     background-size: cover !important;
   }
   .casino #contentGames:before {
-    background: url(https://www.sirplay.it/external_css/SIRPLAY/img/fireToad.png) center center no-repeat !important;
+    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/fireToad.png) center center no-repeat !important;
     top: 14px;
     background-size: contain !important;
     height: 160px !important;
   }
 }
 .casino {
+  .aviator {
+    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/aviator.png);
+    background-repeat: no-repeat;
+    margin-top: 5px;
+  }
+
+  .mega {
+    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/megaways.png);
+    background-repeat: no-repeat;
+  }
+
+  .drops {
+    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/drops&wins.png);
+    background-repeat: no-repeat;
+  }
+
+  .fireblaze {
+    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/fireblaze.png);
+    background-repeat: no-repeat;
+  }
+
   .exa_ico_home {
     background: url(https://#{$skinHost}/external_css/#{$skinName}/img/slot-machine.svg);
     background-repeat: no-repeat;
@@ -309,7 +330,7 @@ body[page="xcasino"] {
     margin-top: 0px;
     max-width: 100%;
     .bg-filtri-casino {
-      background: #000;
+      background: transparent;
       display: flex;
       flex-direction: row;
       flex: 1 1;
@@ -354,6 +375,10 @@ body[page="xcasino"] {
   .exa_ico_novita,
   .exa_ico_slot,
   .exa_ico_jackpot,
+  .aviator,
+  .mega,
+  .drops,
+  .fireblaze,
   .exa_ico_suggeriti,
   .exa_ico_dice,
   .exa_ico_sport,
@@ -1576,7 +1601,7 @@ body[page="promo"] #nascondimenu .logo {
 }
 body:not([page="promo"]) {
   .menu-principale-barra ul.menu-principale a[data-ref="promo"]:after {
-    content: "11";
+    content: "10";
     animation: blink;
     display: block;
     position: absolute;
@@ -2061,16 +2086,17 @@ html .box-vincita-potenziale.bottoni-var-quote a.bottone:hover {
   text-transform: uppercase;
   font-weight: 500;
 }
-
-.btn-success:not(:disabled):not(.disabled).active,
-.btn-success:not(:disabled):not(.disabled):active,
-.show > .btn-success.dropdown-toggle {
-  color: #fff !important;
-  font-size: 18px !important;
-  font-weight: 400;
-  letter-spacing: 1px;
-  background-color: #1e7e34;
-  border-color: #1c7430;
+body:not(.cg-pvr-page) {
+  .btn-success:not(:disabled):not(.disabled).active,
+  .btn-success:not(:disabled):not(.disabled):active,
+  .show > .btn-success.dropdown-toggle {
+    color: #fff !important;
+    font-size: 18px !important;
+    font-weight: 400;
+    letter-spacing: 1px;
+    background-color: #1e7e34;
+    border-color: #1c7430;
+  }
 }
 
 .xp-met-attivo,
@@ -2309,21 +2335,21 @@ body[page="promo"] {
 
 //////////////////////////////////////////// (new promozioni page end)
 
-.menu-principale-barra ul.menu-principale a[data-ref="lotterie"]:after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: -14px;
-  top: -10px;
-  background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/newpng.png);
-  width: 38px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+// .menu-principale-barra ul.menu-principale a[data-ref="lotterie"]:after {
+//   content: "";
+//   display: block;
+//   position: absolute;
+//   right: -14px;
+//   top: -10px;
+//   background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/newpng.png);
+//   width: 38px;
+//   height: 44px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   background-size: contain;
+//   background-repeat: no-repeat;
+// }
 
 body[page="xcasinolive"] {
   .exa_ico_live {
@@ -2373,4 +2399,86 @@ img {
 
 .elementi-footer #consultaUltimev {
   bottom: 0px;
+}
+
+////casino filter problem
+span.popup-desc.align-self-center.margine-sinistra {
+  filter: none !important;
+}
+
+.activeFilterBar .popup-desc {
+  filter: none !important;
+  height: unset !important;
+}
+
+span.popup-desc.align-self-center.margine-sinistra {
+  height: unset !important;
+}
+///////
+
+html [page="xcards"] {
+  .casino .exa_ico_home {
+    height: 22px !important;
+    width: 22px !important;
+    margin-left: 54px;
+    background-size: contain !important;
+    background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/iconAll.png);
+    background-repeat: no-repeat;
+  }
+
+  span.premiomatto {
+    height: 22px !important;
+    width: 22px !important;
+    margin-left: 54px;
+    background-repeat: no-repeat;
+    filter: none;
+    background-size: contain;
+    background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/icon11.png) !important;
+  }
+  span.torneo {
+    height: 22px !important;
+    width: 22px !important;
+    margin-left: 54px;
+    background-repeat: no-repeat;
+    filter: none;
+    background-size: contain;
+    background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/icon22.png) !important;
+  }
+}
+
+///// Align in scommesse (start)
+
+@media screen and (mix-width: 1920px) {
+  .tabellaQuoteIntestazione-GruppoQuote.text-uppercase.d-flex.justify-content-center.align-items-center {
+    margin-left: 45px !important;
+  }
+}
+.tabellaQuoteIntestazione-GruppoQuote.text-uppercase.d-flex.justify-content-center.align-items-center {
+  margin-left: 35px;
+}
+
+///// Align in scommesse (end)
+
+a#idMostraAltriButton {
+  border-radius: 10px;
+  margin-bottom: 80px;
+  background: var(--active-color);
+  color: black !important;
+  font-size: 12px;
+}
+
+body[page="xcasino"] {
+  main#idContentMain {
+    height: 100vh;
+  }
+}
+body[page="xcasinopt"] {
+  main#idContentMain {
+    height: 100vh;
+  }
+}
+body[page="xcasinolive"] {
+  main#idContentMain {
+    height: 100vh;
+  }
 }

@@ -1945,10 +1945,6 @@ html {
       color: #ffda21;
     }
 
-    .customPopup__content__body {
-      color: black;
-    }
-
     #cg-header {
       border-bottom: none;
     }
@@ -2200,4 +2196,8 @@ a.scAggiuntiva {
 html .custom-control-input:checked ~ .custom-control-label::before {
   background-color: red !important;
   border: 0 !important;
+}
+
+html .customPopup__content__body {
+  color: black;
 }
