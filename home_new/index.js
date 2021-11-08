@@ -23,9 +23,29 @@ window.fetchSportBanners = async (skin, token) => {
   var mainBannerTemplate = `${mainBanner
     .map(
       (banner) =>
-        `<div class="newSliderSlide">
-            <img src="${banner?.image?.path}" alt="" />
-           </div>`
+        `
+        <div   class="newSliderSlide">
+            <img   src="${banner?.image?.path}" alt=""  />
+            <button
+            onclick="${
+              banner.id
+                ? `window.top.location.href = 'https://${window.location.host}/promo'`
+                : ""
+            }"
+            style="
+            position: absolute;
+            bottom: 105px;
+            margin-left: 4%;
+            padding: 10px 15px;
+            border-radius: 15px;
+            border: none;
+            background: #fdca00;
+            cursor: pointer;
+            box-shadow: 0px 8px 10px rgb(0 0 0 / 60%);
+            "
+            >SCORPI LE NOSTRE PROMOZIONI</button>
+           </div>
+           `
     )
     .join("")}`;
 

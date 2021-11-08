@@ -260,15 +260,23 @@ body[page="xcasino"] {
     color: var(--col1);
   }
   .casino.cg-bg-live {
-    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/casinobg2.jpg) top center no-repeat !important;
+    // background: url(https://#{$skinHost}/external_css/#{$skinName}/img/casinobg2.jpg) top center no-repeat !important;
+    background: url(https://www.sirplay.it/external_css/SIRPLAY/img/slot-red.jpg) top center no-repeat !important;
     background-attachment: fixed !important;
     background-size: cover !important;
   }
+
+  // .casino #contentGames:before {
+  //   background: url(https://#{$skinHost}/external_css/#{$skinName}/img/fireToad.png) center center no-repeat !important;
+  //   top: 14px;
+  //   background-size: contain !important;
+  //   height: 160px !important;
+  // }
   .casino #contentGames:before {
-    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/fireToad.png) center center no-repeat !important;
-    top: 14px;
+    background: url(https://www.sirplay.it/external_css/SIRPLAY/img/aztecRespinSlotPng.png) center center no-repeat !important;
+    top: -35px;
     background-size: contain !important;
-    height: 160px !important;
+    height: 270px !important;
   }
 }
 .casino {
@@ -297,8 +305,20 @@ body[page="xcasino"] {
     background: url(https://#{$skinHost}/external_css/#{$skinName}/img/slot-machine.svg);
     background-repeat: no-repeat;
   }
+  .halloween {
+    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/halloween.png);
+    background-repeat: no-repeat;
+  }
   .exa_ico_novita {
     background: url(https://#{$skinHost}/external_css/#{$skinName}/img/new.svg);
+    background-repeat: no-repeat;
+  }
+  .torneo {
+    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/torneo-icon.png);
+    background-repeat: no-repeat;
+  }
+  .exa_ico_chip {
+    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/baccarat.png);
     background-repeat: no-repeat;
   }
   .exa_ico_slot {
@@ -347,8 +367,13 @@ body[page="xcasino"] {
       left: 0;
     }
   }
+  // &.cg-bg-live {
+  //   background: url(https://www.sirplay.it/external_css/SIRPLAY/img/backgCasino.jpg) top center no-repeat !important;
+  //   background-attachment: fixed !important;
+  //   background-size: cover !important;
+  // }
   &.cg-bg-live {
-    background: url(https://www.sirplay.it/external_css/SIRPLAY/img/backgCasino.jpg) top center no-repeat !important;
+    background: url(https://www.sirplay.it/external_css/SIRPLAY/img/EpicApe.jpg) top center no-repeat !important;
     background-attachment: fixed !important;
     background-size: cover !important;
   }
@@ -373,9 +398,12 @@ body[page="xcasino"] {
   }
   .exa_ico_home,
   .exa_ico_novita,
+  .torneo,
+  .exa_ico_chip,
   .exa_ico_slot,
   .exa_ico_jackpot,
   .aviator,
+  .halloween,
   .mega,
   .drops,
   .fireblaze,
@@ -491,11 +519,13 @@ body[page="xcasino"] {
     }
     &:before {
       content: "";
-      background: url("https://www.sirplay.it/external_css/SIRPLAY/img/sheildsOfRome.png") center center no-repeat !important;
+      // background: url("https://www.sirplay.it/external_css/SIRPLAY/img/sheildsOfRome.png") center center no-repeat !important;
+      // background: url(https://www.sirplay.it/external_css/SIRPLAY/img/epicApeSlot.png) center center no-repeat !important;
+      background: url(https://www.sirplay.it/external_css/SIRPLAY/img/epic-ape_logo.png) center center no-repeat !important;
       position: absolute;
       width: 100%;
       margin-top: 50px;
-      height: 190px;
+      height: 220px;
       left: 0;
       background-size: contain !important;
       transform: scale(1);
@@ -1601,7 +1631,7 @@ body[page="promo"] #nascondimenu .logo {
 }
 body:not([page="promo"]) {
   .menu-principale-barra ul.menu-principale a[data-ref="promo"]:after {
-    content: "10";
+    content: "11";
     animation: blink;
     display: block;
     position: absolute;
@@ -2481,4 +2511,20 @@ body[page="xcasinolive"] {
   main#idContentMain {
     height: 100vh;
   }
+}
+body[page="xcasino"] {
+  @media (max-width: 1820px) {
+    .col-md-12.riga-titoli-casino > a > span {
+      display: none;
+    }
+  }
+  @media (max-width: 1500px) {
+    .casino #casino-principale:before {
+      height: 70px !important;
+    }
+  }
+}
+
+.col-md-12.riga-titoli-casino > a:nth-child(13) {
+  display: none;
 }
