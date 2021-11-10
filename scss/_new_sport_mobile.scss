@@ -64,7 +64,7 @@ html {
   .cg-odd-live,
   .esito,
   .esiti-container .esito {
-    background: #2f2f2f !important;
+    background: #484848 !important;
     font-size: 1.15rem;
     border: unset !important;
     border-radius: 2px !important;
@@ -473,7 +473,7 @@ html {
   }
 
   a.info-avvenimento {
-    background: #272727;
+    background: #484848;
     color: #fff;
     max-width: calc(100% - 8px);
     margin: 0 auto;
@@ -487,12 +487,9 @@ html {
   #avvenimenti .esiti-container {
     background: #272727;
     color: #fff;
-    padding-bottom: 4px;
     max-width: calc(100% - 8px);
     margin: 0 auto;
     border-radius: 0;
-    padding-left: 4px;
-    padding-right: 4px;
   }
 
   .nome-avvenimento {
@@ -502,7 +499,7 @@ html {
   nav.nav-filters-wrapper {
     padding: 4px;
     height: auto;
-    background: #272727;
+    background: #3e3e3e;
     color: #fff;
   }
 
@@ -540,7 +537,7 @@ html {
 
   div#main-wrapper > #main-container > .avvenimento .info-avvenimento-live,
   .esiti-container {
-    background: #272727;
+    background: #3e3e3e;
     color: #fff;
   }
 
@@ -671,12 +668,12 @@ html {
     padding-right: 8px;
     font-style: italic;
     font-size: 8px !important;
-    background: #272727;
+    background: #484848;
     font-weight: 900;
   }
 
   nav#nav-go-back {
-    background: #272727 !important;
+    background: #353535 !important;
     color: #fff;
     min-height: unset;
     padding-top: 8px;
@@ -949,7 +946,7 @@ html {
 
   .main-content,
   div#cg-tabContainer {
-    background: #222222 !important;
+    background: #353535 !important;
   }
 
   .nav-item .arrow,
@@ -962,7 +959,7 @@ html {
   }
 
   nav.small-navbar {
-    background: #272727;
+    background: #353535;
   }
 
   span.arrow.arrow-collapse {

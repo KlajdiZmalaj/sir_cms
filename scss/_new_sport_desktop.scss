@@ -397,7 +397,11 @@ html {
   .tabellaQuoteIntestazione .tabellaQuoteIntestazione-GruppoQuote {
     color: #fff !important;
     // background: #212121;
-    background: #404040;
+    background: var(--custom-brand-color-2);
+  }
+
+  .titolo-competizione-live.bg-grigio-scuro.pointer.bianco.bordo-tondo.margine-giu-mezzo.toggle-nascondi-live {
+    margin-bottom: 5px;
   }
 
   .tabellaQuoteIntestazione-GruppoQuote > p,
@@ -426,7 +430,7 @@ html {
   .tablesExpanded .tabellaQuoteNew,
   .tablesExpanded .tabellaQuoteIntestazione.tabellaQuoteIntestazionePrematch {
     //background-color: #323232 !important;
-    background-color: #404040 !important;
+    background-color: var(--custom-brand-color-2) !important;
     border-radius: 0;
   }
   .contenitoreRiga:not(:last-child),
@@ -487,12 +491,12 @@ html {
 
       &.selezionata {
         //background: #141414 !important;
-        background: #333333 !important;
+        background: #555 !important;
       }
     }
   }
   .tablesCompacted .tabellaQuoteContenitoreQuotazioni {
-    background-color: var(--custom-brand-color-2-dark) !important;
+    background-color: var(--custom-brand-color-2) !important;
     border-radius: var(--custom-border-radius-2) !important;
   }
 
@@ -663,7 +667,7 @@ html {
   .blocco-quote-espanse .scheda-giocata-sport,
   .quote-extra,
   .quote-extra .tabella-quote-extra {
-    background-color: var(--custom-brand-color-2-dark) !important;
+    background-color: var(--custom-brand-color-2) !important;
   }
 
   .titolo-giocate-extra {
