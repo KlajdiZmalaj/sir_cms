@@ -43,7 +43,7 @@ window.fetchSportBanners = async (skin, token) => {
             cursor: pointer;
             box-shadow: 0px 8px 10px rgb(0 0 0 / 60%);
             "
-            >SCORPI LE NOSTRE PROMOZIONI</button>
+            >SCOPRI LE NOSTRE PROMOZIONI</button>
            </div>
            `
     )
