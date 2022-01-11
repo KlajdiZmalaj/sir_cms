@@ -363,10 +363,105 @@ body .bottomBanners .bottomBanner a:hover {
 
 .carouselContainer .slick-slide img {
   max-height: 266px;
+  margin-top: 15px;
   max-width: 192px;
   margin-bottom: 7px;
 }
 
 img {
   pointer-events: none;
+}
+
+// CHRISTMASS THEME
+
+// video {
+//   position: fixed;
+//   width: 100vw;
+//   height: 120%;
+//   overflow: hidden;
+// }
+// .bottomBanner:nth-child(1):before {
+//   content: "";
+//   background: url(./img/box1-3snow.png);
+//   width: 100%;
+//   height: 50px;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   position: absolute;
+//   top: -14px;
+// }
+
+// .bottomBanner:nth-child(2):before {
+//   content: "";
+//   background: url(./img/box2snow.png);
+//   width: 100%;
+//   height: 50px;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   position: absolute;
+//   top: -9px;
+// }
+
+// .bottomBanner:nth-child(4):before {
+//   content: "";
+//   background: url(./img/box1-3snow.png);
+//   width: 100%;
+//   height: 50px;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   position: absolute;
+//   top: -14px;
+// }
+// .bottomBanner:nth-child(3):before {
+//   content: "";
+//   background: url(./img/box3snow.png);
+//   width: 100%;
+//   height: 50px;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   position: absolute;
+//   top: -11px;
+// }
+
+// @keyframes xmasBall {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   25% {
+//     transform: rotate(-10deg);
+//   }
+//   50% {
+//     transform: rotate(0deg);
+//   }
+//   70% {
+//     transform: rotate(10deg);
+//   }
+//   100% {
+//     transform: rotate(0deg);
+//   }
+// }
+
+// .christmasBall {
+//   position: absolute;
+//   width: 90px;
+//   z-index: 1;
+//   left: 55px;
+//   top: -30px;
+//   filter: drop-shadow(1px -2px 46px white) brightness(1.1) grayscale(0.2);
+//   transition: 0.3s;
+//   transform: rotate(0deg);
+//   transform-origin: top;
+//   animation: xmasBall 2.5s infinite linear;
+// }
+
+.carouselContainer .slick-slide img {
+  pointer-events: visible;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.carouselContainer .slick-slide img:hover {
+  filter: drop-shadow(0px 5px 5px black);
+  transform: scale(1.05);
+  margin-bottom: 20px;
 }

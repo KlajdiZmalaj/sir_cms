@@ -2097,7 +2097,7 @@ html .esiti-container .esito {
 
 body:not([page="promo"]) {
   .cg-homeMenuIcoLite:after {
-    content: "12";
+    content: "10";
     position: absolute;
     top: -10px;
     left: 20px;
@@ -2116,7 +2116,7 @@ body:not([page="promo"]) {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
   }
   #cg-slide-promo-button > .cg-slide-icon-container:after {
-    content: "12";
+    content: "10";
     position: absolute;
     top: 5px;
     right: 5px;

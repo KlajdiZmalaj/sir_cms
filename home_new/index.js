@@ -11,50 +11,92 @@ window.fetchSportBanners = async (skin, token) => {
   } = data;
 
   const mainBanner = banners.filter((a) => a.css_selector.name === "main_banner");
-
+  console.log('banner.id', mainBanner?.title)
   const rightBanner = banners.filter((a) => a.css_selector.name === "right_banner");
 
   let gameBanner = banners.filter((a) => a.css_selector.name === "game_banner");
 
   let centerBanner = banners.filter((a) => a.css_selector.name === "center_banners");
 
-  console.log("mainBanner", mainBanner);
-
   var mainBannerTemplate = `${mainBanner
+    
     .map(
       (banner) =>
         `
-        <div   class="newSliderSlide">
+        <div class="newSliderSlide">
+        <button
+                    onclick="${
+                      banner.id
+                        ? `window.top.location.href = 'https://${window.location.host}/${banner?.title}'`
+                        : ""
+                    }"
+                    style="
+                    position: absolute;
+                    display: flex;
+                    justify-content: space-between;
+                    bottom: 120px;
+                    width: 150px;
+                    margin-left: 75vw;
+                    padding: 10px 10px;
+                    border-radius: 6px;
+                    border: none;
+                    background: #fdca00;
+                    cursor: pointer;
+                    box-shadow: 0px 8px 10px rgb(0 0 0 / 60%);
+                    
+                    
+                    
+                    "
+                    ><span style="
+                    width:70%;
+                    ">SCOPRI DI PIU </span>
+                    <img style="
+                    
+                    max-height: 20px;
+                    width:20%;
+                    
+                    " src="./img/pointerIcon.svg"> </img>
+                    </button>
             <img   src="${banner?.image?.path}" alt=""  />
-            <button
-            onclick="${
-              banner.id
-                ? `window.top.location.href = 'https://${window.location.host}/promo'`
-                : ""
-            }"
-            style="
-            position: absolute;
-            bottom: 105px;
-            margin-left: 4%;
-            padding: 10px 15px;
-            border-radius: 15px;
-            border: none;
-            background: #fdca00;
-            cursor: pointer;
-            box-shadow: 0px 8px 10px rgb(0 0 0 / 60%);
-            "
-            >SCOPRI LE NOSTRE PROMOZIONI</button>
+            
            </div>
+           
            `
     )
     .join("")}`;
+
+    
+
+
+   
+    // <button
+    //         onclick="${
+    //           banner.id
+    //             ? `window.top.location.href = 'https://${window.location.host}/promo'`
+    //             : ""
+    //         }"
+    //         style="
+    //         position: absolute;
+    //         bottom: 105px;
+    //         margin-left: 75vw;
+    //         padding: 10px 15px;
+    //         border-radius: 15px;
+    //         border: none;
+    //         background: #fdca00;
+    //         cursor: pointer;
+    //         box-shadow: 0px 8px 10px rgb(0 0 0 / 60%);
+    //         "
+    //         >SCOPRI LE NOSTRE PROMOZIONI</button>
+
+
 
   var template = `${gameBanner
     .map(
       (banner) =>
         `<div class="sliderItem" onclick="${
           banner.subtitle
-            ? `window.top.location.href = 'https://${window.location.host}/casino?token=&language=it&system_code=SIRPLAY&systemCodeLancioGioco=SIRPLAY&codiceGiocoInterno=${banner.subtitle}&codicePiattaforma=${banner.button}&codiceLancioLive=&isReal=0&ip='`
+            ? `window.top.location.href = 'https://${window.location.host}/slot'`
+            // ? `window.top.location.href = 'https://${window.location.host}/casino?token=&language=it&system_code=SIRPLAY&systemCodeLancioGioco=SIRPLAY&codiceGiocoInterno=${banner.subtitle}&codicePiattaforma=${banner.button}&codiceLancioLive=&isReal=0&ip='`
             : ""
         }"><img class="newSliderSlide" src="${banner?.image?.path}" alt="" /><span>${
           banner.title || "gameTitle"

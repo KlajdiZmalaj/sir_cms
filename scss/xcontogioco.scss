@@ -1631,7 +1631,7 @@ body[page="promo"] #nascondimenu .logo {
 }
 body:not([page="promo"]) {
   .menu-principale-barra ul.menu-principale a[data-ref="promo"]:after {
-    content: "12";
+    content: "10";
     animation: blink;
     display: block;
     position: absolute;
