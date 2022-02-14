@@ -165,10 +165,7 @@ div#cg-logged-section-logout,
 .cg-iconContainer .cg-selection-border,
 .reservationRow > .reloadReservationButton,
 .formReloadReservation > .reloadReservationButton,
-#cg-pvr-confirm-popup
-  .cg-signup-popup-button
-  .formReloadReservation
-  > .reloadReservationButton {
+#cg-pvr-confirm-popup .cg-signup-popup-button .formReloadReservation > .reloadReservationButton {
   background-color: #ffcc00 !important;
   color: black !important;
 }
@@ -217,10 +214,7 @@ div#cg-recover-button-fase1 > div,
 .cg-odd-live.cg-selected > .cg-top,
 .cg-odd.cg-selected > .cg-odd-right,
 .cg-odd-live.cg-selected > .cg-bottom,
-.cg-odd-antepost.cg-selected
-  > .cg-top
-  .cg-odd-antepost.cg-selected
-  > .cg-bottom {
+.cg-odd-antepost.cg-selected > .cg-top .cg-odd-antepost.cg-selected > .cg-bottom {
   color: #101010 !important;
   font-weight: 600;
 }
@@ -406,65 +400,70 @@ div#cg-recover-button-fase1 > div,
   margin: 10px 0;
 }
 
-#cg-contoButton i.cg-icon.cg-ico-user-logged,
-.cg-wrapper-login-section .cg-ico-user,
-.cg-icoUserContainerLoggedSection .cg-ico-user {
-  background-image: url(https://resources2.betaland.it/images/betaland/svg/user-logged.svg) !important;
-}
+// #cg-contoButton i.cg-icon.cg-ico-user-logged,
+// .cg-wrapper-login-section .cg-ico-user,
+// .cg-icoUserContainerLoggedSection .cg-ico-user {
+//   background-image: url(https://resources2.betaland.it/images/betaland/svg/user-logged.svg) !important;
+// }
 
 .cg-homeMenuIcoLite {
   background-image: url(https://www.sirplay.it/external_css/SIRPLAY/img/menu%20logo.svg) !important;
 }
 
-#cg-slide-home-button .cg-slide-icon.cg-slide-ico-home {
-  background-image: url(https://resources2.betaland.it/images/betaland/svg/home.svg) !important;
+// #cg-slide-home-button .cg-slide-icon.cg-slide-ico-home {
+//   background-image: url(https://resources2.betaland.it/images/betaland/svg/home.svg) !important;
+// }
+
+// #cg-slide-prematch-button .cg-slide-icon.cg-slide-ico-prematch,
+// #cg-slide-prematch-button .cg-slide-icon.cg-ico-prematch {
+//   background-image: url(https://resources2.betaland.it/images/betaland/svg/prematch-slide-menu.svg) !important;
+// }
+
+// #cg-slide-live-button .cg-slide-icon.cg-ico-prematch {
+//   background-image: url(https://resources2.betaland.it/images/betaland/svg/prematch.svg) !important;
+// }
+
+// #cg-slide-casino-button .cg-slide-icon.cg-ico-casino {
+//   background-image: url(https://resources2.betaland.it/images/betaland/svg/casino.svg) !important;
+// }
+
+// #cg-betaland-casino-button .cg-ico-cg-betaland-casino-button {
+//   background-image: url(https://resources2.betaland.it/images/betaland/svg/casino.svg) !important;
+// }
+
+// #cg-slide-poker-button .cg-slide-icon.cg-slide-ico-poker {
+//   background-image: url(https://resources2.betaland.it/images/betaland/svg/poker-slide-menu.svg) !important;
+// }
+
+// #cg-betaland-poker-button .cg-ico-cg-betaland-poker-button {
+//   background-image: url(https://resources2.betaland.it/images/betaland/svg/poker-slide-menu.svg) !important;
+// }
+
+// #cg-slide-lotterie-button .cg-slide-icon.cg-slide-ico-lotterie {
+//   background-image: url(https://resources2.betaland.it/images/betaland/svg/bingo-slide-menu.svg) !important;
+// }
+
+// #cg-betaland-bingo-button .cg-ico-cg-betaland-bingo-button,
+// .cg-slide-ico-bingo {
+//   background-image: url(https://resources2.betaland.it/images/betaland/svg/bingo-slide-menu.svg) !important;
+// }
+
+// #sh-lotterie-mobile .cg-slide-icon.cg-ico-sh-lotterie-mobile {
+//   background-image: url(https://resources2.betaland.it/images/betaland/svg/lotterie-slide-menu.svg) !important;
+// }
+
+// #cg-betaland-lotterie-button .cg-ico-cg-betaland-lotterie-button {
+//   background-image: url(https://stag-resource.betaland.it/images/betaland/svg/lotterie-slide-menu.svg) !important;
+// }
+
+// #cg-slide-carte-button .cg-slide-icon.cg-slide-ico-carte {
+//   background-image: url(https://resources2.betaland.it/images/betaland/svg/carte-slide-menu.svg) !important;
+// }
+
+.cg-slide-icon-container > i {
+  filter: invert(1);
 }
 
-#cg-slide-prematch-button .cg-slide-icon.cg-slide-ico-prematch,
-#cg-slide-prematch-button .cg-slide-icon.cg-ico-prematch {
-  background-image: url(https://resources2.betaland.it/images/betaland/svg/prematch-slide-menu.svg) !important;
-}
-
-#cg-slide-live-button .cg-slide-icon.cg-ico-prematch {
-  background-image: url(https://resources2.betaland.it/images/betaland/svg/prematch.svg) !important;
-}
-
-#cg-slide-casino-button .cg-slide-icon.cg-ico-casino {
-  background-image: url(https://resources2.betaland.it/images/betaland/svg/casino.svg) !important;
-}
-
-#cg-betaland-casino-button .cg-ico-cg-betaland-casino-button {
-  background-image: url(https://resources2.betaland.it/images/betaland/svg/casino.svg) !important;
-}
-
-#cg-slide-poker-button .cg-slide-icon.cg-slide-ico-poker {
-  background-image: url(https://resources2.betaland.it/images/betaland/svg/poker-slide-menu.svg) !important;
-}
-
-#cg-betaland-poker-button .cg-ico-cg-betaland-poker-button {
-  background-image: url(https://resources2.betaland.it/images/betaland/svg/poker-slide-menu.svg) !important;
-}
-
-#cg-slide-lotterie-button .cg-slide-icon.cg-slide-ico-lotterie {
-  background-image: url(https://resources2.betaland.it/images/betaland/svg/bingo-slide-menu.svg) !important;
-}
-
-#cg-betaland-bingo-button .cg-ico-cg-betaland-bingo-button,
-.cg-slide-ico-bingo {
-  background-image: url(https://resources2.betaland.it/images/betaland/svg/bingo-slide-menu.svg) !important;
-}
-
-#sh-lotterie-mobile .cg-slide-icon.cg-ico-sh-lotterie-mobile {
-  background-image: url(https://resources2.betaland.it/images/betaland/svg/lotterie-slide-menu.svg) !important;
-}
-
-#cg-betaland-lotterie-button .cg-ico-cg-betaland-lotterie-button {
-  background-image: url(https://stag-resource.betaland.it/images/betaland/svg/lotterie-slide-menu.svg) !important;
-}
-
-#cg-slide-carte-button .cg-slide-icon.cg-slide-ico-carte {
-  background-image: url(https://resources2.betaland.it/images/betaland/svg/carte-slide-menu.svg) !important;
-}
 .cg-slide-ico-virtual,
 .cg-slide-ico-ippica,
 .cg-slide-ico-gv {
@@ -474,9 +473,9 @@ div#cg-recover-button-fase1 > div,
   background-image: url(https://resources2.betaland.it/images/betaland/svg/carte-slide-menu.svg) !important;
 }
 
-#cg-slide-promo-button .cg-slide-icon.cg-slide-ico-promo {
-  background-image: url(https://resources2.betaland.it/images/betaland/svg/promo.svg) !important;
-}
+// #cg-slide-promo-button .cg-slide-icon.cg-slide-ico-promo {
+//   background-image: url(https://resources2.betaland.it/images/betaland/svg/promo.svg) !important;
+// }
 
 #cg-search-event-button .cg-searchIcoLite {
   background-image: url(https://resources2.betaland.it/images/betaland/svg/search-icon.svg) !important;
@@ -526,10 +525,10 @@ div#cg-recover-button-fase1 > div,
   background-image: url(https://resources2.betaland.it/images/betaland/svg/casino-classic.svg) !important;
 }
 
-.cg-ico-sh-casino-live,
-.cg-slide-ico-casino-live {
-  background-image: url(https://resources2.betaland.it/images/betaland/svg/casino-live.svg) !important;
-}
+// .cg-ico-sh-casino-live,
+// .cg-slide-ico-casino-live {
+//   background-image: url(https://resources2.betaland.it/images/betaland/svg/casino-live.svg) !important;
+// }
 
 #cg-betaland-livecasino-button .cg-ico-cg-betaland-livecasino-button {
   background-image: url(https://resources2.betaland.it/images/betaland/svg/casino-live.svg) !important;
@@ -548,16 +547,11 @@ div#cg-recover-button-fase1 > div,
   margin-bottom: 0;
 }
 
-#cg-slide-app-buttons
-  .cg-slide-scroll-buttons-row
-  .cg-slide-scroll-button.cg-app {
+#cg-slide-app-buttons .cg-slide-scroll-buttons-row .cg-slide-scroll-button.cg-app {
   display: contents;
 }
 
-#cg-slide-app-buttons
-  .cg-slide-scroll-buttons-row
-  .cg-slide-scroll-button.cg-app
-  .cg-slide-icon-container {
+#cg-slide-app-buttons .cg-slide-scroll-buttons-row .cg-slide-scroll-button.cg-app .cg-slide-icon-container {
   flex-direction: row;
   border: 2px solid #ffcc00;
   border-radius: 10px;
@@ -1325,10 +1319,7 @@ div#cg-message-refresh {
 
 #cg-user-profile-contact-container .cg-signup-input-border,
 #cg-user-profile-residence-container .cg-signup-input-border {
-  background: linear-gradient(
-    var(--cg-signup-field-gradient),
-    var(--cg-signup-disabled)
-  );
+  background: linear-gradient(var(--cg-signup-field-gradient), var(--cg-signup-disabled));
   color: #000;
 }
 
@@ -2111,7 +2102,7 @@ html .esiti-container .esito {
 
 body:not([page="promo"]) {
   .cg-homeMenuIcoLite:after {
-    content: "10";
+    content: "12";
     position: absolute;
     top: -10px;
     left: 20px;
@@ -2130,7 +2121,7 @@ body:not([page="promo"]) {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
   }
   #cg-slide-promo-button > .cg-slide-icon-container:after {
-    content: "10";
+    content: "12";
     position: absolute;
     top: 5px;
     right: 5px;
@@ -2314,4 +2305,113 @@ span.temporal-filter-tab.tab-heading.uppercase {
 
 .cg-slide-ico-ldt {
   filter: invert(1);
+}
+
+// NEW MOBILE CASINO (START)
+
+.carousel-indicators > button.active {
+  display: none;
+}
+
+.bottone1 {
+  background: var(--accent-bg) !important;
+  & > span {
+    color: var(--primary-bg) !important;
+  }
+}
+.bottone2 {
+  background: var(--accent-bg) !important;
+  & > a {
+    color: var(--primary-bg) !important;
+    font-weight: bold;
+  }
+}
+
+.componenteGioco__intestazione .componenteGioco__titolo {
+  color: white !important;
+}
+
+.bottoneProvider1__nomeProvider {
+  color: #ffffff !important;
+}
+
+.titoloPagina1 {
+  color: white !important;
+}
+
+.categoriaIconContainer .icona.exa_ico_novita.exa_ico_novita {
+  color: white !important;
+  filter: invert(0);
+}
+
+#idContentMain div#mainContentContainer {
+  background: #272727;
+}
+
+.menuCasino {
+  margin-top: 16px !important;
+  color: var(--primary-txt) !important;
+  background: var(--secondary-bg) !important;
+  & > a:nth-child(1) {
+    filter: brightness(100) !important;
+  }
+}
+#idMostraAltriButton {
+  background: var(--accent-bg) !important;
+}
+
+.filtro.selected {
+  border: none !important;
+}
+
+.rigaCategorie1__tipoCategoria {
+  color: #ffffff !important;
+}
+
+.rigaCategorie1 > *:first-child {
+  color: white !important;
+  filter: brightness(1111);
+}
+
+.contentoTitoloCerca {
+  margin-top: 16px !important;
+}
+
+.btn-filters-x,
+.bottoneProvider1__containerLogoInterno {
+  background: var(--accent-bg) !important;
+  color: var(--primary-txt) !important;
+}
+
+#filtri-categorie {
+  .filtro {
+    background: var(--teableSubHeadersBg) !important;
+    color: black;
+    & > div > div:nth-child(1) {
+      filter: invert(1);
+    }
+  }
+  .selected {
+    background: var(--accent-bg) !important;
+    color: var(--primary-txt) !important;
+    & > div > div:nth-child(1) {
+      filter: none !important;
+    }
+  }
+}
+
+#filtri-piattaforme,
+#filtri-temi {
+  .filtro {
+    background: var(--teableSubHeadersBg) !important;
+  }
+  .selected {
+    background: var(--accent-bg) !important;
+    color: var(--primary-txt) !important;
+    font-weight: bold;
+  }
+}
+
+#to-top-button {
+  background: var(--accent-bg) !important;
 }
