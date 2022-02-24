@@ -675,6 +675,10 @@ body[page="xcasino"] {
   content: "";
   background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/lotto2.png);
 }
+.menu-principale-barra ul.menu-principale a[data-ref="altri-giochi"]:before {
+  content: "";
+  background-image: url(https://#{$skinHost}/external_css/#{$skinName}/img/totocalcioYellow.png);
+}
 
 .menu-principale-barra ul.menu-principale a[data-ref="promo"]:before {
   content: "";
@@ -1877,7 +1881,15 @@ body:not(.cg-pvr-page) {
     }
   }
 
-  @media (min-width: 1350px) {
+  @media (max-width: 1479px) and (min-width: 1100px) {
+    .menu-principale-barra ul.menu-principale {
+      justify-content: space-around !important;
+      width: 70% !important;
+      margin-left: 15% !important;
+    }
+  }
+
+  @media (min-width: 1480px) {
     .container-fluid.fissato-alto #nascondimenu {
       height: 72px;
     }
@@ -1899,7 +1911,7 @@ body:not(.cg-pvr-page) {
       background: transparent;
     }
   }
-  @media screen and (max-width: 1550px) {
+  @media screen and (max-width: 1610px) {
     .menu-principale-barra ul.menu-principale li {
       margin: 5px 5px 0px 5px;
     }
