@@ -165,7 +165,10 @@ div#cg-logged-section-logout,
 .cg-iconContainer .cg-selection-border,
 .reservationRow > .reloadReservationButton,
 .formReloadReservation > .reloadReservationButton,
-#cg-pvr-confirm-popup .cg-signup-popup-button .formReloadReservation > .reloadReservationButton {
+#cg-pvr-confirm-popup
+  .cg-signup-popup-button
+  .formReloadReservation
+  > .reloadReservationButton {
   background-color: #ffcc00 !important;
   color: black !important;
 }
@@ -214,7 +217,10 @@ div#cg-recover-button-fase1 > div,
 .cg-odd-live.cg-selected > .cg-top,
 .cg-odd.cg-selected > .cg-odd-right,
 .cg-odd-live.cg-selected > .cg-bottom,
-.cg-odd-antepost.cg-selected > .cg-top .cg-odd-antepost.cg-selected > .cg-bottom {
+.cg-odd-antepost.cg-selected
+  > .cg-top
+  .cg-odd-antepost.cg-selected
+  > .cg-bottom {
   color: #101010 !important;
   font-weight: 600;
 }
@@ -547,11 +553,16 @@ div#cg-recover-button-fase1 > div,
   margin-bottom: 0;
 }
 
-#cg-slide-app-buttons .cg-slide-scroll-buttons-row .cg-slide-scroll-button.cg-app {
+#cg-slide-app-buttons
+  .cg-slide-scroll-buttons-row
+  .cg-slide-scroll-button.cg-app {
   display: contents;
 }
 
-#cg-slide-app-buttons .cg-slide-scroll-buttons-row .cg-slide-scroll-button.cg-app .cg-slide-icon-container {
+#cg-slide-app-buttons
+  .cg-slide-scroll-buttons-row
+  .cg-slide-scroll-button.cg-app
+  .cg-slide-icon-container {
   flex-direction: row;
   border: 2px solid #ffcc00;
   border-radius: 10px;
@@ -1319,7 +1330,10 @@ div#cg-message-refresh {
 
 #cg-user-profile-contact-container .cg-signup-input-border,
 #cg-user-profile-residence-container .cg-signup-input-border {
-  background: linear-gradient(var(--cg-signup-field-gradient), var(--cg-signup-disabled));
+  background: linear-gradient(
+    var(--cg-signup-field-gradient),
+    var(--cg-signup-disabled)
+  );
   color: #000;
 }
 
@@ -2320,7 +2334,6 @@ span.temporal-filter-tab.tab-heading.uppercase {
   }
 }
 .bottone2 {
-  background: var(--accent-bg) !important;
   & > a {
     color: var(--primary-bg) !important;
     font-weight: bold;
@@ -2418,4 +2431,91 @@ span.temporal-filter-tab.tab-heading.uppercase {
 
 .cg-ico-cg-side-totocalcio {
   background-image: url("https://www.sirplay.it/external_css/SIRPLAY/img/totocalcio.png");
+}
+
+//making transparent link content and coloring the svg icon
+a.componenteGioco__altro {
+  color: transparent;
+}
+a.componenteGioco__altro > svg {
+  color: #ffcc00;
+}
+span.componenteGioco__titolo {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  border-bottom: 1.5px solid #ffcc00;
+}
+.bottone1 > span {
+  margin: 0rem 0rem 0rem auto;
+  text-transform: uppercase;
+}
+.containerBloccoRicerca1 {
+  width: 49% !important;
+}
+div#PagefiltersIcon {
+  width: 49% !important;
+  background-color: #404040;
+  border-radius: 0px;
+}
+div#PagefiltersIcon:before {
+  content: "Providers";
+  margin: auto;
+  color: #dededea3;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+
+.rigaTipiGioco1 .bottone2 {
+  background-color: transparent;
+  flex-basis: 10px !important;
+  font-size: 13px;
+  padding: 0px;
+  text-transform: uppercase;
+  
+}
+.rigaTipiGioco1 .bottone2 a.bottone2__testo {
+  color: white !important;
+  font-size: 16px;
+  padding: 0px;
+ 
+}
+
+
+.containerBloccoRicerca1{
+  input.bloccoRicerca1{
+    background-color: #404040;
+    border-radius: 0px;
+    font-size: 12px;
+    width: 50%;
+    &::placeholder{
+  font-size: 12px;
+
+    }
+  }
+}
+
+.rigaFiltri1 .bottone1 {
+  border-radius: 0px !important;
+}
+
+.g-5__containerGridOuter {
+  height: 160px;
+}
+
+
+
+.gioco1__titolo, button.bloccoRicerca1__bottoneChiudi svg, .gioco1__rigaTitolo
+ {
+  display: none !important;
+}
+.componenteGioco__intestazione {
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+#idContentMain {
+  background: #212121;
 }
