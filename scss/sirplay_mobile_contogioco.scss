@@ -2419,3 +2419,17 @@ span.temporal-filter-tab.tab-heading.uppercase {
 .cg-ico-cg-side-totocalcio {
   background-image: url("https://www.sirplay.it/external_css/SIRPLAY/img/totocalcio.png");
 }
+
+#cg-login-section .cg-icoUserContainerLoginSection {
+  display: flex;
+  align-items: center;
+  .cg-ico-user {
+    filter: invert(1);
+  }
+}
+
+.container-carrello-mobile .input-puntata_bottone button,
+.container-carrello-mobile .input-puntata_bottone input {
+  color: #fff !important;
+  font-weight: bold;
+}

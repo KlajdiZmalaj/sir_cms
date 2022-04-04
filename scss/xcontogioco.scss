@@ -13,6 +13,7 @@
   position: absolute;
   bottom: 5px;
   left: 30px;
+  pointer-events: none;
 }
 .cg-error-container {
   background-color: #ff0000;
@@ -1654,6 +1655,12 @@ body:not([page="promo"]) {
     animation: heartbit 1s ease-out infinite;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
   }
+  @-moz-document url-prefix() {
+    .menu-principale-barra ul.menu-principale a[data-ref="promo"]:after {
+      right: -30px;
+      top: 14px;
+    }
+  }
 }
 
 @keyframes heartbit {
@@ -1897,6 +1904,11 @@ body:not(.cg-pvr-page) {
     .login-header {
       top: 53px;
       position: relative;
+    }
+    @-moz-document url-prefix() {
+      .login-header {
+        width: 100px;
+      }
     }
     .menu-principale-barra ul.menu-principale {
       width: 79%;
