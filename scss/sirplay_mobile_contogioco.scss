@@ -2322,7 +2322,7 @@ span.temporal-filter-tab.tab-heading.uppercase {
 .bottone2 {
   & > a {
     color: var(--primary-bg) !important;
-    font-weight: bold;
+    font-weight: 500;
   }
 }
 
@@ -2374,6 +2374,7 @@ span.temporal-filter-tab.tab-heading.uppercase {
 
 .contentoTitoloCerca {
   margin-top: 16px !important;
+  background: #212121 !important;
 }
 
 .btn-filters-x,
@@ -2393,9 +2394,6 @@ span.temporal-filter-tab.tab-heading.uppercase {
   .selected {
     background: var(--accent-bg) !important;
     color: var(--primary-txt) !important;
-    & > div > div:nth-child(1) {
-      filter: none !important;
-    }
   }
 }
 
@@ -2450,19 +2448,23 @@ span.componenteGioco__titolo {
   text-transform: uppercase;
 }
 .containerBloccoRicerca1 {
+  min-width: 49% !important;
   width: 49% !important;
 }
 div#PagefiltersIcon {
-  width: 49% !important;
+  min-width: 49% !important;
   background-color: #404040;
   border-radius: 0px;
+  height: 43px;
+  flex-flow: row-reverse;
+  justify-content: flex-end;
 }
 div#PagefiltersIcon:before {
   content: "Providers";
-  margin: auto;
   color: #dededea3;
   font-size: 12px;
   font-weight: bold;
+  margin-left: 10px;
 }
 
 .rigaTipiGioco1 .bottone2 {
@@ -2481,8 +2483,8 @@ div#PagefiltersIcon:before {
 .containerBloccoRicerca1 {
   input.bloccoRicerca1 {
     background-color: #404040;
+    color: #b4b4b4;
     border-radius: 0px;
-    font-size: 12px;
     width: 50%;
     &::placeholder {
       font-size: 12px;
@@ -2508,6 +2510,108 @@ button.bloccoRicerca1__bottoneChiudi svg,
   margin-right: 10px;
 }
 
+//mobile casino improvements
+
+#games-content-section > .grigliaSlots1 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (max-width: 450px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.bloccoRicerca1,
+#PagefiltersIcon {
+  border: none !important;
+}
+#PagefiltersIcon {
+  height: 100%;
+}
+.containerBloccoRicerca1,
+div#PagefiltersIcon {
+  border: 2px solid #5d5b5b !important;
+}
+
 #idContentMain {
-  background: #212121;
+  min-height: 100%;
+  background: #212121 !important;
+}
+
+#idContentMain {
+  .carousel-indicators {
+    display: none !important;
+  }
+}
+
+.componenteGioco__intestazione > .componenteGioco__altro {
+  z-index: 99999;
+}
+
+.cella__dettaglio__titolo {
+  background-color: var(--accent) !important;
+}
+
+.cella__dettaglio__valore {
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+.bottone__gioca {
+  background-color: var(--accent) !important;
+  color: #000;
+}
+.bottone__prova {
+  color: #fff;
+  background: #838383;
+}
+
+.link__navigazione__top__titolo__testo {
+  font-weight: bold !important;
+  color: var(--accent);
+}
+
+.link__navigazione__top__button__go__back.button__go__back.infoSEOGameCloseButton {
+  color: var(--accent);
+}
+
+div#games-content-section {
+  padding-top: 20px;
+}
+
+.fireblaze,
+.aviator,
+.mega,
+.drops {
+  width: 30px !important;
+  height: 30px !important;
+  background-size: 30px !important;
+  background-repeat: no-repeat !important;
+  filter: grayscale(1) !important;
+}
+.fireblaze {
+  background: url(https://www.sirplay.it/external_css/SIRPLAY/img/fireblaze.png);
+}
+.aviator {
+  background: url(https://www.sirplay.it/external_css/SIRPLAY/img/aviator.png);
+}
+.mega {
+  background: url(https://www.sirplay.it/external_css/SIRPLAY/img/megaways.png);
+}
+.drops {
+  background: url(https://www.sirplay.it/external_css/SIRPLAY/img/fireblaze.png);
+}
+
+.cg-icoUserContainerLoggedSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & > .cg-ico-user {
+    filter: invert(1);
+  }
+}
+
+.sport-img-container > i {
+  color: black !important;
 }
