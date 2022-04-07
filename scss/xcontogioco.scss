@@ -274,10 +274,10 @@ body[page="xcasino"] {
   //   height: 160px !important;
   // }
   .casino #contentGames:before {
-    background: url(https://www.sirplay.it/external_css/SIRPLAY/img/aztecRespinSlotPng.png) center center no-repeat !important;
-    top: -35px;
+    background: url(https://www.sirplay.it/external_css/SIRPLAY/img/Super_X.png) center center no-repeat !important;
+    top: -41px;
     background-size: contain !important;
-    height: 270px !important;
+    height: 216px !important;
   }
 }
 .casino {
@@ -368,13 +368,9 @@ body[page="xcasino"] {
       left: 0;
     }
   }
-  // &.cg-bg-live {
-  //   background: url(https://www.sirplay.it/external_css/SIRPLAY/img/backgCasino.jpg) top center no-repeat !important;
-  //   background-attachment: fixed !important;
-  //   background-size: cover !important;
-  // }
+
   &.cg-bg-live {
-    background: url(https://www.sirplay.it/external_css/SIRPLAY/img/EpicApe.jpg) top center no-repeat !important;
+    background: url(https://www.sirplay.it/external_css/SIRPLAY/img/WildPistoleroMegaFireBlaze.jpg) top center no-repeat !important;
     background-attachment: fixed !important;
     background-size: cover !important;
   }
@@ -522,11 +518,12 @@ body[page="xcasino"] {
       content: "";
       // background: url("https://www.sirplay.it/external_css/SIRPLAY/img/sheildsOfRome.png") center center no-repeat !important;
       // background: url(https://www.sirplay.it/external_css/SIRPLAY/img/epicApeSlot.png) center center no-repeat !important;
-      background: url(https://www.sirplay.it/external_css/SIRPLAY/img/epic-ape_logo.png) center center no-repeat !important;
+      // background: url(https://www.sirplay.it/external_css/SIRPLAY/img/epic-ape_logo.png) center center no-repeat !important;
+      background: url(https://www.sirplay.it/external_css/SIRPLAY/img/pistoleroTema.png) center center no-repeat !important;
       position: absolute;
       width: 100%;
-      margin-top: 50px;
-      height: 220px;
+      margin-top: 94px;
+      height: 155px;
       left: 0;
       background-size: contain !important;
       transform: scale(1);
