@@ -252,7 +252,10 @@ body[page="xcasinolive"] {
   }
   .casino #contentGames:before {
     content: "";
-    background: none !important;
+    background: url(https://www.sirplay.it/external_css/SIRPLAY/img/roulette_liveCasino.png) center center no-repeat !important;
+    margin-top: 94px;
+    height: 135px;
+    background-size: contain !important;
   }
 }
 body[page="xcasino"] {
@@ -343,6 +346,10 @@ body[page="xcasino"] {
     background: url(https://#{$skinHost}/external_css/#{$skinName}/img/cards.svg);
     background-repeat: no-repeat;
   }
+  .exa_ico_preferiti {
+    background: url(https://#{$skinHost}/external_css/#{$skinName}/img/star-line-yellow.png);
+    background-repeat: no-repeat;
+  }
 
   .grid-message {
     color: var(--mainBgCol);
@@ -408,6 +415,7 @@ body[page="xcasino"] {
   .exa_ico_dice,
   .exa_ico_sport,
   .exa_ico_carte,
+  .exa_ico_preferiti,
   .exa_ico_live {
     filter: none;
     height: 20px;
@@ -497,20 +505,21 @@ body[page="xcasino"] {
       background: transparent;
     }
     .blocco-mosaico.game {
+      .img-fluid {
+        height: calc(100% - 40px);
+        transition: filter 0.3s;
+      }
       &:first-child {
         grid-row-start: 1;
         grid-row-end: 3;
         grid-column-start: 1;
         grid-column-end: 3;
-        .img-fluid {
-          height: calc(100% - 40px);
-          transition: filter 0.3s;
-        }
       }
       &:hover {
         .img-fluid {
-          -webkit-filter: blur(20px);
-          filter: blur(20px);
+          // -webkit-filter: blur(20px);
+          // filter: blur(20px);
+          filter: brightness(0.2) blur(1px);
         }
       }
     }
@@ -2548,4 +2557,64 @@ body[page="xcasino"] {
 
 .col-md-12.riga-titoli-casino > a:nth-child(13) {
   display: none;
+}
+
+////////////// LIVE CASINO DESIGN IMPROVEMENTS
+
+.p.bottone.buttonGiocaBG.bianco.maiuscolo {
+  border: 2px solid red;
+  border-radius: 8px;
+  cursor: pointer;
+  min-width: 250px;
+  min-height: 80px;
+}
+
+body[page="xcasinolive"] {
+  .casino.cg-bg-live {
+    // background: url(https://gradm-api.pcluster.info/api/skin/48/image/a8b17a54a5fe1e1c66d7e95f45785911.jpeg) top center
+    //   no-repeat !important;
+    // background: url(https://www.sirplay.it/external_css/SIRPLAY/img/liveCasinoNew.jpg) top center no-repeat !important;
+    background: url(https://gradm-api.pcluster.info/api/skin/74/image/398036d2fdd6743c387db127b4395ccb.jpeg) top center
+      no-repeat !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+  }
+  .casino #contentGames:before {
+    content: "";
+    background: url(https://www.sirplay.it/external_css/SIRPLAY/img/roulette_liveCasino.png) center center no-repeat !important;
+    margin-top: 94px;
+    height: 135px;
+    background-size: contain !important;
+  }
+}
+
+.overlay-mosaico .bottone {
+  font-size: 0.9rem;
+  padding: 0.12rem 0.25rem;
+  line-height: 1.75;
+  width: 80px !important;
+  height: 30px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  transform: translateY(-20px);
+  border-radius: 20px;
+  transition: 0.2s;
+  &:hover {
+    width: 90px !important;
+  }
+}
+
+.overlay-mosaico.nero.bianco > .buttonGiocaBG {
+  background-color: #ffd919 !important;
+  color: #333 !important;
+}
+
+div.blocco-mosaico:hover {
+  transform: translateY(-10px) rotateY(15deg);
+}
+
+div.blocco-mosaico {
+  transition: 0.2s;
 }
